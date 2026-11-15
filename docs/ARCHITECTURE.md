@@ -129,3 +129,11 @@ Alphabetownsletter-onlySymbolTracing;Countingownsitsdigit-onlyTraceDigitsTab bes
 
 
 0.25optionalWordTranslationCaption:SettingsManageroptionalboolenglish_ukrainian_translationdefaultsfalseandacceptslegacyv1missingfield. ParentLanguagecontrolsflag. AudioManager.speech_requested(key,locale)emitsbeforemutecheck,presentationcomponentresolvesfinite264word/requestkeysintoEnglish/UKtextanddisplaysintheheadercenter. Actualaudioselectionunchanged. Captionguardsapp+utteranceENandactivityroute,6sectimer,modal/focuspause,clearonsetting/locale/route. JSONgeneratedfromauthoredcatalogswithcontext-specificalphabetextras. Runtimeoffline,noaudio/modelchanges.
+# Local design authoring tool (2026-11-15)
+
+`design_catalog/` is a separate, loopback-only Python/HTML developer tool. It
+indexes actual project assets/content/component sources, uses Godot fixtures for
+native captures, and stages scoped image/path/color changes with local backups.
+`DesignVisuals` is the small runtime bridge for optional story texture overrides;
+the empty override registry falls back to existing procedural art. Catalog web
+code is excluded from Android exports. See `design_catalog/README.md`.

@@ -52,8 +52,10 @@ func face(at: Vector2,color: Color=Color("344a42")) -> void:
  draw_arc(at+Vector2(0,3),7,0,PI,12,color,2,true)
 func draw_actor(part: Dictionary) -> void:
  var actor_center := actor_position(part);var box: Array=part.box
- var actor_scale: float=minf(box[2],box[3])/100.0
  var world_scale := camera_scale();var shift := image_rect().position-view.position*world_scale
+ draw_set_transform(shift,0,Vector2.ONE*world_scale)
+ if DesignVisuals.draw(self,"story/"+game.story_id+"/"+str(part.id),Rect2(actor_center-Vector2(box[2],box[3])*.5,Vector2(box[2],box[3]))):return
+ var actor_scale: float=minf(box[2],box[3])/100.0
  draw_set_transform(shift+actor_center*world_scale,0,Vector2.ONE*actor_scale*world_scale)
  var active: bool=effects.has(part.id);var t := age if not SettingsManager.values.reduced_motion else 0.0
  var green := Color("639a72");var brown := Color("9d7152");var cream := Color("fff2d7")

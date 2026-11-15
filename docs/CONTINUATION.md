@@ -239,3 +239,39 @@ ValidationTranslation2940/0(parenttoggle/diskreload/legacy/typeguard/all264cues1
 ## Latest deployment - Tablet0.25.0/code29,2026-11-15
 
 Userrequestedinstallation. BuiltandverifiedcurrentAPK42,565,904bytesSHADE2FDAC42BB2167BD1E27654F899CD44325628D0D9EC10405923E72689DCC40A;signature/alignment/packageARM64/no-permissions/assets+all710audioimporttargetchecks passed. AuthorizedRedmiAndroid16updated0.18.0/code20→0.25.0/code29 via targeted install --no-incremental -r:Success. Nouninstall/clear-data/settingschanges;individualprivatefilesnotinspected. Packageversionconfirmed;launcherStatusok,cold828ms,PID20376stillrunning,leftopenforuserreview. StartupnoGodotSCRIPTERROR/ParseError/AndroidRuntimeFATAL;vendorAudioTrackmissinglowpowerXMLnoted,nofullwarningfreeclaim. docs/TABLET_BUILD_REPORT.md updated. APKbuild/android/little-wonder-world-debug.apk,currentPCfolderlink. Source/export25.0/29;allpriornotesstatingtablet/APK0.18arehistoricalsuperseded. NoGit. Nextrealdevicefeedback;captiontoggledefaultoffinparentLanguage,voice/strokesphysicalacceptancependinguserreview.
+# Latest checkpoint - Local design catalog, 2026-11-15
+
+User authorized a catalog across ALL game categories populated from current
+project, then redesign/review through it. Delivered design_catalog/ (buildless
+HTML/CSS/JS, Python stdlib loopback server), tools/Run-DesignCatalog.ps1. Open
+http://127.0.0.1:8790; default port 8790 (8787 earlier sandbox attempt timed out).
+No packages/downloads/accounts/hosting/Git/ADB/APK actions. Runtime/tablet/APK
+stay 0.25.0/code29. Existing art/audio unchanged; override registry empty.
+
+Inventory:1386records,890physicalmedia,724audio,46proceduralstoryactors,69letter/
+digittraces,149paints,15game/worldscreenentries;allcomponentsindexed as source,
+10nativeUI samples. NativeGodot178captures in.local/design-catalog/previews,
+metadata native.json. Capture fixture fixed inherited600x360minimum cropping
+320pxactorpreviews and regenerated;hedgehog visually verified whole in browser.
+Webcatalog search/filter/drawer/source/reviewnotes/status/audio/fonts/backgrounds/
+three-stateactorpreview/tracepoint+JSONeditor;sharedUiKitcoloredit/uploadPNGSVG.
+Drafts stay.local until separate explicit apply; exacttargetedchangesbackedupwith
+history/rollback;hashguardsstalecreation/apply/rollback. Art source note mandatory.
+Audioonlyaudition/review,notbrowserreplacement;arbitrarycodeandriggingnoteditors.
+ProceduralreplacementusesDesignVisuals+data/game_content/design_visual_overrides.json
+andassets/design/overrides;retainswholeobjectmotion/hit/trace,notinternallimbrigging.
+Normalemptyregistryfallbackpreservesoriginalproceduralrender. Catalogexcluded
+Androidexport. Sources/reviews trackednormally;generateddrafts/backupsignored.local.
+
+EightPythonfixturetests pass(apply/rollbackfile/art/color/letter/actortrace,conflicts,
+inventory,invalidimage/path/points),JSsyntax/Pythoncompilepass. House777/0and
+Seasonal1008/0passed;native178capturecompleted. LiveHTTPcatalogread+token/foreign
+Origingates403verified. InitialserverGodotlaunchfailedPowerShell--editorbinding;
+fixedtodirectknownlocalGodotbinarywithisolatedAPPDATA,importandpreviewstartclean
+log. BrowserQAsearchhedgehog/type/category/detail/traceeditor/statecyclingpassed.
+No liveartapplydone;fixturetests only. Native/fullgesture/riggingQA notexhaustive.
+Server running on8790 in session97677 at checkpoint. Catalog browser tab marked
+deliverable. To restart use .\tools\Run-DesignCatalog.ps1. DocsDESIGN_CATALOG_REPORT.md
+anddesign_catalog/README.mdcontainworkflow/limitations. Nextuserreviews current
+library and chooses a coherent first visualfamily (e.g. autumnanimals/leaves)
+before redesign. Do not silently redraw everything or reinstall tablet.

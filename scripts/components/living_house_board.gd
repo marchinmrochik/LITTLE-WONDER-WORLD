@@ -91,6 +91,7 @@ func draw_part(index: int) -> void:
 	var part: Dictionary=game.parts[index];var done: bool=game.completed[index]
 	var active: bool=index==game.part_index and game.state in [game.State.ZOOMING,game.State.TRACE]
 	if not done and not active:return
+	if done and DesignVisuals.draw(self,"story/house/"+str(part.id),part_rect(part)):return
 	if done and part.id in ["sun","cloud","dog","flowers"]:
 		match part.id:
 			"sun":draw_sun()
