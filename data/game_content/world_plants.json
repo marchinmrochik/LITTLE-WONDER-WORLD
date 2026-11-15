@@ -1,0 +1,69 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "tree",
+      "english": "Tree",
+      "ukrainian": "Дерево",
+      "word_key": "WORLD_PLANTS_TREE_WORD",
+      "prompt_key": "WORLD_PLANTS_TREE_FIND",
+      "illustration": "res://assets/objects/world/tree.svg"
+    },
+    {
+      "id": "flower",
+      "english": "Flower",
+      "ukrainian": "Квітка",
+      "word_key": "WORLD_PLANTS_FLOWER_WORD",
+      "prompt_key": "WORLD_PLANTS_FLOWER_FIND",
+      "illustration": "res://assets/objects/world/flower.svg"
+    },
+    {
+      "id": "grass",
+      "english": "Grass",
+      "ukrainian": "Трава",
+      "word_key": "WORLD_PLANTS_GRASS_WORD",
+      "prompt_key": "WORLD_PLANTS_GRASS_FIND",
+      "illustration": "res://assets/objects/world/grass.svg"
+    },
+    {
+      "id": "leaf",
+      "english": "Leaf",
+      "ukrainian": "Листок",
+      "word_key": "WORLD_PLANTS_LEAF_WORD",
+      "prompt_key": "WORLD_PLANTS_LEAF_FIND",
+      "illustration": "res://assets/objects/world/leaf.svg"
+    },
+    {
+      "id": "seed",
+      "english": "Seed",
+      "ukrainian": "Насінина",
+      "word_key": "WORLD_PLANTS_SEED_WORD",
+      "prompt_key": "WORLD_PLANTS_SEED_FIND",
+      "illustration": "res://assets/objects/world/seed.svg"
+    },
+    {
+      "id": "root",
+      "english": "Root",
+      "ukrainian": "Корінь",
+      "word_key": "WORLD_PLANTS_ROOT_WORD",
+      "prompt_key": "WORLD_PLANTS_ROOT_FIND",
+      "illustration": "res://assets/objects/world/root.svg"
+    },
+    {
+      "id": "bush",
+      "english": "Bush",
+      "ukrainian": "Кущ",
+      "word_key": "WORLD_PLANTS_BUSH_WORD",
+      "prompt_key": "WORLD_PLANTS_BUSH_FIND",
+      "illustration": "res://assets/objects/world/bush.svg"
+    },
+    {
+      "id": "pine",
+      "english": "Pine",
+      "ukrainian": "Сосна",
+      "word_key": "WORLD_PLANTS_PINE_WORD",
+      "prompt_key": "WORLD_PLANTS_PINE_FIND",
+      "illustration": "res://assets/objects/world/pine.svg"
+    }
+  ]
+}

@@ -1,0 +1,1868 @@
+{
+  "version": 1,
+  "sfx": {
+    "tap": "res://assets/audio/sfx/tap.wav",
+    "sparkle": "res://assets/audio/sfx/sparkle.wav",
+    "rest": "res://assets/audio/sfx/rest.wav",
+    "balloon_pop": "res://assets/audio/sfx/balloon_pop.wav"
+  },
+  "music": {
+    "meadow": "res://assets/audio/music/meadow.wav"
+  },
+  "voice": {
+    "FOX_HELLO": {
+      "en": "res://assets/audio/voice/en/fox_hello.wav",
+      "uk": "res://assets/audio/voice/uk/fox_hello.wav"
+    },
+    "FOX_HAPPY": {
+      "en": "res://assets/audio/voice/en/fox_happy.wav",
+      "uk": "res://assets/audio/voice/uk/fox_happy.wav"
+    },
+    "FOX_REST": {
+      "en": "res://assets/audio/voice/en/fox_rest.wav",
+      "uk": "res://assets/audio/voice/uk/fox_rest.wav"
+    },
+    "ANIMALS_TAP_HINT": {
+      "en": "res://assets/audio/voice/en/animals_tap_hint.wav",
+      "uk": "res://assets/audio/voice/uk/animals_tap_hint.wav"
+    },
+    "ANIMALS_FIND_INTRO": {
+      "en": "res://assets/audio/voice/en/animals_find_intro.wav",
+      "uk": "res://assets/audio/voice/uk/animals_find_intro.wav"
+    },
+    "ANIMALS_CORRECT": {
+      "en": "res://assets/audio/voice/en/animals_correct.wav",
+      "uk": "res://assets/audio/voice/uk/animals_correct.wav"
+    },
+    "ANIMALS_TRY_AGAIN": {
+      "en": "res://assets/audio/voice/en/animals_try_again.wav",
+      "uk": "res://assets/audio/voice/uk/animals_try_again.wav"
+    },
+    "ANIMALS_COMPLETE": {
+      "en": "res://assets/audio/voice/en/animals_complete.wav",
+      "uk": "res://assets/audio/voice/uk/animals_complete.wav"
+    },
+    "WORD_CAT": {
+      "en": "res://assets/audio/voice/en/word_cat.wav",
+      "uk": "res://assets/audio/voice/uk/word_cat.wav"
+    },
+    "FIND_CAT": {
+      "en": "res://assets/audio/voice/en/find_cat.wav",
+      "uk": "res://assets/audio/voice/uk/find_cat.wav"
+    },
+    "WORD_DOG": {
+      "en": "res://assets/audio/voice/en/word_dog.wav",
+      "uk": "res://assets/audio/voice/uk/word_dog.wav"
+    },
+    "FIND_DOG": {
+      "en": "res://assets/audio/voice/en/find_dog.wav",
+      "uk": "res://assets/audio/voice/uk/find_dog.wav"
+    },
+    "WORD_COW": {
+      "en": "res://assets/audio/voice/en/word_cow.wav",
+      "uk": "res://assets/audio/voice/uk/word_cow.wav"
+    },
+    "FIND_COW": {
+      "en": "res://assets/audio/voice/en/find_cow.wav",
+      "uk": "res://assets/audio/voice/uk/find_cow.wav"
+    },
+    "WORD_PIG": {
+      "en": "res://assets/audio/voice/en/word_pig.wav",
+      "uk": "res://assets/audio/voice/uk/word_pig.wav"
+    },
+    "FIND_PIG": {
+      "en": "res://assets/audio/voice/en/find_pig.wav",
+      "uk": "res://assets/audio/voice/uk/find_pig.wav"
+    },
+    "WORD_SHEEP": {
+      "en": "res://assets/audio/voice/en/word_sheep.wav",
+      "uk": "res://assets/audio/voice/uk/word_sheep.wav"
+    },
+    "FIND_SHEEP": {
+      "en": "res://assets/audio/voice/en/find_sheep.wav",
+      "uk": "res://assets/audio/voice/uk/find_sheep.wav"
+    },
+    "WORD_HORSE": {
+      "en": "res://assets/audio/voice/en/word_horse.wav",
+      "uk": "res://assets/audio/voice/uk/word_horse.wav"
+    },
+    "FIND_HORSE": {
+      "en": "res://assets/audio/voice/en/find_horse.wav",
+      "uk": "res://assets/audio/voice/uk/find_horse.wav"
+    },
+    "WORD_DUCK": {
+      "en": "res://assets/audio/voice/en/word_duck.wav",
+      "uk": "res://assets/audio/voice/uk/word_duck.wav"
+    },
+    "FIND_DUCK": {
+      "en": "res://assets/audio/voice/en/find_duck.wav",
+      "uk": "res://assets/audio/voice/uk/find_duck.wav"
+    },
+    "WORD_CHICKEN": {
+      "en": "res://assets/audio/voice/en/word_chicken.wav",
+      "uk": "res://assets/audio/voice/uk/word_chicken.wav"
+    },
+    "FIND_CHICKEN": {
+      "en": "res://assets/audio/voice/en/find_chicken.wav",
+      "uk": "res://assets/audio/voice/uk/find_chicken.wav"
+    },
+    "WORD_RABBIT": {
+      "en": "res://assets/audio/voice/en/word_rabbit.wav",
+      "uk": "res://assets/audio/voice/uk/word_rabbit.wav"
+    },
+    "FIND_RABBIT": {
+      "en": "res://assets/audio/voice/en/find_rabbit.wav",
+      "uk": "res://assets/audio/voice/uk/find_rabbit.wav"
+    },
+    "WORD_BEAR": {
+      "en": "res://assets/audio/voice/en/word_bear.wav",
+      "uk": "res://assets/audio/voice/uk/word_bear.wav"
+    },
+    "FIND_BEAR": {
+      "en": "res://assets/audio/voice/en/find_bear.wav",
+      "uk": "res://assets/audio/voice/uk/find_bear.wav"
+    },
+    "WORD_LION": {
+      "en": "res://assets/audio/voice/en/word_lion.wav",
+      "uk": "res://assets/audio/voice/uk/word_lion.wav"
+    },
+    "FIND_LION": {
+      "en": "res://assets/audio/voice/en/find_lion.wav",
+      "uk": "res://assets/audio/voice/uk/find_lion.wav"
+    },
+    "WORD_ELEPHANT": {
+      "en": "res://assets/audio/voice/en/word_elephant.wav",
+      "uk": "res://assets/audio/voice/uk/word_elephant.wav"
+    },
+    "FIND_ELEPHANT": {
+      "en": "res://assets/audio/voice/en/find_elephant.wav",
+      "uk": "res://assets/audio/voice/uk/find_elephant.wav"
+    },
+    "COLORS_TAP_HINT": {
+      "en": "res://assets/audio/voice/en/colors_tap_hint.wav",
+      "uk": "res://assets/audio/voice/uk/colors_tap_hint.wav"
+    },
+    "COLORS_FIND_INTRO": {
+      "en": "res://assets/audio/voice/en/colors_find_intro.wav",
+      "uk": "res://assets/audio/voice/uk/colors_find_intro.wav"
+    },
+    "COLORS_CORRECT": {
+      "en": "res://assets/audio/voice/en/colors_correct.wav",
+      "uk": "res://assets/audio/voice/uk/colors_correct.wav"
+    },
+    "COLORS_TRY_AGAIN": {
+      "en": "res://assets/audio/voice/en/colors_try_again.wav",
+      "uk": "res://assets/audio/voice/uk/colors_try_again.wav"
+    },
+    "COLORS_COMPLETE": {
+      "en": "res://assets/audio/voice/en/colors_complete.wav",
+      "uk": "res://assets/audio/voice/uk/colors_complete.wav"
+    },
+    "COLOR_WORD_RED": {
+      "en": "res://assets/audio/voice/en/color_word_red.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_red.wav"
+    },
+    "COLOR_FIND_RED": {
+      "en": "res://assets/audio/voice/en/color_find_red.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_red.wav"
+    },
+    "COLOR_WORD_BLUE": {
+      "en": "res://assets/audio/voice/en/color_word_blue.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_blue.wav"
+    },
+    "COLOR_FIND_BLUE": {
+      "en": "res://assets/audio/voice/en/color_find_blue.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_blue.wav"
+    },
+    "COLOR_WORD_YELLOW": {
+      "en": "res://assets/audio/voice/en/color_word_yellow.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_yellow.wav"
+    },
+    "COLOR_FIND_YELLOW": {
+      "en": "res://assets/audio/voice/en/color_find_yellow.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_yellow.wav"
+    },
+    "COLOR_WORD_GREEN": {
+      "en": "res://assets/audio/voice/en/color_word_green.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_green.wav"
+    },
+    "COLOR_FIND_GREEN": {
+      "en": "res://assets/audio/voice/en/color_find_green.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_green.wav"
+    },
+    "COLOR_WORD_ORANGE": {
+      "en": "res://assets/audio/voice/en/color_word_orange.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_orange.wav"
+    },
+    "COLOR_FIND_ORANGE": {
+      "en": "res://assets/audio/voice/en/color_find_orange.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_orange.wav"
+    },
+    "COLOR_WORD_PURPLE": {
+      "en": "res://assets/audio/voice/en/color_word_purple.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_purple.wav"
+    },
+    "COLOR_FIND_PURPLE": {
+      "en": "res://assets/audio/voice/en/color_find_purple.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_purple.wav"
+    },
+    "COLOR_WORD_PINK": {
+      "en": "res://assets/audio/voice/en/color_word_pink.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_pink.wav"
+    },
+    "COLOR_FIND_PINK": {
+      "en": "res://assets/audio/voice/en/color_find_pink.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_pink.wav"
+    },
+    "COLOR_WORD_BROWN": {
+      "en": "res://assets/audio/voice/en/color_word_brown.wav",
+      "uk": "res://assets/audio/voice/uk/color_word_brown.wav"
+    },
+    "COLOR_FIND_BROWN": {
+      "en": "res://assets/audio/voice/en/color_find_brown.wav",
+      "uk": "res://assets/audio/voice/uk/color_find_brown.wav"
+    },
+    "FEED_HINT": {
+      "en": "res://assets/audio/voice/en/feed_hint.wav",
+      "uk": "res://assets/audio/voice/uk/feed_hint.wav"
+    },
+    "FEED_CORRECT": {
+      "en": "res://assets/audio/voice/en/feed_correct.wav",
+      "uk": "res://assets/audio/voice/uk/feed_correct.wav"
+    },
+    "FEED_TRY_AGAIN": {
+      "en": "res://assets/audio/voice/en/feed_try_again.wav",
+      "uk": "res://assets/audio/voice/uk/feed_try_again.wav"
+    },
+    "FEED_COMPLETE": {
+      "en": "res://assets/audio/voice/en/feed_complete.wav",
+      "uk": "res://assets/audio/voice/uk/feed_complete.wav"
+    },
+    "FOOD_WORD_APPLE": {
+      "en": "res://assets/audio/voice/en/food_word_apple.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_apple.wav"
+    },
+    "FOOD_GIVE_APPLE": {
+      "en": "res://assets/audio/voice/en/food_give_apple.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_apple.wav"
+    },
+    "FOOD_WORD_BANANA": {
+      "en": "res://assets/audio/voice/en/food_word_banana.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_banana.wav"
+    },
+    "FOOD_GIVE_BANANA": {
+      "en": "res://assets/audio/voice/en/food_give_banana.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_banana.wav"
+    },
+    "FOOD_WORD_CARROT": {
+      "en": "res://assets/audio/voice/en/food_word_carrot.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_carrot.wav"
+    },
+    "FOOD_GIVE_CARROT": {
+      "en": "res://assets/audio/voice/en/food_give_carrot.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_carrot.wav"
+    },
+    "FOOD_WORD_BREAD": {
+      "en": "res://assets/audio/voice/en/food_word_bread.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_bread.wav"
+    },
+    "FOOD_GIVE_BREAD": {
+      "en": "res://assets/audio/voice/en/food_give_bread.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_bread.wav"
+    },
+    "FOOD_WORD_CHEESE": {
+      "en": "res://assets/audio/voice/en/food_word_cheese.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_cheese.wav"
+    },
+    "FOOD_GIVE_CHEESE": {
+      "en": "res://assets/audio/voice/en/food_give_cheese.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_cheese.wav"
+    },
+    "FOOD_WORD_MILK": {
+      "en": "res://assets/audio/voice/en/food_word_milk.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_milk.wav"
+    },
+    "FOOD_GIVE_MILK": {
+      "en": "res://assets/audio/voice/en/food_give_milk.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_milk.wav"
+    },
+    "FOOD_WORD_STRAWBERRY": {
+      "en": "res://assets/audio/voice/en/food_word_strawberry.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_strawberry.wav"
+    },
+    "FOOD_GIVE_STRAWBERRY": {
+      "en": "res://assets/audio/voice/en/food_give_strawberry.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_strawberry.wav"
+    },
+    "FOOD_WORD_WATERMELON": {
+      "en": "res://assets/audio/voice/en/food_word_watermelon.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_watermelon.wav"
+    },
+    "FOOD_GIVE_WATERMELON": {
+      "en": "res://assets/audio/voice/en/food_give_watermelon.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_watermelon.wav"
+    },
+    "FOOD_WORD_ORANGE": {
+      "en": "res://assets/audio/voice/en/food_word_orange.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_orange.wav"
+    },
+    "FOOD_GIVE_ORANGE": {
+      "en": "res://assets/audio/voice/en/food_give_orange.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_orange.wav"
+    },
+    "FOOD_WORD_PEAR": {
+      "en": "res://assets/audio/voice/en/food_word_pear.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_pear.wav"
+    },
+    "FOOD_GIVE_PEAR": {
+      "en": "res://assets/audio/voice/en/food_give_pear.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_pear.wav"
+    },
+    "FOOD_WORD_CUCUMBER": {
+      "en": "res://assets/audio/voice/en/food_word_cucumber.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_cucumber.wav"
+    },
+    "FOOD_GIVE_CUCUMBER": {
+      "en": "res://assets/audio/voice/en/food_give_cucumber.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_cucumber.wav"
+    },
+    "FOOD_WORD_TOMATO": {
+      "en": "res://assets/audio/voice/en/food_word_tomato.wav",
+      "uk": "res://assets/audio/voice/uk/food_word_tomato.wav"
+    },
+    "FOOD_GIVE_TOMATO": {
+      "en": "res://assets/audio/voice/en/food_give_tomato.wav",
+      "uk": "res://assets/audio/voice/uk/food_give_tomato.wav"
+    },
+    "SHAPES_INTRO": {
+      "en": "res://assets/audio/voice/en/shapes_intro.wav",
+      "uk": "res://assets/audio/voice/uk/shapes_intro.wav"
+    },
+    "SHAPES_CORRECT": {
+      "en": "res://assets/audio/voice/en/shapes_correct.wav",
+      "uk": "res://assets/audio/voice/uk/shapes_correct.wav"
+    },
+    "SHAPES_RETRY": {
+      "en": "res://assets/audio/voice/en/shapes_retry.wav",
+      "uk": "res://assets/audio/voice/uk/shapes_retry.wav"
+    },
+    "SHAPES_BOARD_DONE": {
+      "en": "res://assets/audio/voice/en/shapes_board_done.wav",
+      "uk": "res://assets/audio/voice/uk/shapes_board_done.wav"
+    },
+    "SHAPES_COMPLETE": {
+      "en": "res://assets/audio/voice/en/shapes_complete.wav",
+      "uk": "res://assets/audio/voice/uk/shapes_complete.wav"
+    },
+    "SHAPE_WORD_CIRCLE": {
+      "en": "res://assets/audio/voice/en/shape_word_circle.wav",
+      "uk": "res://assets/audio/voice/uk/shape_word_circle.wav"
+    },
+    "SHAPE_FIND_CIRCLE": {
+      "en": "res://assets/audio/voice/en/shape_find_circle.wav",
+      "uk": "res://assets/audio/voice/uk/shape_find_circle.wav"
+    },
+    "SHAPE_WORD_SQUARE": {
+      "en": "res://assets/audio/voice/en/shape_word_square.wav",
+      "uk": "res://assets/audio/voice/uk/shape_word_square.wav"
+    },
+    "SHAPE_FIND_SQUARE": {
+      "en": "res://assets/audio/voice/en/shape_find_square.wav",
+      "uk": "res://assets/audio/voice/uk/shape_find_square.wav"
+    },
+    "SHAPE_WORD_TRIANGLE": {
+      "en": "res://assets/audio/voice/en/shape_word_triangle.wav",
+      "uk": "res://assets/audio/voice/uk/shape_word_triangle.wav"
+    },
+    "SHAPE_FIND_TRIANGLE": {
+      "en": "res://assets/audio/voice/en/shape_find_triangle.wav",
+      "uk": "res://assets/audio/voice/uk/shape_find_triangle.wav"
+    },
+    "SHAPE_WORD_RECTANGLE": {
+      "en": "res://assets/audio/voice/en/shape_word_rectangle.wav",
+      "uk": "res://assets/audio/voice/uk/shape_word_rectangle.wav"
+    },
+    "SHAPE_FIND_RECTANGLE": {
+      "en": "res://assets/audio/voice/en/shape_find_rectangle.wav",
+      "uk": "res://assets/audio/voice/uk/shape_find_rectangle.wav"
+    },
+    "SHAPE_WORD_STAR": {
+      "en": "res://assets/audio/voice/en/shape_word_star.wav",
+      "uk": "res://assets/audio/voice/uk/shape_word_star.wav"
+    },
+    "SHAPE_FIND_STAR": {
+      "en": "res://assets/audio/voice/en/shape_find_star.wav",
+      "uk": "res://assets/audio/voice/uk/shape_find_star.wav"
+    },
+    "SHAPE_WORD_HEART": {
+      "en": "res://assets/audio/voice/en/shape_word_heart.wav",
+      "uk": "res://assets/audio/voice/uk/shape_word_heart.wav"
+    },
+    "SHAPE_FIND_HEART": {
+      "en": "res://assets/audio/voice/en/shape_find_heart.wav",
+      "uk": "res://assets/audio/voice/uk/shape_find_heart.wav"
+    },
+    "PUZZLES_INTRO": {
+      "en": "res://assets/audio/voice/en/puzzles_intro.wav",
+      "uk": "res://assets/audio/voice/uk/puzzles_intro.wav"
+    },
+    "PUZZLES_CORRECT": {
+      "en": "res://assets/audio/voice/en/puzzles_correct.wav",
+      "uk": "res://assets/audio/voice/uk/puzzles_correct.wav"
+    },
+    "PUZZLES_RETRY": {
+      "en": "res://assets/audio/voice/en/puzzles_retry.wav",
+      "uk": "res://assets/audio/voice/uk/puzzles_retry.wav"
+    },
+    "PUZZLES_PICTURE_DONE": {
+      "en": "res://assets/audio/voice/en/puzzles_picture_done.wav",
+      "uk": "res://assets/audio/voice/uk/puzzles_picture_done.wav"
+    },
+    "PUZZLES_COMPLETE": {
+      "en": "res://assets/audio/voice/en/puzzles_complete.wav",
+      "uk": "res://assets/audio/voice/uk/puzzles_complete.wav"
+    },
+    "MEMORY_INTRO": {
+      "en": "res://assets/audio/voice/en/memory_intro.wav",
+      "uk": "res://assets/audio/voice/uk/memory_intro.wav"
+    },
+    "MEMORY_MATCH": {
+      "en": "res://assets/audio/voice/en/memory_match.wav",
+      "uk": "res://assets/audio/voice/uk/memory_match.wav"
+    },
+    "MEMORY_RETRY": {
+      "en": "res://assets/audio/voice/en/memory_retry.wav",
+      "uk": "res://assets/audio/voice/uk/memory_retry.wav"
+    },
+    "MEMORY_COMPLETE": {
+      "en": "res://assets/audio/voice/en/memory_complete.wav",
+      "uk": "res://assets/audio/voice/uk/memory_complete.wav"
+    },
+    "COUNT_CORRECT": {
+      "en": "res://assets/audio/voice/en/count_correct.wav",
+      "uk": "res://assets/audio/voice/uk/count_correct.wav"
+    },
+    "COUNT_RETRY": {
+      "en": "res://assets/audio/voice/en/count_retry.wav",
+      "uk": "res://assets/audio/voice/uk/count_retry.wav"
+    },
+    "COUNT_COMPLETE": {
+      "en": "res://assets/audio/voice/en/count_complete.wav",
+      "uk": "res://assets/audio/voice/uk/count_complete.wav"
+    },
+    "COUNT_NUMBER_1": {
+      "en": "res://assets/audio/voice/en/count_number_1.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_1.wav"
+    },
+    "COUNT_NUMBER_2": {
+      "en": "res://assets/audio/voice/en/count_number_2.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_2.wav"
+    },
+    "COUNT_NUMBER_3": {
+      "en": "res://assets/audio/voice/en/count_number_3.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_3.wav"
+    },
+    "COUNT_NUMBER_4": {
+      "en": "res://assets/audio/voice/en/count_number_4.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_4.wav"
+    },
+    "COUNT_NUMBER_5": {
+      "en": "res://assets/audio/voice/en/count_number_5.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_5.wav"
+    },
+    "COUNT_NUMBER_6": {
+      "en": "res://assets/audio/voice/en/count_number_6.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_6.wav"
+    },
+    "COUNT_NUMBER_7": {
+      "en": "res://assets/audio/voice/en/count_number_7.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_7.wav"
+    },
+    "COUNT_NUMBER_8": {
+      "en": "res://assets/audio/voice/en/count_number_8.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_8.wav"
+    },
+    "COUNT_NUMBER_9": {
+      "en": "res://assets/audio/voice/en/count_number_9.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_9.wav"
+    },
+    "COUNT_NUMBER_10": {
+      "en": "res://assets/audio/voice/en/count_number_10.wav",
+      "uk": "res://assets/audio/voice/uk/count_number_10.wav"
+    },
+    "COUNT_HOW_APPLES": {
+      "en": "res://assets/audio/voice/en/count_how_apples.wav",
+      "uk": "res://assets/audio/voice/uk/count_how_apples.wav"
+    },
+    "COUNT_HOW_CARROTS": {
+      "en": "res://assets/audio/voice/en/count_how_carrots.wav",
+      "uk": "res://assets/audio/voice/uk/count_how_carrots.wav"
+    },
+    "COUNT_HOW_STRAWBERRIES": {
+      "en": "res://assets/audio/voice/en/count_how_strawberries.wav",
+      "uk": "res://assets/audio/voice/uk/count_how_strawberries.wav"
+    },
+    "COUNT_HOW_STARS": {
+      "en": "res://assets/audio/voice/en/count_how_stars.wav",
+      "uk": "res://assets/audio/voice/uk/count_how_stars.wav"
+    },
+    "COUNT_PUT_APPLES_1": {
+      "en": "res://assets/audio/voice/en/count_put_apples_1.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_1.wav"
+    },
+    "COUNT_PUT_APPLES_2": {
+      "en": "res://assets/audio/voice/en/count_put_apples_2.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_2.wav"
+    },
+    "COUNT_PUT_APPLES_3": {
+      "en": "res://assets/audio/voice/en/count_put_apples_3.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_3.wav"
+    },
+    "COUNT_PUT_APPLES_4": {
+      "en": "res://assets/audio/voice/en/count_put_apples_4.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_4.wav"
+    },
+    "COUNT_PUT_APPLES_5": {
+      "en": "res://assets/audio/voice/en/count_put_apples_5.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_5.wav"
+    },
+    "COUNT_PUT_APPLES_6": {
+      "en": "res://assets/audio/voice/en/count_put_apples_6.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_6.wav"
+    },
+    "COUNT_PUT_APPLES_7": {
+      "en": "res://assets/audio/voice/en/count_put_apples_7.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_7.wav"
+    },
+    "COUNT_PUT_APPLES_8": {
+      "en": "res://assets/audio/voice/en/count_put_apples_8.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_8.wav"
+    },
+    "COUNT_PUT_APPLES_9": {
+      "en": "res://assets/audio/voice/en/count_put_apples_9.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_9.wav"
+    },
+    "COUNT_PUT_APPLES_10": {
+      "en": "res://assets/audio/voice/en/count_put_apples_10.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_apples_10.wav"
+    },
+    "COUNT_PUT_CARROTS_1": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_1.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_1.wav"
+    },
+    "COUNT_PUT_CARROTS_2": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_2.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_2.wav"
+    },
+    "COUNT_PUT_CARROTS_3": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_3.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_3.wav"
+    },
+    "COUNT_PUT_CARROTS_4": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_4.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_4.wav"
+    },
+    "COUNT_PUT_CARROTS_5": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_5.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_5.wav"
+    },
+    "COUNT_PUT_CARROTS_6": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_6.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_6.wav"
+    },
+    "COUNT_PUT_CARROTS_7": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_7.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_7.wav"
+    },
+    "COUNT_PUT_CARROTS_8": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_8.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_8.wav"
+    },
+    "COUNT_PUT_CARROTS_9": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_9.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_9.wav"
+    },
+    "COUNT_PUT_CARROTS_10": {
+      "en": "res://assets/audio/voice/en/count_put_carrots_10.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_carrots_10.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_1": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_1.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_1.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_2": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_2.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_2.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_3": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_3.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_3.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_4": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_4.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_4.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_5": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_5.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_5.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_6": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_6.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_6.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_7": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_7.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_7.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_8": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_8.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_8.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_9": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_9.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_9.wav"
+    },
+    "COUNT_PUT_STRAWBERRIES_10": {
+      "en": "res://assets/audio/voice/en/count_put_strawberries_10.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_strawberries_10.wav"
+    },
+    "COUNT_PUT_STARS_1": {
+      "en": "res://assets/audio/voice/en/count_put_stars_1.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_1.wav"
+    },
+    "COUNT_PUT_STARS_2": {
+      "en": "res://assets/audio/voice/en/count_put_stars_2.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_2.wav"
+    },
+    "COUNT_PUT_STARS_3": {
+      "en": "res://assets/audio/voice/en/count_put_stars_3.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_3.wav"
+    },
+    "COUNT_PUT_STARS_4": {
+      "en": "res://assets/audio/voice/en/count_put_stars_4.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_4.wav"
+    },
+    "COUNT_PUT_STARS_5": {
+      "en": "res://assets/audio/voice/en/count_put_stars_5.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_5.wav"
+    },
+    "COUNT_PUT_STARS_6": {
+      "en": "res://assets/audio/voice/en/count_put_stars_6.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_6.wav"
+    },
+    "COUNT_PUT_STARS_7": {
+      "en": "res://assets/audio/voice/en/count_put_stars_7.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_7.wav"
+    },
+    "COUNT_PUT_STARS_8": {
+      "en": "res://assets/audio/voice/en/count_put_stars_8.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_8.wav"
+    },
+    "COUNT_PUT_STARS_9": {
+      "en": "res://assets/audio/voice/en/count_put_stars_9.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_9.wav"
+    },
+    "COUNT_PUT_STARS_10": {
+      "en": "res://assets/audio/voice/en/count_put_stars_10.wav",
+      "uk": "res://assets/audio/voice/uk/count_put_stars_10.wav"
+    },
+    "DRAW_INTRO": {
+      "en": "res://assets/audio/voice/en/draw_intro.wav",
+      "uk": "res://assets/audio/voice/uk/draw_intro.wav"
+    },
+    "DRAW_SAVED": {
+      "en": "res://assets/audio/voice/en/draw_saved.wav",
+      "uk": "res://assets/audio/voice/uk/draw_saved.wav"
+    },
+    "BOOK_INTRO": {
+      "en": "res://assets/audio/voice/en/book_intro.wav",
+      "uk": "res://assets/audio/voice/uk/book_intro.wav"
+    },
+    "BOOK_SAVED": {
+      "en": "res://assets/audio/voice/en/book_saved.wav",
+      "uk": "res://assets/audio/voice/uk/book_saved.wav"
+    },
+    "BOOK_WORD_CAT": {
+      "en": "res://assets/audio/voice/en/book_word_cat.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_cat.wav"
+    },
+    "BOOK_WORD_DOG": {
+      "en": "res://assets/audio/voice/en/book_word_dog.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_dog.wav"
+    },
+    "BOOK_WORD_FOX": {
+      "en": "res://assets/audio/voice/en/book_word_fox.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_fox.wav"
+    },
+    "BOOK_WORD_BUTTERFLY": {
+      "en": "res://assets/audio/voice/en/book_word_butterfly.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_butterfly.wav"
+    },
+    "BOOK_WORD_FISH": {
+      "en": "res://assets/audio/voice/en/book_word_fish.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_fish.wav"
+    },
+    "BOOK_WORD_HOUSE": {
+      "en": "res://assets/audio/voice/en/book_word_house.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_house.wav"
+    },
+    "BOOK_WORD_FLOWER": {
+      "en": "res://assets/audio/voice/en/book_word_flower.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_flower.wav"
+    },
+    "BOOK_WORD_CAR": {
+      "en": "res://assets/audio/voice/en/book_word_car.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_car.wav"
+    },
+    "BOOK_WORD_DINOSAUR": {
+      "en": "res://assets/audio/voice/en/book_word_dinosaur.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_dinosaur.wav"
+    },
+    "BOOK_WORD_RAINBOW": {
+      "en": "res://assets/audio/voice/en/book_word_rainbow.wav",
+      "uk": "res://assets/audio/voice/uk/book_word_rainbow.wav"
+    },
+    "PARTY_INTRO": {
+      "en": "res://assets/audio/voice/en/party_intro.wav",
+      "uk": "res://assets/audio/voice/uk/party_intro.wav"
+    },
+    "ALPH_EN_00": {
+      "en": "res://assets/audio/voice/en/alph_en_00.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_00.wav"
+    },
+    "ALPH_EN_01": {
+      "en": "res://assets/audio/voice/en/alph_en_01.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_01.wav"
+    },
+    "ALPH_EN_02": {
+      "en": "res://assets/audio/voice/en/alph_en_02.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_02.wav"
+    },
+    "ALPH_EN_03": {
+      "en": "res://assets/audio/voice/en/alph_en_03.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_03.wav"
+    },
+    "ALPH_EN_04": {
+      "en": "res://assets/audio/voice/en/alph_en_04.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_04.wav"
+    },
+    "ALPH_EN_05": {
+      "en": "res://assets/audio/voice/en/alph_en_05.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_05.wav"
+    },
+    "ALPH_EN_06": {
+      "en": "res://assets/audio/voice/en/alph_en_06.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_06.wav"
+    },
+    "ALPH_EN_07": {
+      "en": "res://assets/audio/voice/en/alph_en_07.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_07.wav"
+    },
+    "ALPH_EN_08": {
+      "en": "res://assets/audio/voice/en/alph_en_08.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_08.wav"
+    },
+    "ALPH_EN_09": {
+      "en": "res://assets/audio/voice/en/alph_en_09.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_09.wav"
+    },
+    "ALPH_EN_10": {
+      "en": "res://assets/audio/voice/en/alph_en_10.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_10.wav"
+    },
+    "ALPH_EN_11": {
+      "en": "res://assets/audio/voice/en/alph_en_11.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_11.wav"
+    },
+    "ALPH_EN_12": {
+      "en": "res://assets/audio/voice/en/alph_en_12.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_12.wav"
+    },
+    "ALPH_EN_13": {
+      "en": "res://assets/audio/voice/en/alph_en_13.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_13.wav"
+    },
+    "ALPH_EN_14": {
+      "en": "res://assets/audio/voice/en/alph_en_14.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_14.wav"
+    },
+    "ALPH_EN_15": {
+      "en": "res://assets/audio/voice/en/alph_en_15.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_15.wav"
+    },
+    "ALPH_EN_16": {
+      "en": "res://assets/audio/voice/en/alph_en_16.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_16.wav"
+    },
+    "ALPH_EN_17": {
+      "en": "res://assets/audio/voice/en/alph_en_17.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_17.wav"
+    },
+    "ALPH_EN_18": {
+      "en": "res://assets/audio/voice/en/alph_en_18.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_18.wav"
+    },
+    "ALPH_EN_19": {
+      "en": "res://assets/audio/voice/en/alph_en_19.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_19.wav"
+    },
+    "ALPH_EN_20": {
+      "en": "res://assets/audio/voice/en/alph_en_20.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_20.wav"
+    },
+    "ALPH_EN_21": {
+      "en": "res://assets/audio/voice/en/alph_en_21.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_21.wav"
+    },
+    "ALPH_EN_22": {
+      "en": "res://assets/audio/voice/en/alph_en_22.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_22.wav"
+    },
+    "ALPH_EN_23": {
+      "en": "res://assets/audio/voice/en/alph_en_23.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_23.wav"
+    },
+    "ALPH_EN_24": {
+      "en": "res://assets/audio/voice/en/alph_en_24.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_24.wav"
+    },
+    "ALPH_EN_25": {
+      "en": "res://assets/audio/voice/en/alph_en_25.wav",
+      "uk": "res://assets/audio/voice/en/alph_en_25.wav"
+    },
+    "ALPH_UK_00": {
+      "en": "res://assets/audio/voice/uk/alph_uk_00.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_00.wav"
+    },
+    "ALPH_UK_01": {
+      "en": "res://assets/audio/voice/uk/alph_uk_01.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_01.wav"
+    },
+    "ALPH_UK_02": {
+      "en": "res://assets/audio/voice/uk/alph_uk_02.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_02.wav"
+    },
+    "ALPH_UK_03": {
+      "en": "res://assets/audio/voice/uk/alph_uk_03.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_03.wav"
+    },
+    "ALPH_UK_04": {
+      "en": "res://assets/audio/voice/uk/alph_uk_04.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_04.wav"
+    },
+    "ALPH_UK_05": {
+      "en": "res://assets/audio/voice/uk/alph_uk_05.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_05.wav"
+    },
+    "ALPH_UK_06": {
+      "en": "res://assets/audio/voice/uk/alph_uk_06.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_06.wav"
+    },
+    "ALPH_UK_07": {
+      "en": "res://assets/audio/voice/uk/alph_uk_07.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_07.wav"
+    },
+    "ALPH_UK_08": {
+      "en": "res://assets/audio/voice/uk/alph_uk_08.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_08.wav"
+    },
+    "ALPH_UK_09": {
+      "en": "res://assets/audio/voice/uk/alph_uk_09.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_09.wav"
+    },
+    "ALPH_UK_10": {
+      "en": "res://assets/audio/voice/uk/alph_uk_10.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_10.wav"
+    },
+    "ALPH_UK_11": {
+      "en": "res://assets/audio/voice/uk/alph_uk_11.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_11.wav"
+    },
+    "ALPH_UK_12": {
+      "en": "res://assets/audio/voice/uk/alph_uk_12.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_12.wav"
+    },
+    "ALPH_UK_13": {
+      "en": "res://assets/audio/voice/uk/alph_uk_13.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_13.wav"
+    },
+    "ALPH_UK_14": {
+      "en": "res://assets/audio/voice/uk/alph_uk_14.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_14.wav"
+    },
+    "ALPH_UK_15": {
+      "en": "res://assets/audio/voice/uk/alph_uk_15.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_15.wav"
+    },
+    "ALPH_UK_16": {
+      "en": "res://assets/audio/voice/uk/alph_uk_16.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_16.wav"
+    },
+    "ALPH_UK_17": {
+      "en": "res://assets/audio/voice/uk/alph_uk_17.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_17.wav"
+    },
+    "ALPH_UK_18": {
+      "en": "res://assets/audio/voice/uk/alph_uk_18.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_18.wav"
+    },
+    "ALPH_UK_19": {
+      "en": "res://assets/audio/voice/uk/alph_uk_19.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_19.wav"
+    },
+    "ALPH_UK_20": {
+      "en": "res://assets/audio/voice/uk/alph_uk_20.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_20.wav"
+    },
+    "ALPH_UK_21": {
+      "en": "res://assets/audio/voice/uk/alph_uk_21.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_21.wav"
+    },
+    "ALPH_UK_22": {
+      "en": "res://assets/audio/voice/uk/alph_uk_22.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_22.wav"
+    },
+    "ALPH_UK_23": {
+      "en": "res://assets/audio/voice/uk/alph_uk_23.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_23.wav"
+    },
+    "ALPH_UK_24": {
+      "en": "res://assets/audio/voice/uk/alph_uk_24.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_24.wav"
+    },
+    "ALPH_UK_25": {
+      "en": "res://assets/audio/voice/uk/alph_uk_25.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_25.wav"
+    },
+    "ALPH_UK_26": {
+      "en": "res://assets/audio/voice/uk/alph_uk_26.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_26.wav"
+    },
+    "ALPH_UK_27": {
+      "en": "res://assets/audio/voice/uk/alph_uk_27.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_27.wav"
+    },
+    "ALPH_UK_28": {
+      "en": "res://assets/audio/voice/uk/alph_uk_28.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_28.wav"
+    },
+    "ALPH_UK_29": {
+      "en": "res://assets/audio/voice/uk/alph_uk_29.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_29.wav"
+    },
+    "ALPH_UK_30": {
+      "en": "res://assets/audio/voice/uk/alph_uk_30.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_30.wav"
+    },
+    "ALPH_UK_31": {
+      "en": "res://assets/audio/voice/uk/alph_uk_31.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_31.wav"
+    },
+    "ALPH_UK_32": {
+      "en": "res://assets/audio/voice/uk/alph_uk_32.wav",
+      "uk": "res://assets/audio/voice/uk/alph_uk_32.wav"
+    },
+    "BLEND_EN_00": {
+      "en": "res://assets/audio/voice/en/blend_en_00.wav",
+      "uk": "res://assets/audio/voice/en/blend_en_00.wav"
+    },
+    "BLEND_EN_01": {
+      "en": "res://assets/audio/voice/en/blend_en_01.wav",
+      "uk": "res://assets/audio/voice/en/blend_en_01.wav"
+    },
+    "BLEND_EN_02": {
+      "en": "res://assets/audio/voice/en/blend_en_02.wav",
+      "uk": "res://assets/audio/voice/en/blend_en_02.wav"
+    },
+    "BLEND_EN_03": {
+      "en": "res://assets/audio/voice/en/blend_en_03.wav",
+      "uk": "res://assets/audio/voice/en/blend_en_03.wav"
+    },
+    "BLEND_EN_04": {
+      "en": "res://assets/audio/voice/en/blend_en_04.wav",
+      "uk": "res://assets/audio/voice/en/blend_en_04.wav"
+    },
+    "BLEND_EN_05": {
+      "en": "res://assets/audio/voice/en/blend_en_05.wav",
+      "uk": "res://assets/audio/voice/en/blend_en_05.wav"
+    },
+    "BLEND_UK_00": {
+      "en": "res://assets/audio/voice/uk/blend_uk_00.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_00.wav"
+    },
+    "BLEND_UK_01": {
+      "en": "res://assets/audio/voice/uk/blend_uk_01.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_01.wav"
+    },
+    "BLEND_UK_02": {
+      "en": "res://assets/audio/voice/uk/blend_uk_02.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_02.wav"
+    },
+    "BLEND_UK_03": {
+      "en": "res://assets/audio/voice/uk/blend_uk_03.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_03.wav"
+    },
+    "BLEND_UK_04": {
+      "en": "res://assets/audio/voice/uk/blend_uk_04.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_04.wav"
+    },
+    "BLEND_UK_05": {
+      "en": "res://assets/audio/voice/uk/blend_uk_05.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_05.wav"
+    },
+    "BLEND_UK_06": {
+      "en": "res://assets/audio/voice/uk/blend_uk_06.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_06.wav"
+    },
+    "BLEND_UK_07": {
+      "en": "res://assets/audio/voice/uk/blend_uk_07.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_07.wav"
+    },
+    "BLEND_UK_08": {
+      "en": "res://assets/audio/voice/uk/blend_uk_08.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_08.wav"
+    },
+    "BLEND_UK_09": {
+      "en": "res://assets/audio/voice/uk/blend_uk_09.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_09.wav"
+    },
+    "BLEND_UK_10": {
+      "en": "res://assets/audio/voice/uk/blend_uk_10.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_10.wav"
+    },
+    "BLEND_UK_11": {
+      "en": "res://assets/audio/voice/uk/blend_uk_11.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_11.wav"
+    },
+    "BLEND_UK_12": {
+      "en": "res://assets/audio/voice/uk/blend_uk_12.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_12.wav"
+    },
+    "BLEND_UK_13": {
+      "en": "res://assets/audio/voice/uk/blend_uk_13.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_13.wav"
+    },
+    "BLEND_UK_14": {
+      "en": "res://assets/audio/voice/uk/blend_uk_14.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_14.wav"
+    },
+    "BLEND_UK_15": {
+      "en": "res://assets/audio/voice/uk/blend_uk_15.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_15.wav"
+    },
+    "BLEND_UK_16": {
+      "en": "res://assets/audio/voice/uk/blend_uk_16.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_16.wav"
+    },
+    "BLEND_UK_17": {
+      "en": "res://assets/audio/voice/uk/blend_uk_17.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_17.wav"
+    },
+    "BLEND_UK_18": {
+      "en": "res://assets/audio/voice/uk/blend_uk_18.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_18.wav"
+    },
+    "BLEND_UK_19": {
+      "en": "res://assets/audio/voice/uk/blend_uk_19.wav",
+      "uk": "res://assets/audio/voice/uk/blend_uk_19.wav"
+    },
+    "WORLD_BODY_HEAD_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_head_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_head_word.wav"
+    },
+    "WORLD_BODY_HEAD_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_head_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_head_find.wav"
+    },
+    "WORLD_BODY_EYE_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_eye_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_eye_word.wav"
+    },
+    "WORLD_BODY_EYE_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_eye_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_eye_find.wav"
+    },
+    "WORLD_BODY_NOSE_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_nose_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_nose_word.wav"
+    },
+    "WORLD_BODY_NOSE_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_nose_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_nose_find.wav"
+    },
+    "WORLD_BODY_MOUTH_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_mouth_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_mouth_word.wav"
+    },
+    "WORLD_BODY_MOUTH_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_mouth_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_mouth_find.wav"
+    },
+    "WORLD_BODY_EAR_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_ear_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_ear_word.wav"
+    },
+    "WORLD_BODY_EAR_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_ear_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_ear_find.wav"
+    },
+    "WORLD_BODY_ARM_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_arm_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_arm_word.wav"
+    },
+    "WORLD_BODY_ARM_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_arm_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_arm_find.wav"
+    },
+    "WORLD_BODY_HAND_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_hand_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_hand_word.wav"
+    },
+    "WORLD_BODY_HAND_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_hand_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_hand_find.wav"
+    },
+    "WORLD_BODY_LEG_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_leg_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_leg_word.wav"
+    },
+    "WORLD_BODY_LEG_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_leg_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_leg_find.wav"
+    },
+    "WORLD_BODY_FOOT_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_foot_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_foot_word.wav"
+    },
+    "WORLD_BODY_FOOT_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_foot_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_foot_find.wav"
+    },
+    "WORLD_PLANTS_TREE_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_tree_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_tree_word.wav"
+    },
+    "WORLD_PLANTS_TREE_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_tree_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_tree_find.wav"
+    },
+    "WORLD_PLANTS_FLOWER_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_flower_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_flower_word.wav"
+    },
+    "WORLD_PLANTS_FLOWER_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_flower_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_flower_find.wav"
+    },
+    "WORLD_PLANTS_GRASS_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_grass_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_grass_word.wav"
+    },
+    "WORLD_PLANTS_GRASS_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_grass_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_grass_find.wav"
+    },
+    "WORLD_PLANTS_LEAF_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_leaf_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_leaf_word.wav"
+    },
+    "WORLD_PLANTS_LEAF_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_leaf_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_leaf_find.wav"
+    },
+    "WORLD_PLANTS_SEED_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_seed_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_seed_word.wav"
+    },
+    "WORLD_PLANTS_SEED_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_seed_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_seed_find.wav"
+    },
+    "WORLD_PLANTS_ROOT_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_root_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_root_word.wav"
+    },
+    "WORLD_PLANTS_ROOT_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_root_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_root_find.wav"
+    },
+    "WORLD_PLANTS_BUSH_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_bush_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_bush_word.wav"
+    },
+    "WORLD_PLANTS_BUSH_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_bush_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_bush_find.wav"
+    },
+    "WORLD_PLANTS_PINE_WORD": {
+      "en": "res://assets/audio/voice/en/world_plants_pine_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_pine_word.wav"
+    },
+    "WORLD_PLANTS_PINE_FIND": {
+      "en": "res://assets/audio/voice/en/world_plants_pine_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_plants_pine_find.wav"
+    },
+    "ALPH_WORD_EN_00": {
+      "en": "res://assets/audio/voice/en/alph_word_en_00.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_00.wav"
+    },
+    "ALPH_WORD_EN_01": {
+      "en": "res://assets/audio/voice/en/alph_word_en_01.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_01.wav"
+    },
+    "ALPH_WORD_EN_02": {
+      "en": "res://assets/audio/voice/en/alph_word_en_02.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_02.wav"
+    },
+    "ALPH_WORD_EN_03": {
+      "en": "res://assets/audio/voice/en/alph_word_en_03.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_03.wav"
+    },
+    "ALPH_WORD_EN_04": {
+      "en": "res://assets/audio/voice/en/alph_word_en_04.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_04.wav"
+    },
+    "ALPH_WORD_EN_05": {
+      "en": "res://assets/audio/voice/en/alph_word_en_05.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_05.wav"
+    },
+    "ALPH_WORD_EN_06": {
+      "en": "res://assets/audio/voice/en/alph_word_en_06.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_06.wav"
+    },
+    "ALPH_WORD_EN_07": {
+      "en": "res://assets/audio/voice/en/alph_word_en_07.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_07.wav"
+    },
+    "ALPH_WORD_EN_08": {
+      "en": "res://assets/audio/voice/en/alph_word_en_08.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_08.wav"
+    },
+    "ALPH_WORD_EN_09": {
+      "en": "res://assets/audio/voice/en/alph_word_en_09.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_09.wav"
+    },
+    "ALPH_WORD_EN_10": {
+      "en": "res://assets/audio/voice/en/alph_word_en_10.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_10.wav"
+    },
+    "ALPH_WORD_EN_11": {
+      "en": "res://assets/audio/voice/en/alph_word_en_11.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_11.wav"
+    },
+    "ALPH_WORD_EN_12": {
+      "en": "res://assets/audio/voice/en/alph_word_en_12.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_12.wav"
+    },
+    "ALPH_WORD_EN_13": {
+      "en": "res://assets/audio/voice/en/alph_word_en_13.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_13.wav"
+    },
+    "ALPH_WORD_EN_14": {
+      "en": "res://assets/audio/voice/en/alph_word_en_14.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_14.wav"
+    },
+    "ALPH_WORD_EN_15": {
+      "en": "res://assets/audio/voice/en/alph_word_en_15.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_15.wav"
+    },
+    "ALPH_WORD_EN_16": {
+      "en": "res://assets/audio/voice/en/alph_word_en_16.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_16.wav"
+    },
+    "ALPH_WORD_EN_17": {
+      "en": "res://assets/audio/voice/en/alph_word_en_17.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_17.wav"
+    },
+    "ALPH_WORD_EN_18": {
+      "en": "res://assets/audio/voice/en/alph_word_en_18.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_18.wav"
+    },
+    "ALPH_WORD_EN_19": {
+      "en": "res://assets/audio/voice/en/alph_word_en_19.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_19.wav"
+    },
+    "ALPH_WORD_EN_20": {
+      "en": "res://assets/audio/voice/en/alph_word_en_20.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_20.wav"
+    },
+    "ALPH_WORD_EN_21": {
+      "en": "res://assets/audio/voice/en/alph_word_en_21.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_21.wav"
+    },
+    "ALPH_WORD_EN_22": {
+      "en": "res://assets/audio/voice/en/alph_word_en_22.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_22.wav"
+    },
+    "ALPH_WORD_EN_23": {
+      "en": "res://assets/audio/voice/en/alph_word_en_23.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_23.wav"
+    },
+    "ALPH_WORD_EN_24": {
+      "en": "res://assets/audio/voice/en/alph_word_en_24.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_24.wav"
+    },
+    "ALPH_WORD_EN_25": {
+      "en": "res://assets/audio/voice/en/alph_word_en_25.wav",
+      "uk": "res://assets/audio/voice/en/alph_word_en_25.wav"
+    },
+    "ALPH_WORD_UK_00": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_00.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_00.wav"
+    },
+    "ALPH_WORD_UK_01": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_01.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_01.wav"
+    },
+    "ALPH_WORD_UK_02": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_02.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_02.wav"
+    },
+    "ALPH_WORD_UK_03": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_03.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_03.wav"
+    },
+    "ALPH_WORD_UK_04": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_04.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_04.wav"
+    },
+    "ALPH_WORD_UK_05": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_05.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_05.wav"
+    },
+    "ALPH_WORD_UK_06": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_06.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_06.wav"
+    },
+    "ALPH_WORD_UK_07": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_07.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_07.wav"
+    },
+    "ALPH_WORD_UK_08": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_08.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_08.wav"
+    },
+    "ALPH_WORD_UK_09": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_09.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_09.wav"
+    },
+    "ALPH_WORD_UK_10": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_10.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_10.wav"
+    },
+    "ALPH_WORD_UK_11": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_11.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_11.wav"
+    },
+    "ALPH_WORD_UK_12": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_12.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_12.wav"
+    },
+    "ALPH_WORD_UK_13": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_13.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_13.wav"
+    },
+    "ALPH_WORD_UK_14": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_14.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_14.wav"
+    },
+    "ALPH_WORD_UK_15": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_15.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_15.wav"
+    },
+    "ALPH_WORD_UK_16": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_16.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_16.wav"
+    },
+    "ALPH_WORD_UK_17": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_17.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_17.wav"
+    },
+    "ALPH_WORD_UK_18": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_18.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_18.wav"
+    },
+    "ALPH_WORD_UK_19": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_19.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_19.wav"
+    },
+    "ALPH_WORD_UK_20": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_20.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_20.wav"
+    },
+    "ALPH_WORD_UK_21": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_21.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_21.wav"
+    },
+    "ALPH_WORD_UK_22": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_22.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_22.wav"
+    },
+    "ALPH_WORD_UK_23": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_23.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_23.wav"
+    },
+    "ALPH_WORD_UK_24": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_24.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_24.wav"
+    },
+    "ALPH_WORD_UK_25": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_25.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_25.wav"
+    },
+    "ALPH_WORD_UK_26": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_26.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_26.wav"
+    },
+    "ALPH_WORD_UK_27": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_27.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_27.wav"
+    },
+    "ALPH_WORD_UK_28": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_28.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_28.wav"
+    },
+    "ALPH_WORD_UK_29": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_29.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_29.wav"
+    },
+    "ALPH_WORD_UK_30": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_30.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_30.wav"
+    },
+    "ALPH_WORD_UK_31": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_31.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_31.wav"
+    },
+    "ALPH_WORD_UK_32": {
+      "en": "res://assets/audio/voice/uk/alph_word_uk_32.wav",
+      "uk": "res://assets/audio/voice/uk/alph_word_uk_32.wav"
+    },
+    "WORLD_BODY_EYEBROW_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_eyebrow_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_eyebrow_word.wav"
+    },
+    "WORLD_BODY_EYEBROW_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_eyebrow_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_eyebrow_find.wav"
+    },
+    "WORLD_BODY_CHEEK_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_cheek_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_cheek_word.wav"
+    },
+    "WORLD_BODY_CHEEK_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_cheek_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_cheek_find.wav"
+    },
+    "WORLD_BODY_CHIN_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_chin_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_chin_word.wav"
+    },
+    "WORLD_BODY_CHIN_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_chin_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_chin_find.wav"
+    },
+    "WORLD_BODY_HAIR_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_hair_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_hair_word.wav"
+    },
+    "WORLD_BODY_HAIR_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_hair_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_hair_find.wav"
+    },
+    "WORLD_BODY_FINGER_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_finger_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_finger_word.wav"
+    },
+    "WORLD_BODY_FINGER_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_finger_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_finger_find.wav"
+    },
+    "WORLD_BODY_ELBOW_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_elbow_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_elbow_word.wav"
+    },
+    "WORLD_BODY_ELBOW_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_elbow_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_elbow_find.wav"
+    },
+    "WORLD_BODY_SHOULDER_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_shoulder_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_shoulder_word.wav"
+    },
+    "WORLD_BODY_SHOULDER_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_shoulder_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_shoulder_find.wav"
+    },
+    "WORLD_BODY_NECK_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_neck_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_neck_word.wav"
+    },
+    "WORLD_BODY_NECK_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_neck_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_neck_find.wav"
+    },
+    "WORLD_BODY_BELLY_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_belly_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_belly_word.wav"
+    },
+    "WORLD_BODY_BELLY_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_belly_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_belly_find.wav"
+    },
+    "WORLD_BODY_TORSO_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_torso_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_torso_word.wav"
+    },
+    "WORLD_BODY_TORSO_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_torso_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_torso_find.wav"
+    },
+    "WORLD_BODY_KNEE_WORD": {
+      "en": "res://assets/audio/voice/en/world_body_knee_word.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_knee_word.wav"
+    },
+    "WORLD_BODY_KNEE_FIND": {
+      "en": "res://assets/audio/voice/en/world_body_knee_find.wav",
+      "uk": "res://assets/audio/voice/uk/world_body_knee_find.wav"
+    },
+    "LIVE_TAP": {
+      "en": "res://assets/audio/voice/en/live_tap.wav",
+      "uk": "res://assets/audio/voice/uk/live_tap.wav"
+    },
+    "LIVE_TRACE": {
+      "en": "res://assets/audio/voice/en/live_trace.wav",
+      "uk": "res://assets/audio/voice/uk/live_trace.wav"
+    },
+    "LIVE_DONE": {
+      "en": "res://assets/audio/voice/en/live_done.wav",
+      "uk": "res://assets/audio/voice/uk/live_done.wav"
+    },
+    "LIVE_WALLS": {
+      "en": "res://assets/audio/voice/en/live_walls.wav",
+      "uk": "res://assets/audio/voice/uk/live_walls.wav"
+    },
+    "LIVE_ROOF": {
+      "en": "res://assets/audio/voice/en/live_roof.wav",
+      "uk": "res://assets/audio/voice/uk/live_roof.wav"
+    },
+    "LIVE_DOOR": {
+      "en": "res://assets/audio/voice/en/live_door.wav",
+      "uk": "res://assets/audio/voice/uk/live_door.wav"
+    },
+    "LIVE_LEFT_WINDOW": {
+      "en": "res://assets/audio/voice/en/live_left_window.wav",
+      "uk": "res://assets/audio/voice/uk/live_left_window.wav"
+    },
+    "LIVE_RIGHT_WINDOW": {
+      "en": "res://assets/audio/voice/en/live_right_window.wav",
+      "uk": "res://assets/audio/voice/uk/live_right_window.wav"
+    },
+    "LIVE_CHIMNEY": {
+      "en": "res://assets/audio/voice/en/live_chimney.wav",
+      "uk": "res://assets/audio/voice/uk/live_chimney.wav"
+    },
+    "LIVE_EXPLORE": {
+      "en": "res://assets/audio/voice/en/live_explore.wav",
+      "uk": "res://assets/audio/voice/uk/live_explore.wav"
+    },
+    "LIVE_SUN": {
+      "en": "res://assets/audio/voice/en/live_sun.wav",
+      "uk": "res://assets/audio/voice/uk/live_sun.wav"
+    },
+    "LIVE_CLOUD": {
+      "en": "res://assets/audio/voice/en/live_cloud.wav",
+      "uk": "res://assets/audio/voice/uk/live_cloud.wav"
+    },
+    "LIVE_DOG": {
+      "en": "res://assets/audio/voice/en/live_dog.wav",
+      "uk": "res://assets/audio/voice/uk/live_dog.wav"
+    },
+    "LIVE_FLOWERS": {
+      "en": "res://assets/audio/voice/en/live_flowers.wav",
+      "uk": "res://assets/audio/voice/uk/live_flowers.wav"
+    },
+    "SEASON_PLAY": {
+      "en": "res://assets/audio/voice/en/season_play.wav",
+      "uk": "res://assets/audio/voice/uk/season_play.wav"
+    },
+    "SEASON_TREE": {
+      "en": "res://assets/audio/voice/en/season_tree.wav",
+      "uk": "res://assets/audio/voice/uk/season_tree.wav"
+    },
+    "SEASON_SUN": {
+      "en": "res://assets/audio/voice/en/season_sun.wav",
+      "uk": "res://assets/audio/voice/uk/season_sun.wav"
+    },
+    "SEASON_CLOUD": {
+      "en": "res://assets/audio/voice/en/season_cloud.wav",
+      "uk": "res://assets/audio/voice/uk/season_cloud.wav"
+    },
+    "SEASON_NEST": {
+      "en": "res://assets/audio/voice/en/season_nest.wav",
+      "uk": "res://assets/audio/voice/uk/season_nest.wav"
+    },
+    "SEASON_BIRD": {
+      "en": "res://assets/audio/voice/en/season_bird.wav",
+      "uk": "res://assets/audio/voice/uk/season_bird.wav"
+    },
+    "SEASON_FLOWERS": {
+      "en": "res://assets/audio/voice/en/season_flowers.wav",
+      "uk": "res://assets/audio/voice/uk/season_flowers.wav"
+    },
+    "SEASON_BUTTERFLY": {
+      "en": "res://assets/audio/voice/en/season_butterfly.wav",
+      "uk": "res://assets/audio/voice/uk/season_butterfly.wav"
+    },
+    "SEASON_BEE": {
+      "en": "res://assets/audio/voice/en/season_bee.wav",
+      "uk": "res://assets/audio/voice/uk/season_bee.wav"
+    },
+    "SEASON_FROG": {
+      "en": "res://assets/audio/voice/en/season_frog.wav",
+      "uk": "res://assets/audio/voice/uk/season_frog.wav"
+    },
+    "SEASON_POND": {
+      "en": "res://assets/audio/voice/en/season_pond.wav",
+      "uk": "res://assets/audio/voice/uk/season_pond.wav"
+    },
+    "SEASON_RAINBOW": {
+      "en": "res://assets/audio/voice/en/season_rainbow.wav",
+      "uk": "res://assets/audio/voice/uk/season_rainbow.wav"
+    },
+    "SEASON_BUNNY": {
+      "en": "res://assets/audio/voice/en/season_bunny.wav",
+      "uk": "res://assets/audio/voice/uk/season_bunny.wav"
+    },
+    "SEASON_LEAVES": {
+      "en": "res://assets/audio/voice/en/season_leaves.wav",
+      "uk": "res://assets/audio/voice/uk/season_leaves.wav"
+    },
+    "SEASON_HEDGEHOG": {
+      "en": "res://assets/audio/voice/en/season_hedgehog.wav",
+      "uk": "res://assets/audio/voice/uk/season_hedgehog.wav"
+    },
+    "SEASON_MUSHROOMS": {
+      "en": "res://assets/audio/voice/en/season_mushrooms.wav",
+      "uk": "res://assets/audio/voice/uk/season_mushrooms.wav"
+    },
+    "SEASON_PUMPKIN": {
+      "en": "res://assets/audio/voice/en/season_pumpkin.wav",
+      "uk": "res://assets/audio/voice/uk/season_pumpkin.wav"
+    },
+    "SEASON_BASKET": {
+      "en": "res://assets/audio/voice/en/season_basket.wav",
+      "uk": "res://assets/audio/voice/uk/season_basket.wav"
+    },
+    "SEASON_KITE": {
+      "en": "res://assets/audio/voice/en/season_kite.wav",
+      "uk": "res://assets/audio/voice/uk/season_kite.wav"
+    },
+    "SEASON_BOOTS": {
+      "en": "res://assets/audio/voice/en/season_boots.wav",
+      "uk": "res://assets/audio/voice/uk/season_boots.wav"
+    },
+    "SEASON_PUDDLE": {
+      "en": "res://assets/audio/voice/en/season_puddle.wav",
+      "uk": "res://assets/audio/voice/uk/season_puddle.wav"
+    },
+    "SEASON_SQUIRREL": {
+      "en": "res://assets/audio/voice/en/season_squirrel.wav",
+      "uk": "res://assets/audio/voice/uk/season_squirrel.wav"
+    },
+    "SEASON_COTTAGE": {
+      "en": "res://assets/audio/voice/en/season_cottage.wav",
+      "uk": "res://assets/audio/voice/uk/season_cottage.wav"
+    },
+    "SEASON_MOON": {
+      "en": "res://assets/audio/voice/en/season_moon.wav",
+      "uk": "res://assets/audio/voice/uk/season_moon.wav"
+    },
+    "SEASON_SNOWMAN": {
+      "en": "res://assets/audio/voice/en/season_snowman.wav",
+      "uk": "res://assets/audio/voice/uk/season_snowman.wav"
+    },
+    "SEASON_PINE": {
+      "en": "res://assets/audio/voice/en/season_pine.wav",
+      "uk": "res://assets/audio/voice/uk/season_pine.wav"
+    },
+    "SEASON_PENGUIN": {
+      "en": "res://assets/audio/voice/en/season_penguin.wav",
+      "uk": "res://assets/audio/voice/uk/season_penguin.wav"
+    },
+    "SEASON_SLED": {
+      "en": "res://assets/audio/voice/en/season_sled.wav",
+      "uk": "res://assets/audio/voice/uk/season_sled.wav"
+    },
+    "SEASON_GIFT": {
+      "en": "res://assets/audio/voice/en/season_gift.wav",
+      "uk": "res://assets/audio/voice/uk/season_gift.wav"
+    },
+    "SEASON_LANTERN": {
+      "en": "res://assets/audio/voice/en/season_lantern.wav",
+      "uk": "res://assets/audio/voice/uk/season_lantern.wav"
+    },
+    "SEASON_STAR": {
+      "en": "res://assets/audio/voice/en/season_star.wav",
+      "uk": "res://assets/audio/voice/uk/season_star.wav"
+    },
+    "SEASON_SNOWFLAKE": {
+      "en": "res://assets/audio/voice/en/season_snowflake.wav",
+      "uk": "res://assets/audio/voice/uk/season_snowflake.wav"
+    },
+    "TRACE_HINT": {
+      "en": "res://assets/audio/voice/en/trace_hint.wav",
+      "uk": "res://assets/audio/voice/uk/trace_hint.wav"
+    },
+    "TRACE_NUMBER_ZERO": {
+      "en": "res://assets/audio/voice/en/trace_number_zero.wav",
+      "uk": "res://assets/audio/voice/uk/trace_number_zero.wav"
+    }
+  },
+  "study_locales": {
+    "ALPH_EN_00": "en",
+    "ALPH_EN_01": "en",
+    "ALPH_EN_02": "en",
+    "ALPH_EN_03": "en",
+    "ALPH_EN_04": "en",
+    "ALPH_EN_05": "en",
+    "ALPH_EN_06": "en",
+    "ALPH_EN_07": "en",
+    "ALPH_EN_08": "en",
+    "ALPH_EN_09": "en",
+    "ALPH_EN_10": "en",
+    "ALPH_EN_11": "en",
+    "ALPH_EN_12": "en",
+    "ALPH_EN_13": "en",
+    "ALPH_EN_14": "en",
+    "ALPH_EN_15": "en",
+    "ALPH_EN_16": "en",
+    "ALPH_EN_17": "en",
+    "ALPH_EN_18": "en",
+    "ALPH_EN_19": "en",
+    "ALPH_EN_20": "en",
+    "ALPH_EN_21": "en",
+    "ALPH_EN_22": "en",
+    "ALPH_EN_23": "en",
+    "ALPH_EN_24": "en",
+    "ALPH_EN_25": "en",
+    "ALPH_UK_00": "uk",
+    "ALPH_UK_01": "uk",
+    "ALPH_UK_02": "uk",
+    "ALPH_UK_03": "uk",
+    "ALPH_UK_04": "uk",
+    "ALPH_UK_05": "uk",
+    "ALPH_UK_06": "uk",
+    "ALPH_UK_07": "uk",
+    "ALPH_UK_08": "uk",
+    "ALPH_UK_09": "uk",
+    "ALPH_UK_10": "uk",
+    "ALPH_UK_11": "uk",
+    "ALPH_UK_12": "uk",
+    "ALPH_UK_13": "uk",
+    "ALPH_UK_14": "uk",
+    "ALPH_UK_15": "uk",
+    "ALPH_UK_16": "uk",
+    "ALPH_UK_17": "uk",
+    "ALPH_UK_18": "uk",
+    "ALPH_UK_19": "uk",
+    "ALPH_UK_20": "uk",
+    "ALPH_UK_21": "uk",
+    "ALPH_UK_22": "uk",
+    "ALPH_UK_23": "uk",
+    "ALPH_UK_24": "uk",
+    "ALPH_UK_25": "uk",
+    "ALPH_UK_26": "uk",
+    "ALPH_UK_27": "uk",
+    "ALPH_UK_28": "uk",
+    "ALPH_UK_29": "uk",
+    "ALPH_UK_30": "uk",
+    "ALPH_UK_31": "uk",
+    "ALPH_UK_32": "uk",
+    "BLEND_EN_00": "en",
+    "BLEND_EN_01": "en",
+    "BLEND_EN_02": "en",
+    "BLEND_EN_03": "en",
+    "BLEND_EN_04": "en",
+    "BLEND_EN_05": "en",
+    "BLEND_UK_00": "uk",
+    "BLEND_UK_01": "uk",
+    "BLEND_UK_02": "uk",
+    "BLEND_UK_03": "uk",
+    "BLEND_UK_04": "uk",
+    "BLEND_UK_05": "uk",
+    "BLEND_UK_06": "uk",
+    "BLEND_UK_07": "uk",
+    "BLEND_UK_08": "uk",
+    "BLEND_UK_09": "uk",
+    "BLEND_UK_10": "uk",
+    "BLEND_UK_11": "uk",
+    "BLEND_UK_12": "uk",
+    "BLEND_UK_13": "uk",
+    "BLEND_UK_14": "uk",
+    "BLEND_UK_15": "uk",
+    "BLEND_UK_16": "uk",
+    "BLEND_UK_17": "uk",
+    "BLEND_UK_18": "uk",
+    "BLEND_UK_19": "uk",
+    "ALPH_WORD_EN_00": "en",
+    "ALPH_WORD_EN_01": "en",
+    "ALPH_WORD_EN_02": "en",
+    "ALPH_WORD_EN_03": "en",
+    "ALPH_WORD_EN_04": "en",
+    "ALPH_WORD_EN_05": "en",
+    "ALPH_WORD_EN_06": "en",
+    "ALPH_WORD_EN_07": "en",
+    "ALPH_WORD_EN_08": "en",
+    "ALPH_WORD_EN_09": "en",
+    "ALPH_WORD_EN_10": "en",
+    "ALPH_WORD_EN_11": "en",
+    "ALPH_WORD_EN_12": "en",
+    "ALPH_WORD_EN_13": "en",
+    "ALPH_WORD_EN_14": "en",
+    "ALPH_WORD_EN_15": "en",
+    "ALPH_WORD_EN_16": "en",
+    "ALPH_WORD_EN_17": "en",
+    "ALPH_WORD_EN_18": "en",
+    "ALPH_WORD_EN_19": "en",
+    "ALPH_WORD_EN_20": "en",
+    "ALPH_WORD_EN_21": "en",
+    "ALPH_WORD_EN_22": "en",
+    "ALPH_WORD_EN_23": "en",
+    "ALPH_WORD_EN_24": "en",
+    "ALPH_WORD_EN_25": "en",
+    "ALPH_WORD_UK_00": "uk",
+    "ALPH_WORD_UK_01": "uk",
+    "ALPH_WORD_UK_02": "uk",
+    "ALPH_WORD_UK_03": "uk",
+    "ALPH_WORD_UK_04": "uk",
+    "ALPH_WORD_UK_05": "uk",
+    "ALPH_WORD_UK_06": "uk",
+    "ALPH_WORD_UK_07": "uk",
+    "ALPH_WORD_UK_08": "uk",
+    "ALPH_WORD_UK_09": "uk",
+    "ALPH_WORD_UK_10": "uk",
+    "ALPH_WORD_UK_11": "uk",
+    "ALPH_WORD_UK_12": "uk",
+    "ALPH_WORD_UK_13": "uk",
+    "ALPH_WORD_UK_14": "uk",
+    "ALPH_WORD_UK_15": "uk",
+    "ALPH_WORD_UK_16": "uk",
+    "ALPH_WORD_UK_17": "uk",
+    "ALPH_WORD_UK_18": "uk",
+    "ALPH_WORD_UK_19": "uk",
+    "ALPH_WORD_UK_20": "uk",
+    "ALPH_WORD_UK_21": "uk",
+    "ALPH_WORD_UK_22": "uk",
+    "ALPH_WORD_UK_23": "uk",
+    "ALPH_WORD_UK_24": "uk",
+    "ALPH_WORD_UK_25": "uk",
+    "ALPH_WORD_UK_26": "uk",
+    "ALPH_WORD_UK_27": "uk",
+    "ALPH_WORD_UK_28": "uk",
+    "ALPH_WORD_UK_29": "uk",
+    "ALPH_WORD_UK_30": "uk",
+    "ALPH_WORD_UK_31": "uk",
+    "ALPH_WORD_UK_32": "uk"
+  }
+}

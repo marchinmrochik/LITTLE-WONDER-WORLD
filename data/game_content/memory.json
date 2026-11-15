@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "memory": [
+    {
+      "id": "animal_cat",
+      "english": "Cat",
+      "ukrainian": "Кіт",
+      "illustration": "res://assets/objects/animals/cat.svg",
+      "word_key": "WORD_CAT",
+      "prompt_key": "FIND_CAT",
+      "word_audio": "res://assets/audio/voice/en/word_cat.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_cat.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "animal_dog",
+      "english": "Dog",
+      "ukrainian": "Собака",
+      "illustration": "res://assets/objects/animals/dog.svg",
+      "word_key": "WORD_DOG",
+      "prompt_key": "FIND_DOG",
+      "word_audio": "res://assets/audio/voice/en/word_dog.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_dog.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "animal_rabbit",
+      "english": "Rabbit",
+      "ukrainian": "Кролик",
+      "illustration": "res://assets/objects/animals/rabbit.svg",
+      "word_key": "WORD_RABBIT",
+      "prompt_key": "FIND_RABBIT",
+      "word_audio": "res://assets/audio/voice/en/word_rabbit.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_rabbit.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "animal_bear",
+      "english": "Bear",
+      "ukrainian": "Ведмідь",
+      "illustration": "res://assets/objects/animals/bear.svg",
+      "word_key": "WORD_BEAR",
+      "prompt_key": "FIND_BEAR",
+      "word_audio": "res://assets/audio/voice/en/word_bear.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_bear.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "food_apple",
+      "english": "Apple",
+      "ukrainian": "Яблуко",
+      "illustration": "res://assets/objects/food/apple.svg",
+      "word_key": "FOOD_WORD_APPLE",
+      "prompt_key": "FOOD_GIVE_APPLE",
+      "word_audio": "res://assets/audio/voice/en/food_word_apple.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_apple.wav",
+      "request": "Give me an apple, please."
+    },
+    {
+      "id": "food_banana",
+      "english": "Banana",
+      "ukrainian": "Банан",
+      "illustration": "res://assets/objects/food/banana.svg",
+      "word_key": "FOOD_WORD_BANANA",
+      "prompt_key": "FOOD_GIVE_BANANA",
+      "word_audio": "res://assets/audio/voice/en/food_word_banana.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_banana.wav",
+      "request": "Give me a banana, please."
+    },
+    {
+      "id": "food_carrot",
+      "english": "Carrot",
+      "ukrainian": "Морква",
+      "illustration": "res://assets/objects/food/carrot.svg",
+      "word_key": "FOOD_WORD_CARROT",
+      "prompt_key": "FOOD_GIVE_CARROT",
+      "word_audio": "res://assets/audio/voice/en/food_word_carrot.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_carrot.wav",
+      "request": "Give me a carrot, please."
+    },
+    {
+      "id": "food_strawberry",
+      "english": "Strawberry",
+      "ukrainian": "Полуниця",
+      "illustration": "res://assets/objects/food/strawberry.svg",
+      "word_key": "FOOD_WORD_STRAWBERRY",
+      "prompt_key": "FOOD_GIVE_STRAWBERRY",
+      "word_audio": "res://assets/audio/voice/en/food_word_strawberry.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_strawberry.wav",
+      "request": "Give me a strawberry, please."
+    },
+    {
+      "id": "shape_circle",
+      "english": "Circle",
+      "ukrainian": "Коло",
+      "illustration": "res://assets/objects/shapes/circle.svg",
+      "slot": "res://assets/objects/shapes/circle_slot.svg",
+      "word_key": "SHAPE_WORD_CIRCLE",
+      "prompt_key": "SHAPE_FIND_CIRCLE",
+      "word_audio": "res://assets/audio/voice/en/shape_word_circle.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_circle.wav"
+    },
+    {
+      "id": "shape_square",
+      "english": "Square",
+      "ukrainian": "Квадрат",
+      "illustration": "res://assets/objects/shapes/square.svg",
+      "slot": "res://assets/objects/shapes/square_slot.svg",
+      "word_key": "SHAPE_WORD_SQUARE",
+      "prompt_key": "SHAPE_FIND_SQUARE",
+      "word_audio": "res://assets/audio/voice/en/shape_word_square.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_square.wav"
+    },
+    {
+      "id": "shape_star",
+      "english": "Star",
+      "ukrainian": "Зірка",
+      "illustration": "res://assets/objects/shapes/star.svg",
+      "slot": "res://assets/objects/shapes/star_slot.svg",
+      "word_key": "SHAPE_WORD_STAR",
+      "prompt_key": "SHAPE_FIND_STAR",
+      "word_audio": "res://assets/audio/voice/en/shape_word_star.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_star.wav"
+    },
+    {
+      "id": "shape_heart",
+      "english": "Heart",
+      "ukrainian": "Серце",
+      "illustration": "res://assets/objects/shapes/heart.svg",
+      "slot": "res://assets/objects/shapes/heart_slot.svg",
+      "word_key": "SHAPE_WORD_HEART",
+      "prompt_key": "SHAPE_FIND_HEART",
+      "word_audio": "res://assets/audio/voice/en/shape_word_heart.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_heart.wav"
+    }
+  ]
+}

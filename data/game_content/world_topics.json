@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "animals",
+      "title_key": "WORLD_ANIMALS",
+      "revision": 1,
+      "kind": "cards",
+      "catalog": "res://data/game_content/world_animals.json",
+      "illustration": "res://assets/objects/animals/cat.svg",
+      "check_items": [
+        "cat",
+        "dog",
+        "cow",
+        "rabbit",
+        "elephant"
+      ]
+    },
+    {
+      "id": "body",
+      "title_key": "WORLD_BODY",
+      "revision": 3,
+      "kind": "body",
+      "catalog": "res://data/game_content/world_body.json",
+      "illustration": "res://assets/objects/people/boy.png",
+      "check_items": [
+        "eye",
+        "nose",
+        "arm",
+        "leg",
+        "foot"
+      ]
+    },
+    {
+      "id": "plants",
+      "title_key": "WORLD_PLANTS",
+      "revision": 1,
+      "kind": "cards",
+      "catalog": "res://data/game_content/world_plants.json",
+      "illustration": "res://assets/objects/world/flower.svg",
+      "check_items": [
+        "tree",
+        "flower",
+        "leaf",
+        "seed",
+        "root"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+; Little Wonder World вЂ” Godot 4.7.2 Standard
+config_version=5
+
+[application]
+config/name="Little Wonder World"
+config/version="0.25.0"
+run/main_scene="res://scenes/core/app_root.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://assets/ui/app_icon.svg"
+config/auto_accept_quit=false
+
+[autoload]
+SettingsManager="*res://scripts/core/settings_manager.gd"
+LocalizationManager="*res://scripts/core/localization_manager.gd"
+ProgressManager="*res://scripts/core/progress_manager.gd"
+AssessmentHistory="*res://scripts/core/assessment_history.gd"
+ArtworkManager="*res://scripts/core/artwork_manager.gd"
+ContentManager="*res://scripts/core/content_manager.gd"
+AudioManager="*res://scripts/core/audio_manager.gd"
+GameManager="*res://scripts/core/game_manager.gd"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/window_width_override=1152
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/handheld/orientation=0
+
+[audio]
+general/text_to_speech=true
+
+[input_devices]
+pointing/emulate_touch_from_mouse=false
+pointing/emulate_mouse_from_touch=true
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
+environment/defaults/default_clear_color=Color(1, 0.973, 0.925, 1)

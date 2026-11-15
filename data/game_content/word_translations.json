@@ -1,0 +1,1061 @@
+{
+  "version": 1,
+  "captions": {
+    "WORD_CAT": {
+      "english": "Cat",
+      "ukrainian": "Кіт"
+    },
+    "FIND_CAT": {
+      "english": "Cat",
+      "ukrainian": "Кіт"
+    },
+    "WORD_DOG": {
+      "english": "Dog",
+      "ukrainian": "Собака"
+    },
+    "FIND_DOG": {
+      "english": "Dog",
+      "ukrainian": "Собака"
+    },
+    "WORD_COW": {
+      "english": "Cow",
+      "ukrainian": "Корова"
+    },
+    "FIND_COW": {
+      "english": "Cow",
+      "ukrainian": "Корова"
+    },
+    "WORD_PIG": {
+      "english": "Pig",
+      "ukrainian": "Свинка"
+    },
+    "FIND_PIG": {
+      "english": "Pig",
+      "ukrainian": "Свинка"
+    },
+    "WORD_SHEEP": {
+      "english": "Sheep",
+      "ukrainian": "Вівця"
+    },
+    "FIND_SHEEP": {
+      "english": "Sheep",
+      "ukrainian": "Вівця"
+    },
+    "WORD_HORSE": {
+      "english": "Horse",
+      "ukrainian": "Кінь"
+    },
+    "FIND_HORSE": {
+      "english": "Horse",
+      "ukrainian": "Кінь"
+    },
+    "WORD_DUCK": {
+      "english": "Duck",
+      "ukrainian": "Качка"
+    },
+    "FIND_DUCK": {
+      "english": "Duck",
+      "ukrainian": "Качка"
+    },
+    "WORD_CHICKEN": {
+      "english": "Chicken",
+      "ukrainian": "Курка"
+    },
+    "FIND_CHICKEN": {
+      "english": "Chicken",
+      "ukrainian": "Курка"
+    },
+    "WORD_RABBIT": {
+      "english": "Rabbit",
+      "ukrainian": "Кролик"
+    },
+    "FIND_RABBIT": {
+      "english": "Rabbit",
+      "ukrainian": "Кролик"
+    },
+    "WORD_BEAR": {
+      "english": "Bear",
+      "ukrainian": "Ведмідь"
+    },
+    "FIND_BEAR": {
+      "english": "Bear",
+      "ukrainian": "Ведмідь"
+    },
+    "WORD_LION": {
+      "english": "Lion",
+      "ukrainian": "Лев"
+    },
+    "FIND_LION": {
+      "english": "Lion",
+      "ukrainian": "Лев"
+    },
+    "WORD_ELEPHANT": {
+      "english": "Elephant",
+      "ukrainian": "Слон"
+    },
+    "FIND_ELEPHANT": {
+      "english": "Elephant",
+      "ukrainian": "Слон"
+    },
+    "FOOD_WORD_APPLE": {
+      "english": "Apple",
+      "ukrainian": "Яблуко"
+    },
+    "FOOD_GIVE_APPLE": {
+      "english": "Apple",
+      "ukrainian": "Яблуко"
+    },
+    "FOOD_WORD_BANANA": {
+      "english": "Banana",
+      "ukrainian": "Банан"
+    },
+    "FOOD_GIVE_BANANA": {
+      "english": "Banana",
+      "ukrainian": "Банан"
+    },
+    "FOOD_WORD_CARROT": {
+      "english": "Carrot",
+      "ukrainian": "Морква"
+    },
+    "FOOD_GIVE_CARROT": {
+      "english": "Carrot",
+      "ukrainian": "Морква"
+    },
+    "FOOD_WORD_BREAD": {
+      "english": "Bread",
+      "ukrainian": "Хліб"
+    },
+    "FOOD_GIVE_BREAD": {
+      "english": "Bread",
+      "ukrainian": "Хліб"
+    },
+    "FOOD_WORD_CHEESE": {
+      "english": "Cheese",
+      "ukrainian": "Сир"
+    },
+    "FOOD_GIVE_CHEESE": {
+      "english": "Cheese",
+      "ukrainian": "Сир"
+    },
+    "FOOD_WORD_MILK": {
+      "english": "Milk",
+      "ukrainian": "Молоко"
+    },
+    "FOOD_GIVE_MILK": {
+      "english": "Milk",
+      "ukrainian": "Молоко"
+    },
+    "FOOD_WORD_STRAWBERRY": {
+      "english": "Strawberry",
+      "ukrainian": "Полуниця"
+    },
+    "FOOD_GIVE_STRAWBERRY": {
+      "english": "Strawberry",
+      "ukrainian": "Полуниця"
+    },
+    "FOOD_WORD_WATERMELON": {
+      "english": "Watermelon",
+      "ukrainian": "Кавун"
+    },
+    "FOOD_GIVE_WATERMELON": {
+      "english": "Watermelon",
+      "ukrainian": "Кавун"
+    },
+    "FOOD_WORD_ORANGE": {
+      "english": "Orange",
+      "ukrainian": "Апельсин"
+    },
+    "FOOD_GIVE_ORANGE": {
+      "english": "Orange",
+      "ukrainian": "Апельсин"
+    },
+    "FOOD_WORD_PEAR": {
+      "english": "Pear",
+      "ukrainian": "Груша"
+    },
+    "FOOD_GIVE_PEAR": {
+      "english": "Pear",
+      "ukrainian": "Груша"
+    },
+    "FOOD_WORD_CUCUMBER": {
+      "english": "Cucumber",
+      "ukrainian": "Огірок"
+    },
+    "FOOD_GIVE_CUCUMBER": {
+      "english": "Cucumber",
+      "ukrainian": "Огірок"
+    },
+    "FOOD_WORD_TOMATO": {
+      "english": "Tomato",
+      "ukrainian": "Помідор"
+    },
+    "FOOD_GIVE_TOMATO": {
+      "english": "Tomato",
+      "ukrainian": "Помідор"
+    },
+    "COLOR_WORD_RED": {
+      "english": "Red",
+      "ukrainian": "Червоний"
+    },
+    "COLOR_FIND_RED": {
+      "english": "Red",
+      "ukrainian": "Червоний"
+    },
+    "COLOR_WORD_BLUE": {
+      "english": "Blue",
+      "ukrainian": "Синій"
+    },
+    "COLOR_FIND_BLUE": {
+      "english": "Blue",
+      "ukrainian": "Синій"
+    },
+    "COLOR_WORD_YELLOW": {
+      "english": "Yellow",
+      "ukrainian": "Жовтий"
+    },
+    "COLOR_FIND_YELLOW": {
+      "english": "Yellow",
+      "ukrainian": "Жовтий"
+    },
+    "COLOR_WORD_GREEN": {
+      "english": "Green",
+      "ukrainian": "Зелений"
+    },
+    "COLOR_FIND_GREEN": {
+      "english": "Green",
+      "ukrainian": "Зелений"
+    },
+    "COLOR_WORD_ORANGE": {
+      "english": "Orange",
+      "ukrainian": "Помаранчевий"
+    },
+    "COLOR_FIND_ORANGE": {
+      "english": "Orange",
+      "ukrainian": "Помаранчевий"
+    },
+    "COLOR_WORD_PURPLE": {
+      "english": "Purple",
+      "ukrainian": "Фіолетовий"
+    },
+    "COLOR_FIND_PURPLE": {
+      "english": "Purple",
+      "ukrainian": "Фіолетовий"
+    },
+    "COLOR_WORD_PINK": {
+      "english": "Pink",
+      "ukrainian": "Рожевий"
+    },
+    "COLOR_FIND_PINK": {
+      "english": "Pink",
+      "ukrainian": "Рожевий"
+    },
+    "COLOR_WORD_BROWN": {
+      "english": "Brown",
+      "ukrainian": "Коричневий"
+    },
+    "COLOR_FIND_BROWN": {
+      "english": "Brown",
+      "ukrainian": "Коричневий"
+    },
+    "SHAPE_WORD_CIRCLE": {
+      "english": "Circle",
+      "ukrainian": "Коло"
+    },
+    "SHAPE_FIND_CIRCLE": {
+      "english": "Circle",
+      "ukrainian": "Коло"
+    },
+    "SHAPE_WORD_SQUARE": {
+      "english": "Square",
+      "ukrainian": "Квадрат"
+    },
+    "SHAPE_FIND_SQUARE": {
+      "english": "Square",
+      "ukrainian": "Квадрат"
+    },
+    "SHAPE_WORD_TRIANGLE": {
+      "english": "Triangle",
+      "ukrainian": "Трикутник"
+    },
+    "SHAPE_FIND_TRIANGLE": {
+      "english": "Triangle",
+      "ukrainian": "Трикутник"
+    },
+    "SHAPE_WORD_RECTANGLE": {
+      "english": "Rectangle",
+      "ukrainian": "Прямокутник"
+    },
+    "SHAPE_FIND_RECTANGLE": {
+      "english": "Rectangle",
+      "ukrainian": "Прямокутник"
+    },
+    "SHAPE_WORD_STAR": {
+      "english": "Star",
+      "ukrainian": "Зірка"
+    },
+    "SHAPE_FIND_STAR": {
+      "english": "Star",
+      "ukrainian": "Зірка"
+    },
+    "SHAPE_WORD_HEART": {
+      "english": "Heart",
+      "ukrainian": "Серце"
+    },
+    "SHAPE_FIND_HEART": {
+      "english": "Heart",
+      "ukrainian": "Серце"
+    },
+    "WORLD_BODY_EYEBROW_WORD": {
+      "english": "Eyebrow",
+      "ukrainian": "Брова"
+    },
+    "WORLD_BODY_EYEBROW_FIND": {
+      "english": "Eyebrow",
+      "ukrainian": "Брова"
+    },
+    "WORLD_BODY_EYE_WORD": {
+      "english": "Eye",
+      "ukrainian": "Око"
+    },
+    "WORLD_BODY_EYE_FIND": {
+      "english": "Eye",
+      "ukrainian": "Око"
+    },
+    "WORLD_BODY_NOSE_WORD": {
+      "english": "Nose",
+      "ukrainian": "Ніс"
+    },
+    "WORLD_BODY_NOSE_FIND": {
+      "english": "Nose",
+      "ukrainian": "Ніс"
+    },
+    "WORLD_BODY_MOUTH_WORD": {
+      "english": "Mouth",
+      "ukrainian": "Рот"
+    },
+    "WORLD_BODY_MOUTH_FIND": {
+      "english": "Mouth",
+      "ukrainian": "Рот"
+    },
+    "WORLD_BODY_EAR_WORD": {
+      "english": "Ear",
+      "ukrainian": "Вухо"
+    },
+    "WORLD_BODY_EAR_FIND": {
+      "english": "Ear",
+      "ukrainian": "Вухо"
+    },
+    "WORLD_BODY_CHEEK_WORD": {
+      "english": "Cheek",
+      "ukrainian": "Щока"
+    },
+    "WORLD_BODY_CHEEK_FIND": {
+      "english": "Cheek",
+      "ukrainian": "Щока"
+    },
+    "WORLD_BODY_CHIN_WORD": {
+      "english": "Chin",
+      "ukrainian": "Підборіддя"
+    },
+    "WORLD_BODY_CHIN_FIND": {
+      "english": "Chin",
+      "ukrainian": "Підборіддя"
+    },
+    "WORLD_BODY_HAIR_WORD": {
+      "english": "Hair",
+      "ukrainian": "Волосся"
+    },
+    "WORLD_BODY_HAIR_FIND": {
+      "english": "Hair",
+      "ukrainian": "Волосся"
+    },
+    "WORLD_BODY_HEAD_WORD": {
+      "english": "Head",
+      "ukrainian": "Голова"
+    },
+    "WORLD_BODY_HEAD_FIND": {
+      "english": "Head",
+      "ukrainian": "Голова"
+    },
+    "WORLD_BODY_FINGER_WORD": {
+      "english": "Finger",
+      "ukrainian": "Палець"
+    },
+    "WORLD_BODY_FINGER_FIND": {
+      "english": "Finger",
+      "ukrainian": "Палець"
+    },
+    "WORLD_BODY_HAND_WORD": {
+      "english": "Hand",
+      "ukrainian": "Долоня"
+    },
+    "WORLD_BODY_HAND_FIND": {
+      "english": "Hand",
+      "ukrainian": "Долоня"
+    },
+    "WORLD_BODY_ELBOW_WORD": {
+      "english": "Elbow",
+      "ukrainian": "Лікоть"
+    },
+    "WORLD_BODY_ELBOW_FIND": {
+      "english": "Elbow",
+      "ukrainian": "Лікоть"
+    },
+    "WORLD_BODY_ARM_WORD": {
+      "english": "Arm",
+      "ukrainian": "Рука"
+    },
+    "WORLD_BODY_ARM_FIND": {
+      "english": "Arm",
+      "ukrainian": "Рука"
+    },
+    "WORLD_BODY_SHOULDER_WORD": {
+      "english": "Shoulder",
+      "ukrainian": "Плече"
+    },
+    "WORLD_BODY_SHOULDER_FIND": {
+      "english": "Shoulder",
+      "ukrainian": "Плече"
+    },
+    "WORLD_BODY_NECK_WORD": {
+      "english": "Neck",
+      "ukrainian": "Шия"
+    },
+    "WORLD_BODY_NECK_FIND": {
+      "english": "Neck",
+      "ukrainian": "Шия"
+    },
+    "WORLD_BODY_BELLY_WORD": {
+      "english": "Belly",
+      "ukrainian": "Живіт"
+    },
+    "WORLD_BODY_BELLY_FIND": {
+      "english": "Belly",
+      "ukrainian": "Живіт"
+    },
+    "WORLD_BODY_TORSO_WORD": {
+      "english": "Torso",
+      "ukrainian": "Тулуб"
+    },
+    "WORLD_BODY_TORSO_FIND": {
+      "english": "Torso",
+      "ukrainian": "Тулуб"
+    },
+    "WORLD_BODY_KNEE_WORD": {
+      "english": "Knee",
+      "ukrainian": "Коліно"
+    },
+    "WORLD_BODY_KNEE_FIND": {
+      "english": "Knee",
+      "ukrainian": "Коліно"
+    },
+    "WORLD_BODY_LEG_WORD": {
+      "english": "Leg",
+      "ukrainian": "Нога"
+    },
+    "WORLD_BODY_LEG_FIND": {
+      "english": "Leg",
+      "ukrainian": "Нога"
+    },
+    "WORLD_BODY_FOOT_WORD": {
+      "english": "Foot",
+      "ukrainian": "Ступня"
+    },
+    "WORLD_BODY_FOOT_FIND": {
+      "english": "Foot",
+      "ukrainian": "Ступня"
+    },
+    "WORLD_PLANTS_TREE_WORD": {
+      "english": "Tree",
+      "ukrainian": "Дерево"
+    },
+    "WORLD_PLANTS_TREE_FIND": {
+      "english": "Tree",
+      "ukrainian": "Дерево"
+    },
+    "WORLD_PLANTS_FLOWER_WORD": {
+      "english": "Flower",
+      "ukrainian": "Квітка"
+    },
+    "WORLD_PLANTS_FLOWER_FIND": {
+      "english": "Flower",
+      "ukrainian": "Квітка"
+    },
+    "WORLD_PLANTS_GRASS_WORD": {
+      "english": "Grass",
+      "ukrainian": "Трава"
+    },
+    "WORLD_PLANTS_GRASS_FIND": {
+      "english": "Grass",
+      "ukrainian": "Трава"
+    },
+    "WORLD_PLANTS_LEAF_WORD": {
+      "english": "Leaf",
+      "ukrainian": "Листок"
+    },
+    "WORLD_PLANTS_LEAF_FIND": {
+      "english": "Leaf",
+      "ukrainian": "Листок"
+    },
+    "WORLD_PLANTS_SEED_WORD": {
+      "english": "Seed",
+      "ukrainian": "Насінина"
+    },
+    "WORLD_PLANTS_SEED_FIND": {
+      "english": "Seed",
+      "ukrainian": "Насінина"
+    },
+    "WORLD_PLANTS_ROOT_WORD": {
+      "english": "Root",
+      "ukrainian": "Корінь"
+    },
+    "WORLD_PLANTS_ROOT_FIND": {
+      "english": "Root",
+      "ukrainian": "Корінь"
+    },
+    "WORLD_PLANTS_BUSH_WORD": {
+      "english": "Bush",
+      "ukrainian": "Кущ"
+    },
+    "WORLD_PLANTS_BUSH_FIND": {
+      "english": "Bush",
+      "ukrainian": "Кущ"
+    },
+    "WORLD_PLANTS_PINE_WORD": {
+      "english": "Pine",
+      "ukrainian": "Сосна"
+    },
+    "WORLD_PLANTS_PINE_FIND": {
+      "english": "Pine",
+      "ukrainian": "Сосна"
+    },
+    "BOOK_WORD_CAT": {
+      "english": "Cat",
+      "ukrainian": "Кіт"
+    },
+    "BOOK_WORD_DOG": {
+      "english": "Dog",
+      "ukrainian": "Собака"
+    },
+    "BOOK_WORD_FOX": {
+      "english": "Fox",
+      "ukrainian": "Лисиця"
+    },
+    "BOOK_WORD_BUTTERFLY": {
+      "english": "Butterfly",
+      "ukrainian": "Метелик"
+    },
+    "BOOK_WORD_FISH": {
+      "english": "Fish",
+      "ukrainian": "Рибка"
+    },
+    "BOOK_WORD_HOUSE": {
+      "english": "House",
+      "ukrainian": "Будинок"
+    },
+    "BOOK_WORD_FLOWER": {
+      "english": "Flower",
+      "ukrainian": "Квітка"
+    },
+    "BOOK_WORD_CAR": {
+      "english": "Car",
+      "ukrainian": "Машина"
+    },
+    "BOOK_WORD_DINOSAUR": {
+      "english": "Dinosaur",
+      "ukrainian": "Динозавр"
+    },
+    "BOOK_WORD_RAINBOW": {
+      "english": "Rainbow",
+      "ukrainian": "Веселка"
+    },
+    "ALPH_WORD_EN_00": {
+      "english": "Apple",
+      "ukrainian": "Яблуко"
+    },
+    "ALPH_WORD_EN_01": {
+      "english": "Bear",
+      "ukrainian": "Ведмідь"
+    },
+    "ALPH_WORD_EN_02": {
+      "english": "Cat",
+      "ukrainian": "Кіт"
+    },
+    "ALPH_WORD_EN_03": {
+      "english": "Dog",
+      "ukrainian": "Собака"
+    },
+    "ALPH_WORD_EN_04": {
+      "english": "Elephant",
+      "ukrainian": "Слон"
+    },
+    "ALPH_WORD_EN_05": {
+      "english": "Flower",
+      "ukrainian": "Квітка"
+    },
+    "ALPH_WORD_EN_06": {
+      "english": "Goat",
+      "ukrainian": "Коза"
+    },
+    "ALPH_WORD_EN_07": {
+      "english": "House",
+      "ukrainian": "Будинок"
+    },
+    "ALPH_WORD_EN_08": {
+      "english": "Ice cream",
+      "ukrainian": "Морозиво"
+    },
+    "ALPH_WORD_EN_09": {
+      "english": "Jelly",
+      "ukrainian": "Желе"
+    },
+    "ALPH_WORD_EN_10": {
+      "english": "Kite",
+      "ukrainian": "Повітряний змій"
+    },
+    "ALPH_WORD_EN_11": {
+      "english": "Lion",
+      "ukrainian": "Лев"
+    },
+    "ALPH_WORD_EN_12": {
+      "english": "Moon",
+      "ukrainian": "Місяць"
+    },
+    "ALPH_WORD_EN_13": {
+      "english": "Nest",
+      "ukrainian": "Гніздо"
+    },
+    "ALPH_WORD_EN_14": {
+      "english": "Orange",
+      "ukrainian": "Апельсин"
+    },
+    "ALPH_WORD_EN_15": {
+      "english": "Pig",
+      "ukrainian": "Свинка"
+    },
+    "ALPH_WORD_EN_16": {
+      "english": "Queen",
+      "ukrainian": "Королева"
+    },
+    "ALPH_WORD_EN_17": {
+      "english": "Rabbit",
+      "ukrainian": "Кролик"
+    },
+    "ALPH_WORD_EN_18": {
+      "english": "Sun",
+      "ukrainian": "Сонце"
+    },
+    "ALPH_WORD_EN_19": {
+      "english": "Tree",
+      "ukrainian": "Дерево"
+    },
+    "ALPH_WORD_EN_20": {
+      "english": "Umbrella",
+      "ukrainian": "Парасолька"
+    },
+    "ALPH_WORD_EN_21": {
+      "english": "Violin",
+      "ukrainian": "Скрипка"
+    },
+    "ALPH_WORD_EN_22": {
+      "english": "Whale",
+      "ukrainian": "Кит"
+    },
+    "ALPH_WORD_EN_23": {
+      "english": "Xylophone",
+      "ukrainian": "Ксилофон"
+    },
+    "ALPH_WORD_EN_24": {
+      "english": "Yo-yo",
+      "ukrainian": "Йо-йо"
+    },
+    "ALPH_WORD_EN_25": {
+      "english": "Zebra",
+      "ukrainian": "Зебра"
+    },
+    "SEASON_TREE": {
+      "english": "Tree",
+      "ukrainian": "Дерево"
+    },
+    "SEASON_SUN": {
+      "english": "Sun",
+      "ukrainian": "Сонце"
+    },
+    "SEASON_CLOUD": {
+      "english": "Cloud",
+      "ukrainian": "Хмаринка"
+    },
+    "SEASON_NEST": {
+      "english": "Nest",
+      "ukrainian": "Гніздо"
+    },
+    "SEASON_BIRD": {
+      "english": "Bird",
+      "ukrainian": "Пташка"
+    },
+    "SEASON_FLOWERS": {
+      "english": "Flowers",
+      "ukrainian": "Квіти"
+    },
+    "SEASON_BUTTERFLY": {
+      "english": "Butterfly",
+      "ukrainian": "Метелик"
+    },
+    "SEASON_BEE": {
+      "english": "Bee",
+      "ukrainian": "Бджілка"
+    },
+    "SEASON_FROG": {
+      "english": "Frog",
+      "ukrainian": "Жабка"
+    },
+    "SEASON_POND": {
+      "english": "Pond",
+      "ukrainian": "Ставок"
+    },
+    "SEASON_RAINBOW": {
+      "english": "Rainbow",
+      "ukrainian": "Веселка"
+    },
+    "SEASON_BUNNY": {
+      "english": "Bunny",
+      "ukrainian": "Зайчик"
+    },
+    "SEASON_LEAVES": {
+      "english": "Leaves",
+      "ukrainian": "Листя"
+    },
+    "SEASON_HEDGEHOG": {
+      "english": "Hedgehog",
+      "ukrainian": "Їжачок"
+    },
+    "SEASON_MUSHROOMS": {
+      "english": "Mushrooms",
+      "ukrainian": "Гриби"
+    },
+    "SEASON_PUMPKIN": {
+      "english": "Pumpkin",
+      "ukrainian": "Гарбуз"
+    },
+    "SEASON_BASKET": {
+      "english": "Basket",
+      "ukrainian": "Кошик"
+    },
+    "SEASON_KITE": {
+      "english": "Kite",
+      "ukrainian": "Повітряний змій"
+    },
+    "SEASON_BOOTS": {
+      "english": "Boots",
+      "ukrainian": "Чобітки"
+    },
+    "SEASON_PUDDLE": {
+      "english": "Puddle",
+      "ukrainian": "Калюжа"
+    },
+    "SEASON_SQUIRREL": {
+      "english": "Squirrel",
+      "ukrainian": "Білка"
+    },
+    "SEASON_COTTAGE": {
+      "english": "Cottage",
+      "ukrainian": "Хатинка"
+    },
+    "SEASON_MOON": {
+      "english": "Moon",
+      "ukrainian": "Місяць"
+    },
+    "SEASON_SNOWMAN": {
+      "english": "Snowman",
+      "ukrainian": "Сніговик"
+    },
+    "SEASON_PINE": {
+      "english": "Fir tree",
+      "ukrainian": "Ялинка"
+    },
+    "SEASON_PENGUIN": {
+      "english": "Penguin",
+      "ukrainian": "Пінгвін"
+    },
+    "SEASON_SLED": {
+      "english": "Sled",
+      "ukrainian": "Санчата"
+    },
+    "SEASON_GIFT": {
+      "english": "Gift",
+      "ukrainian": "Подарунок"
+    },
+    "SEASON_LANTERN": {
+      "english": "Lantern",
+      "ukrainian": "Ліхтарик"
+    },
+    "SEASON_STAR": {
+      "english": "Star",
+      "ukrainian": "Зірка"
+    },
+    "SEASON_SNOWFLAKE": {
+      "english": "Snowflake",
+      "ukrainian": "Сніжинка"
+    },
+    "LIVE_WALLS": {
+      "english": "Walls",
+      "ukrainian": "Стіни"
+    },
+    "LIVE_ROOF": {
+      "english": "Roof",
+      "ukrainian": "Дах"
+    },
+    "LIVE_DOOR": {
+      "english": "Door",
+      "ukrainian": "Двері"
+    },
+    "LIVE_LEFT_WINDOW": {
+      "english": "Left window",
+      "ukrainian": "Ліве вікно"
+    },
+    "LIVE_RIGHT_WINDOW": {
+      "english": "Right window",
+      "ukrainian": "Праве вікно"
+    },
+    "LIVE_CHIMNEY": {
+      "english": "Chimney",
+      "ukrainian": "Труба"
+    },
+    "LIVE_SUN": {
+      "english": "Sun",
+      "ukrainian": "Сонце"
+    },
+    "LIVE_CLOUD": {
+      "english": "Cloud",
+      "ukrainian": "Хмаринка"
+    },
+    "LIVE_DOG": {
+      "english": "Puppy",
+      "ukrainian": "Песик"
+    },
+    "LIVE_FLOWERS": {
+      "english": "Flowers",
+      "ukrainian": "Квіти"
+    },
+    "COUNT_NUMBER_1": {
+      "english": "One",
+      "ukrainian": "Один"
+    },
+    "COUNT_NUMBER_2": {
+      "english": "Two",
+      "ukrainian": "Два"
+    },
+    "COUNT_NUMBER_3": {
+      "english": "Three",
+      "ukrainian": "Три"
+    },
+    "COUNT_NUMBER_4": {
+      "english": "Four",
+      "ukrainian": "Чотири"
+    },
+    "COUNT_NUMBER_5": {
+      "english": "Five",
+      "ukrainian": "П'ять"
+    },
+    "COUNT_NUMBER_6": {
+      "english": "Six",
+      "ukrainian": "Шість"
+    },
+    "COUNT_NUMBER_7": {
+      "english": "Seven",
+      "ukrainian": "Сім"
+    },
+    "COUNT_NUMBER_8": {
+      "english": "Eight",
+      "ukrainian": "Вісім"
+    },
+    "COUNT_NUMBER_9": {
+      "english": "Nine",
+      "ukrainian": "Дев'ять"
+    },
+    "COUNT_NUMBER_10": {
+      "english": "Ten",
+      "ukrainian": "Десять"
+    },
+    "COUNT_HOW_APPLES": {
+      "english": "How many apples?",
+      "ukrainian": "Скільки яблук?"
+    },
+    "COUNT_PUT_APPLES_1": {
+      "english": "Put one apple in the basket.",
+      "ukrainian": "Поклади одне яблуко в кошик."
+    },
+    "COUNT_PUT_APPLES_2": {
+      "english": "Put two apples in the basket.",
+      "ukrainian": "Поклади два яблука в кошик."
+    },
+    "COUNT_PUT_APPLES_3": {
+      "english": "Put three apples in the basket.",
+      "ukrainian": "Поклади три яблука в кошик."
+    },
+    "COUNT_PUT_APPLES_4": {
+      "english": "Put four apples in the basket.",
+      "ukrainian": "Поклади чотири яблука в кошик."
+    },
+    "COUNT_PUT_APPLES_5": {
+      "english": "Put five apples in the basket.",
+      "ukrainian": "Поклади п'ять яблук в кошик."
+    },
+    "COUNT_PUT_APPLES_6": {
+      "english": "Put six apples in the basket.",
+      "ukrainian": "Поклади шість яблук в кошик."
+    },
+    "COUNT_PUT_APPLES_7": {
+      "english": "Put seven apples in the basket.",
+      "ukrainian": "Поклади сім яблук в кошик."
+    },
+    "COUNT_PUT_APPLES_8": {
+      "english": "Put eight apples in the basket.",
+      "ukrainian": "Поклади вісім яблук в кошик."
+    },
+    "COUNT_PUT_APPLES_9": {
+      "english": "Put nine apples in the basket.",
+      "ukrainian": "Поклади дев'ять яблук в кошик."
+    },
+    "COUNT_PUT_APPLES_10": {
+      "english": "Put ten apples in the basket.",
+      "ukrainian": "Поклади десять яблук в кошик."
+    },
+    "COUNT_HOW_CARROTS": {
+      "english": "How many carrots?",
+      "ukrainian": "Скільки морквин?"
+    },
+    "COUNT_PUT_CARROTS_1": {
+      "english": "Put one carrot in the basket.",
+      "ukrainian": "Поклади одну морквину в кошик."
+    },
+    "COUNT_PUT_CARROTS_2": {
+      "english": "Put two carrots in the basket.",
+      "ukrainian": "Поклади дві морквини в кошик."
+    },
+    "COUNT_PUT_CARROTS_3": {
+      "english": "Put three carrots in the basket.",
+      "ukrainian": "Поклади три морквини в кошик."
+    },
+    "COUNT_PUT_CARROTS_4": {
+      "english": "Put four carrots in the basket.",
+      "ukrainian": "Поклади чотири морквини в кошик."
+    },
+    "COUNT_PUT_CARROTS_5": {
+      "english": "Put five carrots in the basket.",
+      "ukrainian": "Поклади п'ять морквин в кошик."
+    },
+    "COUNT_PUT_CARROTS_6": {
+      "english": "Put six carrots in the basket.",
+      "ukrainian": "Поклади шість морквин в кошик."
+    },
+    "COUNT_PUT_CARROTS_7": {
+      "english": "Put seven carrots in the basket.",
+      "ukrainian": "Поклади сім морквин в кошик."
+    },
+    "COUNT_PUT_CARROTS_8": {
+      "english": "Put eight carrots in the basket.",
+      "ukrainian": "Поклади вісім морквин в кошик."
+    },
+    "COUNT_PUT_CARROTS_9": {
+      "english": "Put nine carrots in the basket.",
+      "ukrainian": "Поклади дев'ять морквин в кошик."
+    },
+    "COUNT_PUT_CARROTS_10": {
+      "english": "Put ten carrots in the basket.",
+      "ukrainian": "Поклади десять морквин в кошик."
+    },
+    "COUNT_HOW_STRAWBERRIES": {
+      "english": "How many strawberries?",
+      "ukrainian": "Скільки полуниць?"
+    },
+    "COUNT_PUT_STRAWBERRIES_1": {
+      "english": "Put one strawberry in the basket.",
+      "ukrainian": "Поклади одну полуницю в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_2": {
+      "english": "Put two strawberries in the basket.",
+      "ukrainian": "Поклади дві полуниці в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_3": {
+      "english": "Put three strawberries in the basket.",
+      "ukrainian": "Поклади три полуниці в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_4": {
+      "english": "Put four strawberries in the basket.",
+      "ukrainian": "Поклади чотири полуниці в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_5": {
+      "english": "Put five strawberries in the basket.",
+      "ukrainian": "Поклади п'ять полуниць в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_6": {
+      "english": "Put six strawberries in the basket.",
+      "ukrainian": "Поклади шість полуниць в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_7": {
+      "english": "Put seven strawberries in the basket.",
+      "ukrainian": "Поклади сім полуниць в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_8": {
+      "english": "Put eight strawberries in the basket.",
+      "ukrainian": "Поклади вісім полуниць в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_9": {
+      "english": "Put nine strawberries in the basket.",
+      "ukrainian": "Поклади дев'ять полуниць в кошик."
+    },
+    "COUNT_PUT_STRAWBERRIES_10": {
+      "english": "Put ten strawberries in the basket.",
+      "ukrainian": "Поклади десять полуниць в кошик."
+    },
+    "COUNT_HOW_STARS": {
+      "english": "How many stars?",
+      "ukrainian": "Скільки зірок?"
+    },
+    "COUNT_PUT_STARS_1": {
+      "english": "Put one star in the basket.",
+      "ukrainian": "Поклади одну зірку в кошик."
+    },
+    "COUNT_PUT_STARS_2": {
+      "english": "Put two stars in the basket.",
+      "ukrainian": "Поклади дві зірки в кошик."
+    },
+    "COUNT_PUT_STARS_3": {
+      "english": "Put three stars in the basket.",
+      "ukrainian": "Поклади три зірки в кошик."
+    },
+    "COUNT_PUT_STARS_4": {
+      "english": "Put four stars in the basket.",
+      "ukrainian": "Поклади чотири зірки в кошик."
+    },
+    "COUNT_PUT_STARS_5": {
+      "english": "Put five stars in the basket.",
+      "ukrainian": "Поклади п'ять зірок в кошик."
+    },
+    "COUNT_PUT_STARS_6": {
+      "english": "Put six stars in the basket.",
+      "ukrainian": "Поклади шість зірок в кошик."
+    },
+    "COUNT_PUT_STARS_7": {
+      "english": "Put seven stars in the basket.",
+      "ukrainian": "Поклади сім зірок в кошик."
+    },
+    "COUNT_PUT_STARS_8": {
+      "english": "Put eight stars in the basket.",
+      "ukrainian": "Поклади вісім зірок в кошик."
+    },
+    "COUNT_PUT_STARS_9": {
+      "english": "Put nine stars in the basket.",
+      "ukrainian": "Поклади дев'ять зірок в кошик."
+    },
+    "COUNT_PUT_STARS_10": {
+      "english": "Put ten stars in the basket.",
+      "ukrainian": "Поклади десять зірок в кошик."
+    },
+    "TRACE_NUMBER_ZERO": {
+      "english": "Zero",
+      "ukrainian": "Нуль"
+    }
+  }
+}

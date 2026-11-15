@@ -1,0 +1,36 @@
+{
+  "recorded_on": "2026-11-13",
+  "host": "windows-x64",
+  "godot": {
+    "version": "4.7.2.stable.official.ed1daf0bf",
+    "archive": "Godot_v4.7.2-stable_win64.exe.zip",
+    "sha256": "731980f9608d61333e5baf54a2ef17210acc7a538446c0cb9969f002aca1e953",
+    "source": "https://godotengine.org/download/archive/4.7.2-stable/"
+  },
+  "export_templates": {
+    "version": "4.7.2.stable",
+    "archive": "Godot_v4.7.2-stable_export_templates.tpz",
+    "sha256": "f298490b8d44d934be425a5a65a51bf15f422428b229a06a6e11d9ffea248011",
+    "source": "https://api.github.com/repos/godotengine/godot-builds/releases/tags/4.7.2-stable"
+  },
+  "java": {
+    "vendor": "Eclipse Temurin",
+    "version": "17.0.21+9",
+    "archive": "OpenJDK17U-jdk_x64_windows_hotspot_17.0.21_9.zip",
+    "sha256": "98518ecf554465057ee5509462631deeee374bc368c12a411d225cd29381f84b",
+    "source": "https://api.adoptium.net/v3/assets/latest/17/hotspot?architecture=x64&image_type=jdk&os=windows&vendor=eclipse"
+  },
+  "android_command_line_tools": {
+    "version": "22.0",
+    "archive": "commandlinetools-win-15859902_latest.zip",
+    "sha256": "90ae805d20434428bffcb699c290860f19bb5f66a67e6b330067e3de801fb04a",
+    "source": "https://developer.android.com/studio#command-tools"
+  },
+  "android_packages": ["platform-tools", "build-tools;35.0.1", "platforms;android-35", "build-tools;36.0.0", "platforms;android-36"],
+  "notes": [
+    "Exact installed SDK package revisions are recorded in docs/ENVIRONMENT.md after verification.",
+    "The actual Godot 4.7.2 prebuilt APK targets API 36; matching API 36 packages were added after the export probe.",
+    "NDK, CMake, Android Studio and emulator are deferred unless the actual export path requires them.",
+    "Installed tools and credentials live in ignored local directories."
+  ]
+}

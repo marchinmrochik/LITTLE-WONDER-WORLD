@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "counting": [
+    {
+      "id": "apples",
+      "english": "Apple",
+      "ukrainian": "Яблуко",
+      "illustration": "res://assets/objects/food/apple.svg",
+      "word_key": "FOOD_WORD_APPLE",
+      "prompt_key": "FOOD_GIVE_APPLE",
+      "word_audio": "res://assets/audio/voice/en/food_word_apple.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_apple.wav",
+      "request": "Give me an apple, please.",
+      "singular": "apple",
+      "plural": "apples",
+      "question_key": "COUNT_HOW_APPLES"
+    },
+    {
+      "id": "carrots",
+      "english": "Carrot",
+      "ukrainian": "Морква",
+      "illustration": "res://assets/objects/food/carrot.svg",
+      "word_key": "FOOD_WORD_CARROT",
+      "prompt_key": "FOOD_GIVE_CARROT",
+      "word_audio": "res://assets/audio/voice/en/food_word_carrot.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_carrot.wav",
+      "request": "Give me a carrot, please.",
+      "singular": "carrot",
+      "plural": "carrots",
+      "question_key": "COUNT_HOW_CARROTS"
+    },
+    {
+      "id": "strawberries",
+      "english": "Strawberry",
+      "ukrainian": "Полуниця",
+      "illustration": "res://assets/objects/food/strawberry.svg",
+      "word_key": "FOOD_WORD_STRAWBERRY",
+      "prompt_key": "FOOD_GIVE_STRAWBERRY",
+      "word_audio": "res://assets/audio/voice/en/food_word_strawberry.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_strawberry.wav",
+      "request": "Give me a strawberry, please.",
+      "singular": "strawberry",
+      "plural": "strawberries",
+      "question_key": "COUNT_HOW_STRAWBERRIES"
+    },
+    {
+      "id": "stars",
+      "english": "Star",
+      "ukrainian": "Зірка",
+      "illustration": "res://assets/objects/shapes/star.svg",
+      "slot": "res://assets/objects/shapes/star_slot.svg",
+      "word_key": "SHAPE_WORD_STAR",
+      "prompt_key": "SHAPE_FIND_STAR",
+      "word_audio": "res://assets/audio/voice/en/shape_word_star.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_star.wav",
+      "singular": "star",
+      "plural": "stars",
+      "question_key": "COUNT_HOW_STARS"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "foods": [
+    {
+      "id": "apple",
+      "english": "Apple",
+      "ukrainian": "Яблуко",
+      "illustration": "res://assets/objects/food/apple.svg",
+      "word_key": "FOOD_WORD_APPLE",
+      "prompt_key": "FOOD_GIVE_APPLE",
+      "word_audio": "res://assets/audio/voice/en/food_word_apple.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_apple.wav",
+      "request": "Give me an apple, please."
+    },
+    {
+      "id": "banana",
+      "english": "Banana",
+      "ukrainian": "Банан",
+      "illustration": "res://assets/objects/food/banana.svg",
+      "word_key": "FOOD_WORD_BANANA",
+      "prompt_key": "FOOD_GIVE_BANANA",
+      "word_audio": "res://assets/audio/voice/en/food_word_banana.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_banana.wav",
+      "request": "Give me a banana, please."
+    },
+    {
+      "id": "carrot",
+      "english": "Carrot",
+      "ukrainian": "Морква",
+      "illustration": "res://assets/objects/food/carrot.svg",
+      "word_key": "FOOD_WORD_CARROT",
+      "prompt_key": "FOOD_GIVE_CARROT",
+      "word_audio": "res://assets/audio/voice/en/food_word_carrot.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_carrot.wav",
+      "request": "Give me a carrot, please."
+    },
+    {
+      "id": "bread",
+      "english": "Bread",
+      "ukrainian": "Хліб",
+      "illustration": "res://assets/objects/food/bread.svg",
+      "word_key": "FOOD_WORD_BREAD",
+      "prompt_key": "FOOD_GIVE_BREAD",
+      "word_audio": "res://assets/audio/voice/en/food_word_bread.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_bread.wav",
+      "request": "Give me some bread, please."
+    },
+    {
+      "id": "cheese",
+      "english": "Cheese",
+      "ukrainian": "Сир",
+      "illustration": "res://assets/objects/food/cheese.svg",
+      "word_key": "FOOD_WORD_CHEESE",
+      "prompt_key": "FOOD_GIVE_CHEESE",
+      "word_audio": "res://assets/audio/voice/en/food_word_cheese.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_cheese.wav",
+      "request": "Give me some cheese, please."
+    },
+    {
+      "id": "milk",
+      "english": "Milk",
+      "ukrainian": "Молоко",
+      "illustration": "res://assets/objects/food/milk.svg",
+      "word_key": "FOOD_WORD_MILK",
+      "prompt_key": "FOOD_GIVE_MILK",
+      "word_audio": "res://assets/audio/voice/en/food_word_milk.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_milk.wav",
+      "request": "Give me some milk, please."
+    },
+    {
+      "id": "strawberry",
+      "english": "Strawberry",
+      "ukrainian": "Полуниця",
+      "illustration": "res://assets/objects/food/strawberry.svg",
+      "word_key": "FOOD_WORD_STRAWBERRY",
+      "prompt_key": "FOOD_GIVE_STRAWBERRY",
+      "word_audio": "res://assets/audio/voice/en/food_word_strawberry.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_strawberry.wav",
+      "request": "Give me a strawberry, please."
+    },
+    {
+      "id": "watermelon",
+      "english": "Watermelon",
+      "ukrainian": "Кавун",
+      "illustration": "res://assets/objects/food/watermelon.svg",
+      "word_key": "FOOD_WORD_WATERMELON",
+      "prompt_key": "FOOD_GIVE_WATERMELON",
+      "word_audio": "res://assets/audio/voice/en/food_word_watermelon.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_watermelon.wav",
+      "request": "Give me some watermelon, please."
+    },
+    {
+      "id": "orange",
+      "english": "Orange",
+      "ukrainian": "Апельсин",
+      "illustration": "res://assets/objects/food/orange.svg",
+      "word_key": "FOOD_WORD_ORANGE",
+      "prompt_key": "FOOD_GIVE_ORANGE",
+      "word_audio": "res://assets/audio/voice/en/food_word_orange.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_orange.wav",
+      "request": "Give me an orange, please."
+    },
+    {
+      "id": "pear",
+      "english": "Pear",
+      "ukrainian": "Груша",
+      "illustration": "res://assets/objects/food/pear.svg",
+      "word_key": "FOOD_WORD_PEAR",
+      "prompt_key": "FOOD_GIVE_PEAR",
+      "word_audio": "res://assets/audio/voice/en/food_word_pear.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_pear.wav",
+      "request": "Give me a pear, please."
+    },
+    {
+      "id": "cucumber",
+      "english": "Cucumber",
+      "ukrainian": "Огірок",
+      "illustration": "res://assets/objects/food/cucumber.svg",
+      "word_key": "FOOD_WORD_CUCUMBER",
+      "prompt_key": "FOOD_GIVE_CUCUMBER",
+      "word_audio": "res://assets/audio/voice/en/food_word_cucumber.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_cucumber.wav",
+      "request": "Give me a cucumber, please."
+    },
+    {
+      "id": "tomato",
+      "english": "Tomato",
+      "ukrainian": "Помідор",
+      "illustration": "res://assets/objects/food/tomato.svg",
+      "word_key": "FOOD_WORD_TOMATO",
+      "prompt_key": "FOOD_GIVE_TOMATO",
+      "word_audio": "res://assets/audio/voice/en/food_word_tomato.wav",
+      "prompt_audio": "res://assets/audio/voice/en/food_give_tomato.wav",
+      "request": "Give me a tomato, please."
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "colors": [
+    {
+      "id": "red",
+      "english": "Red",
+      "ukrainian": "Червоний",
+      "illustration": "res://assets/objects/colors/red.svg",
+      "word_key": "COLOR_WORD_RED",
+      "prompt_key": "COLOR_FIND_RED",
+      "word_audio": "res://assets/audio/voice/en/color_word_red.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_red.wav"
+    },
+    {
+      "id": "blue",
+      "english": "Blue",
+      "ukrainian": "Синій",
+      "illustration": "res://assets/objects/colors/blue.svg",
+      "word_key": "COLOR_WORD_BLUE",
+      "prompt_key": "COLOR_FIND_BLUE",
+      "word_audio": "res://assets/audio/voice/en/color_word_blue.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_blue.wav"
+    },
+    {
+      "id": "yellow",
+      "english": "Yellow",
+      "ukrainian": "Жовтий",
+      "illustration": "res://assets/objects/colors/yellow.svg",
+      "word_key": "COLOR_WORD_YELLOW",
+      "prompt_key": "COLOR_FIND_YELLOW",
+      "word_audio": "res://assets/audio/voice/en/color_word_yellow.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_yellow.wav"
+    },
+    {
+      "id": "green",
+      "english": "Green",
+      "ukrainian": "Зелений",
+      "illustration": "res://assets/objects/colors/green.svg",
+      "word_key": "COLOR_WORD_GREEN",
+      "prompt_key": "COLOR_FIND_GREEN",
+      "word_audio": "res://assets/audio/voice/en/color_word_green.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_green.wav"
+    },
+    {
+      "id": "orange",
+      "english": "Orange",
+      "ukrainian": "Помаранчевий",
+      "illustration": "res://assets/objects/colors/orange.svg",
+      "word_key": "COLOR_WORD_ORANGE",
+      "prompt_key": "COLOR_FIND_ORANGE",
+      "word_audio": "res://assets/audio/voice/en/color_word_orange.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_orange.wav"
+    },
+    {
+      "id": "purple",
+      "english": "Purple",
+      "ukrainian": "Фіолетовий",
+      "illustration": "res://assets/objects/colors/purple.svg",
+      "word_key": "COLOR_WORD_PURPLE",
+      "prompt_key": "COLOR_FIND_PURPLE",
+      "word_audio": "res://assets/audio/voice/en/color_word_purple.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_purple.wav"
+    },
+    {
+      "id": "pink",
+      "english": "Pink",
+      "ukrainian": "Рожевий",
+      "illustration": "res://assets/objects/colors/pink.svg",
+      "word_key": "COLOR_WORD_PINK",
+      "prompt_key": "COLOR_FIND_PINK",
+      "word_audio": "res://assets/audio/voice/en/color_word_pink.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_pink.wav"
+    },
+    {
+      "id": "brown",
+      "english": "Brown",
+      "ukrainian": "Коричневий",
+      "illustration": "res://assets/objects/colors/brown.svg",
+      "word_key": "COLOR_WORD_BROWN",
+      "prompt_key": "COLOR_FIND_BROWN",
+      "word_audio": "res://assets/audio/voice/en/color_word_brown.wav",
+      "prompt_audio": "res://assets/audio/voice/en/color_find_brown.wav"
+    }
+  ]
+}

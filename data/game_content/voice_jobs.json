@@ -1,0 +1,3556 @@
+{
+  "en": [
+    {
+      "key": "FOX_HELLO",
+      "text": "Hello!",
+      "file": "assets/audio/voice/en/fox_hello.wav"
+    },
+    {
+      "key": "FOX_HAPPY",
+      "text": "Wonderful!",
+      "file": "assets/audio/voice/en/fox_happy.wav"
+    },
+    {
+      "key": "FOX_REST",
+      "text": "Let's rest.",
+      "file": "assets/audio/voice/en/fox_rest.wav"
+    },
+    {
+      "key": "ANIMALS_TAP_HINT",
+      "text": "Tap an animal",
+      "file": "assets/audio/voice/en/animals_tap_hint.wav"
+    },
+    {
+      "key": "ANIMALS_FIND_INTRO",
+      "text": "Let's find the animals!",
+      "file": "assets/audio/voice/en/animals_find_intro.wav"
+    },
+    {
+      "key": "ANIMALS_CORRECT",
+      "text": "Great job!",
+      "file": "assets/audio/voice/en/animals_correct.wav"
+    },
+    {
+      "key": "ANIMALS_TRY_AGAIN",
+      "text": "Let's try again!",
+      "file": "assets/audio/voice/en/animals_try_again.wav"
+    },
+    {
+      "key": "ANIMALS_COMPLETE",
+      "text": "You did it!",
+      "file": "assets/audio/voice/en/animals_complete.wav"
+    },
+    {
+      "key": "WORD_CAT",
+      "text": "Cat.",
+      "file": "assets/audio/voice/en/word_cat.wav"
+    },
+    {
+      "key": "FIND_CAT",
+      "text": "Find the cat!",
+      "file": "assets/audio/voice/en/find_cat.wav"
+    },
+    {
+      "key": "WORD_DOG",
+      "text": "Dog.",
+      "file": "assets/audio/voice/en/word_dog.wav"
+    },
+    {
+      "key": "FIND_DOG",
+      "text": "Find the dog!",
+      "file": "assets/audio/voice/en/find_dog.wav"
+    },
+    {
+      "key": "WORD_COW",
+      "text": "Cow.",
+      "file": "assets/audio/voice/en/word_cow.wav"
+    },
+    {
+      "key": "FIND_COW",
+      "text": "Find the cow!",
+      "file": "assets/audio/voice/en/find_cow.wav"
+    },
+    {
+      "key": "WORD_PIG",
+      "text": "Pig.",
+      "file": "assets/audio/voice/en/word_pig.wav"
+    },
+    {
+      "key": "FIND_PIG",
+      "text": "Find the pig!",
+      "file": "assets/audio/voice/en/find_pig.wav"
+    },
+    {
+      "key": "WORD_SHEEP",
+      "text": "Sheep.",
+      "file": "assets/audio/voice/en/word_sheep.wav"
+    },
+    {
+      "key": "FIND_SHEEP",
+      "text": "Find the sheep!",
+      "file": "assets/audio/voice/en/find_sheep.wav"
+    },
+    {
+      "key": "WORD_HORSE",
+      "text": "Horse.",
+      "file": "assets/audio/voice/en/word_horse.wav"
+    },
+    {
+      "key": "FIND_HORSE",
+      "text": "Find the horse!",
+      "file": "assets/audio/voice/en/find_horse.wav"
+    },
+    {
+      "key": "WORD_DUCK",
+      "text": "Duck.",
+      "file": "assets/audio/voice/en/word_duck.wav"
+    },
+    {
+      "key": "FIND_DUCK",
+      "text": "Find the duck!",
+      "file": "assets/audio/voice/en/find_duck.wav"
+    },
+    {
+      "key": "WORD_CHICKEN",
+      "text": "Chicken.",
+      "file": "assets/audio/voice/en/word_chicken.wav"
+    },
+    {
+      "key": "FIND_CHICKEN",
+      "text": "Find the chicken!",
+      "file": "assets/audio/voice/en/find_chicken.wav"
+    },
+    {
+      "key": "WORD_RABBIT",
+      "text": "Rabbit.",
+      "file": "assets/audio/voice/en/word_rabbit.wav"
+    },
+    {
+      "key": "FIND_RABBIT",
+      "text": "Find the rabbit!",
+      "file": "assets/audio/voice/en/find_rabbit.wav"
+    },
+    {
+      "key": "WORD_BEAR",
+      "text": "Bear.",
+      "file": "assets/audio/voice/en/word_bear.wav"
+    },
+    {
+      "key": "FIND_BEAR",
+      "text": "Find the bear!",
+      "file": "assets/audio/voice/en/find_bear.wav"
+    },
+    {
+      "key": "WORD_LION",
+      "text": "Lion.",
+      "file": "assets/audio/voice/en/word_lion.wav"
+    },
+    {
+      "key": "FIND_LION",
+      "text": "Find the lion!",
+      "file": "assets/audio/voice/en/find_lion.wav"
+    },
+    {
+      "key": "WORD_ELEPHANT",
+      "text": "Elephant.",
+      "file": "assets/audio/voice/en/word_elephant.wav"
+    },
+    {
+      "key": "FIND_ELEPHANT",
+      "text": "Find the elephant!",
+      "file": "assets/audio/voice/en/find_elephant.wav"
+    },
+    {
+      "key": "COLORS_TAP_HINT",
+      "text": "Tap a ball",
+      "file": "assets/audio/voice/en/colors_tap_hint.wav"
+    },
+    {
+      "key": "COLORS_FIND_INTRO",
+      "text": "Let's find the colors.",
+      "file": "assets/audio/voice/en/colors_find_intro.wav"
+    },
+    {
+      "key": "COLORS_CORRECT",
+      "text": "Great job!",
+      "file": "assets/audio/voice/en/colors_correct.wav"
+    },
+    {
+      "key": "COLORS_TRY_AGAIN",
+      "text": "Let's try again!",
+      "file": "assets/audio/voice/en/colors_try_again.wav"
+    },
+    {
+      "key": "COLORS_COMPLETE",
+      "text": "You did it!",
+      "file": "assets/audio/voice/en/colors_complete.wav"
+    },
+    {
+      "key": "COLOR_WORD_RED",
+      "text": "Red.",
+      "file": "assets/audio/voice/en/color_word_red.wav"
+    },
+    {
+      "key": "COLOR_FIND_RED",
+      "text": "Find something red.",
+      "file": "assets/audio/voice/en/color_find_red.wav"
+    },
+    {
+      "key": "COLOR_WORD_BLUE",
+      "text": "Blue.",
+      "file": "assets/audio/voice/en/color_word_blue.wav"
+    },
+    {
+      "key": "COLOR_FIND_BLUE",
+      "text": "Find something blue.",
+      "file": "assets/audio/voice/en/color_find_blue.wav"
+    },
+    {
+      "key": "COLOR_WORD_YELLOW",
+      "text": "Yellow.",
+      "file": "assets/audio/voice/en/color_word_yellow.wav"
+    },
+    {
+      "key": "COLOR_FIND_YELLOW",
+      "text": "Find something yellow.",
+      "file": "assets/audio/voice/en/color_find_yellow.wav"
+    },
+    {
+      "key": "COLOR_WORD_GREEN",
+      "text": "Green.",
+      "file": "assets/audio/voice/en/color_word_green.wav"
+    },
+    {
+      "key": "COLOR_FIND_GREEN",
+      "text": "Find something green.",
+      "file": "assets/audio/voice/en/color_find_green.wav"
+    },
+    {
+      "key": "COLOR_WORD_ORANGE",
+      "text": "Orange.",
+      "file": "assets/audio/voice/en/color_word_orange.wav"
+    },
+    {
+      "key": "COLOR_FIND_ORANGE",
+      "text": "Find something orange.",
+      "file": "assets/audio/voice/en/color_find_orange.wav"
+    },
+    {
+      "key": "COLOR_WORD_PURPLE",
+      "text": "Purple.",
+      "file": "assets/audio/voice/en/color_word_purple.wav"
+    },
+    {
+      "key": "COLOR_FIND_PURPLE",
+      "text": "Find something purple.",
+      "file": "assets/audio/voice/en/color_find_purple.wav"
+    },
+    {
+      "key": "COLOR_WORD_PINK",
+      "text": "Pink.",
+      "file": "assets/audio/voice/en/color_word_pink.wav"
+    },
+    {
+      "key": "COLOR_FIND_PINK",
+      "text": "Find something pink.",
+      "file": "assets/audio/voice/en/color_find_pink.wav"
+    },
+    {
+      "key": "COLOR_WORD_BROWN",
+      "text": "Brown.",
+      "file": "assets/audio/voice/en/color_word_brown.wav"
+    },
+    {
+      "key": "COLOR_FIND_BROWN",
+      "text": "Find something brown.",
+      "file": "assets/audio/voice/en/color_find_brown.wav"
+    },
+    {
+      "key": "FEED_HINT",
+      "text": "Drag the food to Foxie",
+      "file": "assets/audio/voice/en/feed_hint.wav"
+    },
+    {
+      "key": "FEED_CORRECT",
+      "text": "Yum! Thank you.",
+      "file": "assets/audio/voice/en/feed_correct.wav"
+    },
+    {
+      "key": "FEED_TRY_AGAIN",
+      "text": "Let's try another one.",
+      "file": "assets/audio/voice/en/feed_try_again.wav"
+    },
+    {
+      "key": "FEED_COMPLETE",
+      "text": "What a lovely picnic!",
+      "file": "assets/audio/voice/en/feed_complete.wav"
+    },
+    {
+      "key": "FOOD_WORD_APPLE",
+      "text": "Apple.",
+      "file": "assets/audio/voice/en/food_word_apple.wav"
+    },
+    {
+      "key": "FOOD_GIVE_APPLE",
+      "text": "Give me an apple, please.",
+      "file": "assets/audio/voice/en/food_give_apple.wav"
+    },
+    {
+      "key": "FOOD_WORD_BANANA",
+      "text": "Banana.",
+      "file": "assets/audio/voice/en/food_word_banana.wav"
+    },
+    {
+      "key": "FOOD_GIVE_BANANA",
+      "text": "Give me a banana, please.",
+      "file": "assets/audio/voice/en/food_give_banana.wav"
+    },
+    {
+      "key": "FOOD_WORD_CARROT",
+      "text": "Carrot.",
+      "file": "assets/audio/voice/en/food_word_carrot.wav"
+    },
+    {
+      "key": "FOOD_GIVE_CARROT",
+      "text": "Give me a carrot, please.",
+      "file": "assets/audio/voice/en/food_give_carrot.wav"
+    },
+    {
+      "key": "FOOD_WORD_BREAD",
+      "text": "Bread.",
+      "file": "assets/audio/voice/en/food_word_bread.wav"
+    },
+    {
+      "key": "FOOD_GIVE_BREAD",
+      "text": "Give me some bread, please.",
+      "file": "assets/audio/voice/en/food_give_bread.wav"
+    },
+    {
+      "key": "FOOD_WORD_CHEESE",
+      "text": "Cheese.",
+      "file": "assets/audio/voice/en/food_word_cheese.wav"
+    },
+    {
+      "key": "FOOD_GIVE_CHEESE",
+      "text": "Give me some cheese, please.",
+      "file": "assets/audio/voice/en/food_give_cheese.wav"
+    },
+    {
+      "key": "FOOD_WORD_MILK",
+      "text": "Milk.",
+      "file": "assets/audio/voice/en/food_word_milk.wav"
+    },
+    {
+      "key": "FOOD_GIVE_MILK",
+      "text": "Give me some milk, please.",
+      "file": "assets/audio/voice/en/food_give_milk.wav"
+    },
+    {
+      "key": "FOOD_WORD_STRAWBERRY",
+      "text": "Strawberry.",
+      "file": "assets/audio/voice/en/food_word_strawberry.wav"
+    },
+    {
+      "key": "FOOD_GIVE_STRAWBERRY",
+      "text": "Give me a strawberry, please.",
+      "file": "assets/audio/voice/en/food_give_strawberry.wav"
+    },
+    {
+      "key": "FOOD_WORD_WATERMELON",
+      "text": "Watermelon.",
+      "file": "assets/audio/voice/en/food_word_watermelon.wav"
+    },
+    {
+      "key": "FOOD_GIVE_WATERMELON",
+      "text": "Give me some watermelon, please.",
+      "file": "assets/audio/voice/en/food_give_watermelon.wav"
+    },
+    {
+      "key": "FOOD_WORD_ORANGE",
+      "text": "Orange.",
+      "file": "assets/audio/voice/en/food_word_orange.wav"
+    },
+    {
+      "key": "FOOD_GIVE_ORANGE",
+      "text": "Give me an orange, please.",
+      "file": "assets/audio/voice/en/food_give_orange.wav"
+    },
+    {
+      "key": "FOOD_WORD_PEAR",
+      "text": "Pear.",
+      "file": "assets/audio/voice/en/food_word_pear.wav"
+    },
+    {
+      "key": "FOOD_GIVE_PEAR",
+      "text": "Give me a pear, please.",
+      "file": "assets/audio/voice/en/food_give_pear.wav"
+    },
+    {
+      "key": "FOOD_WORD_CUCUMBER",
+      "text": "Cucumber.",
+      "file": "assets/audio/voice/en/food_word_cucumber.wav"
+    },
+    {
+      "key": "FOOD_GIVE_CUCUMBER",
+      "text": "Give me a cucumber, please.",
+      "file": "assets/audio/voice/en/food_give_cucumber.wav"
+    },
+    {
+      "key": "FOOD_WORD_TOMATO",
+      "text": "Tomato.",
+      "file": "assets/audio/voice/en/food_word_tomato.wav"
+    },
+    {
+      "key": "FOOD_GIVE_TOMATO",
+      "text": "Give me a tomato, please.",
+      "file": "assets/audio/voice/en/food_give_tomato.wav"
+    },
+    {
+      "key": "SHAPES_INTRO",
+      "text": "Let's match the shapes.",
+      "file": "assets/audio/voice/en/shapes_intro.wav"
+    },
+    {
+      "key": "SHAPES_CORRECT",
+      "text": "A lovely match!",
+      "file": "assets/audio/voice/en/shapes_correct.wav"
+    },
+    {
+      "key": "SHAPES_RETRY",
+      "text": "Let's try another outline.",
+      "file": "assets/audio/voice/en/shapes_retry.wav"
+    },
+    {
+      "key": "SHAPES_BOARD_DONE",
+      "text": "This garden is ready!",
+      "file": "assets/audio/voice/en/shapes_board_done.wav"
+    },
+    {
+      "key": "SHAPES_COMPLETE",
+      "text": "You matched all the shapes!",
+      "file": "assets/audio/voice/en/shapes_complete.wav"
+    },
+    {
+      "key": "SHAPE_WORD_CIRCLE",
+      "text": "Circle.",
+      "file": "assets/audio/voice/en/shape_word_circle.wav"
+    },
+    {
+      "key": "SHAPE_FIND_CIRCLE",
+      "text": "Find the circle.",
+      "file": "assets/audio/voice/en/shape_find_circle.wav"
+    },
+    {
+      "key": "SHAPE_WORD_SQUARE",
+      "text": "Square.",
+      "file": "assets/audio/voice/en/shape_word_square.wav"
+    },
+    {
+      "key": "SHAPE_FIND_SQUARE",
+      "text": "Find the square.",
+      "file": "assets/audio/voice/en/shape_find_square.wav"
+    },
+    {
+      "key": "SHAPE_WORD_TRIANGLE",
+      "text": "Triangle.",
+      "file": "assets/audio/voice/en/shape_word_triangle.wav"
+    },
+    {
+      "key": "SHAPE_FIND_TRIANGLE",
+      "text": "Find the triangle.",
+      "file": "assets/audio/voice/en/shape_find_triangle.wav"
+    },
+    {
+      "key": "SHAPE_WORD_RECTANGLE",
+      "text": "Rectangle.",
+      "file": "assets/audio/voice/en/shape_word_rectangle.wav"
+    },
+    {
+      "key": "SHAPE_FIND_RECTANGLE",
+      "text": "Find the rectangle.",
+      "file": "assets/audio/voice/en/shape_find_rectangle.wav"
+    },
+    {
+      "key": "SHAPE_WORD_STAR",
+      "text": "Star.",
+      "file": "assets/audio/voice/en/shape_word_star.wav"
+    },
+    {
+      "key": "SHAPE_FIND_STAR",
+      "text": "Find the star.",
+      "file": "assets/audio/voice/en/shape_find_star.wav"
+    },
+    {
+      "key": "SHAPE_WORD_HEART",
+      "text": "Heart.",
+      "file": "assets/audio/voice/en/shape_word_heart.wav"
+    },
+    {
+      "key": "SHAPE_FIND_HEART",
+      "text": "Find the heart.",
+      "file": "assets/audio/voice/en/shape_find_heart.wav"
+    },
+    {
+      "key": "PUZZLES_INTRO",
+      "text": "Let's put the picture together.",
+      "file": "assets/audio/voice/en/puzzles_intro.wav"
+    },
+    {
+      "key": "PUZZLES_CORRECT",
+      "text": "That piece fits!",
+      "file": "assets/audio/voice/en/puzzles_correct.wav"
+    },
+    {
+      "key": "PUZZLES_RETRY",
+      "text": "Let's try another place.",
+      "file": "assets/audio/voice/en/puzzles_retry.wav"
+    },
+    {
+      "key": "PUZZLES_PICTURE_DONE",
+      "text": "A lovely picture!",
+      "file": "assets/audio/voice/en/puzzles_picture_done.wav"
+    },
+    {
+      "key": "PUZZLES_COMPLETE",
+      "text": "You made three lovely pictures!",
+      "file": "assets/audio/voice/en/puzzles_complete.wav"
+    },
+    {
+      "key": "MEMORY_INTRO",
+      "text": "Turn over two cards.",
+      "file": "assets/audio/voice/en/memory_intro.wav"
+    },
+    {
+      "key": "MEMORY_MATCH",
+      "text": "A lovely pair!",
+      "file": "assets/audio/voice/en/memory_match.wav"
+    },
+    {
+      "key": "MEMORY_RETRY",
+      "text": "Let's look again.",
+      "file": "assets/audio/voice/en/memory_retry.wav"
+    },
+    {
+      "key": "MEMORY_COMPLETE",
+      "text": "You found all the pairs!",
+      "file": "assets/audio/voice/en/memory_complete.wav"
+    },
+    {
+      "key": "COUNT_CORRECT",
+      "text": "You counted it!",
+      "file": "assets/audio/voice/en/count_correct.wav"
+    },
+    {
+      "key": "COUNT_RETRY",
+      "text": "Let's count again.",
+      "file": "assets/audio/voice/en/count_retry.wav"
+    },
+    {
+      "key": "COUNT_COMPLETE",
+      "text": "What lovely counting!",
+      "file": "assets/audio/voice/en/count_complete.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_1",
+      "text": "One.",
+      "file": "assets/audio/voice/en/count_number_1.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_2",
+      "text": "Two.",
+      "file": "assets/audio/voice/en/count_number_2.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_3",
+      "text": "Three.",
+      "file": "assets/audio/voice/en/count_number_3.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_4",
+      "text": "Four.",
+      "file": "assets/audio/voice/en/count_number_4.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_5",
+      "text": "Five.",
+      "file": "assets/audio/voice/en/count_number_5.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_6",
+      "text": "Six.",
+      "file": "assets/audio/voice/en/count_number_6.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_7",
+      "text": "Seven.",
+      "file": "assets/audio/voice/en/count_number_7.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_8",
+      "text": "Eight.",
+      "file": "assets/audio/voice/en/count_number_8.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_9",
+      "text": "Nine.",
+      "file": "assets/audio/voice/en/count_number_9.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_10",
+      "text": "Ten.",
+      "file": "assets/audio/voice/en/count_number_10.wav"
+    },
+    {
+      "key": "COUNT_HOW_APPLES",
+      "text": "How many apples?",
+      "file": "assets/audio/voice/en/count_how_apples.wav"
+    },
+    {
+      "key": "COUNT_HOW_CARROTS",
+      "text": "How many carrots?",
+      "file": "assets/audio/voice/en/count_how_carrots.wav"
+    },
+    {
+      "key": "COUNT_HOW_STRAWBERRIES",
+      "text": "How many strawberries?",
+      "file": "assets/audio/voice/en/count_how_strawberries.wav"
+    },
+    {
+      "key": "COUNT_HOW_STARS",
+      "text": "How many stars?",
+      "file": "assets/audio/voice/en/count_how_stars.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_1",
+      "text": "Put one apple in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_2",
+      "text": "Put two apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_3",
+      "text": "Put three apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_4",
+      "text": "Put four apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_5",
+      "text": "Put five apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_6",
+      "text": "Put six apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_7",
+      "text": "Put seven apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_8",
+      "text": "Put eight apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_9",
+      "text": "Put nine apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_10",
+      "text": "Put ten apples in the basket.",
+      "file": "assets/audio/voice/en/count_put_apples_10.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_1",
+      "text": "Put one carrot in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_2",
+      "text": "Put two carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_3",
+      "text": "Put three carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_4",
+      "text": "Put four carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_5",
+      "text": "Put five carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_6",
+      "text": "Put six carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_7",
+      "text": "Put seven carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_8",
+      "text": "Put eight carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_9",
+      "text": "Put nine carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_10",
+      "text": "Put ten carrots in the basket.",
+      "file": "assets/audio/voice/en/count_put_carrots_10.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_1",
+      "text": "Put one strawberry in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_2",
+      "text": "Put two strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_3",
+      "text": "Put three strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_4",
+      "text": "Put four strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_5",
+      "text": "Put five strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_6",
+      "text": "Put six strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_7",
+      "text": "Put seven strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_8",
+      "text": "Put eight strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_9",
+      "text": "Put nine strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_10",
+      "text": "Put ten strawberries in the basket.",
+      "file": "assets/audio/voice/en/count_put_strawberries_10.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_1",
+      "text": "Put one star in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_2",
+      "text": "Put two stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_3",
+      "text": "Put three stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_4",
+      "text": "Put four stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_5",
+      "text": "Put five stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_6",
+      "text": "Put six stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_7",
+      "text": "Put seven stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_8",
+      "text": "Put eight stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_9",
+      "text": "Put nine stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_10",
+      "text": "Put ten stars in the basket.",
+      "file": "assets/audio/voice/en/count_put_stars_10.wav"
+    },
+    {
+      "key": "DRAW_INTRO",
+      "text": "Let's make a little picture.",
+      "file": "assets/audio/voice/en/draw_intro.wav"
+    },
+    {
+      "key": "DRAW_SAVED",
+      "text": "Your picture is saved!",
+      "file": "assets/audio/voice/en/draw_saved.wav"
+    },
+    {
+      "key": "BOOK_INTRO",
+      "text": "Choose a color and tap a shape.",
+      "file": "assets/audio/voice/en/book_intro.wav"
+    },
+    {
+      "key": "BOOK_SAVED",
+      "text": "Your coloring is saved!",
+      "file": "assets/audio/voice/en/book_saved.wav"
+    },
+    {
+      "key": "BOOK_WORD_CAT",
+      "text": "Cat.",
+      "file": "assets/audio/voice/en/book_word_cat.wav"
+    },
+    {
+      "key": "BOOK_WORD_DOG",
+      "text": "Dog.",
+      "file": "assets/audio/voice/en/book_word_dog.wav"
+    },
+    {
+      "key": "BOOK_WORD_FOX",
+      "text": "Fox.",
+      "file": "assets/audio/voice/en/book_word_fox.wav"
+    },
+    {
+      "key": "BOOK_WORD_BUTTERFLY",
+      "text": "Butterfly.",
+      "file": "assets/audio/voice/en/book_word_butterfly.wav"
+    },
+    {
+      "key": "BOOK_WORD_FISH",
+      "text": "Fish.",
+      "file": "assets/audio/voice/en/book_word_fish.wav"
+    },
+    {
+      "key": "BOOK_WORD_HOUSE",
+      "text": "House.",
+      "file": "assets/audio/voice/en/book_word_house.wav"
+    },
+    {
+      "key": "BOOK_WORD_FLOWER",
+      "text": "Flower.",
+      "file": "assets/audio/voice/en/book_word_flower.wav"
+    },
+    {
+      "key": "BOOK_WORD_CAR",
+      "text": "Car.",
+      "file": "assets/audio/voice/en/book_word_car.wav"
+    },
+    {
+      "key": "BOOK_WORD_DINOSAUR",
+      "text": "Dinosaur.",
+      "file": "assets/audio/voice/en/book_word_dinosaur.wav"
+    },
+    {
+      "key": "BOOK_WORD_RAINBOW",
+      "text": "Rainbow.",
+      "file": "assets/audio/voice/en/book_word_rainbow.wav"
+    },
+    {
+      "key": "PARTY_INTRO",
+      "text": "Well done! All finished! Pop every balloon!",
+      "file": "assets/audio/voice/en/party_intro.wav"
+    },
+    {
+      "key": "BLEND_EN_00",
+      "text": "at.",
+      "file": "assets/audio/voice/en/blend_en_00.wav"
+    },
+    {
+      "key": "BLEND_EN_01",
+      "text": "an.",
+      "file": "assets/audio/voice/en/blend_en_01.wav"
+    },
+    {
+      "key": "BLEND_EN_02",
+      "text": "in.",
+      "file": "assets/audio/voice/en/blend_en_02.wav"
+    },
+    {
+      "key": "BLEND_EN_03",
+      "text": "it.",
+      "file": "assets/audio/voice/en/blend_en_03.wav"
+    },
+    {
+      "key": "BLEND_EN_04",
+      "text": "on.",
+      "file": "assets/audio/voice/en/blend_en_04.wav"
+    },
+    {
+      "key": "BLEND_EN_05",
+      "text": "up.",
+      "file": "assets/audio/voice/en/blend_en_05.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_TREE_WORD",
+      "text": "Tree.",
+      "file": "assets/audio/voice/en/world_plants_tree_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_TREE_FIND",
+      "text": "Find the tree.",
+      "file": "assets/audio/voice/en/world_plants_tree_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_FLOWER_WORD",
+      "text": "Flower.",
+      "file": "assets/audio/voice/en/world_plants_flower_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_FLOWER_FIND",
+      "text": "Find the flower.",
+      "file": "assets/audio/voice/en/world_plants_flower_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_GRASS_WORD",
+      "text": "Grass.",
+      "file": "assets/audio/voice/en/world_plants_grass_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_GRASS_FIND",
+      "text": "Find the grass.",
+      "file": "assets/audio/voice/en/world_plants_grass_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_LEAF_WORD",
+      "text": "Leaf.",
+      "file": "assets/audio/voice/en/world_plants_leaf_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_LEAF_FIND",
+      "text": "Find the leaf.",
+      "file": "assets/audio/voice/en/world_plants_leaf_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_SEED_WORD",
+      "text": "Seed.",
+      "file": "assets/audio/voice/en/world_plants_seed_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_SEED_FIND",
+      "text": "Find the seed.",
+      "file": "assets/audio/voice/en/world_plants_seed_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_ROOT_WORD",
+      "text": "Root.",
+      "file": "assets/audio/voice/en/world_plants_root_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_ROOT_FIND",
+      "text": "Find the root.",
+      "file": "assets/audio/voice/en/world_plants_root_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_BUSH_WORD",
+      "text": "Bush.",
+      "file": "assets/audio/voice/en/world_plants_bush_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_BUSH_FIND",
+      "text": "Find the bush.",
+      "file": "assets/audio/voice/en/world_plants_bush_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_PINE_WORD",
+      "text": "Pine.",
+      "file": "assets/audio/voice/en/world_plants_pine_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_PINE_FIND",
+      "text": "Find the pine.",
+      "file": "assets/audio/voice/en/world_plants_pine_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYEBROW_WORD",
+      "text": "Eyebrow.",
+      "file": "assets/audio/voice/en/world_body_eyebrow_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYEBROW_FIND",
+      "text": "Show me the eyebrow.",
+      "file": "assets/audio/voice/en/world_body_eyebrow_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYE_WORD",
+      "text": "Eye.",
+      "file": "assets/audio/voice/en/world_body_eye_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYE_FIND",
+      "text": "Show me the eye.",
+      "file": "assets/audio/voice/en/world_body_eye_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_NOSE_WORD",
+      "text": "Nose.",
+      "file": "assets/audio/voice/en/world_body_nose_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_NOSE_FIND",
+      "text": "Show me the nose.",
+      "file": "assets/audio/voice/en/world_body_nose_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_MOUTH_WORD",
+      "text": "Mouth.",
+      "file": "assets/audio/voice/en/world_body_mouth_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_MOUTH_FIND",
+      "text": "Show me the mouth.",
+      "file": "assets/audio/voice/en/world_body_mouth_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_EAR_WORD",
+      "text": "Ear.",
+      "file": "assets/audio/voice/en/world_body_ear_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_EAR_FIND",
+      "text": "Show me the ear.",
+      "file": "assets/audio/voice/en/world_body_ear_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHEEK_WORD",
+      "text": "Cheek.",
+      "file": "assets/audio/voice/en/world_body_cheek_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHEEK_FIND",
+      "text": "Show me the cheek.",
+      "file": "assets/audio/voice/en/world_body_cheek_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHIN_WORD",
+      "text": "Chin.",
+      "file": "assets/audio/voice/en/world_body_chin_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHIN_FIND",
+      "text": "Show me the chin.",
+      "file": "assets/audio/voice/en/world_body_chin_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAIR_WORD",
+      "text": "Hair.",
+      "file": "assets/audio/voice/en/world_body_hair_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAIR_FIND",
+      "text": "Show me the hair.",
+      "file": "assets/audio/voice/en/world_body_hair_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_HEAD_WORD",
+      "text": "Head.",
+      "file": "assets/audio/voice/en/world_body_head_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_HEAD_FIND",
+      "text": "Show me the head.",
+      "file": "assets/audio/voice/en/world_body_head_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_FINGER_WORD",
+      "text": "Finger.",
+      "file": "assets/audio/voice/en/world_body_finger_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_FINGER_FIND",
+      "text": "Show me the finger.",
+      "file": "assets/audio/voice/en/world_body_finger_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAND_WORD",
+      "text": "Hand.",
+      "file": "assets/audio/voice/en/world_body_hand_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAND_FIND",
+      "text": "Show me the hand.",
+      "file": "assets/audio/voice/en/world_body_hand_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_ELBOW_WORD",
+      "text": "Elbow.",
+      "file": "assets/audio/voice/en/world_body_elbow_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_ELBOW_FIND",
+      "text": "Show me the elbow.",
+      "file": "assets/audio/voice/en/world_body_elbow_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_ARM_WORD",
+      "text": "Arm.",
+      "file": "assets/audio/voice/en/world_body_arm_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_ARM_FIND",
+      "text": "Show me the arm.",
+      "file": "assets/audio/voice/en/world_body_arm_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_SHOULDER_WORD",
+      "text": "Shoulder.",
+      "file": "assets/audio/voice/en/world_body_shoulder_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_SHOULDER_FIND",
+      "text": "Show me the shoulder.",
+      "file": "assets/audio/voice/en/world_body_shoulder_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_NECK_WORD",
+      "text": "Neck.",
+      "file": "assets/audio/voice/en/world_body_neck_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_NECK_FIND",
+      "text": "Show me the neck.",
+      "file": "assets/audio/voice/en/world_body_neck_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_BELLY_WORD",
+      "text": "Belly.",
+      "file": "assets/audio/voice/en/world_body_belly_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_BELLY_FIND",
+      "text": "Show me the belly.",
+      "file": "assets/audio/voice/en/world_body_belly_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_TORSO_WORD",
+      "text": "Torso.",
+      "file": "assets/audio/voice/en/world_body_torso_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_TORSO_FIND",
+      "text": "Show me the torso.",
+      "file": "assets/audio/voice/en/world_body_torso_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_KNEE_WORD",
+      "text": "Knee.",
+      "file": "assets/audio/voice/en/world_body_knee_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_KNEE_FIND",
+      "text": "Show me the knee.",
+      "file": "assets/audio/voice/en/world_body_knee_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_LEG_WORD",
+      "text": "Leg.",
+      "file": "assets/audio/voice/en/world_body_leg_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_LEG_FIND",
+      "text": "Show me the leg.",
+      "file": "assets/audio/voice/en/world_body_leg_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_FOOT_WORD",
+      "text": "Foot.",
+      "file": "assets/audio/voice/en/world_body_foot_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_FOOT_FIND",
+      "text": "Show me the foot.",
+      "file": "assets/audio/voice/en/world_body_foot_find.wav"
+    },
+    {
+      "key": "ALPH_EN_00",
+      "text": "A.",
+      "file": "assets/audio/voice/en/alph_en_00.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_00",
+      "text": "Apple.",
+      "file": "assets/audio/voice/en/alph_word_en_00.wav"
+    },
+    {
+      "key": "ALPH_EN_01",
+      "text": "B.",
+      "file": "assets/audio/voice/en/alph_en_01.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_01",
+      "text": "Bear.",
+      "file": "assets/audio/voice/en/alph_word_en_01.wav"
+    },
+    {
+      "key": "ALPH_EN_02",
+      "text": "C.",
+      "file": "assets/audio/voice/en/alph_en_02.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_02",
+      "text": "Cat.",
+      "file": "assets/audio/voice/en/alph_word_en_02.wav"
+    },
+    {
+      "key": "ALPH_EN_03",
+      "text": "D.",
+      "file": "assets/audio/voice/en/alph_en_03.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_03",
+      "text": "Dog.",
+      "file": "assets/audio/voice/en/alph_word_en_03.wav"
+    },
+    {
+      "key": "ALPH_EN_04",
+      "text": "E.",
+      "file": "assets/audio/voice/en/alph_en_04.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_04",
+      "text": "Elephant.",
+      "file": "assets/audio/voice/en/alph_word_en_04.wav"
+    },
+    {
+      "key": "ALPH_EN_05",
+      "text": "F.",
+      "file": "assets/audio/voice/en/alph_en_05.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_05",
+      "text": "Flower.",
+      "file": "assets/audio/voice/en/alph_word_en_05.wav"
+    },
+    {
+      "key": "ALPH_EN_06",
+      "text": "G.",
+      "file": "assets/audio/voice/en/alph_en_06.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_06",
+      "text": "Goat.",
+      "file": "assets/audio/voice/en/alph_word_en_06.wav"
+    },
+    {
+      "key": "ALPH_EN_07",
+      "text": "H.",
+      "file": "assets/audio/voice/en/alph_en_07.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_07",
+      "text": "House.",
+      "file": "assets/audio/voice/en/alph_word_en_07.wav"
+    },
+    {
+      "key": "ALPH_EN_08",
+      "text": "I.",
+      "file": "assets/audio/voice/en/alph_en_08.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_08",
+      "text": "Ice cream.",
+      "file": "assets/audio/voice/en/alph_word_en_08.wav"
+    },
+    {
+      "key": "ALPH_EN_09",
+      "text": "J.",
+      "file": "assets/audio/voice/en/alph_en_09.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_09",
+      "text": "Jelly.",
+      "file": "assets/audio/voice/en/alph_word_en_09.wav"
+    },
+    {
+      "key": "ALPH_EN_10",
+      "text": "K.",
+      "file": "assets/audio/voice/en/alph_en_10.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_10",
+      "text": "Kite.",
+      "file": "assets/audio/voice/en/alph_word_en_10.wav"
+    },
+    {
+      "key": "ALPH_EN_11",
+      "text": "L.",
+      "file": "assets/audio/voice/en/alph_en_11.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_11",
+      "text": "Lion.",
+      "file": "assets/audio/voice/en/alph_word_en_11.wav"
+    },
+    {
+      "key": "ALPH_EN_12",
+      "text": "M.",
+      "file": "assets/audio/voice/en/alph_en_12.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_12",
+      "text": "Moon.",
+      "file": "assets/audio/voice/en/alph_word_en_12.wav"
+    },
+    {
+      "key": "ALPH_EN_13",
+      "text": "N.",
+      "file": "assets/audio/voice/en/alph_en_13.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_13",
+      "text": "Nest.",
+      "file": "assets/audio/voice/en/alph_word_en_13.wav"
+    },
+    {
+      "key": "ALPH_EN_14",
+      "text": "O.",
+      "file": "assets/audio/voice/en/alph_en_14.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_14",
+      "text": "Orange.",
+      "file": "assets/audio/voice/en/alph_word_en_14.wav"
+    },
+    {
+      "key": "ALPH_EN_15",
+      "text": "P.",
+      "file": "assets/audio/voice/en/alph_en_15.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_15",
+      "text": "Pig.",
+      "file": "assets/audio/voice/en/alph_word_en_15.wav"
+    },
+    {
+      "key": "ALPH_EN_16",
+      "text": "Q.",
+      "file": "assets/audio/voice/en/alph_en_16.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_16",
+      "text": "Queen.",
+      "file": "assets/audio/voice/en/alph_word_en_16.wav"
+    },
+    {
+      "key": "ALPH_EN_17",
+      "text": "R.",
+      "file": "assets/audio/voice/en/alph_en_17.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_17",
+      "text": "Rabbit.",
+      "file": "assets/audio/voice/en/alph_word_en_17.wav"
+    },
+    {
+      "key": "ALPH_EN_18",
+      "text": "S.",
+      "file": "assets/audio/voice/en/alph_en_18.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_18",
+      "text": "Sun.",
+      "file": "assets/audio/voice/en/alph_word_en_18.wav"
+    },
+    {
+      "key": "ALPH_EN_19",
+      "text": "T.",
+      "file": "assets/audio/voice/en/alph_en_19.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_19",
+      "text": "Tree.",
+      "file": "assets/audio/voice/en/alph_word_en_19.wav"
+    },
+    {
+      "key": "ALPH_EN_20",
+      "text": "U.",
+      "file": "assets/audio/voice/en/alph_en_20.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_20",
+      "text": "Umbrella.",
+      "file": "assets/audio/voice/en/alph_word_en_20.wav"
+    },
+    {
+      "key": "ALPH_EN_21",
+      "text": "V.",
+      "file": "assets/audio/voice/en/alph_en_21.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_21",
+      "text": "Violin.",
+      "file": "assets/audio/voice/en/alph_word_en_21.wav"
+    },
+    {
+      "key": "ALPH_EN_22",
+      "text": "W.",
+      "file": "assets/audio/voice/en/alph_en_22.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_22",
+      "text": "Whale.",
+      "file": "assets/audio/voice/en/alph_word_en_22.wav"
+    },
+    {
+      "key": "ALPH_EN_23",
+      "text": "X.",
+      "file": "assets/audio/voice/en/alph_en_23.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_23",
+      "text": "Xylophone.",
+      "file": "assets/audio/voice/en/alph_word_en_23.wav"
+    },
+    {
+      "key": "ALPH_EN_24",
+      "text": "Y.",
+      "file": "assets/audio/voice/en/alph_en_24.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_24",
+      "text": "Yo-yo.",
+      "file": "assets/audio/voice/en/alph_word_en_24.wav"
+    },
+    {
+      "key": "ALPH_EN_25",
+      "text": "Z.",
+      "file": "assets/audio/voice/en/alph_en_25.wav"
+    },
+    {
+      "key": "ALPH_WORD_EN_25",
+      "text": "Zebra.",
+      "file": "assets/audio/voice/en/alph_word_en_25.wav"
+    },
+    {
+      "key": "LIVE_TAP",
+      "text": "Tap the glowing dot.",
+      "file": "assets/audio/voice/en/live_tap.wav"
+    },
+    {
+      "key": "LIVE_TRACE",
+      "text": "Follow the dots with your finger.",
+      "file": "assets/audio/voice/en/live_trace.wav"
+    },
+    {
+      "key": "LIVE_DONE",
+      "text": "Your yard is coming alive. Draw and play!",
+      "file": "assets/audio/voice/en/live_done.wav"
+    },
+    {
+      "key": "LIVE_EXPLORE",
+      "text": "Choose a dot to draw. Tap finished pictures to play.",
+      "file": "assets/audio/voice/en/live_explore.wav"
+    },
+    {
+      "key": "LIVE_WALLS",
+      "text": "Draw the walls. Follow the dots with your finger.",
+      "file": "assets/audio/voice/en/live_walls.wav"
+    },
+    {
+      "key": "LIVE_ROOF",
+      "text": "Draw the roof.",
+      "file": "assets/audio/voice/en/live_roof.wav"
+    },
+    {
+      "key": "LIVE_DOOR",
+      "text": "Draw the door.",
+      "file": "assets/audio/voice/en/live_door.wav"
+    },
+    {
+      "key": "LIVE_LEFT_WINDOW",
+      "text": "Draw this window.",
+      "file": "assets/audio/voice/en/live_left_window.wav"
+    },
+    {
+      "key": "LIVE_RIGHT_WINDOW",
+      "text": "Draw the other window.",
+      "file": "assets/audio/voice/en/live_right_window.wav"
+    },
+    {
+      "key": "LIVE_CHIMNEY",
+      "text": "Draw the chimney.",
+      "file": "assets/audio/voice/en/live_chimney.wav"
+    },
+    {
+      "key": "LIVE_SUN",
+      "text": "Draw the sun. Tap it to change day and night.",
+      "file": "assets/audio/voice/en/live_sun.wav"
+    },
+    {
+      "key": "LIVE_CLOUD",
+      "text": "Draw a cloud. Tap it to make rain.",
+      "file": "assets/audio/voice/en/live_cloud.wav"
+    },
+    {
+      "key": "LIVE_DOG",
+      "text": "Draw a puppy. Tap to hear it bark and watch it run.",
+      "file": "assets/audio/voice/en/live_dog.wav"
+    },
+    {
+      "key": "LIVE_FLOWERS",
+      "text": "Draw a flower. Tap it to invite butterflies.",
+      "file": "assets/audio/voice/en/live_flowers.wav"
+    },
+    {
+      "key": "SEASON_PLAY",
+      "text": "Your world is alive. Tap the pictures and explore!",
+      "file": "assets/audio/voice/en/season_play.wav"
+    },
+    {
+      "key": "SEASON_TREE",
+      "text": "Draw the tree.",
+      "file": "assets/audio/voice/en/season_tree.wav"
+    },
+    {
+      "key": "SEASON_SUN",
+      "text": "Draw the sun.",
+      "file": "assets/audio/voice/en/season_sun.wav"
+    },
+    {
+      "key": "SEASON_CLOUD",
+      "text": "Draw the cloud.",
+      "file": "assets/audio/voice/en/season_cloud.wav"
+    },
+    {
+      "key": "SEASON_NEST",
+      "text": "Draw the nest.",
+      "file": "assets/audio/voice/en/season_nest.wav"
+    },
+    {
+      "key": "SEASON_BIRD",
+      "text": "Draw the bird.",
+      "file": "assets/audio/voice/en/season_bird.wav"
+    },
+    {
+      "key": "SEASON_FLOWERS",
+      "text": "Draw the flowers.",
+      "file": "assets/audio/voice/en/season_flowers.wav"
+    },
+    {
+      "key": "SEASON_BUTTERFLY",
+      "text": "Draw the butterfly.",
+      "file": "assets/audio/voice/en/season_butterfly.wav"
+    },
+    {
+      "key": "SEASON_BEE",
+      "text": "Draw the bee.",
+      "file": "assets/audio/voice/en/season_bee.wav"
+    },
+    {
+      "key": "SEASON_FROG",
+      "text": "Draw the frog.",
+      "file": "assets/audio/voice/en/season_frog.wav"
+    },
+    {
+      "key": "SEASON_POND",
+      "text": "Draw the pond.",
+      "file": "assets/audio/voice/en/season_pond.wav"
+    },
+    {
+      "key": "SEASON_RAINBOW",
+      "text": "Draw the rainbow.",
+      "file": "assets/audio/voice/en/season_rainbow.wav"
+    },
+    {
+      "key": "SEASON_BUNNY",
+      "text": "Draw the bunny.",
+      "file": "assets/audio/voice/en/season_bunny.wav"
+    },
+    {
+      "key": "SEASON_LEAVES",
+      "text": "Draw the leaves.",
+      "file": "assets/audio/voice/en/season_leaves.wav"
+    },
+    {
+      "key": "SEASON_HEDGEHOG",
+      "text": "Draw the hedgehog.",
+      "file": "assets/audio/voice/en/season_hedgehog.wav"
+    },
+    {
+      "key": "SEASON_MUSHROOMS",
+      "text": "Draw the mushrooms.",
+      "file": "assets/audio/voice/en/season_mushrooms.wav"
+    },
+    {
+      "key": "SEASON_PUMPKIN",
+      "text": "Draw the pumpkin.",
+      "file": "assets/audio/voice/en/season_pumpkin.wav"
+    },
+    {
+      "key": "SEASON_BASKET",
+      "text": "Draw the basket of apples.",
+      "file": "assets/audio/voice/en/season_basket.wav"
+    },
+    {
+      "key": "SEASON_KITE",
+      "text": "Draw the kite.",
+      "file": "assets/audio/voice/en/season_kite.wav"
+    },
+    {
+      "key": "SEASON_BOOTS",
+      "text": "Draw the boots.",
+      "file": "assets/audio/voice/en/season_boots.wav"
+    },
+    {
+      "key": "SEASON_PUDDLE",
+      "text": "Draw the puddle.",
+      "file": "assets/audio/voice/en/season_puddle.wav"
+    },
+    {
+      "key": "SEASON_SQUIRREL",
+      "text": "Draw the squirrel.",
+      "file": "assets/audio/voice/en/season_squirrel.wav"
+    },
+    {
+      "key": "SEASON_COTTAGE",
+      "text": "Draw the cottage.",
+      "file": "assets/audio/voice/en/season_cottage.wav"
+    },
+    {
+      "key": "SEASON_MOON",
+      "text": "Draw the moon.",
+      "file": "assets/audio/voice/en/season_moon.wav"
+    },
+    {
+      "key": "SEASON_SNOWMAN",
+      "text": "Draw the snowman.",
+      "file": "assets/audio/voice/en/season_snowman.wav"
+    },
+    {
+      "key": "SEASON_PINE",
+      "text": "Draw the fir tree.",
+      "file": "assets/audio/voice/en/season_pine.wav"
+    },
+    {
+      "key": "SEASON_PENGUIN",
+      "text": "Draw the penguin.",
+      "file": "assets/audio/voice/en/season_penguin.wav"
+    },
+    {
+      "key": "SEASON_SLED",
+      "text": "Draw the sled.",
+      "file": "assets/audio/voice/en/season_sled.wav"
+    },
+    {
+      "key": "SEASON_GIFT",
+      "text": "Draw the gift.",
+      "file": "assets/audio/voice/en/season_gift.wav"
+    },
+    {
+      "key": "SEASON_LANTERN",
+      "text": "Draw the lantern.",
+      "file": "assets/audio/voice/en/season_lantern.wav"
+    },
+    {
+      "key": "SEASON_STAR",
+      "text": "Draw the star.",
+      "file": "assets/audio/voice/en/season_star.wav"
+    },
+    {
+      "key": "SEASON_SNOWFLAKE",
+      "text": "Draw the snowflake.",
+      "file": "assets/audio/voice/en/season_snowflake.wav"
+    },
+    {
+      "key": "TRACE_HINT",
+      "text": "Follow the green dot.",
+      "file": "assets/audio/voice/en/trace_hint.wav"
+    },
+    {
+      "key": "TRACE_NUMBER_ZERO",
+      "text": "Zero",
+      "file": "assets/audio/voice/en/trace_number_zero.wav"
+    }
+  ],
+  "uk": [
+    {
+      "key": "FOX_HELLO",
+      "text": "Привіт!",
+      "file": "assets/audio/voice/uk/fox_hello.wav"
+    },
+    {
+      "key": "FOX_HAPPY",
+      "text": "Чудово!",
+      "file": "assets/audio/voice/uk/fox_happy.wav"
+    },
+    {
+      "key": "FOX_REST",
+      "text": "Відпочиньмо.",
+      "file": "assets/audio/voice/uk/fox_rest.wav"
+    },
+    {
+      "key": "ANIMALS_TAP_HINT",
+      "text": "Торкнись тваринки",
+      "file": "assets/audio/voice/uk/animals_tap_hint.wav"
+    },
+    {
+      "key": "ANIMALS_FIND_INTRO",
+      "text": "Знайдімо тваринок!",
+      "file": "assets/audio/voice/uk/animals_find_intro.wav"
+    },
+    {
+      "key": "ANIMALS_CORRECT",
+      "text": "Молодець!",
+      "file": "assets/audio/voice/uk/animals_correct.wav"
+    },
+    {
+      "key": "ANIMALS_TRY_AGAIN",
+      "text": "Спробуймо ще!",
+      "file": "assets/audio/voice/uk/animals_try_again.wav"
+    },
+    {
+      "key": "ANIMALS_COMPLETE",
+      "text": "У тебе вийшло!",
+      "file": "assets/audio/voice/uk/animals_complete.wav"
+    },
+    {
+      "key": "WORD_CAT",
+      "text": "Кіт",
+      "file": "assets/audio/voice/uk/word_cat.wav"
+    },
+    {
+      "key": "FIND_CAT",
+      "text": "Знайди кота.",
+      "file": "assets/audio/voice/uk/find_cat.wav"
+    },
+    {
+      "key": "WORD_DOG",
+      "text": "Собака",
+      "file": "assets/audio/voice/uk/word_dog.wav"
+    },
+    {
+      "key": "FIND_DOG",
+      "text": "Знайди собаку.",
+      "file": "assets/audio/voice/uk/find_dog.wav"
+    },
+    {
+      "key": "WORD_COW",
+      "text": "Корова",
+      "file": "assets/audio/voice/uk/word_cow.wav"
+    },
+    {
+      "key": "FIND_COW",
+      "text": "Знайди корову.",
+      "file": "assets/audio/voice/uk/find_cow.wav"
+    },
+    {
+      "key": "WORD_PIG",
+      "text": "Свинка",
+      "file": "assets/audio/voice/uk/word_pig.wav"
+    },
+    {
+      "key": "FIND_PIG",
+      "text": "Знайди свинку.",
+      "file": "assets/audio/voice/uk/find_pig.wav"
+    },
+    {
+      "key": "WORD_SHEEP",
+      "text": "Вівця",
+      "file": "assets/audio/voice/uk/word_sheep.wav"
+    },
+    {
+      "key": "FIND_SHEEP",
+      "text": "Знайди вівцю.",
+      "file": "assets/audio/voice/uk/find_sheep.wav"
+    },
+    {
+      "key": "WORD_HORSE",
+      "text": "Кінь",
+      "file": "assets/audio/voice/uk/word_horse.wav"
+    },
+    {
+      "key": "FIND_HORSE",
+      "text": "Знайди коня.",
+      "file": "assets/audio/voice/uk/find_horse.wav"
+    },
+    {
+      "key": "WORD_DUCK",
+      "text": "Качка",
+      "file": "assets/audio/voice/uk/word_duck.wav"
+    },
+    {
+      "key": "FIND_DUCK",
+      "text": "Знайди качку.",
+      "file": "assets/audio/voice/uk/find_duck.wav"
+    },
+    {
+      "key": "WORD_CHICKEN",
+      "text": "Курка",
+      "file": "assets/audio/voice/uk/word_chicken.wav"
+    },
+    {
+      "key": "FIND_CHICKEN",
+      "text": "Знайди курку.",
+      "file": "assets/audio/voice/uk/find_chicken.wav"
+    },
+    {
+      "key": "WORD_RABBIT",
+      "text": "Кролик",
+      "file": "assets/audio/voice/uk/word_rabbit.wav"
+    },
+    {
+      "key": "FIND_RABBIT",
+      "text": "Знайди кролика.",
+      "file": "assets/audio/voice/uk/find_rabbit.wav"
+    },
+    {
+      "key": "WORD_BEAR",
+      "text": "Ведмідь",
+      "file": "assets/audio/voice/uk/word_bear.wav"
+    },
+    {
+      "key": "FIND_BEAR",
+      "text": "Знайди ведмедя.",
+      "file": "assets/audio/voice/uk/find_bear.wav"
+    },
+    {
+      "key": "WORD_LION",
+      "text": "Лев",
+      "file": "assets/audio/voice/uk/word_lion.wav"
+    },
+    {
+      "key": "FIND_LION",
+      "text": "Знайди лева.",
+      "file": "assets/audio/voice/uk/find_lion.wav"
+    },
+    {
+      "key": "WORD_ELEPHANT",
+      "text": "Слон",
+      "file": "assets/audio/voice/uk/word_elephant.wav"
+    },
+    {
+      "key": "FIND_ELEPHANT",
+      "text": "Знайди слона.",
+      "file": "assets/audio/voice/uk/find_elephant.wav"
+    },
+    {
+      "key": "COLORS_TAP_HINT",
+      "text": "Торкнись м’ячика",
+      "file": "assets/audio/voice/uk/colors_tap_hint.wav"
+    },
+    {
+      "key": "COLORS_FIND_INTRO",
+      "text": "Знайдімо кольори.",
+      "file": "assets/audio/voice/uk/colors_find_intro.wav"
+    },
+    {
+      "key": "COLORS_CORRECT",
+      "text": "Молодець!",
+      "file": "assets/audio/voice/uk/colors_correct.wav"
+    },
+    {
+      "key": "COLORS_TRY_AGAIN",
+      "text": "Спробуймо ще!",
+      "file": "assets/audio/voice/uk/colors_try_again.wav"
+    },
+    {
+      "key": "COLORS_COMPLETE",
+      "text": "У тебе вийшло!",
+      "file": "assets/audio/voice/uk/colors_complete.wav"
+    },
+    {
+      "key": "COLOR_WORD_RED",
+      "text": "Червоний",
+      "file": "assets/audio/voice/uk/color_word_red.wav"
+    },
+    {
+      "key": "COLOR_FIND_RED",
+      "text": "Знайди червоний колір.",
+      "file": "assets/audio/voice/uk/color_find_red.wav"
+    },
+    {
+      "key": "COLOR_WORD_BLUE",
+      "text": "Синій",
+      "file": "assets/audio/voice/uk/color_word_blue.wav"
+    },
+    {
+      "key": "COLOR_FIND_BLUE",
+      "text": "Знайди синій колір.",
+      "file": "assets/audio/voice/uk/color_find_blue.wav"
+    },
+    {
+      "key": "COLOR_WORD_YELLOW",
+      "text": "Жовтий",
+      "file": "assets/audio/voice/uk/color_word_yellow.wav"
+    },
+    {
+      "key": "COLOR_FIND_YELLOW",
+      "text": "Знайди жовтий колір.",
+      "file": "assets/audio/voice/uk/color_find_yellow.wav"
+    },
+    {
+      "key": "COLOR_WORD_GREEN",
+      "text": "Зелений",
+      "file": "assets/audio/voice/uk/color_word_green.wav"
+    },
+    {
+      "key": "COLOR_FIND_GREEN",
+      "text": "Знайди зелений колір.",
+      "file": "assets/audio/voice/uk/color_find_green.wav"
+    },
+    {
+      "key": "COLOR_WORD_ORANGE",
+      "text": "Помаранчевий",
+      "file": "assets/audio/voice/uk/color_word_orange.wav"
+    },
+    {
+      "key": "COLOR_FIND_ORANGE",
+      "text": "Знайди помаранчевий колір.",
+      "file": "assets/audio/voice/uk/color_find_orange.wav"
+    },
+    {
+      "key": "COLOR_WORD_PURPLE",
+      "text": "Фіолетовий",
+      "file": "assets/audio/voice/uk/color_word_purple.wav"
+    },
+    {
+      "key": "COLOR_FIND_PURPLE",
+      "text": "Знайди фіолетовий колір.",
+      "file": "assets/audio/voice/uk/color_find_purple.wav"
+    },
+    {
+      "key": "COLOR_WORD_PINK",
+      "text": "Рожевий",
+      "file": "assets/audio/voice/uk/color_word_pink.wav"
+    },
+    {
+      "key": "COLOR_FIND_PINK",
+      "text": "Знайди рожевий колір.",
+      "file": "assets/audio/voice/uk/color_find_pink.wav"
+    },
+    {
+      "key": "COLOR_WORD_BROWN",
+      "text": "Коричневий",
+      "file": "assets/audio/voice/uk/color_word_brown.wav"
+    },
+    {
+      "key": "COLOR_FIND_BROWN",
+      "text": "Знайди коричневий колір.",
+      "file": "assets/audio/voice/uk/color_find_brown.wav"
+    },
+    {
+      "key": "FEED_HINT",
+      "text": "Перетягни їжу до Фоксі",
+      "file": "assets/audio/voice/uk/feed_hint.wav"
+    },
+    {
+      "key": "FEED_CORRECT",
+      "text": "Ням! Дякую.",
+      "file": "assets/audio/voice/uk/feed_correct.wav"
+    },
+    {
+      "key": "FEED_TRY_AGAIN",
+      "text": "Спробуймо інше.",
+      "file": "assets/audio/voice/uk/feed_try_again.wav"
+    },
+    {
+      "key": "FEED_COMPLETE",
+      "text": "Який чудовий пікнік!",
+      "file": "assets/audio/voice/uk/feed_complete.wav"
+    },
+    {
+      "key": "FOOD_WORD_APPLE",
+      "text": "Яблуко",
+      "file": "assets/audio/voice/uk/food_word_apple.wav"
+    },
+    {
+      "key": "FOOD_GIVE_APPLE",
+      "text": "Дай мені яблуко, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_apple.wav"
+    },
+    {
+      "key": "FOOD_WORD_BANANA",
+      "text": "Банан",
+      "file": "assets/audio/voice/uk/food_word_banana.wav"
+    },
+    {
+      "key": "FOOD_GIVE_BANANA",
+      "text": "Дай мені банан, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_banana.wav"
+    },
+    {
+      "key": "FOOD_WORD_CARROT",
+      "text": "Морква",
+      "file": "assets/audio/voice/uk/food_word_carrot.wav"
+    },
+    {
+      "key": "FOOD_GIVE_CARROT",
+      "text": "Дай мені моркву, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_carrot.wav"
+    },
+    {
+      "key": "FOOD_WORD_BREAD",
+      "text": "Хліб",
+      "file": "assets/audio/voice/uk/food_word_bread.wav"
+    },
+    {
+      "key": "FOOD_GIVE_BREAD",
+      "text": "Дай мені хліб, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_bread.wav"
+    },
+    {
+      "key": "FOOD_WORD_CHEESE",
+      "text": "Сир",
+      "file": "assets/audio/voice/uk/food_word_cheese.wav"
+    },
+    {
+      "key": "FOOD_GIVE_CHEESE",
+      "text": "Дай мені сир, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_cheese.wav"
+    },
+    {
+      "key": "FOOD_WORD_MILK",
+      "text": "Молоко",
+      "file": "assets/audio/voice/uk/food_word_milk.wav"
+    },
+    {
+      "key": "FOOD_GIVE_MILK",
+      "text": "Дай мені молоко, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_milk.wav"
+    },
+    {
+      "key": "FOOD_WORD_STRAWBERRY",
+      "text": "Полуниця",
+      "file": "assets/audio/voice/uk/food_word_strawberry.wav"
+    },
+    {
+      "key": "FOOD_GIVE_STRAWBERRY",
+      "text": "Дай мені полуницю, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_strawberry.wav"
+    },
+    {
+      "key": "FOOD_WORD_WATERMELON",
+      "text": "Кавун",
+      "file": "assets/audio/voice/uk/food_word_watermelon.wav"
+    },
+    {
+      "key": "FOOD_GIVE_WATERMELON",
+      "text": "Дай мені кавун, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_watermelon.wav"
+    },
+    {
+      "key": "FOOD_WORD_ORANGE",
+      "text": "Апельсин",
+      "file": "assets/audio/voice/uk/food_word_orange.wav"
+    },
+    {
+      "key": "FOOD_GIVE_ORANGE",
+      "text": "Дай мені апельсин, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_orange.wav"
+    },
+    {
+      "key": "FOOD_WORD_PEAR",
+      "text": "Груша",
+      "file": "assets/audio/voice/uk/food_word_pear.wav"
+    },
+    {
+      "key": "FOOD_GIVE_PEAR",
+      "text": "Дай мені грушу, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_pear.wav"
+    },
+    {
+      "key": "FOOD_WORD_CUCUMBER",
+      "text": "Огірок",
+      "file": "assets/audio/voice/uk/food_word_cucumber.wav"
+    },
+    {
+      "key": "FOOD_GIVE_CUCUMBER",
+      "text": "Дай мені огірок, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_cucumber.wav"
+    },
+    {
+      "key": "FOOD_WORD_TOMATO",
+      "text": "Помідор",
+      "file": "assets/audio/voice/uk/food_word_tomato.wav"
+    },
+    {
+      "key": "FOOD_GIVE_TOMATO",
+      "text": "Дай мені помідор, будь ласка.",
+      "file": "assets/audio/voice/uk/food_give_tomato.wav"
+    },
+    {
+      "key": "SHAPES_INTRO",
+      "text": "Знайдімо місце для фігур.",
+      "file": "assets/audio/voice/uk/shapes_intro.wav"
+    },
+    {
+      "key": "SHAPES_CORRECT",
+      "text": "Чудово підходить!",
+      "file": "assets/audio/voice/uk/shapes_correct.wav"
+    },
+    {
+      "key": "SHAPES_RETRY",
+      "text": "Спробуймо інший контур.",
+      "file": "assets/audio/voice/uk/shapes_retry.wav"
+    },
+    {
+      "key": "SHAPES_BOARD_DONE",
+      "text": "Цей сад готовий!",
+      "file": "assets/audio/voice/uk/shapes_board_done.wav"
+    },
+    {
+      "key": "SHAPES_COMPLETE",
+      "text": "Усі фігури на місці!",
+      "file": "assets/audio/voice/uk/shapes_complete.wav"
+    },
+    {
+      "key": "SHAPE_WORD_CIRCLE",
+      "text": "Коло",
+      "file": "assets/audio/voice/uk/shape_word_circle.wav"
+    },
+    {
+      "key": "SHAPE_FIND_CIRCLE",
+      "text": "Знайди коло.",
+      "file": "assets/audio/voice/uk/shape_find_circle.wav"
+    },
+    {
+      "key": "SHAPE_WORD_SQUARE",
+      "text": "Квадрат",
+      "file": "assets/audio/voice/uk/shape_word_square.wav"
+    },
+    {
+      "key": "SHAPE_FIND_SQUARE",
+      "text": "Знайди квадрат.",
+      "file": "assets/audio/voice/uk/shape_find_square.wav"
+    },
+    {
+      "key": "SHAPE_WORD_TRIANGLE",
+      "text": "Трикутник",
+      "file": "assets/audio/voice/uk/shape_word_triangle.wav"
+    },
+    {
+      "key": "SHAPE_FIND_TRIANGLE",
+      "text": "Знайди трикутник.",
+      "file": "assets/audio/voice/uk/shape_find_triangle.wav"
+    },
+    {
+      "key": "SHAPE_WORD_RECTANGLE",
+      "text": "Прямокутник",
+      "file": "assets/audio/voice/uk/shape_word_rectangle.wav"
+    },
+    {
+      "key": "SHAPE_FIND_RECTANGLE",
+      "text": "Знайди прямокутник.",
+      "file": "assets/audio/voice/uk/shape_find_rectangle.wav"
+    },
+    {
+      "key": "SHAPE_WORD_STAR",
+      "text": "Зірка",
+      "file": "assets/audio/voice/uk/shape_word_star.wav"
+    },
+    {
+      "key": "SHAPE_FIND_STAR",
+      "text": "Знайди зірку.",
+      "file": "assets/audio/voice/uk/shape_find_star.wav"
+    },
+    {
+      "key": "SHAPE_WORD_HEART",
+      "text": "Серце",
+      "file": "assets/audio/voice/uk/shape_word_heart.wav"
+    },
+    {
+      "key": "SHAPE_FIND_HEART",
+      "text": "Знайди серце.",
+      "file": "assets/audio/voice/uk/shape_find_heart.wav"
+    },
+    {
+      "key": "PUZZLES_INTRO",
+      "text": "Зберімо картинку разом.",
+      "file": "assets/audio/voice/uk/puzzles_intro.wav"
+    },
+    {
+      "key": "PUZZLES_CORRECT",
+      "text": "Ця частинка підходить!",
+      "file": "assets/audio/voice/uk/puzzles_correct.wav"
+    },
+    {
+      "key": "PUZZLES_RETRY",
+      "text": "Спробуймо інше місце.",
+      "file": "assets/audio/voice/uk/puzzles_retry.wav"
+    },
+    {
+      "key": "PUZZLES_PICTURE_DONE",
+      "text": "Чудова картинка!",
+      "file": "assets/audio/voice/uk/puzzles_picture_done.wav"
+    },
+    {
+      "key": "PUZZLES_COMPLETE",
+      "text": "Ти склав три чудові картинки!",
+      "file": "assets/audio/voice/uk/puzzles_complete.wav"
+    },
+    {
+      "key": "MEMORY_INTRO",
+      "text": "Відкрий дві картки.",
+      "file": "assets/audio/voice/uk/memory_intro.wav"
+    },
+    {
+      "key": "MEMORY_MATCH",
+      "text": "Чудова пара!",
+      "file": "assets/audio/voice/uk/memory_match.wav"
+    },
+    {
+      "key": "MEMORY_RETRY",
+      "text": "Пошукаймо ще.",
+      "file": "assets/audio/voice/uk/memory_retry.wav"
+    },
+    {
+      "key": "MEMORY_COMPLETE",
+      "text": "Ти знайшов усі пари!",
+      "file": "assets/audio/voice/uk/memory_complete.wav"
+    },
+    {
+      "key": "COUNT_CORRECT",
+      "text": "Ти порахував!",
+      "file": "assets/audio/voice/uk/count_correct.wav"
+    },
+    {
+      "key": "COUNT_RETRY",
+      "text": "Порахуймо ще.",
+      "file": "assets/audio/voice/uk/count_retry.wav"
+    },
+    {
+      "key": "COUNT_COMPLETE",
+      "text": "Як чудово ти рахуєш!",
+      "file": "assets/audio/voice/uk/count_complete.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_1",
+      "text": "Один",
+      "file": "assets/audio/voice/uk/count_number_1.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_2",
+      "text": "Два",
+      "file": "assets/audio/voice/uk/count_number_2.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_3",
+      "text": "Три",
+      "file": "assets/audio/voice/uk/count_number_3.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_4",
+      "text": "Чотири",
+      "file": "assets/audio/voice/uk/count_number_4.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_5",
+      "text": "П'ять",
+      "file": "assets/audio/voice/uk/count_number_5.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_6",
+      "text": "Шість",
+      "file": "assets/audio/voice/uk/count_number_6.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_7",
+      "text": "Сім",
+      "file": "assets/audio/voice/uk/count_number_7.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_8",
+      "text": "Вісім",
+      "file": "assets/audio/voice/uk/count_number_8.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_9",
+      "text": "Дев'ять",
+      "file": "assets/audio/voice/uk/count_number_9.wav"
+    },
+    {
+      "key": "COUNT_NUMBER_10",
+      "text": "Десять",
+      "file": "assets/audio/voice/uk/count_number_10.wav"
+    },
+    {
+      "key": "COUNT_HOW_APPLES",
+      "text": "Скільки яблук?",
+      "file": "assets/audio/voice/uk/count_how_apples.wav"
+    },
+    {
+      "key": "COUNT_HOW_CARROTS",
+      "text": "Скільки морквин?",
+      "file": "assets/audio/voice/uk/count_how_carrots.wav"
+    },
+    {
+      "key": "COUNT_HOW_STRAWBERRIES",
+      "text": "Скільки полуниць?",
+      "file": "assets/audio/voice/uk/count_how_strawberries.wav"
+    },
+    {
+      "key": "COUNT_HOW_STARS",
+      "text": "Скільки зірок?",
+      "file": "assets/audio/voice/uk/count_how_stars.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_1",
+      "text": "Поклади одне яблуко в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_2",
+      "text": "Поклади два яблука в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_3",
+      "text": "Поклади три яблука в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_4",
+      "text": "Поклади чотири яблука в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_5",
+      "text": "Поклади п'ять яблук в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_6",
+      "text": "Поклади шість яблук в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_7",
+      "text": "Поклади сім яблук в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_8",
+      "text": "Поклади вісім яблук в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_9",
+      "text": "Поклади дев'ять яблук в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_APPLES_10",
+      "text": "Поклади десять яблук в кошик.",
+      "file": "assets/audio/voice/uk/count_put_apples_10.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_1",
+      "text": "Поклади одну морквину в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_2",
+      "text": "Поклади дві морквини в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_3",
+      "text": "Поклади три морквини в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_4",
+      "text": "Поклади чотири морквини в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_5",
+      "text": "Поклади п'ять морквин в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_6",
+      "text": "Поклади шість морквин в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_7",
+      "text": "Поклади сім морквин в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_8",
+      "text": "Поклади вісім морквин в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_9",
+      "text": "Поклади дев'ять морквин в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_CARROTS_10",
+      "text": "Поклади десять морквин в кошик.",
+      "file": "assets/audio/voice/uk/count_put_carrots_10.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_1",
+      "text": "Поклади одну полуницю в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_2",
+      "text": "Поклади дві полуниці в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_3",
+      "text": "Поклади три полуниці в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_4",
+      "text": "Поклади чотири полуниці в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_5",
+      "text": "Поклади п'ять полуниць в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_6",
+      "text": "Поклади шість полуниць в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_7",
+      "text": "Поклади сім полуниць в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_8",
+      "text": "Поклади вісім полуниць в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_9",
+      "text": "Поклади дев'ять полуниць в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_STRAWBERRIES_10",
+      "text": "Поклади десять полуниць в кошик.",
+      "file": "assets/audio/voice/uk/count_put_strawberries_10.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_1",
+      "text": "Поклади одну зірку в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_1.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_2",
+      "text": "Поклади дві зірки в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_2.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_3",
+      "text": "Поклади три зірки в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_3.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_4",
+      "text": "Поклади чотири зірки в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_4.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_5",
+      "text": "Поклади п'ять зірок в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_5.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_6",
+      "text": "Поклади шість зірок в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_6.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_7",
+      "text": "Поклади сім зірок в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_7.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_8",
+      "text": "Поклади вісім зірок в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_8.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_9",
+      "text": "Поклади дев'ять зірок в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_9.wav"
+    },
+    {
+      "key": "COUNT_PUT_STARS_10",
+      "text": "Поклади десять зірок в кошик.",
+      "file": "assets/audio/voice/uk/count_put_stars_10.wav"
+    },
+    {
+      "key": "DRAW_INTRO",
+      "text": "Намалюймо маленьку картинку.",
+      "file": "assets/audio/voice/uk/draw_intro.wav"
+    },
+    {
+      "key": "DRAW_SAVED",
+      "text": "Твій малюнок збережено!",
+      "file": "assets/audio/voice/uk/draw_saved.wav"
+    },
+    {
+      "key": "BOOK_INTRO",
+      "text": "Обери колір і торкнись області.",
+      "file": "assets/audio/voice/uk/book_intro.wav"
+    },
+    {
+      "key": "BOOK_SAVED",
+      "text": "Твою розмальовку збережено!",
+      "file": "assets/audio/voice/uk/book_saved.wav"
+    },
+    {
+      "key": "BOOK_WORD_CAT",
+      "text": "Кіт",
+      "file": "assets/audio/voice/uk/book_word_cat.wav"
+    },
+    {
+      "key": "BOOK_WORD_DOG",
+      "text": "Собака",
+      "file": "assets/audio/voice/uk/book_word_dog.wav"
+    },
+    {
+      "key": "BOOK_WORD_FOX",
+      "text": "Лисиця",
+      "file": "assets/audio/voice/uk/book_word_fox.wav"
+    },
+    {
+      "key": "BOOK_WORD_BUTTERFLY",
+      "text": "Метелик",
+      "file": "assets/audio/voice/uk/book_word_butterfly.wav"
+    },
+    {
+      "key": "BOOK_WORD_FISH",
+      "text": "Рибка",
+      "file": "assets/audio/voice/uk/book_word_fish.wav"
+    },
+    {
+      "key": "BOOK_WORD_HOUSE",
+      "text": "Будинок",
+      "file": "assets/audio/voice/uk/book_word_house.wav"
+    },
+    {
+      "key": "BOOK_WORD_FLOWER",
+      "text": "Квітка",
+      "file": "assets/audio/voice/uk/book_word_flower.wav"
+    },
+    {
+      "key": "BOOK_WORD_CAR",
+      "text": "Машина",
+      "file": "assets/audio/voice/uk/book_word_car.wav"
+    },
+    {
+      "key": "BOOK_WORD_DINOSAUR",
+      "text": "Динозавр",
+      "file": "assets/audio/voice/uk/book_word_dinosaur.wav"
+    },
+    {
+      "key": "BOOK_WORD_RAINBOW",
+      "text": "Веселка",
+      "file": "assets/audio/voice/uk/book_word_rainbow.wav"
+    },
+    {
+      "key": "PARTY_INTRO",
+      "text": "Молодець! Завдання завершено! Лопни всі кульки!",
+      "file": "assets/audio/voice/uk/party_intro.wav"
+    },
+    {
+      "key": "BLEND_UK_00",
+      "text": "ма.",
+      "file": "assets/audio/voice/uk/blend_uk_00.wav"
+    },
+    {
+      "key": "BLEND_UK_01",
+      "text": "мо.",
+      "file": "assets/audio/voice/uk/blend_uk_01.wav"
+    },
+    {
+      "key": "BLEND_UK_02",
+      "text": "му.",
+      "file": "assets/audio/voice/uk/blend_uk_02.wav"
+    },
+    {
+      "key": "BLEND_UK_03",
+      "text": "ми.",
+      "file": "assets/audio/voice/uk/blend_uk_03.wav"
+    },
+    {
+      "key": "BLEND_UK_04",
+      "text": "мі.",
+      "file": "assets/audio/voice/uk/blend_uk_04.wav"
+    },
+    {
+      "key": "BLEND_UK_05",
+      "text": "на.",
+      "file": "assets/audio/voice/uk/blend_uk_05.wav"
+    },
+    {
+      "key": "BLEND_UK_06",
+      "text": "но.",
+      "file": "assets/audio/voice/uk/blend_uk_06.wav"
+    },
+    {
+      "key": "BLEND_UK_07",
+      "text": "ну.",
+      "file": "assets/audio/voice/uk/blend_uk_07.wav"
+    },
+    {
+      "key": "BLEND_UK_08",
+      "text": "ни.",
+      "file": "assets/audio/voice/uk/blend_uk_08.wav"
+    },
+    {
+      "key": "BLEND_UK_09",
+      "text": "ні.",
+      "file": "assets/audio/voice/uk/blend_uk_09.wav"
+    },
+    {
+      "key": "BLEND_UK_10",
+      "text": "са.",
+      "file": "assets/audio/voice/uk/blend_uk_10.wav"
+    },
+    {
+      "key": "BLEND_UK_11",
+      "text": "со.",
+      "file": "assets/audio/voice/uk/blend_uk_11.wav"
+    },
+    {
+      "key": "BLEND_UK_12",
+      "text": "су.",
+      "file": "assets/audio/voice/uk/blend_uk_12.wav"
+    },
+    {
+      "key": "BLEND_UK_13",
+      "text": "си.",
+      "file": "assets/audio/voice/uk/blend_uk_13.wav"
+    },
+    {
+      "key": "BLEND_UK_14",
+      "text": "сі.",
+      "file": "assets/audio/voice/uk/blend_uk_14.wav"
+    },
+    {
+      "key": "BLEND_UK_15",
+      "text": "та.",
+      "file": "assets/audio/voice/uk/blend_uk_15.wav"
+    },
+    {
+      "key": "BLEND_UK_16",
+      "text": "то.",
+      "file": "assets/audio/voice/uk/blend_uk_16.wav"
+    },
+    {
+      "key": "BLEND_UK_17",
+      "text": "ту.",
+      "file": "assets/audio/voice/uk/blend_uk_17.wav"
+    },
+    {
+      "key": "BLEND_UK_18",
+      "text": "ти.",
+      "file": "assets/audio/voice/uk/blend_uk_18.wav"
+    },
+    {
+      "key": "BLEND_UK_19",
+      "text": "ті.",
+      "file": "assets/audio/voice/uk/blend_uk_19.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_TREE_WORD",
+      "text": "Дерево.",
+      "file": "assets/audio/voice/uk/world_plants_tree_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_TREE_FIND",
+      "text": "Знайди дерево.",
+      "file": "assets/audio/voice/uk/world_plants_tree_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_FLOWER_WORD",
+      "text": "Квітка.",
+      "file": "assets/audio/voice/uk/world_plants_flower_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_FLOWER_FIND",
+      "text": "Знайди квітку.",
+      "file": "assets/audio/voice/uk/world_plants_flower_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_GRASS_WORD",
+      "text": "Трава.",
+      "file": "assets/audio/voice/uk/world_plants_grass_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_GRASS_FIND",
+      "text": "Знайди траву.",
+      "file": "assets/audio/voice/uk/world_plants_grass_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_LEAF_WORD",
+      "text": "Листок.",
+      "file": "assets/audio/voice/uk/world_plants_leaf_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_LEAF_FIND",
+      "text": "Знайди листок.",
+      "file": "assets/audio/voice/uk/world_plants_leaf_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_SEED_WORD",
+      "text": "Насінина.",
+      "file": "assets/audio/voice/uk/world_plants_seed_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_SEED_FIND",
+      "text": "Знайди насінину.",
+      "file": "assets/audio/voice/uk/world_plants_seed_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_ROOT_WORD",
+      "text": "Корінь.",
+      "file": "assets/audio/voice/uk/world_plants_root_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_ROOT_FIND",
+      "text": "Знайди корінь.",
+      "file": "assets/audio/voice/uk/world_plants_root_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_BUSH_WORD",
+      "text": "Кущ.",
+      "file": "assets/audio/voice/uk/world_plants_bush_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_BUSH_FIND",
+      "text": "Знайди кущ.",
+      "file": "assets/audio/voice/uk/world_plants_bush_find.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_PINE_WORD",
+      "text": "Сосна.",
+      "file": "assets/audio/voice/uk/world_plants_pine_word.wav"
+    },
+    {
+      "key": "WORLD_PLANTS_PINE_FIND",
+      "text": "Знайди сосну.",
+      "file": "assets/audio/voice/uk/world_plants_pine_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYEBROW_WORD",
+      "text": "Брова.",
+      "file": "assets/audio/voice/uk/world_body_eyebrow_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYEBROW_FIND",
+      "text": "Покажи брову.",
+      "file": "assets/audio/voice/uk/world_body_eyebrow_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYE_WORD",
+      "text": "Око.",
+      "file": "assets/audio/voice/uk/world_body_eye_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_EYE_FIND",
+      "text": "Покажи око.",
+      "file": "assets/audio/voice/uk/world_body_eye_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_NOSE_WORD",
+      "text": "Ніс.",
+      "file": "assets/audio/voice/uk/world_body_nose_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_NOSE_FIND",
+      "text": "Покажи ніс.",
+      "file": "assets/audio/voice/uk/world_body_nose_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_MOUTH_WORD",
+      "text": "Рот.",
+      "file": "assets/audio/voice/uk/world_body_mouth_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_MOUTH_FIND",
+      "text": "Покажи рот.",
+      "file": "assets/audio/voice/uk/world_body_mouth_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_EAR_WORD",
+      "text": "Вухо.",
+      "file": "assets/audio/voice/uk/world_body_ear_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_EAR_FIND",
+      "text": "Покажи вухо.",
+      "file": "assets/audio/voice/uk/world_body_ear_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHEEK_WORD",
+      "text": "Щока.",
+      "file": "assets/audio/voice/uk/world_body_cheek_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHEEK_FIND",
+      "text": "Покажи щоку.",
+      "file": "assets/audio/voice/uk/world_body_cheek_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHIN_WORD",
+      "text": "Підборіддя.",
+      "file": "assets/audio/voice/uk/world_body_chin_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_CHIN_FIND",
+      "text": "Покажи підборіддя.",
+      "file": "assets/audio/voice/uk/world_body_chin_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAIR_WORD",
+      "text": "Волосся.",
+      "file": "assets/audio/voice/uk/world_body_hair_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAIR_FIND",
+      "text": "Покажи волосся.",
+      "file": "assets/audio/voice/uk/world_body_hair_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_HEAD_WORD",
+      "text": "Голова.",
+      "file": "assets/audio/voice/uk/world_body_head_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_HEAD_FIND",
+      "text": "Покажи голову.",
+      "file": "assets/audio/voice/uk/world_body_head_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_FINGER_WORD",
+      "text": "Палець.",
+      "file": "assets/audio/voice/uk/world_body_finger_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_FINGER_FIND",
+      "text": "Покажи палець.",
+      "file": "assets/audio/voice/uk/world_body_finger_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAND_WORD",
+      "text": "Долоня.",
+      "file": "assets/audio/voice/uk/world_body_hand_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_HAND_FIND",
+      "text": "Покажи долоню.",
+      "file": "assets/audio/voice/uk/world_body_hand_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_ELBOW_WORD",
+      "text": "Лікоть.",
+      "file": "assets/audio/voice/uk/world_body_elbow_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_ELBOW_FIND",
+      "text": "Покажи лікоть.",
+      "file": "assets/audio/voice/uk/world_body_elbow_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_ARM_WORD",
+      "text": "Рука.",
+      "file": "assets/audio/voice/uk/world_body_arm_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_ARM_FIND",
+      "text": "Покажи руку.",
+      "file": "assets/audio/voice/uk/world_body_arm_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_SHOULDER_WORD",
+      "text": "Плече.",
+      "file": "assets/audio/voice/uk/world_body_shoulder_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_SHOULDER_FIND",
+      "text": "Покажи плече.",
+      "file": "assets/audio/voice/uk/world_body_shoulder_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_NECK_WORD",
+      "text": "Шия.",
+      "file": "assets/audio/voice/uk/world_body_neck_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_NECK_FIND",
+      "text": "Покажи шию.",
+      "file": "assets/audio/voice/uk/world_body_neck_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_BELLY_WORD",
+      "text": "Живіт.",
+      "file": "assets/audio/voice/uk/world_body_belly_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_BELLY_FIND",
+      "text": "Покажи живіт.",
+      "file": "assets/audio/voice/uk/world_body_belly_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_TORSO_WORD",
+      "text": "Тулуб.",
+      "file": "assets/audio/voice/uk/world_body_torso_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_TORSO_FIND",
+      "text": "Покажи тулуб.",
+      "file": "assets/audio/voice/uk/world_body_torso_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_KNEE_WORD",
+      "text": "Коліно.",
+      "file": "assets/audio/voice/uk/world_body_knee_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_KNEE_FIND",
+      "text": "Покажи коліно.",
+      "file": "assets/audio/voice/uk/world_body_knee_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_LEG_WORD",
+      "text": "Нога.",
+      "file": "assets/audio/voice/uk/world_body_leg_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_LEG_FIND",
+      "text": "Покажи ногу.",
+      "file": "assets/audio/voice/uk/world_body_leg_find.wav"
+    },
+    {
+      "key": "WORLD_BODY_FOOT_WORD",
+      "text": "Ступня.",
+      "file": "assets/audio/voice/uk/world_body_foot_word.wav"
+    },
+    {
+      "key": "WORLD_BODY_FOOT_FIND",
+      "text": "Покажи ступню.",
+      "file": "assets/audio/voice/uk/world_body_foot_find.wav"
+    },
+    {
+      "key": "ALPH_UK_00",
+      "text": "а.",
+      "file": "assets/audio/voice/uk/alph_uk_00.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_00",
+      "text": "Автобус.",
+      "file": "assets/audio/voice/uk/alph_word_uk_00.wav"
+    },
+    {
+      "key": "ALPH_UK_01",
+      "text": "бе.",
+      "file": "assets/audio/voice/uk/alph_uk_01.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_01",
+      "text": "Банан.",
+      "file": "assets/audio/voice/uk/alph_word_uk_01.wav"
+    },
+    {
+      "key": "ALPH_UK_02",
+      "text": "ве.",
+      "file": "assets/audio/voice/uk/alph_uk_02.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_02",
+      "text": "Ведмідь.",
+      "file": "assets/audio/voice/uk/alph_word_uk_02.wav"
+    },
+    {
+      "key": "ALPH_UK_03",
+      "text": "ге.",
+      "file": "assets/audio/voice/uk/alph_uk_03.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_03",
+      "text": "Гриб.",
+      "file": "assets/audio/voice/uk/alph_word_uk_03.wav"
+    },
+    {
+      "key": "ALPH_UK_04",
+      "text": "ґе.",
+      "file": "assets/audio/voice/uk/alph_uk_04.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_04",
+      "text": "Ґудзик.",
+      "file": "assets/audio/voice/uk/alph_word_uk_04.wav"
+    },
+    {
+      "key": "ALPH_UK_05",
+      "text": "де.",
+      "file": "assets/audio/voice/uk/alph_uk_05.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_05",
+      "text": "Дерево.",
+      "file": "assets/audio/voice/uk/alph_word_uk_05.wav"
+    },
+    {
+      "key": "ALPH_UK_06",
+      "text": "е.",
+      "file": "assets/audio/voice/uk/alph_uk_06.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_06",
+      "text": "Екран.",
+      "file": "assets/audio/voice/uk/alph_word_uk_06.wav"
+    },
+    {
+      "key": "ALPH_UK_07",
+      "text": "є.",
+      "file": "assets/audio/voice/uk/alph_uk_07.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_07",
+      "text": "Єнот.",
+      "file": "assets/audio/voice/uk/alph_word_uk_07.wav"
+    },
+    {
+      "key": "ALPH_UK_08",
+      "text": "же.",
+      "file": "assets/audio/voice/uk/alph_uk_08.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_08",
+      "text": "Жук.",
+      "file": "assets/audio/voice/uk/alph_word_uk_08.wav"
+    },
+    {
+      "key": "ALPH_UK_09",
+      "text": "зе.",
+      "file": "assets/audio/voice/uk/alph_uk_09.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_09",
+      "text": "Заєць.",
+      "file": "assets/audio/voice/uk/alph_word_uk_09.wav"
+    },
+    {
+      "key": "ALPH_UK_10",
+      "text": "и.",
+      "file": "assets/audio/voice/uk/alph_uk_10.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_10",
+      "text": "Сир.",
+      "file": "assets/audio/voice/uk/alph_word_uk_10.wav"
+    },
+    {
+      "key": "ALPH_UK_11",
+      "text": "і.",
+      "file": "assets/audio/voice/uk/alph_uk_11.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_11",
+      "text": "Індик.",
+      "file": "assets/audio/voice/uk/alph_word_uk_11.wav"
+    },
+    {
+      "key": "ALPH_UK_12",
+      "text": "ї.",
+      "file": "assets/audio/voice/uk/alph_uk_12.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_12",
+      "text": "Їжак.",
+      "file": "assets/audio/voice/uk/alph_word_uk_12.wav"
+    },
+    {
+      "key": "ALPH_UK_13",
+      "text": "йот.",
+      "file": "assets/audio/voice/uk/alph_uk_13.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_13",
+      "text": "Йогурт.",
+      "file": "assets/audio/voice/uk/alph_word_uk_13.wav"
+    },
+    {
+      "key": "ALPH_UK_14",
+      "text": "ка.",
+      "file": "assets/audio/voice/uk/alph_uk_14.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_14",
+      "text": "Кіт.",
+      "file": "assets/audio/voice/uk/alph_word_uk_14.wav"
+    },
+    {
+      "key": "ALPH_UK_15",
+      "text": "ел.",
+      "file": "assets/audio/voice/uk/alph_uk_15.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_15",
+      "text": "Лев.",
+      "file": "assets/audio/voice/uk/alph_word_uk_15.wav"
+    },
+    {
+      "key": "ALPH_UK_16",
+      "text": "ем.",
+      "file": "assets/audio/voice/uk/alph_uk_16.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_16",
+      "text": "Морква.",
+      "file": "assets/audio/voice/uk/alph_word_uk_16.wav"
+    },
+    {
+      "key": "ALPH_UK_17",
+      "text": "ен.",
+      "file": "assets/audio/voice/uk/alph_uk_17.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_17",
+      "text": "Намет.",
+      "file": "assets/audio/voice/uk/alph_word_uk_17.wav"
+    },
+    {
+      "key": "ALPH_UK_18",
+      "text": "о.",
+      "file": "assets/audio/voice/uk/alph_uk_18.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_18",
+      "text": "Огірок.",
+      "file": "assets/audio/voice/uk/alph_word_uk_18.wav"
+    },
+    {
+      "key": "ALPH_UK_19",
+      "text": "пе.",
+      "file": "assets/audio/voice/uk/alph_uk_19.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_19",
+      "text": "Полуниця.",
+      "file": "assets/audio/voice/uk/alph_word_uk_19.wav"
+    },
+    {
+      "key": "ALPH_UK_20",
+      "text": "ер.",
+      "file": "assets/audio/voice/uk/alph_uk_20.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_20",
+      "text": "Риба.",
+      "file": "assets/audio/voice/uk/alph_word_uk_20.wav"
+    },
+    {
+      "key": "ALPH_UK_21",
+      "text": "ес.",
+      "file": "assets/audio/voice/uk/alph_uk_21.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_21",
+      "text": "Слон.",
+      "file": "assets/audio/voice/uk/alph_word_uk_21.wav"
+    },
+    {
+      "key": "ALPH_UK_22",
+      "text": "те.",
+      "file": "assets/audio/voice/uk/alph_uk_22.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_22",
+      "text": "Томат.",
+      "file": "assets/audio/voice/uk/alph_word_uk_22.wav"
+    },
+    {
+      "key": "ALPH_UK_23",
+      "text": "у.",
+      "file": "assets/audio/voice/uk/alph_uk_23.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_23",
+      "text": "Усмішка.",
+      "file": "assets/audio/voice/uk/alph_word_uk_23.wav"
+    },
+    {
+      "key": "ALPH_UK_24",
+      "text": "еф.",
+      "file": "assets/audio/voice/uk/alph_uk_24.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_24",
+      "text": "Фонтан.",
+      "file": "assets/audio/voice/uk/alph_word_uk_24.wav"
+    },
+    {
+      "key": "ALPH_UK_25",
+      "text": "ха.",
+      "file": "assets/audio/voice/uk/alph_uk_25.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_25",
+      "text": "Хліб.",
+      "file": "assets/audio/voice/uk/alph_word_uk_25.wav"
+    },
+    {
+      "key": "ALPH_UK_26",
+      "text": "це.",
+      "file": "assets/audio/voice/uk/alph_uk_26.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_26",
+      "text": "Цибуля.",
+      "file": "assets/audio/voice/uk/alph_word_uk_26.wav"
+    },
+    {
+      "key": "ALPH_UK_27",
+      "text": "че.",
+      "file": "assets/audio/voice/uk/alph_uk_27.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_27",
+      "text": "Черепаха.",
+      "file": "assets/audio/voice/uk/alph_word_uk_27.wav"
+    },
+    {
+      "key": "ALPH_UK_28",
+      "text": "ша.",
+      "file": "assets/audio/voice/uk/alph_uk_28.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_28",
+      "text": "Шапка.",
+      "file": "assets/audio/voice/uk/alph_word_uk_28.wav"
+    },
+    {
+      "key": "ALPH_UK_29",
+      "text": "ща.",
+      "file": "assets/audio/voice/uk/alph_uk_29.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_29",
+      "text": "Щітка.",
+      "file": "assets/audio/voice/uk/alph_word_uk_29.wav"
+    },
+    {
+      "key": "ALPH_UK_30",
+      "text": "м’який знак.",
+      "file": "assets/audio/voice/uk/alph_uk_30.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_30",
+      "text": "Кінь.",
+      "file": "assets/audio/voice/uk/alph_word_uk_30.wav"
+    },
+    {
+      "key": "ALPH_UK_31",
+      "text": "ю.",
+      "file": "assets/audio/voice/uk/alph_uk_31.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_31",
+      "text": "Юла.",
+      "file": "assets/audio/voice/uk/alph_word_uk_31.wav"
+    },
+    {
+      "key": "ALPH_UK_32",
+      "text": "я.",
+      "file": "assets/audio/voice/uk/alph_uk_32.wav"
+    },
+    {
+      "key": "ALPH_WORD_UK_32",
+      "text": "Яблуко.",
+      "file": "assets/audio/voice/uk/alph_word_uk_32.wav"
+    },
+    {
+      "key": "LIVE_TAP",
+      "text": "Натисни на сяючу крапку.",
+      "file": "assets/audio/voice/uk/live_tap.wav"
+    },
+    {
+      "key": "LIVE_TRACE",
+      "text": "Веди пальчиком уздовж крапочок.",
+      "file": "assets/audio/voice/uk/live_trace.wav"
+    },
+    {
+      "key": "LIVE_DONE",
+      "text": "Твій дворик оживає. Малюй та грайся!",
+      "file": "assets/audio/voice/uk/live_done.wav"
+    },
+    {
+      "key": "LIVE_EXPLORE",
+      "text": "Обери крапку та малюй. Натискай на готові малюнки та грайся.",
+      "file": "assets/audio/voice/uk/live_explore.wav"
+    },
+    {
+      "key": "LIVE_WALLS",
+      "text": "Намалюй стіни. Веди пальчиком уздовж крапочок.",
+      "file": "assets/audio/voice/uk/live_walls.wav"
+    },
+    {
+      "key": "LIVE_ROOF",
+      "text": "Намалюй дах.",
+      "file": "assets/audio/voice/uk/live_roof.wav"
+    },
+    {
+      "key": "LIVE_DOOR",
+      "text": "Намалюй двері.",
+      "file": "assets/audio/voice/uk/live_door.wav"
+    },
+    {
+      "key": "LIVE_LEFT_WINDOW",
+      "text": "Намалюй це віконце.",
+      "file": "assets/audio/voice/uk/live_left_window.wav"
+    },
+    {
+      "key": "LIVE_RIGHT_WINDOW",
+      "text": "Намалюй друге віконце.",
+      "file": "assets/audio/voice/uk/live_right_window.wav"
+    },
+    {
+      "key": "LIVE_CHIMNEY",
+      "text": "Намалюй трубу.",
+      "file": "assets/audio/voice/uk/live_chimney.wav"
+    },
+    {
+      "key": "LIVE_SUN",
+      "text": "Намалюй сонечко. Натискай на нього, щоб змінювати день і ніч.",
+      "file": "assets/audio/voice/uk/live_sun.wav"
+    },
+    {
+      "key": "LIVE_CLOUD",
+      "text": "Намалюй хмаринку. Натисни на неї, щоб пішов дощик.",
+      "file": "assets/audio/voice/uk/live_cloud.wav"
+    },
+    {
+      "key": "LIVE_DOG",
+      "text": "Намалюй песика. Натисни на нього: він загавкає та побіжить.",
+      "file": "assets/audio/voice/uk/live_dog.wav"
+    },
+    {
+      "key": "LIVE_FLOWERS",
+      "text": "Намалюй квіточку. Натисни на неї, щоб прилетіли метелики.",
+      "file": "assets/audio/voice/uk/live_flowers.wav"
+    },
+    {
+      "key": "SEASON_PLAY",
+      "text": "Твій світ ожив. Натискай на малюнки та досліджуй!",
+      "file": "assets/audio/voice/uk/season_play.wav"
+    },
+    {
+      "key": "SEASON_TREE",
+      "text": "Намалюй дерево.",
+      "file": "assets/audio/voice/uk/season_tree.wav"
+    },
+    {
+      "key": "SEASON_SUN",
+      "text": "Намалюй сонечко.",
+      "file": "assets/audio/voice/uk/season_sun.wav"
+    },
+    {
+      "key": "SEASON_CLOUD",
+      "text": "Намалюй хмаринку.",
+      "file": "assets/audio/voice/uk/season_cloud.wav"
+    },
+    {
+      "key": "SEASON_NEST",
+      "text": "Намалюй гніздечко.",
+      "file": "assets/audio/voice/uk/season_nest.wav"
+    },
+    {
+      "key": "SEASON_BIRD",
+      "text": "Намалюй пташку.",
+      "file": "assets/audio/voice/uk/season_bird.wav"
+    },
+    {
+      "key": "SEASON_FLOWERS",
+      "text": "Намалюй квіти.",
+      "file": "assets/audio/voice/uk/season_flowers.wav"
+    },
+    {
+      "key": "SEASON_BUTTERFLY",
+      "text": "Намалюй метелика.",
+      "file": "assets/audio/voice/uk/season_butterfly.wav"
+    },
+    {
+      "key": "SEASON_BEE",
+      "text": "Намалюй бджілку.",
+      "file": "assets/audio/voice/uk/season_bee.wav"
+    },
+    {
+      "key": "SEASON_FROG",
+      "text": "Намалюй жабку.",
+      "file": "assets/audio/voice/uk/season_frog.wav"
+    },
+    {
+      "key": "SEASON_POND",
+      "text": "Намалюй ставочок.",
+      "file": "assets/audio/voice/uk/season_pond.wav"
+    },
+    {
+      "key": "SEASON_RAINBOW",
+      "text": "Намалюй веселку.",
+      "file": "assets/audio/voice/uk/season_rainbow.wav"
+    },
+    {
+      "key": "SEASON_BUNNY",
+      "text": "Намалюй зайчика.",
+      "file": "assets/audio/voice/uk/season_bunny.wav"
+    },
+    {
+      "key": "SEASON_LEAVES",
+      "text": "Намалюй листочки.",
+      "file": "assets/audio/voice/uk/season_leaves.wav"
+    },
+    {
+      "key": "SEASON_HEDGEHOG",
+      "text": "Намалюй їжачка.",
+      "file": "assets/audio/voice/uk/season_hedgehog.wav"
+    },
+    {
+      "key": "SEASON_MUSHROOMS",
+      "text": "Намалюй грибочки.",
+      "file": "assets/audio/voice/uk/season_mushrooms.wav"
+    },
+    {
+      "key": "SEASON_PUMPKIN",
+      "text": "Намалюй гарбуз.",
+      "file": "assets/audio/voice/uk/season_pumpkin.wav"
+    },
+    {
+      "key": "SEASON_BASKET",
+      "text": "Намалюй кошик яблук.",
+      "file": "assets/audio/voice/uk/season_basket.wav"
+    },
+    {
+      "key": "SEASON_KITE",
+      "text": "Намалюй повітряного змія.",
+      "file": "assets/audio/voice/uk/season_kite.wav"
+    },
+    {
+      "key": "SEASON_BOOTS",
+      "text": "Намалюй чобітки.",
+      "file": "assets/audio/voice/uk/season_boots.wav"
+    },
+    {
+      "key": "SEASON_PUDDLE",
+      "text": "Намалюй калюжку.",
+      "file": "assets/audio/voice/uk/season_puddle.wav"
+    },
+    {
+      "key": "SEASON_SQUIRREL",
+      "text": "Намалюй білочку.",
+      "file": "assets/audio/voice/uk/season_squirrel.wav"
+    },
+    {
+      "key": "SEASON_COTTAGE",
+      "text": "Намалюй хатинку.",
+      "file": "assets/audio/voice/uk/season_cottage.wav"
+    },
+    {
+      "key": "SEASON_MOON",
+      "text": "Намалюй місяць.",
+      "file": "assets/audio/voice/uk/season_moon.wav"
+    },
+    {
+      "key": "SEASON_SNOWMAN",
+      "text": "Намалюй сніговика.",
+      "file": "assets/audio/voice/uk/season_snowman.wav"
+    },
+    {
+      "key": "SEASON_PINE",
+      "text": "Намалюй ялинку.",
+      "file": "assets/audio/voice/uk/season_pine.wav"
+    },
+    {
+      "key": "SEASON_PENGUIN",
+      "text": "Намалюй пінгвіна.",
+      "file": "assets/audio/voice/uk/season_penguin.wav"
+    },
+    {
+      "key": "SEASON_SLED",
+      "text": "Намалюй санчата.",
+      "file": "assets/audio/voice/uk/season_sled.wav"
+    },
+    {
+      "key": "SEASON_GIFT",
+      "text": "Намалюй подарунок.",
+      "file": "assets/audio/voice/uk/season_gift.wav"
+    },
+    {
+      "key": "SEASON_LANTERN",
+      "text": "Намалюй ліхтарик.",
+      "file": "assets/audio/voice/uk/season_lantern.wav"
+    },
+    {
+      "key": "SEASON_STAR",
+      "text": "Намалюй зірочку.",
+      "file": "assets/audio/voice/uk/season_star.wav"
+    },
+    {
+      "key": "SEASON_SNOWFLAKE",
+      "text": "Намалюй сніжинку.",
+      "file": "assets/audio/voice/uk/season_snowflake.wav"
+    },
+    {
+      "key": "TRACE_HINT",
+      "text": "Веди пальчиком за зеленою крапкою.",
+      "file": "assets/audio/voice/uk/trace_hint.wav"
+    },
+    {
+      "key": "TRACE_NUMBER_ZERO",
+      "text": "Нуль",
+      "file": "assets/audio/voice/uk/trace_number_zero.wav"
+    }
+  ]
+}

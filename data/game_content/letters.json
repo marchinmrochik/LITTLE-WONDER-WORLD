@@ -1,0 +1,957 @@
+{
+  "version": 1,
+  "alphabets": {
+    "en": [
+      {
+        "id": "en_0",
+        "upper": "A",
+        "lower": "a",
+        "word_key": "ALPH_EN_00",
+        "name": "Ay",
+        "example": "Apple",
+        "illustration": "res://assets/objects/food/apple.svg",
+        "example_key": "ALPH_WORD_EN_00",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_1",
+        "upper": "B",
+        "lower": "b",
+        "word_key": "ALPH_EN_01",
+        "name": "Bee",
+        "example": "Bear",
+        "illustration": "res://assets/objects/animals/bear.svg",
+        "example_key": "ALPH_WORD_EN_01",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_2",
+        "upper": "C",
+        "lower": "c",
+        "word_key": "ALPH_EN_02",
+        "name": "See",
+        "example": "Cat",
+        "illustration": "res://assets/objects/animals/cat.svg",
+        "example_key": "ALPH_WORD_EN_02",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_3",
+        "upper": "D",
+        "lower": "d",
+        "word_key": "ALPH_EN_03",
+        "name": "Dee",
+        "example": "Dog",
+        "illustration": "res://assets/objects/animals/dog.svg",
+        "example_key": "ALPH_WORD_EN_03",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_4",
+        "upper": "E",
+        "lower": "e",
+        "word_key": "ALPH_EN_04",
+        "name": "Ee",
+        "example": "Elephant",
+        "illustration": "res://assets/objects/animals/elephant.svg",
+        "example_key": "ALPH_WORD_EN_04",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_5",
+        "upper": "F",
+        "lower": "f",
+        "word_key": "ALPH_EN_05",
+        "name": "Ef",
+        "example": "Flower",
+        "illustration": "res://assets/objects/world/flower.svg",
+        "example_key": "ALPH_WORD_EN_05",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_6",
+        "upper": "G",
+        "lower": "g",
+        "word_key": "ALPH_EN_06",
+        "name": "Jee",
+        "example": "Goat",
+        "illustration": "res://assets/objects/alphabet/goat.svg",
+        "example_key": "ALPH_WORD_EN_06",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_7",
+        "upper": "H",
+        "lower": "h",
+        "word_key": "ALPH_EN_07",
+        "name": "Aitch",
+        "example": "House",
+        "illustration": "res://assets/objects/alphabet/house.svg",
+        "example_key": "ALPH_WORD_EN_07",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_8",
+        "upper": "I",
+        "lower": "i",
+        "word_key": "ALPH_EN_08",
+        "name": "Eye",
+        "example": "Ice cream",
+        "illustration": "res://assets/objects/alphabet/icecream.svg",
+        "example_key": "ALPH_WORD_EN_08",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_9",
+        "upper": "J",
+        "lower": "j",
+        "word_key": "ALPH_EN_09",
+        "name": "Jay",
+        "example": "Jelly",
+        "illustration": "res://assets/objects/alphabet/jelly.svg",
+        "example_key": "ALPH_WORD_EN_09",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_10",
+        "upper": "K",
+        "lower": "k",
+        "word_key": "ALPH_EN_10",
+        "name": "Kay",
+        "example": "Kite",
+        "illustration": "res://assets/objects/alphabet/kite.svg",
+        "example_key": "ALPH_WORD_EN_10",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_11",
+        "upper": "L",
+        "lower": "l",
+        "word_key": "ALPH_EN_11",
+        "name": "El",
+        "example": "Lion",
+        "illustration": "res://assets/objects/animals/lion.svg",
+        "example_key": "ALPH_WORD_EN_11",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_12",
+        "upper": "M",
+        "lower": "m",
+        "word_key": "ALPH_EN_12",
+        "name": "Em",
+        "example": "Moon",
+        "illustration": "res://assets/objects/alphabet/moon.svg",
+        "example_key": "ALPH_WORD_EN_12",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_13",
+        "upper": "N",
+        "lower": "n",
+        "word_key": "ALPH_EN_13",
+        "name": "En",
+        "example": "Nest",
+        "illustration": "res://assets/objects/alphabet/nest.svg",
+        "example_key": "ALPH_WORD_EN_13",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_14",
+        "upper": "O",
+        "lower": "o",
+        "word_key": "ALPH_EN_14",
+        "name": "Oh",
+        "example": "Orange",
+        "illustration": "res://assets/objects/food/orange.svg",
+        "example_key": "ALPH_WORD_EN_14",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_15",
+        "upper": "P",
+        "lower": "p",
+        "word_key": "ALPH_EN_15",
+        "name": "Pee",
+        "example": "Pig",
+        "illustration": "res://assets/objects/animals/pig.svg",
+        "example_key": "ALPH_WORD_EN_15",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_16",
+        "upper": "Q",
+        "lower": "q",
+        "word_key": "ALPH_EN_16",
+        "name": "Cue",
+        "example": "Queen",
+        "illustration": "res://assets/objects/alphabet/queen.svg",
+        "example_key": "ALPH_WORD_EN_16",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_17",
+        "upper": "R",
+        "lower": "r",
+        "word_key": "ALPH_EN_17",
+        "name": "Ar",
+        "example": "Rabbit",
+        "illustration": "res://assets/objects/animals/rabbit.svg",
+        "example_key": "ALPH_WORD_EN_17",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_18",
+        "upper": "S",
+        "lower": "s",
+        "word_key": "ALPH_EN_18",
+        "name": "Ess",
+        "example": "Sun",
+        "illustration": "res://assets/objects/alphabet/sun.svg",
+        "example_key": "ALPH_WORD_EN_18",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_19",
+        "upper": "T",
+        "lower": "t",
+        "word_key": "ALPH_EN_19",
+        "name": "Tee",
+        "example": "Tree",
+        "illustration": "res://assets/objects/world/tree.svg",
+        "example_key": "ALPH_WORD_EN_19",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_20",
+        "upper": "U",
+        "lower": "u",
+        "word_key": "ALPH_EN_20",
+        "name": "You",
+        "example": "Umbrella",
+        "illustration": "res://assets/objects/alphabet/umbrella.svg",
+        "example_key": "ALPH_WORD_EN_20",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_21",
+        "upper": "V",
+        "lower": "v",
+        "word_key": "ALPH_EN_21",
+        "name": "Vee",
+        "example": "Violin",
+        "illustration": "res://assets/objects/alphabet/violin.svg",
+        "example_key": "ALPH_WORD_EN_21",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_22",
+        "upper": "W",
+        "lower": "w",
+        "word_key": "ALPH_EN_22",
+        "name": "Double you",
+        "example": "Whale",
+        "illustration": "res://assets/objects/alphabet/whale.svg",
+        "example_key": "ALPH_WORD_EN_22",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_23",
+        "upper": "X",
+        "lower": "x",
+        "word_key": "ALPH_EN_23",
+        "name": "Ex",
+        "example": "Xylophone",
+        "illustration": "res://assets/ui/xylophone.svg",
+        "example_key": "ALPH_WORD_EN_23",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_24",
+        "upper": "Y",
+        "lower": "y",
+        "word_key": "ALPH_EN_24",
+        "name": "Why",
+        "example": "Yo-yo",
+        "illustration": "res://assets/objects/alphabet/yoyo.svg",
+        "example_key": "ALPH_WORD_EN_24",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "en_25",
+        "upper": "Z",
+        "lower": "z",
+        "word_key": "ALPH_EN_25",
+        "name": "Zed",
+        "example": "Zebra",
+        "illustration": "res://assets/objects/alphabet/zebra.svg",
+        "example_key": "ALPH_WORD_EN_25",
+        "highlight_index": 0,
+        "initial": true
+      }
+    ],
+    "uk": [
+      {
+        "id": "uk_0",
+        "upper": "А",
+        "lower": "а",
+        "word_key": "ALPH_UK_00",
+        "name": "А",
+        "example": "Автобус",
+        "illustration": "res://assets/objects/alphabet/bus.svg",
+        "example_key": "ALPH_WORD_UK_00",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_1",
+        "upper": "Б",
+        "lower": "б",
+        "word_key": "ALPH_UK_01",
+        "name": "Бе",
+        "example": "Банан",
+        "illustration": "res://assets/objects/food/banana.svg",
+        "example_key": "ALPH_WORD_UK_01",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_2",
+        "upper": "В",
+        "lower": "в",
+        "word_key": "ALPH_UK_02",
+        "name": "Ве",
+        "example": "Ведмідь",
+        "illustration": "res://assets/objects/animals/bear.svg",
+        "example_key": "ALPH_WORD_UK_02",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_3",
+        "upper": "Г",
+        "lower": "г",
+        "word_key": "ALPH_UK_03",
+        "name": "Ге",
+        "example": "Гриб",
+        "illustration": "res://assets/objects/alphabet/mushroom.svg",
+        "example_key": "ALPH_WORD_UK_03",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_4",
+        "upper": "Ґ",
+        "lower": "ґ",
+        "word_key": "ALPH_UK_04",
+        "name": "Ґе",
+        "example": "Ґудзик",
+        "illustration": "res://assets/objects/alphabet/button.svg",
+        "example_key": "ALPH_WORD_UK_04",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_5",
+        "upper": "Д",
+        "lower": "д",
+        "word_key": "ALPH_UK_05",
+        "name": "Де",
+        "example": "Дерево",
+        "illustration": "res://assets/objects/world/tree.svg",
+        "example_key": "ALPH_WORD_UK_05",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_6",
+        "upper": "Е",
+        "lower": "е",
+        "word_key": "ALPH_UK_06",
+        "name": "Е",
+        "example": "Екран",
+        "illustration": "res://assets/objects/alphabet/screen.svg",
+        "example_key": "ALPH_WORD_UK_06",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_7",
+        "upper": "Є",
+        "lower": "є",
+        "word_key": "ALPH_UK_07",
+        "name": "Є",
+        "example": "Єнот",
+        "illustration": "res://assets/objects/alphabet/raccoon.svg",
+        "example_key": "ALPH_WORD_UK_07",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_8",
+        "upper": "Ж",
+        "lower": "ж",
+        "word_key": "ALPH_UK_08",
+        "name": "Же",
+        "example": "Жук",
+        "illustration": "res://assets/objects/alphabet/beetle.svg",
+        "example_key": "ALPH_WORD_UK_08",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_9",
+        "upper": "З",
+        "lower": "з",
+        "word_key": "ALPH_UK_09",
+        "name": "Зе",
+        "example": "Заєць",
+        "illustration": "res://assets/objects/animals/rabbit.svg",
+        "example_key": "ALPH_WORD_UK_09",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_10",
+        "upper": "И",
+        "lower": "и",
+        "word_key": "ALPH_UK_10",
+        "name": "И",
+        "example": "Сир",
+        "illustration": "res://assets/objects/food/cheese.svg",
+        "example_key": "ALPH_WORD_UK_10",
+        "highlight_index": 1,
+        "initial": false
+      },
+      {
+        "id": "uk_11",
+        "upper": "І",
+        "lower": "і",
+        "word_key": "ALPH_UK_11",
+        "name": "І",
+        "example": "Індик",
+        "illustration": "res://assets/objects/alphabet/turkey.svg",
+        "example_key": "ALPH_WORD_UK_11",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_12",
+        "upper": "Ї",
+        "lower": "ї",
+        "word_key": "ALPH_UK_12",
+        "name": "Ї",
+        "example": "Їжак",
+        "illustration": "res://assets/objects/alphabet/hedgehog.svg",
+        "example_key": "ALPH_WORD_UK_12",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_13",
+        "upper": "Й",
+        "lower": "й",
+        "word_key": "ALPH_UK_13",
+        "name": "Йот",
+        "example": "Йогурт",
+        "illustration": "res://assets/objects/alphabet/yogurt.svg",
+        "example_key": "ALPH_WORD_UK_13",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_14",
+        "upper": "К",
+        "lower": "к",
+        "word_key": "ALPH_UK_14",
+        "name": "Ка",
+        "example": "Кіт",
+        "illustration": "res://assets/objects/animals/cat.svg",
+        "example_key": "ALPH_WORD_UK_14",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_15",
+        "upper": "Л",
+        "lower": "л",
+        "word_key": "ALPH_UK_15",
+        "name": "Ел",
+        "example": "Лев",
+        "illustration": "res://assets/objects/animals/lion.svg",
+        "example_key": "ALPH_WORD_UK_15",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_16",
+        "upper": "М",
+        "lower": "м",
+        "word_key": "ALPH_UK_16",
+        "name": "Ем",
+        "example": "Морква",
+        "illustration": "res://assets/objects/food/carrot.svg",
+        "example_key": "ALPH_WORD_UK_16",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_17",
+        "upper": "Н",
+        "lower": "н",
+        "word_key": "ALPH_UK_17",
+        "name": "Ен",
+        "example": "Намет",
+        "illustration": "res://assets/objects/alphabet/tent.svg",
+        "example_key": "ALPH_WORD_UK_17",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_18",
+        "upper": "О",
+        "lower": "о",
+        "word_key": "ALPH_UK_18",
+        "name": "О",
+        "example": "Огірок",
+        "illustration": "res://assets/objects/food/cucumber.svg",
+        "example_key": "ALPH_WORD_UK_18",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_19",
+        "upper": "П",
+        "lower": "п",
+        "word_key": "ALPH_UK_19",
+        "name": "Пе",
+        "example": "Полуниця",
+        "illustration": "res://assets/objects/food/strawberry.svg",
+        "example_key": "ALPH_WORD_UK_19",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_20",
+        "upper": "Р",
+        "lower": "р",
+        "word_key": "ALPH_UK_20",
+        "name": "Ер",
+        "example": "Риба",
+        "illustration": "res://assets/objects/alphabet/fish.svg",
+        "example_key": "ALPH_WORD_UK_20",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_21",
+        "upper": "С",
+        "lower": "с",
+        "word_key": "ALPH_UK_21",
+        "name": "Ес",
+        "example": "Слон",
+        "illustration": "res://assets/objects/animals/elephant.svg",
+        "example_key": "ALPH_WORD_UK_21",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_22",
+        "upper": "Т",
+        "lower": "т",
+        "word_key": "ALPH_UK_22",
+        "name": "Те",
+        "example": "Томат",
+        "illustration": "res://assets/objects/food/tomato.svg",
+        "example_key": "ALPH_WORD_UK_22",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_23",
+        "upper": "У",
+        "lower": "у",
+        "word_key": "ALPH_UK_23",
+        "name": "У",
+        "example": "Усмішка",
+        "illustration": "res://assets/objects/alphabet/smile.svg",
+        "example_key": "ALPH_WORD_UK_23",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_24",
+        "upper": "Ф",
+        "lower": "ф",
+        "word_key": "ALPH_UK_24",
+        "name": "Еф",
+        "example": "Фонтан",
+        "illustration": "res://assets/objects/alphabet/fountain.svg",
+        "example_key": "ALPH_WORD_UK_24",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_25",
+        "upper": "Х",
+        "lower": "х",
+        "word_key": "ALPH_UK_25",
+        "name": "Ха",
+        "example": "Хліб",
+        "illustration": "res://assets/objects/food/bread.svg",
+        "example_key": "ALPH_WORD_UK_25",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_26",
+        "upper": "Ц",
+        "lower": "ц",
+        "word_key": "ALPH_UK_26",
+        "name": "Це",
+        "example": "Цибуля",
+        "illustration": "res://assets/objects/alphabet/onion.svg",
+        "example_key": "ALPH_WORD_UK_26",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_27",
+        "upper": "Ч",
+        "lower": "ч",
+        "word_key": "ALPH_UK_27",
+        "name": "Че",
+        "example": "Черепаха",
+        "illustration": "res://assets/objects/alphabet/turtle.svg",
+        "example_key": "ALPH_WORD_UK_27",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_28",
+        "upper": "Ш",
+        "lower": "ш",
+        "word_key": "ALPH_UK_28",
+        "name": "Ша",
+        "example": "Шапка",
+        "illustration": "res://assets/objects/alphabet/hat.svg",
+        "example_key": "ALPH_WORD_UK_28",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_29",
+        "upper": "Щ",
+        "lower": "щ",
+        "word_key": "ALPH_UK_29",
+        "name": "Ща",
+        "example": "Щітка",
+        "illustration": "res://assets/objects/alphabet/brush.svg",
+        "example_key": "ALPH_WORD_UK_29",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_30",
+        "upper": "Ь",
+        "lower": "ь",
+        "word_key": "ALPH_UK_30",
+        "name": "М’який знак",
+        "example": "Кінь",
+        "illustration": "res://assets/objects/animals/horse.svg",
+        "example_key": "ALPH_WORD_UK_30",
+        "highlight_index": 3,
+        "initial": false
+      },
+      {
+        "id": "uk_31",
+        "upper": "Ю",
+        "lower": "ю",
+        "word_key": "ALPH_UK_31",
+        "name": "Ю",
+        "example": "Юла",
+        "illustration": "res://assets/objects/alphabet/top.svg",
+        "example_key": "ALPH_WORD_UK_31",
+        "highlight_index": 0,
+        "initial": true
+      },
+      {
+        "id": "uk_32",
+        "upper": "Я",
+        "lower": "я",
+        "word_key": "ALPH_UK_32",
+        "name": "Я",
+        "example": "Яблуко",
+        "illustration": "res://assets/objects/food/apple.svg",
+        "example_key": "ALPH_WORD_UK_32",
+        "highlight_index": 0,
+        "initial": true
+      }
+    ]
+  },
+  "syllables": {
+    "en": [
+      {
+        "id": "en_0",
+        "letters": [
+          "A",
+          "T"
+        ],
+        "word_key": "BLEND_EN_00",
+        "text": "AT"
+      },
+      {
+        "id": "en_1",
+        "letters": [
+          "A",
+          "N"
+        ],
+        "word_key": "BLEND_EN_01",
+        "text": "AN"
+      },
+      {
+        "id": "en_2",
+        "letters": [
+          "I",
+          "N"
+        ],
+        "word_key": "BLEND_EN_02",
+        "text": "IN"
+      },
+      {
+        "id": "en_3",
+        "letters": [
+          "I",
+          "T"
+        ],
+        "word_key": "BLEND_EN_03",
+        "text": "IT"
+      },
+      {
+        "id": "en_4",
+        "letters": [
+          "O",
+          "N"
+        ],
+        "word_key": "BLEND_EN_04",
+        "text": "ON"
+      },
+      {
+        "id": "en_5",
+        "letters": [
+          "U",
+          "P"
+        ],
+        "word_key": "BLEND_EN_05",
+        "text": "UP"
+      }
+    ],
+    "uk": [
+      {
+        "id": "uk_0",
+        "letters": [
+          "М",
+          "А"
+        ],
+        "word_key": "BLEND_UK_00",
+        "text": "МА"
+      },
+      {
+        "id": "uk_1",
+        "letters": [
+          "М",
+          "О"
+        ],
+        "word_key": "BLEND_UK_01",
+        "text": "МО"
+      },
+      {
+        "id": "uk_2",
+        "letters": [
+          "М",
+          "У"
+        ],
+        "word_key": "BLEND_UK_02",
+        "text": "МУ"
+      },
+      {
+        "id": "uk_3",
+        "letters": [
+          "М",
+          "И"
+        ],
+        "word_key": "BLEND_UK_03",
+        "text": "МИ"
+      },
+      {
+        "id": "uk_4",
+        "letters": [
+          "М",
+          "І"
+        ],
+        "word_key": "BLEND_UK_04",
+        "text": "МІ"
+      },
+      {
+        "id": "uk_5",
+        "letters": [
+          "Н",
+          "А"
+        ],
+        "word_key": "BLEND_UK_05",
+        "text": "НА"
+      },
+      {
+        "id": "uk_6",
+        "letters": [
+          "Н",
+          "О"
+        ],
+        "word_key": "BLEND_UK_06",
+        "text": "НО"
+      },
+      {
+        "id": "uk_7",
+        "letters": [
+          "Н",
+          "У"
+        ],
+        "word_key": "BLEND_UK_07",
+        "text": "НУ"
+      },
+      {
+        "id": "uk_8",
+        "letters": [
+          "Н",
+          "И"
+        ],
+        "word_key": "BLEND_UK_08",
+        "text": "НИ"
+      },
+      {
+        "id": "uk_9",
+        "letters": [
+          "Н",
+          "І"
+        ],
+        "word_key": "BLEND_UK_09",
+        "text": "НІ"
+      },
+      {
+        "id": "uk_10",
+        "letters": [
+          "С",
+          "А"
+        ],
+        "word_key": "BLEND_UK_10",
+        "text": "СА"
+      },
+      {
+        "id": "uk_11",
+        "letters": [
+          "С",
+          "О"
+        ],
+        "word_key": "BLEND_UK_11",
+        "text": "СО"
+      },
+      {
+        "id": "uk_12",
+        "letters": [
+          "С",
+          "У"
+        ],
+        "word_key": "BLEND_UK_12",
+        "text": "СУ"
+      },
+      {
+        "id": "uk_13",
+        "letters": [
+          "С",
+          "И"
+        ],
+        "word_key": "BLEND_UK_13",
+        "text": "СИ"
+      },
+      {
+        "id": "uk_14",
+        "letters": [
+          "С",
+          "І"
+        ],
+        "word_key": "BLEND_UK_14",
+        "text": "СІ"
+      },
+      {
+        "id": "uk_15",
+        "letters": [
+          "Т",
+          "А"
+        ],
+        "word_key": "BLEND_UK_15",
+        "text": "ТА"
+      },
+      {
+        "id": "uk_16",
+        "letters": [
+          "Т",
+          "О"
+        ],
+        "word_key": "BLEND_UK_16",
+        "text": "ТО"
+      },
+      {
+        "id": "uk_17",
+        "letters": [
+          "Т",
+          "У"
+        ],
+        "word_key": "BLEND_UK_17",
+        "text": "ТУ"
+      },
+      {
+        "id": "uk_18",
+        "letters": [
+          "Т",
+          "И"
+        ],
+        "word_key": "BLEND_UK_18",
+        "text": "ТИ"
+      },
+      {
+        "id": "uk_19",
+        "letters": [
+          "Т",
+          "І"
+        ],
+        "word_key": "BLEND_UK_19",
+        "text": "ТІ"
+      }
+    ]
+  }
+}

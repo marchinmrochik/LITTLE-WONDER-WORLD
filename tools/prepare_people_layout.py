@@ -1,0 +1,47 @@
+"""Hand-reviewed hit geometry for the approved generated boy and girl sprites."""
+from pathlib import Path
+import copy,json
+ROOT=Path(__file__).resolve().parents[1]
+def read(p):return json.loads((ROOT/p).read_text(encoding='utf-8'))
+def write(p,d):(ROOT/p).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+areas={
+'eyebrow':[[404,164,70,38],[550,164,70,38]],'eye':[[403,218,72,82],[548,218,72,82]],
+'nose':[[479,286,65,48]],'mouth':[[454,336,118,56]],'ear':[[324,267,57,96],[650,267,57,96]],
+'cheek':[[382,306,75,44],[569,306,75,44]],'chin':[[480,395,65,28]],'hair':[[440,48,95,78]],
+'head':[[622,157,30,40],[363,126,289,299]],
+'finger':[[98,889,78,65],[848,889,78,65],[98,806,65,34],[861,806,65,34]],
+'hand':[[157,837,57,48],[810,837,57,48]],
+'elbow':[[242,639,66,77],[716,639,66,77]],
+'arm':[[291,555,59,80],[674,555,59,80],[206,720,52,70],[766,720,52,70]],
+'shoulder':[[322,487,48,56],[654,487,48,56]],'neck':[[478,403,66,59]],
+'belly':[[444,697,140,100]],'torso':[[433,501,158,147],[391,461,243,383]],
+'knee':[[356,1105,72,80],[583,1105,72,80]],
+'leg':[[350,1240,74,116],[593,1240,74,116]],'foot':[[260,1433,140,83],[594,1433,140,83]]}
+# Each sprite gets its own reviewed geometry even though their poses are matched.
+girl=copy.deepcopy(areas)
+for key in ['eye','eyebrow','mouth','nose','cheek','chin','ear']:
+ for box in girl[key]:box[1]+=2
+girl['hair']=[[440,48,95,78],[285,356,100,95],[643,356,100,95]]
+girl['hand']=[[158,835,57,48],[809,835,57,48]]
+girl['foot']=[[261,1433,140,83],[593,1433,140,83]]
+crops={
+'head':[290,0,440,430],'hair':[300,0,420,220],'eyebrow':[389,146,99,70],
+'eye':[390,204,100,108],'nose':[458,270,105,82],'mouth':[438,320,147,86],
+'ear':[309,252,84,123],'cheek':[370,295,105,80],'chin':[463,378,99,61],
+'neck':[459,390,102,93],'finger':[75,837,165,140],'hand':[75,780,180,200],
+'arm':[165,490,240,375],'elbow':[213,603,120,145],'shoulder':[292,454,135,150],
+'belly':[404,645,219,200],'torso':[318,430,392,460],'knee':[322,1065,148,180],
+'leg':[305,1050,180,390],'foot':[243,1370,180,164]}
+characters={}
+for id,geometry in [('boy',areas),('girl',girl)]:
+ characters[id]={'texture':f'res://assets/objects/people/{id}.png','bounds':[65,0,890,1536],'face':[280,0,460,470],'hand':[65,770,205,220],'areas':geometry,'crops':crops}
+write('data/game_content/body_characters.json',{'version':1,'characters':characters})
+body=read('data/game_content/world_body.json')
+for entry in body['items']:
+ entry['areas']=areas[entry['id']];entry['illustration']=characters['boy']['texture'];entry['art_region']=crops[entry['id']]
+write('data/game_content/world_body.json',body)
+topics=read('data/game_content/world_topics.json')
+for topic in topics['topics']:
+ if topic['id']=='body':topic['revision']=3;topic['illustration']=characters['boy']['texture']
+write('data/game_content/world_topics.json',topics)
+print('People:approved1024x1536 boy/girl with separate geometry,20part atlas regions each.')

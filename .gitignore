@@ -1,0 +1,61 @@
+# Local toolchains, downloaded models, user data and review artifacts
+/.tools/
+/.local/
+
+# Godot-generated imports and editor state
+.godot/
+# Keep asset *.import descriptors and script *.uid files in Git.
+
+# Build outputs and signing material
+/build/
+*.apk
+*.aab
+*.idsig
+*.keystore
+*.jks
+*.key
+*.pem
+*.p12
+*.pfx
+export_credentials.cfg
+
+# Environment secrets (only sanitized examples belong in Git)
+.env
+.env.*
+!.env.example
+!.env.sample
+!.env.template
+.envrc
+secrets.json
+secrets.yaml
+secrets.yml
+credentials.json
+credentials.local.*
+/.aws/
+/.ssh/
+
+# Development-only model weights; runtime speech uses committed WAV files
+*.onnx
+*.onnx.data
+
+# Python environments, bytecode and test caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# OS/editor files
+Thumbs.db
+Desktop.ini
+.DS_Store
+*.tmp
+*.log
+*.swp
+*.swo
+*~

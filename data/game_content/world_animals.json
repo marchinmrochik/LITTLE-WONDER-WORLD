@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "cat",
+      "english": "Cat",
+      "ukrainian": "Кіт",
+      "illustration": "res://assets/objects/animals/cat.svg",
+      "word_key": "WORD_CAT",
+      "prompt_key": "FIND_CAT",
+      "word_audio": "res://assets/audio/voice/en/word_cat.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_cat.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "dog",
+      "english": "Dog",
+      "ukrainian": "Собака",
+      "illustration": "res://assets/objects/animals/dog.svg",
+      "word_key": "WORD_DOG",
+      "prompt_key": "FIND_DOG",
+      "word_audio": "res://assets/audio/voice/en/word_dog.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_dog.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "cow",
+      "english": "Cow",
+      "ukrainian": "Корова",
+      "illustration": "res://assets/objects/animals/cow.svg",
+      "word_key": "WORD_COW",
+      "prompt_key": "FIND_COW",
+      "word_audio": "res://assets/audio/voice/en/word_cow.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_cow.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "pig",
+      "english": "Pig",
+      "ukrainian": "Свинка",
+      "illustration": "res://assets/objects/animals/pig.svg",
+      "word_key": "WORD_PIG",
+      "prompt_key": "FIND_PIG",
+      "word_audio": "res://assets/audio/voice/en/word_pig.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_pig.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "sheep",
+      "english": "Sheep",
+      "ukrainian": "Вівця",
+      "illustration": "res://assets/objects/animals/sheep.svg",
+      "word_key": "WORD_SHEEP",
+      "prompt_key": "FIND_SHEEP",
+      "word_audio": "res://assets/audio/voice/en/word_sheep.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_sheep.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "horse",
+      "english": "Horse",
+      "ukrainian": "Кінь",
+      "illustration": "res://assets/objects/animals/horse.svg",
+      "word_key": "WORD_HORSE",
+      "prompt_key": "FIND_HORSE",
+      "word_audio": "res://assets/audio/voice/en/word_horse.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_horse.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "duck",
+      "english": "Duck",
+      "ukrainian": "Качка",
+      "illustration": "res://assets/objects/animals/duck.svg",
+      "word_key": "WORD_DUCK",
+      "prompt_key": "FIND_DUCK",
+      "word_audio": "res://assets/audio/voice/en/word_duck.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_duck.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "chicken",
+      "english": "Chicken",
+      "ukrainian": "Курка",
+      "illustration": "res://assets/objects/animals/chicken.svg",
+      "word_key": "WORD_CHICKEN",
+      "prompt_key": "FIND_CHICKEN",
+      "word_audio": "res://assets/audio/voice/en/word_chicken.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_chicken.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "rabbit",
+      "english": "Rabbit",
+      "ukrainian": "Кролик",
+      "illustration": "res://assets/objects/animals/rabbit.svg",
+      "word_key": "WORD_RABBIT",
+      "prompt_key": "FIND_RABBIT",
+      "word_audio": "res://assets/audio/voice/en/word_rabbit.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_rabbit.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "bear",
+      "english": "Bear",
+      "ukrainian": "Ведмідь",
+      "illustration": "res://assets/objects/animals/bear.svg",
+      "word_key": "WORD_BEAR",
+      "prompt_key": "FIND_BEAR",
+      "word_audio": "res://assets/audio/voice/en/word_bear.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_bear.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "lion",
+      "english": "Lion",
+      "ukrainian": "Лев",
+      "illustration": "res://assets/objects/animals/lion.svg",
+      "word_key": "WORD_LION",
+      "prompt_key": "FIND_LION",
+      "word_audio": "res://assets/audio/voice/en/word_lion.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_lion.wav",
+      "animal_sound": ""
+    },
+    {
+      "id": "elephant",
+      "english": "Elephant",
+      "ukrainian": "Слон",
+      "illustration": "res://assets/objects/animals/elephant.svg",
+      "word_key": "WORD_ELEPHANT",
+      "prompt_key": "FIND_ELEPHANT",
+      "word_audio": "res://assets/audio/voice/en/word_elephant.wav",
+      "prompt_audio": "res://assets/audio/voice/en/find_elephant.wav",
+      "animal_sound": ""
+    }
+  ]
+}

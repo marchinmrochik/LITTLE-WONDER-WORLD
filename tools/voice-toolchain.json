@@ -1,0 +1,26 @@
+{
+  "recorded_on": "2026-11-14",
+  "engine": "Piper 2023.11.14-2",
+  "engine_source": "https://github.com/rhasspy/piper/releases/tag/2023.11.14-2",
+  "engine_archive_sha256": "f3c58906402b24f3a96d92145f58acba6d86c9b5db896d207f78dc80811efcea",
+  "model_repository": "rhasspy/piper-voices",
+  "models": {
+    "en": {
+      "file": "en_GB-cori-high.onnx",
+      "revision": "375a0fe641dea077c2a47b4e9a056d6da521eed3",
+      "sha256": "470b4dd634c98f8a4850d7626ffc3dfc90774628eeef6605a6dd8f88f30a5903"
+    },
+    "uk": {
+      "file": "uk_UA-tetiana-high.onnx",
+      "repository": "RomanStasyshyn/uk_UA-tetiana-high",
+      "revision": "42be6e3f72a7c6042271236b94e48edffd1f0c63",
+      "sha256": "1206d8447b99632badeb63d6132241f76cf551874e5254eb8836db36aed7c85c",
+      "frontend": "eSpeak NG uk + finite lexical stress + explicit canonical letter-name IPA",
+      "license": "Apache-2.0",
+      "development_only": true
+    }
+  },
+  "verification": "Model SHA256 values matched official Hugging Face LFS metadata; engine archive local hash recorded, no upstream digest claimed",
+  "runtime": "Only generated WAV files are bundled. Engine, model weights and Python remain PC development tools.",
+  "uk_synthesis_runtime": "Existing local ONNX Runtime CPU; direct Ukrainian IPA input with explicit lexical stress and duration-aligned letters"
+}

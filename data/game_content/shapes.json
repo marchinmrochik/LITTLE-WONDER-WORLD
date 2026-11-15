@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "shapes": [
+    {
+      "id": "circle",
+      "english": "Circle",
+      "ukrainian": "Коло",
+      "illustration": "res://assets/objects/shapes/circle.svg",
+      "slot": "res://assets/objects/shapes/circle_slot.svg",
+      "word_key": "SHAPE_WORD_CIRCLE",
+      "prompt_key": "SHAPE_FIND_CIRCLE",
+      "word_audio": "res://assets/audio/voice/en/shape_word_circle.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_circle.wav"
+    },
+    {
+      "id": "square",
+      "english": "Square",
+      "ukrainian": "Квадрат",
+      "illustration": "res://assets/objects/shapes/square.svg",
+      "slot": "res://assets/objects/shapes/square_slot.svg",
+      "word_key": "SHAPE_WORD_SQUARE",
+      "prompt_key": "SHAPE_FIND_SQUARE",
+      "word_audio": "res://assets/audio/voice/en/shape_word_square.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_square.wav"
+    },
+    {
+      "id": "triangle",
+      "english": "Triangle",
+      "ukrainian": "Трикутник",
+      "illustration": "res://assets/objects/shapes/triangle.svg",
+      "slot": "res://assets/objects/shapes/triangle_slot.svg",
+      "word_key": "SHAPE_WORD_TRIANGLE",
+      "prompt_key": "SHAPE_FIND_TRIANGLE",
+      "word_audio": "res://assets/audio/voice/en/shape_word_triangle.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_triangle.wav"
+    },
+    {
+      "id": "rectangle",
+      "english": "Rectangle",
+      "ukrainian": "Прямокутник",
+      "illustration": "res://assets/objects/shapes/rectangle.svg",
+      "slot": "res://assets/objects/shapes/rectangle_slot.svg",
+      "word_key": "SHAPE_WORD_RECTANGLE",
+      "prompt_key": "SHAPE_FIND_RECTANGLE",
+      "word_audio": "res://assets/audio/voice/en/shape_word_rectangle.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_rectangle.wav"
+    },
+    {
+      "id": "star",
+      "english": "Star",
+      "ukrainian": "Зірка",
+      "illustration": "res://assets/objects/shapes/star.svg",
+      "slot": "res://assets/objects/shapes/star_slot.svg",
+      "word_key": "SHAPE_WORD_STAR",
+      "prompt_key": "SHAPE_FIND_STAR",
+      "word_audio": "res://assets/audio/voice/en/shape_word_star.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_star.wav"
+    },
+    {
+      "id": "heart",
+      "english": "Heart",
+      "ukrainian": "Серце",
+      "illustration": "res://assets/objects/shapes/heart.svg",
+      "slot": "res://assets/objects/shapes/heart_slot.svg",
+      "word_key": "SHAPE_WORD_HEART",
+      "prompt_key": "SHAPE_FIND_HEART",
+      "word_audio": "res://assets/audio/voice/en/shape_word_heart.wav",
+      "prompt_audio": "res://assets/audio/voice/en/shape_find_heart.wav"
+    }
+  ]
+}

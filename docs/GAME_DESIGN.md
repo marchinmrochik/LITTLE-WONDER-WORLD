@@ -1,0 +1,46 @@
+# Game Design Status
+
+The desktop build implements the shell, companion meadow, Learn Animals, Learn Colors, Feed the Animals, Shape Sorting, Animal Puzzles, Memory Match, Let's Count and Magic Drawing. The meadow is a hello/sparkle/rest interaction, not an eleventh educational game. No scores or mastery are awarded for tapping Foxie.
+
+| Planned game | Required core behavior | Implemented? |
+| --- | --- | --- |
+| Learn Animals | 12 animals, exploration, find mode, English words | Yes on PC; Android acceptance pending |
+| Learn Colors | 8 colors, exploration and search | Yes on PC; Android acceptance pending |
+| Feed the Animals | 12 foods, drag/drop and eating response | Yes on PC; Android acceptance pending |
+| Magic Drawing | Smooth drawing, brush modes, erase, undo/redo, save/gallery | Yes on PC; Android acceptance pending |
+| Coloring Book | 10 authored pages, independently fillable regions, save/undo | No |
+| Animal Puzzles | Multiple pictures, 2/4/6 pieces and snap completion | Yes on PC; Android acceptance pending |
+| Shape Sorting | 6 shapes, matching drop targets and forgiving snap | Yes on PC; Android acceptance pending |
+| Memory Match | 2/3/4 pairs, guarded flips and replay | Yes on PC; Android acceptance pending |
+| Let's Count | 1-5 / 1-10, choices and basket mode | Yes on PC; Android acceptance pending |
+| Magic Xylophone | 8 pitched keys, polyphony and multitouch | No |
+
+The activity menu exposes Animals, Colors, Snack time and Shape garden (English), Animal puzzles (Thinking) and the working companion meadow. Other zones appear only when their games work. Easy/Normal/Advanced controls Animals choice counts at 2/3/4. Automatic adaptive difficulty is not implemented.
+
+Animals exploration shows four illustrated cards per page across three pages. Card taps repeat English words. Find mode chooses five distinct targets per session among unique randomized options and plays English instructions in either UI language. Incorrect choices retain the task with a gentle localized reaction. Correct choices lock feedback against repeated input, save the answer/task and lead to the next prompt. Completion gives a five-star visual celebration and records one session. Replay starts a new session. There is no timed challenge, loss state, punishment or mastery claim.
+
+Full content lists and mechanics are preserved in requirements/MASTER_PROMPT.ru.md. All games must keep short repeatable rounds, no punishment/timer/failure screen, large touch targets, repeatable voice instructions and a reliable home path.
+
+Feeding uses a fantasy Foxie picnic and the exact twelve requested food words. It teaches English vocabulary rather than real-animal dietary matching. Difficulty offers 3/4/5 food cards. Tapping selects/speaks a word; moving a card to the highlighted character offers it. Wrong food retains the request; outside/canceled drops record no attempts. Only one pointer owns a drag, which is canceled on focus loss, overlay, Escape or exit. Five accepted requests complete a session with replay. Reduced motion keeps static food feedback instead of shrinking animation.
+
+Shape garden has Circle, Square, Triangle, Rectangle, Star and Heart. Easy/Normal/Advanced provide 2/3/4 simultaneous pieces across three boards. Every session covers all six IDs; piece order and slot order are independently shuffled and cannot be identical. Neutral silhouettes avoid color-only cues. Matching is by shape ID, with a 12-logical-pixel near-edge tolerance and nearest-slot resolution. Correct pieces snap into place and remain there; incorrect pieces return. Outside/occupied/canceled drops do not count attempts. Tap a source or silhouette to hear its English name. All placements are required before advancing, with completion/replay and separate progress. No developmental mastery is inferred.
+
+Animal Puzzles reuses Cat, Dog, Rabbit, Bear, Lion and Elephant art. Each session selects three distinct pictures. Easy/Normal/Advanced divide the original image into 2x1, 2x2 or 3x2 rectangular crops. A shuffled tray holds all pieces. Correct pieces snap and remain; wrong pieces return. Source/slot IDs must match, and every piece is required. A translucent template starts on for Easy and can be toggled for any difficulty. After the first two images, Next unlocks so the child can enjoy the completed picture before continuing. The third complete image ends the session. Restart clears the current picture only; replay starts a new session. Saved counters represent actual practice placements, including repeated practice after restart, not mastery.
+
+Memory Match (Find the pairs) selects 2/3/4 distinct pictures and makes exactly two cards per picture. The pool reuses four animals, four foods and four familiar shapes. Card positions shuffle each session. One reveal completes before the next can start; a second card locks input until its pair is resolved. Different cards remain visible briefly then smoothly flip closed; matching cards stay open. No countdown, error limit or punishment. English vocabulary follows each reveal; UI-localized helpers react to pairs. A pair attempt is recorded only when the second reveal finishes; a matched pair counts as a completed task. All pairs are required for session celebration. Replay/restart clears the board; prior actual practice remains in local counters. Focus/overlays pause flips/holds/hides. Leaving or restarting invalidates old callbacks.
+
+Activities now uses four game cards per page (2x2) with Previous/Next and a page indicator. Puzzles and Memory are on page two. Foxie's meadow is a persistent illustrated footer button. Last menu page is remembered for the current app process, including locale rebuilds; it is not saved as child progress.
+
+Let's Count uses four original-art themes:apples,carrots,strawberries,stars. Easy ranges1-5;Normal/Advanced range1-10 with2/3/4 number choices. Each mode has five distinct target quantities and cycles all four themes. How many? renders exactly the target number of objects,asks in English and speaks the selected numeral in English. Basket asks for a visible numeric quantity with English spoken number words. Every source object has a unique instance ID and can be stored once;stored objects can be tapped to return. An explicit All ready! check accepts only the exact live count. Overfill/underfill retains the task;duplicate checks and feedback inputs cannot score twice. Dragging alone is not an answer attempt. Mode switch/replay cancels pending drags and resets the session;all practice counters stay honest rather than implying mastery.
+
+Magic Drawing has nine colors, three brush widths, regular/soft/rainbow modes, white eraser, undo/redo, protected Clear, Save and child gallery. Large gaps between input events are interpolated and clipped to the page. One pointer owns a stroke; interruptions commit visible work before draft flushing. Clear requires confirmation and is undoable. Reopening a saved PNG starts a new editable raster session; original saved copies remain unchanged until explicitly deleted by an adult. Undo does not extend into past app sessions. Replacing unpublished current work also asks before opening another picture. Gallery deletion requires the adult route and a confirmation. Free drawing does not fabricate learning scores.
+
+Coloring Book delivered on desktop0.11.0: all ten specified pages, independent visible closed regions, nine colors plus white, repeat English page name, undo/redo, protected undoable reset, editable saves and separate multi-page draft. Single pointer press fills one region; dragging does not sweep across regions. No learning score inferred. Magic Xylophone is next.
+
+Magic Xylophone desktop0.12.0 completes GAME10 free-play requirements on PC: eight rainbow keys C5-C6, original soft modal-bar sounds, independent simultaneous touch pointers/slides, press visual and reduced-motion support, bounded16-note polyphony, parent SFX volume. No lessons, correct-answer scores or artificial progression. Parent overlay/focus loss/home release notes. Actual tablet touch/latency and subjective timbre review remain pending.
+
+Latest user policy0.13.0: all child words/instructions/speech follow selected language. Ukrainian is fully Ukrainian. Ten games now accessed through a virtual scroll grid,not paginated navigation. Idle help demonstrates one concrete valid action after10seconds,without acting or scoring. Drawing/Coloring tools use icons. Earlier English-only/pagination descriptions are historical.
+
+Completed learning rounds now have an explicit finale: spoken congratulations,short fireworks andsix touch balloons. Allsix must pop before replay/result controls return;rootHome remains available. Balloons do not add learning scores. Open-ended creative/music activities are not artificially ended. PC0.14.0 evidence inCELEBRATION_REPORT.md.
+
+Feedback0.15.0:25colors/6gradients;next-piece drag no longer waits for praise. Letters explores bothalphabets;Buildasyllable assembles two-letter targets in5task sessions withcommonparty. Balloonmeadow renews6freeplayballoons with no scores orpressure.13activities now;UIlanguage andexplicit ABC/АБВ lessonlanguage distinguished. SeeFEEDBACK_PACK_REPORT.md.
