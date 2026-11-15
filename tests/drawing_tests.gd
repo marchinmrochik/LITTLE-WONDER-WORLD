@@ -100,7 +100,7 @@ func _run() -> void:
 	_expect(ArtworkManager._read_png(ArtworkManager.directory + "/bad.png") == null, "PNG dimensions bounded before decode")
 	for i: int in range(ArtworkManager.MAX_ENTRIES - 1):
 		_expect(not ArtworkManager.save_artwork(paint.image).is_empty(), "Gallery within its capacity saves")
-	_expect(ArtworkManager.save_artwork(paint.image).is_empty() and ArtworkManager.entries.size() == 24, "Gallery cap never evicts earlier pictures")
+	_expect(ArtworkManager.save_artwork(paint.image).is_empty() and ArtworkManager.entries.size() == ArtworkManager.MAX_ENTRIES, "Gallery cap never evicts earlier pictures")
 	_expect(ArtworkManager.remove_artwork(id) and ArtworkManager.load_artwork(id) == null, "Adult-confirmed deletion removes only selected saved copy")
 	ArtworkManager.directory = root + "/quota"
 	ArtworkManager.reload()

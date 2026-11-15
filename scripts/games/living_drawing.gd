@@ -120,12 +120,14 @@ func _notification(what: int) -> void:
 func _exit_tree() -> void:
 	if motion!=null:motion.kill()
 	board.cancel_pointer()
-	GameManager.living_drafts[story_id]={"completed":completed.duplicate(),"part":part_index,"stroke":stroke_index,"edge":trace.edge,"fraction":trace.fraction,"tracing":state==State.TRACE,"night":board.night,"smoke":board.smoke_color,"lit":board.lit.duplicate()}
+	GameManager.living_drafts[story_id]={"completed":completed.duplicate(),"part":part_index,"stroke":stroke_index,"edge":trace.edge,"fraction":trace.fraction,"reversed":trace.reversed_path,"tracing":state==State.TRACE,"night":board.night,"smoke":board.smoke_color,"lit":board.lit.duplicate()}
 
 func restore_scene(saved: Dictionary) -> void:
 	completed.assign(saved.completed);part_index=saved.part;board.night=saved.night;board.smoke_color=saved.smoke;board.lit=saved.lit.duplicate()
 	if saved.tracing and not completed[part_index]:
-		state=State.TRACE;stroke_index=saved.stroke;configure_stroke();trace.edge=mini(saved.edge,trace.points.size()-2);trace.fraction=saved.fraction
+		state=State.TRACE;stroke_index=saved.stroke;configure_stroke()
+		if saved.get("reversed",false):trace.points.reverse();trace._rebuild_lengths();trace.reversed_path=true
+		trace.edge=mini(saved.edge,trace.points.size()-2);trace.fraction=saved.fraction
 		var box: Array=part().zoom;board.view=Rect2(box[0],box[1],box[2],box[3]);update_labels();repeat_prompt()
 	else:advance_part()
 

@@ -32,6 +32,7 @@ func _ready() -> void:
 	register_game("puzzles", "res://scenes/games/animal_puzzles.tscn", "thinking")
 	register_game("memory", "res://scenes/games/memory_match.tscn", "thinking")
 	register_game("counting", "res://scenes/games/lets_count.tscn", "thinking")
+	register_game("draw_word","res://scenes/games/draw_word.tscn","creative")
 	register_game("drawing", "res://scenes/games/magic_drawing.tscn", "creative")
 	register_game("coloring", "res://scenes/games/coloring_book.tscn", "creative")
 	register_game("xylophone", "res://scenes/games/magic_xylophone.tscn", "creative")

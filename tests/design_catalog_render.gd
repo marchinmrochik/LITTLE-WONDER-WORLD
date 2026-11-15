@@ -19,6 +19,7 @@ func run() -> void:
  get_window().title="Little Wonder World - Catalog Renderer";get_window().size=Vector2i(1280,800)
  DirAccess.make_dir_recursive_absolute(ProjectSettings.globalize_path(OUT))
  var fixture := "user://test-runs/design-catalog-"+str(Time.get_ticks_usec())
+ BalloonRecords.storage_path=fixture+"/balloons.json"
  SettingsManager.storage_path=fixture+"/settings.json";ProgressManager.storage_path=fixture+"/progress.json";ArtworkManager.directory=fixture+"/artwork";AssessmentHistory.storage_path=fixture+"/history.json"
  SettingsManager.reload();ProgressManager.reload();ArtworkManager.reload();AssessmentHistory.reload();SettingsManager.set_value("music_enabled",false);SettingsManager.set_value("voice_volume",0.0);SettingsManager.set_value("sfx_volume",0.0);SettingsManager.set_value("locale","uk");SettingsManager.set_value("reduced_motion",false)
  app=preload("res://scenes/core/app_root.tscn").instantiate();add_child(app);app.idle_guide.set_process(false);await frames();await capture("screen_home")
@@ -26,6 +27,16 @@ func run() -> void:
   GameManager.start_game(route);await frames();app.suspended=false
   if app.current_view.get("focus_paused")!=null:app.current_view.focus_paused=false
   await capture("screen_"+route)
+ GameManager.start_game("puzzles");await frames();app.current_view.focus_paused=false;app.current_view.choose_material();await capture("screen_material_picker");app.close_modal();await frames()
+ GameManager.start_game("xylophone");await frames();app.current_view.focus_paused=false;app.current_view.set_learning(true);await capture("screen_music_practice")
+ GameManager.start_game("balloons");await frames();app.current_view.focus_paused=false;app.current_view.start_mode(true);await capture("screen_balloon_challenge");app.current_view.remaining=0;app.current_view.finish_challenge();await capture("screen_balloon_records")
+ GameManager.start_game("draw_word");await frames();var drawing_game: Variant=app.current_view;drawing_game.focus_paused=false;drawing_game.editor.focus_paused=false;drawing_game.family=false;drawing_game.deck.configure("uk","normal","all");drawing_game.task=drawing_game.deck.next();drawing_game.begin_task();await capture("screen_draw_word_child")
+ drawing_game.family=true;drawing_game.start_drawing();await capture("screen_draw_word_family")
+ GameManager.start_game("coloring");await frames();SettingsManager.set_value("coloring_reference",true);app.current_view._update_reference();await capture("screen_coloring_reference")
+ for page: Dictionary in ColoringDocument.catalog():
+  ColoringDocument.reference_image(page.id).save_png(ProjectSettings.globalize_path(OUT+"coloring_example_"+page.id+".png"));captures+=1
+ ArtworkManager.save_artwork(ColoringDocument.reference_image("fox"));GameManager.parents_unlocked=true;GameManager.navigate("gallery");await capture("screen_artwork_export")
+ SettingsManager.set_value("coloring_reference",false)
  for route: String in ["activities","world","living_gallery","settings"]:
   GameManager.parents_unlocked=true;GameManager.navigate(route);await capture("screen_"+route)
  for topic: String in ["animals","body","plants"]:

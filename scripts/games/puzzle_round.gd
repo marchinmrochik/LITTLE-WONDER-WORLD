@@ -15,8 +15,8 @@ var rng := RandomNumberGenerator.new()
 func _init(picture_ids: Array[String]) -> void:
 	ids.assign(picture_ids)
 
-func begin(difficulty: String, random_seed: int = 0) -> bool:
-	if not LAYOUTS.has(difficulty) or ids.size() < PICTURES_PER_SESSION:
+func begin(difficulty: String, random_seed: int = 0, selected_id: String = "") -> bool:
+	if not LAYOUTS.has(difficulty) or ids.size() < (PICTURES_PER_SESSION if selected_id.is_empty() else 1) or (not selected_id.is_empty() and selected_id not in ids):
 		return false
 	var unique := {}
 	for id: String in ids:
@@ -27,6 +27,7 @@ func begin(difficulty: String, random_seed: int = 0) -> bool:
 		rng.randomize()
 	else:
 		rng.seed = random_seed
+	var previous := picture_id()
 	layout = LAYOUTS[difficulty]
 	pictures.assign(ids)
 	for i: int in range(pictures.size() - 1, 0, -1):
@@ -34,7 +35,9 @@ func begin(difficulty: String, random_seed: int = 0) -> bool:
 		var saved := pictures[i]
 		pictures[i] = pictures[j]
 		pictures[j] = saved
+	if selected_id.is_empty() and pictures.size()>1 and pictures[0]==previous:pictures.push_back(pictures.pop_front())
 	pictures.resize(PICTURES_PER_SESSION)
+	if not selected_id.is_empty():pictures.assign([selected_id])
 	index = 0
 	completed = false
 	reset_picture()

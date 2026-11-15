@@ -48,3 +48,14 @@ Seasonal0.22:36actors across3originalscenes,seasonalicons and animatedeffects au
 
 
 Symbol tracing0.23: original printed uppercase/digit centerline geometry authored by tools/prepare_symbol_tracing.py;smallfireworks originalCanvasItemgeometry. UkrainianWAVs rebuiltusingRomanStasyshyn/uk_UA-tetiana-high (Apache2.0,pinnedhashinvoice-toolchain),authoredfinitestresslexiconandcanonicalletterIPA. Weights/configdownloadeddevelopment-only;onlyWAVs/modelcard/license shipped. English339existingclipsunchanged. No externaltracingart or addedpackages.
+
+Play improvements0.26: `ui/settings.svg` is an original project gear vector. MelodyPractice contains three short authored note patterns played using the existing original xylophone waveforms; no external song recording or new sample library. Nine story tracing gestures were authored against existing procedural actor coordinates; illustration art is unchanged.
+
+
+Storybook 0.27: 40 original SVG illustrations authored locally by tools/prepare_story_illustrations.py, with rounded companion-style geometry. Existing original dog/rabbit companion SVGs are reused without third-party material. All 46 story actors are covered, including day/night and active variants. assets/ui/draw_word.svg is an original clue-card/pencil composition reusing the existing original cat. No external art, recordings, dependencies or models were downloaded; existing voice clips remain unchanged in this increment.
+
+
+0.28: Ten original coloring-reference palettes authored locally against existing closed regions; no external art or color-reference imagery.388 replacement speech clips use existing licensed Tetiana High/Cori/LJ Speech models, with per-cue hashes and methods recorded in manifest voice_repair fields. No new model or package downloaded. Nine owner-selected/retained clips are byte-preserved. Replacements await human listening approval; see licenses/VOICE_NOTICE.md.
+
+
+0.29: removed the authored decorative green background plate from all12animal SVGs and their generator, retaining original character geometry/shadows. Living-story objects retain transparent surroundings (47unique relevant textures audited). The only speech replacement in this increment is the owner-selected public-domain human British Z; see licenses/Z_PRONUNCIATION_NOTICE.md and tools/voice_sources.json. Whisper.cpp/base are development-only downloaded tools in ignored .tools, never packaged into the application; no child audio is sent to a service.

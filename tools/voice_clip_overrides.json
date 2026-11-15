@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "clips": {
+    "uk:WORD_CAT": {
+      "sha256": "9451031f801c262ceed69ab7d23675314f889bd00b636d4cd16423adadcde804",
+      "variant": "tetiana_standard",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "uk:BOOK_WORD_CAT": {
+      "sha256": "9451031f801c262ceed69ab7d23675314f889bd00b636d4cd16423adadcde804",
+      "variant": "tetiana_standard",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "uk:ALPH_WORD_UK_14": {
+      "sha256": "9451031f801c262ceed69ab7d23675314f889bd00b636d4cd16423adadcde804",
+      "variant": "tetiana_standard",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "en:WORD_SHEEP": {
+      "sha256": "d61d621225dc8d1dfe5fbdc42e333d25b26a21efd50609d137aa723d9f011ab7",
+      "variant": "ljspeech",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "en:WORD_CAT": {
+      "sha256": "6b337bd7e54af607316791b63d85bb0ada19dff98e216091f445a5e49381d273",
+      "variant": "cat_direct_model",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "en:BOOK_WORD_CAT": {
+      "sha256": "6b337bd7e54af607316791b63d85bb0ada19dff98e216091f445a5e49381d273",
+      "variant": "cat_direct_model",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "en:ALPH_WORD_EN_02": {
+      "sha256": "6b337bd7e54af607316791b63d85bb0ada19dff98e216091f445a5e49381d273",
+      "variant": "cat_direct_model",
+      "reason": "Preserve the human-selected recording during routine synthesis"
+    },
+    "uk:WORD_DUCK": {
+      "sha256": "537506e5dd147787e0146e08633891a0c2e2e052a0537ea7186d68cb80186cc8",
+      "variant": "current_selected",
+      "reason": "Owner explicitly kept this existing Ukrainian recording; preserve exact bytes"
+    },
+    "uk:WORD_SHEEP": {
+      "sha256": "ca77592d7b85f6d2989122e0b562bc7a614a4bf542491c65a1a296c83ca57824",
+      "variant": "current_selected",
+      "reason": "Owner explicitly kept this existing Ukrainian recording; preserve exact bytes"
+    },
+    "en:ALPH_EN_25": {
+      "sha256": "73e5fc4ce213df7a802c9f8724b58de411f45d2c7e72b26b58b77ecae243933e",
+      "variant": "human_zed_selected",
+      "reason": "Owner selected the British public-domain human recording; preserve exact processed PCM"
+    }
+  }
+}

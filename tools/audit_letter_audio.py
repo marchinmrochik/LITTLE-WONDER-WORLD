@@ -14,12 +14,12 @@ for locale in ['en','uk']:
   metrics=measure(path)
   clip=clips[(locale,entry['word_key'])]
   extracted=clip.get('extraction',{})
-  actual=extracted.get('target_phonemes','')
+  actual=extracted.get('target_phonemes') or clip.get('voice_repair',{}).get('phonemes') or clip.get('voice_override',{}).get('phonemes','')
   expected=expected_en[position] if locale=='en' else __import__('letter_aligned').ukrainian_letter_phonemes(entry['word_key']).replace('ˈ','').replace('ˌ','')
-  normalized=actual.replace('ˈ','').replace('ˌ','')
+  normalized=actual.replace('ˈ','').replace('ˌ','').rstrip('.')
   if locale=='en' and entry['upper']=='X':normalized=normalized.replace('ɛː','ɛ')
   phonemes_match=normalized==expected
-  metrics['phonemes_match']=phonemes_match
+  metrics['declared_phonemes_match']=phonemes_match
   metrics['review']=metrics['review'] or not phonemes_match
 
   row=dict(locale=locale,glyph=entry['upper'],key=entry['word_key'],**metrics)

@@ -35,7 +35,7 @@ drawings["elephant"] = body("#b0bfc2", "#8c9fa5") + '<ellipse cx="105" cy="132" 
 catalog = []
 names = [("cat","Cat","Кіт"),("dog","Dog","Собака"),("cow","Cow","Корова"),("pig","Pig","Свинка"),("sheep","Sheep","Вівця"),("horse","Horse","Кінь"),("duck","Duck","Качка"),("chicken","Chicken","Курка"),("rabbit","Rabbit","Кролик"),("bear","Bear","Ведмідь"),("lion","Lion","Лев"),("elephant","Elephant","Слон")]
 for animal_id, english, ukrainian in names:
-    svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="30 0 300 300"><path d="M67 161c-8-67 33-105 107-105 86 0 118 58 112 128-4 58-27 88-101 88S76 235 67 161" fill="#deead7"/><ellipse cx="180" cy="278" rx="91" ry="12" fill="#527566" opacity=".12"/>{drawings[animal_id]}</svg>\n'
+    svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="30 0 300 300"><ellipse cx="180" cy="278" rx="91" ry="12" fill="#527566" opacity=".12"/>{drawings[animal_id]}</svg>\n'
     (DEST / f"{animal_id}.svg").write_text(svg, encoding="utf-8")
     catalog.append({"id":animal_id,"english":english,"ukrainian":ukrainian,"illustration":f"res://assets/objects/animals/{animal_id}.svg","word_key":f"WORD_{animal_id.upper()}","prompt_key":f"FIND_{animal_id.upper()}","word_audio":f"res://assets/audio/voice/en/word_{animal_id}.wav","prompt_audio":f"res://assets/audio/voice/en/find_{animal_id}.wav","animal_sound":""})
 (ROOT / "data/game_content/animals.json").write_text(json.dumps({"version":1,"animals":catalog}, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")

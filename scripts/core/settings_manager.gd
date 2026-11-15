@@ -5,7 +5,7 @@ signal storage_failed
 
 const DEFAULTS := {
 	"version": 1, "locale": "en", "difficulty": "easy",
-	"english_ukrainian_translation": false,
+	"english_ukrainian_translation": false, "coloring_reference": false,
 	"companion": "fox", "body_character": "boy",
 	"music_volume": 0.25, "voice_volume": 0.8, "sfx_volume": 0.55,
 	"music_enabled": true, "reduced_motion": false, "system_voice_enabled": false,
@@ -65,4 +65,5 @@ func is_valid_document(value: Dictionary) -> bool:
 		if not value.get(key) is bool:
 			return false
 	if not value.get("english_ukrainian_translation",false) is bool:return false
+	if not value.get("coloring_reference",false) is bool:return false
 	return true

@@ -59,3 +59,24 @@ Desktop.ini
 *.swp
 *.swo
 *~
+
+# Offline speech-recognition models and local review/training material
+*.gguf
+*.ggml
+ggml-*.bin
+*.safetensors
+*.pt
+*.pth
+*.tflite
+*.part
+# Never publish tablet backups or exported child drawings outside the local tree
+/tablet-backups/
+/artwork-exports/
+
+# Device debug keys, crash dumps and accidental local backups
+adbkey
+adbkey.pub
+*.bak
+*.backup
+*.dmp
+*.hprof

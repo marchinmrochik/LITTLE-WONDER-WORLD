@@ -1,6 +1,7 @@
 extends Control
 
 enum State { BUILDING, FEEDBACK, PICTURE_DONE, COMPLETE }
+var chosen_picture := ""
 var state := State.BUILDING
 var model: PuzzleRound
 var drag := PointerDrag.new()
@@ -49,7 +50,7 @@ func _entry() -> Dictionary:
 
 func start_session() -> void:
 	session_awarded = false
-	if model.begin(SettingsManager.values.difficulty):
+	if model.begin(SettingsManager.values.difficulty,0,chosen_picture):
 		hint_visible = SettingsManager.values.difficulty == "easy"
 		_show_picture()
 
@@ -77,6 +78,7 @@ func _show_picture() -> void:
 	body.add_child(heading)
 	heading.add_child(UiKit.label("PUZZLES_TITLE", 30, UiKit.GREEN))
 	heading.add_child(UiKit.spacer())
+	heading.add_child(UiKit.button("MATERIAL_CHOOSE",choose_material,UiKit.MINT))
 	heading.add_child(UiKit.label("PUZZLES_HINT", 25))
 	var prompt := UiKit.row(14)
 	prompt.alignment = BoxContainer.ALIGNMENT_CENTER
@@ -151,7 +153,7 @@ func _show_picture() -> void:
 	footer.alignment = BoxContainer.ALIGNMENT_CENTER
 	body.add_child(footer)
 	var count := UiKit.label("", 23, UiKit.GREEN)
-	count.text = LocalizationManager.text("PUZZLES_PROGRESS").format({"current": model.index + 1, "total": PuzzleRound.PICTURES_PER_SESSION})
+	count.text = LocalizationManager.text("PUZZLES_PROGRESS").format({"current": model.index + 1, "total": model.pictures.size()})
 	footer.add_child(count)
 	var word := UiKit.button("", repeat_word, UiKit.MINT, "speaker")
 	word.name = "RepeatWord"
@@ -311,7 +313,7 @@ func _finish_feedback() -> void:
 		slot_pictures[piece].visible = true
 	_restore_drag()
 	if model.picture_complete():
-		if model.index + 1 == PuzzleRound.PICTURES_PER_SESSION:
+		if model.index + 1 == model.pictures.size():
 			model.advance()
 			_show_complete()
 		else:
@@ -353,7 +355,7 @@ func _show_complete() -> void:
 	center.add_child(card)
 	var column := UiKit.column(18)
 	card.add_child(column)
-	var title := UiKit.label("PUZZLES_COMPLETE", 34, UiKit.GREEN)
+	var title := UiKit.label("PUZZLES_PICTURE_DONE" if not chosen_picture.is_empty() else "PUZZLES_COMPLETE", 34, UiKit.GREEN)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	column.add_child(title)
 	fox = FoxieView.new()
@@ -362,8 +364,8 @@ func _show_complete() -> void:
 	fox.set_state("celebrating")
 	var replay := UiKit.button("ANIMALS_REPLAY", start_session, UiKit.MINT, "replay")
 	replay.name = "Replay"
-	column.add_child(replay)
-	AudioManager.say("PUZZLES_COMPLETE")
+	var actions := UiKit.row(12);column.add_child(actions);actions.add_child(replay);actions.add_child(UiKit.button("MATERIAL_CHOOSE",choose_material,UiKit.CREAM))
+	AudioManager.say("PUZZLES_PICTURE_DONE" if not chosen_picture.is_empty() else "PUZZLES_COMPLETE")
 	CompletionCelebration.mount(self)
 
 func set_overlay_paused(value: bool) -> void:
@@ -400,3 +402,8 @@ func _exit_tree() -> void:
 	if celebration != null:
 		celebration.kill()
 	AudioManager.stop_voice()
+
+func choose_material() -> void:
+	MaterialPicker.show_for(self,ContentManager.puzzles,func(ids: Array) -> void:
+		chosen_picture="" if ids.is_empty() else str(ids[0]);start_session()
+	)

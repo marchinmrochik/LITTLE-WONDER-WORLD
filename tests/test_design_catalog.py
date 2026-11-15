@@ -31,7 +31,7 @@ class CatalogTests(unittest.TestCase):
     def test_inventory(self):
         data = self.catalog.refresh()
         self.assertEqual(data['stats']['procedural'], 46)
-        self.assertEqual(data['stats']['screens'], 15)
+        self.assertEqual(data['stats']['screens'], 16)
         self.assertEqual(sum(e['type'] == 'trace' for e in data['entries']), 69)
         self.assertEqual(len({e['id'] for e in data['entries']}), len(data['entries']))
 

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300"><defs>
+<linearGradient id="cream" x2=".3" y2="1"><stop stop-color="#fff7df"/><stop offset="1" stop-color="#edcda2"/></linearGradient>
+<linearGradient id="fur" x2=".2" y2="1"><stop stop-color="#eac18a"/><stop offset="1" stop-color="#ce935e"/></linearGradient>
+<linearGradient id="rust" x2=".3" y2="1"><stop stop-color="#b38768"/><stop offset="1" stop-color="#805d4c"/></linearGradient>
+<linearGradient id="leaf" x2=".3" y2="1"><stop stop-color="#b6d49b"/><stop offset="1" stop-color="#72a780"/></linearGradient>
+<linearGradient id="blue" x2=".2" y2="1"><stop stop-color="#c9e5ec"/><stop offset="1" stop-color="#82b8cf"/></linearGradient>
+<linearGradient id="pink" x2=".3" y2="1"><stop stop-color="#f4c3ca"/><stop offset="1" stop-color="#d995ab"/></linearGradient>
+<linearGradient id="gold" x2=".2" y2="1"><stop stop-color="#ffe8a1"/><stop offset="1" stop-color="#e8b455"/></linearGradient>
+<linearGradient id="cloud" x2=".3" y2="1"><stop stop-color="#fffef5"/><stop offset="1" stop-color="#dbe9e9"/></linearGradient>
+<linearGradient id="autumn" x2=".2" y2="1"><stop stop-color="#efc084"/><stop offset="1" stop-color="#cb855e"/></linearGradient>
+</defs><ellipse cx="150" cy="278" rx="87" ry="10" fill="#527566" opacity="0.13"/><path d="M150.0 26.0L181.4 98.8L260.3 106.2L200.7 158.5L218.2 235.8L150.0 195.4L81.8 235.8L99.3 158.5L39.7 106.2L118.6 98.8Z" fill="url(#gold)" stroke="#edca7c" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/><g transform="translate(150 147) scale(0.9)"><ellipse cx="-22" cy="0" rx="7" ry="10" fill="#293d39" opacity="1"/><ellipse cx="22" cy="0" rx="7" ry="10" fill="#293d39" opacity="1"/><ellipse cx="-24" cy="-3" rx="2.5" ry="3" fill="#fffdf4" opacity="1"/><ellipse cx="20" cy="-3" rx="2.5" ry="3" fill="#fffdf4" opacity="1"/><ellipse cx="-36" cy="18" rx="10" ry="5" fill="#e6a89b" opacity="0.6"/><ellipse cx="36" cy="18" rx="10" ry="5" fill="#e6a89b" opacity="0.6"/><path d="M-11 24Q0 34 11 24" fill="none" stroke="#986e5b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></g><path d="M125 72l14-10" fill="none" stroke="#fff0bf" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>

@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "pages": {
+    "cat": {
+      "tail": "b58a68",
+      "left_ear": "eaa0b6",
+      "right_ear": "eaa0b6",
+      "body": "b58a68",
+      "head": "b58a68",
+      "belly": "fff1cc",
+      "left_paw": "fff1cc",
+      "right_paw": "fff1cc"
+    },
+    "dog": {
+      "tail": "b58a68",
+      "body": "b58a68",
+      "left_ear": "eaa0b6",
+      "right_ear": "eaa0b6",
+      "head": "b58a68",
+      "muzzle": "fff1cc",
+      "belly": "fff1cc",
+      "left_paw": "fff1cc",
+      "right_paw": "fff1cc"
+    },
+    "fox": {
+      "tail": "e8a267",
+      "tail_tip": "fff1cc",
+      "body": "e8a267",
+      "left_ear": "eaa0b6",
+      "right_ear": "eaa0b6",
+      "head": "e8a267",
+      "left_cheek": "fff1cc",
+      "right_cheek": "fff1cc",
+      "belly": "fff1cc",
+      "left_paw": "fff1cc",
+      "right_paw": "fff1cc"
+    },
+    "butterfly": {
+      "upper_left": "eaa0b6",
+      "upper_right": "eaa0b6",
+      "lower_left": "ad99ca",
+      "lower_right": "ad99ca",
+      "left_spot": "f2ce70",
+      "right_spot": "f2ce70",
+      "lower_left_spot": "fff1cc",
+      "lower_right_spot": "fff1cc",
+      "body": "b58a68",
+      "head": "b58a68"
+    },
+    "fish": {
+      "tail": "e8a267",
+      "top_fin": "eaa0b6",
+      "body": "e8a267",
+      "head": "f2ce70",
+      "fin": "eaa0b6",
+      "bubble_big": "88bfd0",
+      "bubble_small": "88bfd0"
+    },
+    "house": {
+      "chimney": "b58a68",
+      "wall": "fff1cc",
+      "roof": "d98481",
+      "door": "79ad83",
+      "left_window": "88bfd0",
+      "right_window": "88bfd0",
+      "attic": "f2ce70"
+    },
+    "flower": {
+      "stem": "79ad83",
+      "left_leaf": "79ad83",
+      "right_leaf": "79ad83",
+      "petal_0": "eaa0b6",
+      "petal_1": "eaa0b6",
+      "petal_2": "eaa0b6",
+      "petal_3": "eaa0b6",
+      "petal_4": "eaa0b6",
+      "petal_5": "eaa0b6",
+      "petal_6": "eaa0b6",
+      "petal_7": "eaa0b6",
+      "center": "f2ce70"
+    },
+    "car": {
+      "body": "d98481",
+      "left_window": "88bfd0",
+      "right_window": "88bfd0",
+      "left_light": "f2ce70",
+      "right_light": "f2ce70",
+      "left_wheel": "556b65",
+      "right_wheel": "556b65",
+      "left_hub": "fff1cc",
+      "right_hub": "fff1cc"
+    },
+    "dinosaur": {
+      "tail": "79ad83",
+      "back_leg": "79ad83",
+      "front_leg": "79ad83",
+      "spine_a": "e8a267",
+      "spine_b": "e8a267",
+      "spine_c": "e8a267",
+      "body": "79ad83",
+      "neck": "79ad83",
+      "head": "79ad83",
+      "belly": "fff1cc",
+      "spot_a": "f2ce70",
+      "spot_b": "f2ce70",
+      "spot_c": "f2ce70"
+    },
+    "rainbow": {
+      "band_0": "dc8580",
+      "band_1": "e8a267",
+      "band_2": "f2ce70",
+      "band_3": "79ad83",
+      "band_4": "88bfd0",
+      "band_5": "829ed1",
+      "band_6": "ad99ca",
+      "left_cloud": "dcecef",
+      "right_cloud": "dcecef"
+    }
+  }
+}

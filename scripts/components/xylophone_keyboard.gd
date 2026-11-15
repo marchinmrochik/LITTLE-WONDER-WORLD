@@ -7,6 +7,7 @@ const NAMES := ["C", "D", "E", "F", "G", "A", "B", "C"]
 var pointers: Dictionary = {}
 var pulses := PackedFloat32Array([0,0,0,0,0,0,0,0])
 var paused := false
+var highlighted := -1
 
 func _ready() -> void:
 	custom_minimum_size = Vector2(640, 360)
@@ -40,7 +41,8 @@ func _draw() -> void:
 		bar.bg_color = COLORS[index].lightened(0.17 if held else pulses[index]*0.12)
 		bar.set_corner_radius_all(18)
 		bar.border_color = Color("496557")
-		bar.set_border_width_all(2)
+		bar.border_color=Color("f4cf58") if highlighted==index else Color("496557")
+		bar.set_border_width_all(6 if highlighted==index else 2)
 		rect.position.y += shift
 		draw_style_box(bar,rect)
 		for fraction: float in [0.18,0.82]:

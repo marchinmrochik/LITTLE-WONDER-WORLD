@@ -16,9 +16,10 @@ var rng := RandomNumberGenerator.new()
 func _init(item_ids: Array[String]) -> void:
 	ids.assign(item_ids)
 
-func begin(difficulty: String, random_seed: int = 0) -> bool:
+func begin(difficulty: String, random_seed: int = 0, selected_ids: Array[String] = []) -> bool:
 	if not PAIRS.has(difficulty) or ids.size() < PAIRS[difficulty]:
 		return false
+	if not selected_ids.is_empty() and (selected_ids.size()!=PAIRS[difficulty] or selected_ids.any(func(id: String) -> bool:return id not in ids) or selected_ids.any(func(id: String) -> bool:return selected_ids.count(id)>1)):return false
 	var unique := {}
 	for id: String in ids:
 		if id.is_empty() or unique.has(id):
@@ -29,7 +30,7 @@ func begin(difficulty: String, random_seed: int = 0) -> bool:
 	else:
 		rng.seed = random_seed
 	pair_count = PAIRS[difficulty]
-	var available := ids.duplicate()
+	var available := ids.duplicate() if selected_ids.is_empty() else selected_ids.duplicate()
 	_shuffle(available)
 	deck.clear()
 	for id: String in available.slice(0, pair_count):

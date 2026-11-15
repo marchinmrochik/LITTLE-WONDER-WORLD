@@ -54,6 +54,7 @@ func _ready() -> void:
 		_add_volume(right, entry[0], entry[1])
 	_add_toggle(right, "music_enabled", "MUSIC_ENABLED")
 	_add_toggle(right, "reduced_motion", "REDUCED_MOTION")
+	_add_toggle(right,"coloring_reference","BOOK_EXAMPLE")
 	_add_toggle(right, "system_voice_enabled", "SYSTEM_VOICE")
 	right.add_child(UiKit.paragraph("VOICE_NOTE", 18))
 	right.add_child(UiKit.paragraph("SYSTEM_VOICE_NOTE", 18))

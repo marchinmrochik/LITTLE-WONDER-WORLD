@@ -1,6 +1,7 @@
 extends Control
 
 enum State { CHOOSING, REVEALING, HOLDING, HIDING, COMPLETE }
+var chosen_ids: Array[String]=[]
 var state := State.CHOOSING
 var model: MemoryRound
 var body := UiKit.column(14)
@@ -52,7 +53,7 @@ func _clear_body() -> void:
 
 func start_session() -> void:
 	AudioManager.stop_voice()
-	if not model.begin(SettingsManager.values.difficulty):
+	if not model.begin(SettingsManager.values.difficulty,0,chosen_ids):
 		return
 	_clear_body()
 	session_awarded = false
@@ -60,7 +61,7 @@ func start_session() -> void:
 	state = State.CHOOSING
 	var title := UiKit.label("MEMORY_TITLE", 32, UiKit.GREEN)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
-	body.add_child(title)
+	var top := UiKit.row(10);body.add_child(top);top.add_child(title);top.add_child(UiKit.spacer());top.add_child(UiKit.button("MATERIAL_CHOOSE",choose_material,UiKit.MINT))
 	var prompt := UiKit.row(14)
 	prompt.alignment = BoxContainer.ALIGNMENT_CENTER
 	body.add_child(prompt)
@@ -205,7 +206,7 @@ func _show_complete() -> void:
 	fox.set_state("celebrating")
 	var replay := UiKit.button("ANIMALS_REPLAY", start_session, UiKit.MINT, "replay")
 	replay.name = "Replay"
-	column.add_child(replay)
+	var actions := UiKit.row(12);column.add_child(actions);actions.add_child(replay);actions.add_child(UiKit.button("MATERIAL_CHOOSE",choose_material,UiKit.CREAM))
 	AudioManager.say("MEMORY_COMPLETE")
 	CompletionCelebration.mount(self)
 
@@ -234,3 +235,8 @@ func _exit_tree() -> void:
 		if card.flip_tween != null:
 			card.flip_tween.kill()
 	AudioManager.stop_voice()
+
+func choose_material() -> void:
+	MaterialPicker.show_for(self,ContentManager.memory,func(ids: Array) -> void:
+		chosen_ids.assign(ids);start_session()
+	,MemoryRound.PAIRS[SettingsManager.values.difficulty])

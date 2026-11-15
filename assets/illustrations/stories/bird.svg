@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300"><defs>
+<linearGradient id="cream" x2=".3" y2="1"><stop stop-color="#fff7df"/><stop offset="1" stop-color="#edcda2"/></linearGradient>
+<linearGradient id="fur" x2=".2" y2="1"><stop stop-color="#eac18a"/><stop offset="1" stop-color="#ce935e"/></linearGradient>
+<linearGradient id="rust" x2=".3" y2="1"><stop stop-color="#b38768"/><stop offset="1" stop-color="#805d4c"/></linearGradient>
+<linearGradient id="leaf" x2=".3" y2="1"><stop stop-color="#b6d49b"/><stop offset="1" stop-color="#72a780"/></linearGradient>
+<linearGradient id="blue" x2=".2" y2="1"><stop stop-color="#c9e5ec"/><stop offset="1" stop-color="#82b8cf"/></linearGradient>
+<linearGradient id="pink" x2=".3" y2="1"><stop stop-color="#f4c3ca"/><stop offset="1" stop-color="#d995ab"/></linearGradient>
+<linearGradient id="gold" x2=".2" y2="1"><stop stop-color="#ffe8a1"/><stop offset="1" stop-color="#e8b455"/></linearGradient>
+<linearGradient id="cloud" x2=".3" y2="1"><stop stop-color="#fffef5"/><stop offset="1" stop-color="#dbe9e9"/></linearGradient>
+<linearGradient id="autumn" x2=".2" y2="1"><stop stop-color="#efc084"/><stop offset="1" stop-color="#cb855e"/></linearGradient>
+</defs><ellipse cx="150" cy="264" rx="83" ry="10" fill="#527566" opacity="0.13"/><path d="M76 190Q30 190 43 149L96 166" fill="url(#blue)"/><ellipse cx="143" cy="189" rx="86" ry="64" fill="url(#blue)" opacity="1"/><ellipse cx="192" cy="128" rx="48" ry="51" fill="url(#gold)" opacity="1"/><path d="M230 133q34 4 29 17l-31 8" fill="url(#gold)"/><path d="M99 176Q127 144 157 172Q146 218 106 218Q86 202 99 176" fill="#8bb7cb"/><ellipse cx="194" cy="119" rx="7" ry="10" fill="#293d39" opacity="1"/><ellipse cx="192" cy="116" rx="2.6" ry="3" fill="#fffdf4" opacity="1"/><ellipse cx="217" cy="143" rx="10" ry="5" fill="#e8a18f" opacity="0.6"/><path d="M129 247v15m40-16v16" fill="none" stroke="#bd9b69" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><path d="M172 83q-9-20 4-25m10 25q6-19 17-17" fill="none" stroke="#dbb779" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>

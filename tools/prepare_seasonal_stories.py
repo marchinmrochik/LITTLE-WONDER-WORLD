@@ -1,5 +1,6 @@
 from pathlib import Path
 import json,math
+from trace_silhouettes import gesture
 R=Path('.')
 def read(p):return json.loads((R/p).read_text(encoding='utf-8'))
 def write(p,d):(R/p).write_text(json.dumps(d,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
@@ -42,6 +43,9 @@ for story,kinds in stories.items():
    'rainbow':[[math.cos(math.pi+n*math.pi/12)*.48,.3+math.sin(math.pi+n*math.pi/12)*.7] for n in range(13)]}
   if kind in shapes:path=[[round(x+a*w,2),round(y+b*h,2)] for a,b in shapes[kind]]
   parts.append(dict(id=kind,prompt='SEASON_'+kind.upper(),color=colors[i],marker=[x,y],zoom=[left-45,top-45,w+90,h+90],box=[left,top,w,h],strokes=[path]))
+ for part in parts:
+  silhouette=gesture(part)
+  if silhouette:part['strokes']=[silhouette]
  write('data/game_content/living_'+story+'.json',dict(version=1,id=story,base_parts=1,bounds=[0,-100,1000,850],parts=parts))
 en=read('data/localization/en.json');uk=read('data/localization/uk.json');manifest=read('data/game_content/foundation.json');jobs=read('data/game_content/voice_jobs.json')
 texts={'SEASON_SPRING':('Spring garden','Весняний сад'),'SEASON_AUTUMN':('Autumn adventure','Осіння пригода'),'SEASON_WINTER':('Winter wonderland','Зимова казка'),'SEASON_PLAY':('Your world is alive. Tap the pictures and explore!','Твій світ ожив. Натискай на малюнки та досліджуй!')}
@@ -57,3 +61,6 @@ for p,d in [('data/localization/en.json',en),('data/localization/uk.json',uk),('
 for story,color,shape in [('spring','#a1c88b','<circle cx="80" cy="65" r="45"/>'),('autumn','#df995d','<path d="M80 15L130 85L80 125L30 85Z"/>'),('winter','#b2d8e8','<path d="M80 15L125 115H35Z"/>')]:
  (R/f'assets/ui/living_{story}.svg').write_text(f'<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><path d="M80 65V145" stroke="#7d6652" stroke-width="14"/><g fill="{color}" stroke="#496557" stroke-width="4">{shape}</g><circle cx="130" cy="25" r="15" fill="#f5d475"/></svg>',encoding='utf-8')
 print('Three seasonal stories, 36 actors, bilingual local instructions.')
+
+# Apply the current companion-style art/gesture definitions after base content.
+import prepare_story_illustrations

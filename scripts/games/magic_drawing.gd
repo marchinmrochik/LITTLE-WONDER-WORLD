@@ -1,5 +1,10 @@
 extends Control
 
+@export var draft_slot := ""
+@export var allow_gallery := true
+@export var play_intro := true
+@export var compact_inset := false
+
 var canvas := PaintCanvas.new()
 var column := UiKit.column(6)
 var stage := UiKit.row(8)
@@ -17,7 +22,7 @@ func _ready() -> void:
 	add_child(column)
 	column.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
 	var inset := MarginContainer.new();inset.size_flags_vertical=Control.SIZE_EXPAND_FILL
-	inset.add_theme_constant_override("margin_top",32);inset.add_theme_constant_override("margin_bottom",16);column.add_child(inset)
+	inset.add_theme_constant_override("margin_top",10 if compact_inset else 32);inset.add_theme_constant_override("margin_bottom",6 if compact_inset else 16);column.add_child(inset)
 	stage.size_flags_vertical=Control.SIZE_EXPAND_FILL;inset.add_child(stage)
 	var right := UiKit.column(14);right.name="DrawingActions";right.custom_minimum_size.x=110
 	palette.side_layout=true;right.add_child(palette)
@@ -25,6 +30,7 @@ func _ready() -> void:
 	undo_button = UiKit.compact_tool_button("DRAW_UNDO", undo, "undo");undo_button.name="Undo";actions.add_child(undo_button)
 	redo_button = UiKit.compact_tool_button("DRAW_REDO", redo, "redo");redo_button.name="Redo";actions.add_child(redo_button)
 	for entry: Array in [["DRAW_SAVE", "SaveDrawing", save_picture], ["GALLERY", "OpenGallery", show_gallery], ["DRAW_CLEAR", "ClearDrawing", request_clear]]:
+		if entry[1]=="OpenGallery" and not allow_gallery:continue
 		var button := UiKit.compact_tool_button(entry[0],entry[2],{"SaveDrawing":"save","OpenGallery":"gallery","ClearDrawing":"clear"}[entry[1]])
 		button.name=entry[1];actions.add_child(button)
 	palette.paint_selected.connect(select_paint)
@@ -57,17 +63,17 @@ func _ready() -> void:
 	add_child(draft_timer)
 	draft_timer.timeout.connect(flush_draft)
 	canvas.stroke_committed.connect(_changed)
-	var draft := ArtworkManager.load_draft()
+	var draft := ArtworkManager.load_draft(draft_slot)
 	if draft != null:
 		canvas.document.load_image(draft)
 		canvas.refresh()
 		unpublished = not canvas.document.is_blank()
 	_update_controls()
-	if not ArtworkManager.pending_open_id.is_empty():
+	if allow_gallery and not ArtworkManager.pending_open_id.is_empty():
 		var id := ArtworkManager.pending_open_id
 		ArtworkManager.pending_open_id = ""
 		call_deferred("request_open", id)
-	AudioManager.say("DRAW_INTRO")
+	if play_intro:AudioManager.say("DRAW_INTRO")
 
 func _app() -> Node:
 	return get_tree().get_first_node_in_group("app_root")
@@ -149,7 +155,7 @@ func clear_picture() -> void:
 func flush_draft() -> void:
 	draft_timer.stop()
 	if unpublished:
-		if not ArtworkManager.save_draft(canvas.document.image):
+		if not ArtworkManager.save_draft(canvas.document.image,draft_slot):
 			status.text = LocalizationManager.text("SAVE_ERROR")
 
 func save_picture() -> void:
@@ -165,7 +171,7 @@ func save_picture() -> void:
 		status.text = LocalizationManager.text("DRAW_FULL" if ArtworkManager.last_error == ERR_OUT_OF_MEMORY else "SAVE_ERROR")
 	else:
 		unpublished = false
-		ArtworkManager.save_draft(canvas.document.image)
+		ArtworkManager.save_draft(canvas.document.image,draft_slot)
 		status.text = LocalizationManager.text("DRAW_SAVED")
 		AudioManager.say("DRAW_SAVED")
 
@@ -207,7 +213,7 @@ func load_picture(id: String) -> void:
 	canvas.document.load_image(image)
 	canvas.refresh()
 	unpublished = false
-	ArtworkManager.save_draft(image)
+	ArtworkManager.save_draft(image,draft_slot)
 	close_gallery()
 	_update_controls()
 	status.text = LocalizationManager.text("DRAW_READY")

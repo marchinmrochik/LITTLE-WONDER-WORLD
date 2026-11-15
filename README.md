@@ -2,9 +2,9 @@
 
 Godot 4.7.2 Standard educational application for ages 3-5. English is the first-run language; Ukrainian is available in the parent section. Distribution remains local/private, without Google Play.
 
-## Current desktop version - 0.25.0
+## Current desktop version - 0.29.0
 
-Fourteen activities, **Learn Animals**, **Learn Colors**, **Feed the Animals**, **Shape Sorting**, **Animal Puzzles**, **Memory Match**, **Numbers and counting**, **Magic Drawing**, **Coloring Book** and **Magic Xylophone**, are playable on the PC:
+Fifteen activities, **Learn Animals**, **Learn Colors**, **Feed the Animals**, **Shape Sorting**, **Animal Puzzles**, **Memory Match**, **Numbers and counting**, **Magic Drawing**, **Coloring Book** and **Magic Xylophone**, are playable on the PC:
 
 - Magic drawing: 149 paint choices, three sizes, regular/soft/rainbow brushes, eraser, bounded undo/redo, guarded clear, draft recovery and editable local PNG gallery.
 - Numbers and counting: 1-5/1-10, four picture sets, number choice and unique-object basket modes, English numbers, return/correct/check and saved progress.
@@ -20,7 +20,7 @@ Fourteen activities, **Learn Animals**, **Learn Colors**, **Feed the Animals**, 
 - Local English/Ukrainian synthesized speech, independent audio controls and music ducking during voice playback.
 - Actual attempts, completed tasks and completed sessions saved locally. No mastery assessment is inferred.
 
-The activity menu exposes Animals, Colors, Snack time, Shape garden, Animal puzzles, Find the pairs, Numbers and counting, Magic drawing and the working Foxie meadow. All ten games are available in the scrollable activity grid. All ten activities have desktop implementations; final Android acceptance remains pending. The user's approved meadow artwork, palette and music are retained; Animals illustrations and additional Foxie poses extend that style. New voice timbre/pronunciation still need listening review.
+The activity menu exposes Animals, Colors, Snack time, Shape garden, Animal puzzles, Find the pairs, Numbers and counting, Magic drawing and the working Foxie meadow. All fifteen games are available in the scrollable activity grid. All fifteen activities have desktop implementations; final Android acceptance remains pending. The user's approved meadow artwork, palette and music are retained; Animals illustrations and additional Foxie poses extend that style. New voice timbre/pronunciation still need listening review.
 
 The new **Living drawings / Живі малюнки** gallery contains four open-ended stories: House and yard, Spring garden, Autumn adventure and Winter wonderland. Categories and stories are displayed four per row. In House and yard, trace enlarged elements, then play with a barking puppy, day/night sun, rain, butterflies and colored chimney smoke. There is no final task or completion screen. See [the seasonal report](docs/SEASONS_REPORT.md). The drawing palette now has 149 choices, and the home screen has a single horizontal companion strip with selection arrows.
 
@@ -113,3 +113,11 @@ Desktop0.18.0 replaces the body with an approved illustrated boy and matching gi
 Desktop0.19.0 adds unified whole-content touch scrolling for home/settings/catalog/palette,149paint choices,andcompactdrawingtools withlarger920x575visiblepaper at1280x800. See[Scroll/paint report](docs/SCROLL_PAINT_REPORT.md). Tablet remains0.18.0.
 
 Home correction0.19.1:one horizontal swipeable pet strip at the bottom;previous/next arrows beside the large companion,cyclicselection andautomatic selected-thumbnail reveal. This supersedes the0.19.0homepetgrid. Other vertical scroll/drawing changes remain. PC only;tablet0.18.0.
+
+Desktop0.26.0: visible difficulty strip and settings gear; pictured material choice in puzzles/memory/word building; bounded trace recovery and nine silhouette guides; separate60-second balloon challenge with local records; three guided xylophone melodies. EN/UK, local-only. See [Play improvements report](docs/PLAY_IMPROVEMENTS_REPORT.md). Tablet and existing APK remain0.25.0/code29 until a requested update.
+
+Desktop 0.27.0: offline **Draw a word** in EN/UK, child/family modes, familiar pictured vocabulary and isolated draft recovery. All 46 living-story actors now use matching companion-style illustrations; completing a cloud reveals three clouds. See [Draw a word and storybook report](docs/DRAW_WORD_STORYBOOK_REPORT.md). Tablet/APK remain 0.25.0/code29.
+
+Desktop 0.28.0: parent-gallery PNG export, 200-picture / 256MiB bounded gallery with lazy thumbnails, and optional examples for all ten coloring pages. 388 speech clips have been regenerated with revised frontends; selected recordings remain unchanged, pronunciation listening is still pending. See [Speech, gallery and coloring report](docs/VOICE_GALLERY_COLORING_REPORT.md). Tablet/APK remain 0.25.0/code29.
+
+Desktop0.29.0: flexible corner/jitter tracing, compact balloon score and larger flight area, persistent difficulty selection styling, transparent animal artwork, owner-selected human British Z and offline semantic speech triage. The full710-recording ASR report is a review aid, not pronunciation approval. See [Input and voice QA report](docs/FLEXIBLE_INPUT_VOICE_QA_REPORT.md). Tablet/APK remain0.28.0/code32.

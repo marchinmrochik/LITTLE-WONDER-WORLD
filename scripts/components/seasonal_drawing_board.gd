@@ -20,6 +20,7 @@ func _draw() -> void:
  paint_ellipse(Rect2(-450,450,1900,900),ground)
  if night:
   for star: Vector2 in [Vector2(300,10),Vector2(530,-35),Vector2(710,110),Vector2(940,280)]:draw_circle(star,3,Color("ffedb8"))
+ if is_done("cloud"):DesignVisuals.sky_clouds(self,game.story_id,age,night)
  # Small non-interactive ground accents belong to the scenery, not hidden guides.
  for i: int in range(18):
   var at := Vector2(40+i*55,700+sin(i*1.8)*20)
@@ -54,7 +55,16 @@ func draw_actor(part: Dictionary) -> void:
  var actor_center := actor_position(part);var box: Array=part.box
  var world_scale := camera_scale();var shift := image_rect().position-view.position*world_scale
  draw_set_transform(shift,0,Vector2.ONE*world_scale)
- if DesignVisuals.draw(self,"story/"+game.story_id+"/"+str(part.id),Rect2(actor_center-Vector2(box[2],box[3])*.5,Vector2(box[2],box[3]))):return
+ var reactive: bool=effects.has(part.id)
+ var rotation := 0.0 if not reactive or SettingsManager.values.reduced_motion else age*.3 if part.id=="snowflake" else sin(age*5)*.045
+ draw_set_transform(shift+actor_center*world_scale,rotation,Vector2.ONE*world_scale)
+ if DesignVisuals.draw(self,"story/"+game.story_id+"/"+str(part.id),Rect2(-Vector2(box[2],box[3])*.5,Vector2(box[2],box[3])),"night" if night else "active" if reactive else "idle"):
+  if reactive and part.id in ["star","gift","rainbow","lantern"]:
+   draw_set_transform(shift+actor_center*world_scale,0,Vector2.ONE*minf(box[2],box[3])/100.0*world_scale);draw_sparkles(age)
+  if reactive and part.id in ["pond","puddle"]:
+   draw_set_transform(shift+actor_center*world_scale,0,Vector2.ONE*world_scale)
+   for ring: int in range(3):draw_arc(Vector2.ZERO,(ring+1)*box[2]*.12+sin(age*3)*3,0,TAU,48,Color("e8f3e8"),2,true)
+  draw_set_transform(shift,0,Vector2.ONE*world_scale);return
  var actor_scale: float=minf(box[2],box[3])/100.0
  draw_set_transform(shift+actor_center*world_scale,0,Vector2.ONE*actor_scale*world_scale)
  var active: bool=effects.has(part.id);var t := age if not SettingsManager.values.reduced_motion else 0.0

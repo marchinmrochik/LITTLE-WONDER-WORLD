@@ -19,6 +19,9 @@ var gallery: ArtworkGallery
 var draft_timer := Timer.new()
 var overlay_paused := false
 var focus_paused := false
+var reference_panel: VBoxContainer
+var reference_picture: TextureRect
+var reference_button: ChildButton
 
 func _ready() -> void:
 	for page: Dictionary in ColoringDocument.catalog():
@@ -46,6 +49,9 @@ func _ready() -> void:
 		var button := UiKit.tool_button(entry[0],entry[2],{"SaveColoring":"save","OpenGallery":"gallery","ResetColoring":"clear"}[entry[1]])
 		button.name = entry[1]
 		top.add_child(button)
+	reference_button=UiKit.tool_button("BOOK_EXAMPLE",toggle_reference,"palette")
+	reference_button.name="ToggleReference"
+	top.add_child(reference_button)
 	var pages := UiKit.row(14)
 	pages.alignment = BoxContainer.ALIGNMENT_CENTER
 	column.add_child(pages)
@@ -71,7 +77,15 @@ func _ready() -> void:
 	palette.paint_selected.connect(select_paint)
 
 	canvas.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	column.add_child(canvas)
+	var workspace := UiKit.row(14)
+	workspace.size_flags_vertical=Control.SIZE_EXPAND_FILL
+	column.add_child(workspace)
+	canvas.size_flags_horizontal=Control.SIZE_EXPAND_FILL
+	workspace.add_child(canvas)
+	reference_panel=UiKit.column(8);reference_panel.custom_minimum_size.x=200;workspace.add_child(reference_panel)
+	reference_panel.add_child(UiKit.label("BOOK_EXAMPLE",22,UiKit.GREEN))
+	reference_picture=TextureRect.new();reference_picture.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;reference_picture.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;reference_picture.custom_minimum_size=Vector2(200,150);reference_picture.mouse_filter=Control.MOUSE_FILTER_IGNORE;reference_panel.add_child(reference_picture)
+	var freedom := UiKit.paragraph("BOOK_EXAMPLE_HINT",18);freedom.custom_minimum_size.x=200;reference_panel.add_child(freedom)
 	canvas.region_pressed.connect(fill_at)
 	status = UiKit.label("BOOK_READY", 21, UiKit.GREEN)
 	column.add_child(status)
@@ -96,7 +110,19 @@ func _show_page() -> void:
 	counter.text = LocalizationManager.text("BOOK_PAGE").format({"current":page_index + 1,"total":10})
 	previous.disabled = page_index == 0
 	next.disabled = page_index == ColoringDocument.catalog().size() - 1
+	_update_reference()
 	_update_controls()
+
+func toggle_reference() -> void:
+	SettingsManager.set_value("coloring_reference",not SettingsManager.values.coloring_reference)
+	_update_reference()
+
+func _update_reference() -> void:
+	reference_panel.visible=SettingsManager.values.coloring_reference
+	if reference_panel.visible:
+		var image := ColoringDocument.reference_image(document().page.id)
+		reference_picture.texture=ImageTexture.create_from_image(image) if image!=null else null
+	reference_button.add_theme_stylebox_override("normal",UiKit.panel(UiKit.MINT if reference_panel.visible else UiKit.CREAM,16,8))
 
 func _update_controls() -> void:
 	undo_button.disabled = document().cursor == 0

@@ -165,3 +165,13 @@ func render_image() -> Image:
 		return null
 	image.convert(Image.FORMAT_RGBA8)
 	return image
+
+static func reference_image(id: String) -> Image:
+	var data: Variant=JSON.parse_string(FileAccess.get_file_as_string("res://data/game_content/coloring_references.json"))
+	if not data is Dictionary or data.get("version")!=1:return null
+	var colors_for_page: Variant=data.get("pages",{}).get(id,{})
+	var state := {"version":1,"page":id,"colors":colors_for_page}
+	if not valid_state(state) or colors_for_page.size()!=page_for(id).regions.size():return null
+	var example := ColoringDocument.new(id)
+	if not example.restore(state):return null
+	return example.render_image()

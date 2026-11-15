@@ -1,8 +1,8 @@
 extends Node
 
 signal changed
-const MAX_ENTRIES := 24
-const MAX_GALLERY_BYTES := 67108864
+const MAX_ENTRIES := 200
+const MAX_GALLERY_BYTES := 268435456
 const MAX_PNG_BYTES := 4194304
 var directory := "user://artwork"
 var entries: Array[Dictionary] = []
@@ -135,16 +135,19 @@ func save_color_draft(value: Dictionary) -> bool:
 	last_error = JsonStore.write_document(directory + "/coloring-draft.json", value, _valid_color_draft)
 	return last_error == OK
 
-func save_draft(image: Image) -> bool:
+func save_draft(image: Image,slot: String="") -> bool:
+	if slot not in ["","draw-word"]:return false
 	if status == "incompatible" or not _valid_image(image):
 		last_error = ERR_INVALID_DATA
 		return false
-	last_error = _publish(directory + "/draft.png", image.save_png_to_buffer(), true)
+	last_error = _publish(directory + ("/draft.png" if slot.is_empty() else "/draw-word-draft.png"), image.save_png_to_buffer(), true)
 	return last_error == OK
 
-func load_draft() -> Image:
-	var image := _read_png(directory + "/draft.png")
-	return image if image != null else _read_png(directory + "/draft.png.bak")
+func load_draft(slot: String="") -> Image:
+	if slot not in ["","draw-word"]:return null
+	var path := directory + ("/draft.png" if slot.is_empty() else "/draw-word-draft.png")
+	var image := _read_png(path)
+	return image if image != null else _read_png(path+".bak")
 
 func load_artwork(id: String) -> Image:
 	if not valid_id(id) or not _has(id):
@@ -222,3 +225,24 @@ func _read_png(path: String) -> Image:
 
 func _u32(bytes: PackedByteArray, offset: int) -> int:
 	return (int(bytes[offset]) << 24) | (int(bytes[offset + 1]) << 16) | (int(bytes[offset + 2]) << 8) | int(bytes[offset + 3])
+
+# Only a path explicitly returned by the parent's system save dialog is used.
+func export_artwork(id: String, destination: String) -> Error:
+	var image := load_artwork(id)
+	if image == null or destination.is_empty() or destination.begins_with("res://"):
+		return ERR_INVALID_PARAMETER
+	var resolved := ProjectSettings.globalize_path(destination).simplify_path().replace("\\", "/")
+	var internal := ProjectSettings.globalize_path(directory).simplify_path().replace("\\", "/")
+	if resolved.to_lower() == internal.to_lower() or resolved.to_lower().begins_with(internal.to_lower()+"/"):
+		return ERR_INVALID_PARAMETER
+	if not destination.begins_with("content://") and not destination.get_extension().to_lower() == "png":
+		return ERR_INVALID_PARAMETER
+	var bytes := image.save_png_to_buffer()
+	if bytes.is_empty():return ERR_INVALID_DATA
+	# Android document-provider URIs are opened directly by Godot's FileAccess.
+	if destination.begins_with("content://"):
+		var output := FileAccess.open(destination,FileAccess.WRITE)
+		if output == null:return FileAccess.get_open_error()
+		output.store_buffer(bytes);output.flush()
+		var error := output.get_error();output.close();return error
+	return _publish(destination,bytes,false)

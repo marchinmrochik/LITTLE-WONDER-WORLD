@@ -35,7 +35,6 @@ spoken=['LIVE_TAP','LIVE_TRACE','LIVE_DONE','LIVE_EXPLORE']+['LIVE_'+p['id'].upp
 for key in spoken:
  manifest['voice'][key]={}
  for loc,text in [('en',en[key]),('uk',uk[key])]:
-  if key=='LIVE_WALLS':text+=' '+copy['LIVE_TRACE'][loc=='uk']
   file=f'assets/audio/voice/{loc}/{key.lower()}.wav';manifest['voice'][key][loc]='res://'+file;jobs[loc]=[j for j in jobs[loc] if j['key']!=key];jobs[loc].append(dict(key=key,text=text,file=file))
 for p,d in [('data/localization/en.json',en),('data/localization/uk.json',uk),('data/game_content/foundation.json',manifest),('data/game_content/voice_jobs.json',jobs)]:write(p,d)
 (ROOT/'assets/ui/living_house.svg').write_text('<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160"><g stroke="#496557" stroke-width="5" stroke-linejoin="round"><path d="M35 70H125V140H35Z" fill="#f4ce93"/><path d="M20 73L80 25L140 73Z" fill="#d98173"/><path d="M70 103H91V140H70Z" fill="#86b5b6"/><path d="M44 87H62V108H44ZM102 87H120V108H102Z" fill="#a9dce0"/><circle cx="127" cy="33" r="12" fill="#efce55"/></g></svg>',encoding='utf-8')

@@ -137,3 +137,24 @@ native captures, and stages scoped image/path/color changes with local backups.
 `DesignVisuals` is the small runtime bridge for optional story texture overrides;
 the empty override registry falls back to existing procedural art. Catalog web
 code is excluded from Android exports. See `design_catalog/README.md`.
+
+
+0.26 Play improvements: DifficultyStrip changes the persisted difficulty before
+entering games. MaterialPicker uses AppRoot.modal to pause/resume, bounded4-column
+TouchScroll pooling, and exact selected IDs passed into PuzzleRound/MemoryRound/
+word building. Random modes remain; selected puzzle/word has variable session
+length. BalloonRecords uses a separate validated JsonStore document and bounded
+top10 by difficulty; only the completed60s mode submits records. MelodyPractice
+is pure ordered-note state; sample playback and user input have separate paths.
+GuidedTrace recovery remains current-segment bounded; final pointer-up coordinates
+are considered unless cancelled. Native catalog modes are rendered from the same
+scenes with isolated balloon history.
+
+
+0.27 DrawWordDeck derives categorized EN/UK tasks from WordCatalog. DrawWord embeds MagicDrawing with the whitelisted draw-word draft slot and its matching task context; the ordinary draft is unchanged. Save-before-next blocks on gallery/save errors. Family mode suppresses prompt audio, MaterialPicker speech and WordTranslationCaption; guesses are human-confirmed, never assessment results. DesignVisuals now supports contain/stretch fitting, state variants and opacity; the 46 living-story overrides use original SVG art while existing animation/effect state stays in the boards.
+
+
+0.28: ArtworkManager accepts existing version1 indexes up to200 entries / 256MiB PNGs. ParentGallery owns the native FileDialog and passes its explicit chosen path to export_artwork; child galleries expose no filesystem controls. ArtworkGallery recycles visible cards in TouchScroll and keeps at most24 cached thumbnails. Optional coloring references use a separate validated ColoringDocument and a backward-compatible coloring_reference setting. Voice repair pins are distinct from human-approved overrides; both survive routine generation. Standard Tetiana text and whole-letter IPA repair metadata is per cue.
+
+
+0.29: GuidedTrace stores monotonic arc progress through edge/fraction, projects a bounded neighboring corridor and bounds forward progress by input movement. Direction inference considers a neighborhood and reversed-path state survives story drafts. DifficultyStrip uses an exclusive ButtonGroup with selected styling in all interaction states. Independent offline ASR tooling caches by recording/model/engine/settings; the catalog joins results only for matching pack/recording hashes. ASR does not write listening decisions.

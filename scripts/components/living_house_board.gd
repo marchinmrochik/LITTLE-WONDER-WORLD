@@ -39,7 +39,7 @@ func image_rect() -> Rect2:
 	var fitted := view.size*camera_scale();return Rect2((size-fitted)*.5,fitted)
 func from_world(point: Vector2) -> Vector2:return image_rect().position+(point-view.position)*camera_scale()
 func to_world(point: Vector2) -> Vector2:return view.position+(point-image_rect().position)/camera_scale()
-func tolerance() -> float:return {"easy":44.0,"normal":34.0,"advanced":26.0}[SettingsManager.values.difficulty]/camera_scale()
+func tolerance() -> float:return {"easy":52.0,"normal":44.0,"advanced":36.0}[SettingsManager.values.difficulty]/camera_scale()
 func paused() -> bool:return game.overlay_paused or game.focus_paused
 func _process(delta: float) -> void:
 	if paused() or not is_visible_in_tree():return
@@ -69,6 +69,7 @@ func _draw() -> void:
 		for star: Vector2 in [Vector2(250,-35),Vector2(380,10),Vector2(690,-15),Vector2(920,175),Vector2(75,240),Vector2(800,300)]:
 			draw_circle(star,2.5,Color("fff0bd"))
 	paint_ellipse(Rect2(-300,555,1600,650),Color("405e63") if night else Color("c4dcae"))
+	if is_done("cloud"):DesignVisuals.sky_clouds(self,"house",age,night)
 	# Soft original scenery anchors the finished illustration.
 	paint_ellipse(Rect2(240,563,520,55),Color("b6d09d"))
 	draw_line(Vector2(210,584),Vector2(790,584),Color("83ad83"),3,true)
@@ -91,7 +92,18 @@ func draw_part(index: int) -> void:
 	var part: Dictionary=game.parts[index];var done: bool=game.completed[index]
 	var active: bool=index==game.part_index and game.state in [game.State.ZOOMING,game.State.TRACE]
 	if not done and not active:return
-	if done and DesignVisuals.draw(self,"story/house/"+str(part.id),part_rect(part)):return
+	var visual_rect := part_rect(part)
+	if part.id=="flowers":visual_rect=Rect2(785,480,130,185)
+	if part.id=="sun":visual_rect=Rect2(70,-30,130,130)
+	if part.id=="dog":visual_rect=Rect2(dog_position()-Vector2(80,85),Vector2(160,145))
+	var visual_state := "night" if night and part.id=="sun" else "active" if effects.has(part.id) or lit.get(part.id,false) else "idle"
+	if part.id in ["left_window","right_window"]:visual_state="active" if lit.get(part.id,false) else "idle"
+	if done and DesignVisuals.draw(self,"story/house/"+str(part.id),visual_rect,visual_state,game.fill_reveal if game.state==game.State.REVEAL and index==game.part_index else 1.0):
+		if part.id=="door" and effects.has("door"):draw_texture_rect(friend,Rect2(476,478,53,75),false)
+		if part.id in ["left_window","right_window"] and effects.has(part.id):
+			for ray: int in range(6):
+				var direction := Vector2.from_angle(ray*TAU/6+age*.5);draw_line(visual_rect.get_center()+direction*8,visual_rect.get_center()+direction*15,Color("fff4d2"),2,true)
+		return
 	if done and part.id in ["sun","cloud","dog","flowers"]:
 		match part.id:
 			"sun":draw_sun()
@@ -161,8 +173,9 @@ func draw_smoke(elapsed: float) -> void:
 		var t := fmod(elapsed*.65+i*.22,1.0)
 		draw_circle(Vector2(616+sin(t*5+i)*16,67-t*105),10+t*13,Color(SMOKE_COLORS[smoke_color],(1-t)*.7))
 func draw_bird(elapsed: float) -> void:
-	var t := .5 if SettingsManager.values.reduced_motion else clampf(elapsed/2.0,0.0,1.0);var at := Vector2(250+t*510,185-sin(t*PI)*95)
-	paint_ellipse(Rect2(at-Vector2(17,10),Vector2(34,20)),Color("ebbf63"));draw_circle(at+Vector2(14,-8),9,Color("ebbf63"));draw_line(at,at+Vector2(-8,-12-absf(sin(age*12))*15),Color("b58d53"),5,true)
+	var t := .5 if SettingsManager.values.reduced_motion else clampf(elapsed/2.0,0.0,1.0)
+	var at := Vector2(250+t*510,185-sin(t*PI)*95)
+	draw_texture_rect(load("res://assets/illustrations/stories/bird.svg"),Rect2(at-Vector2(26,30),Vector2(52,60)),false)
 func play_object(id: String) -> void:
 	effects[id]=4.0 if id in ["dog","cloud","flowers"] else 2.0;effect_count+=1
 	if id=="chimney":smoke_color=(smoke_color+1)%SMOKE_COLORS.size()
@@ -211,7 +224,7 @@ func _input(event: InputEvent) -> void:
 	elif event is InputEventMouseMotion and pointer_owner==-1:point=event.position;moved=true
 	elif event is InputEventMouseButton and pointer_owner==-1 and event.button_index==MOUSE_BUTTON_LEFT and not event.pressed:point=event.position;ended=true
 	else:return
-	if moved:
+	if moved or (ended and not (event is InputEventScreenTouch and event.canceled)):
 		game.trace.move(to_world(get_global_transform_with_canvas().affine_inverse()*point),tolerance());progress_changed.emit()
 		if game.trace.complete:cancel_pointer();stroke_finished.emit()
 	if ended:cancel_pointer()

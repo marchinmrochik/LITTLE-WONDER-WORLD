@@ -9,7 +9,7 @@ func _ready() -> void:
 func camera_scale() -> float:return minf(size.x/600.0,size.y/660.0)
 func from_world(at: Vector2) -> Vector2:return (size-Vector2(400,640)*camera_scale())*.5+Vector2(0,120)*camera_scale()+at*camera_scale()
 func to_world(at: Vector2) -> Vector2:return (at-(size-Vector2(400,640)*camera_scale())*.5-Vector2(0,120)*camera_scale())/camera_scale()
-func tolerance() -> float:return {"easy":44.0,"normal":34.0,"advanced":26.0}[SettingsManager.values.difficulty]/camera_scale()
+func tolerance() -> float:return {"easy":52.0,"normal":44.0,"advanced":36.0}[SettingsManager.values.difficulty]/camera_scale()
 func _process(delta: float) -> void:
  if lesson==null or lesson.paused():return
  age+=delta;queue_redraw()
@@ -65,11 +65,11 @@ func _input(event: InputEvent) -> void:
  if lesson.paused():cancel_pointer();return
  var point := Vector2.ZERO;var moved := false;var ended := false
  if event is InputEventScreenDrag and event.index==pointer_owner:point=event.position;moved=true
- elif event is InputEventScreenTouch and event.index==pointer_owner and not event.pressed:ended=true
+ elif event is InputEventScreenTouch and event.index==pointer_owner and not event.pressed:point=event.position;ended=true
  elif event is InputEventMouseMotion and pointer_owner==-1:point=event.position;moved=true
- elif event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT and pointer_owner==-1 and not event.pressed:ended=true
+ elif event is InputEventMouseButton and event.button_index==MOUSE_BUTTON_LEFT and pointer_owner==-1 and not event.pressed:point=event.position;ended=true
  else:return
- if moved:
+ if moved or (ended and not (event is InputEventScreenTouch and event.canceled)):
   lesson.trace.move(to_world(get_global_transform_with_canvas().affine_inverse()*point),tolerance())
   if lesson.trace.complete:cancel_pointer();stroke_finished.emit()
  if ended:cancel_pointer()

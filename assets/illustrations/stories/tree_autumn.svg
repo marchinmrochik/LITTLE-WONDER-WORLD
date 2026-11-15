@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="460" viewBox="0 0 300 460"><defs>
+<linearGradient id="cream" x2=".3" y2="1"><stop stop-color="#fff7df"/><stop offset="1" stop-color="#edcda2"/></linearGradient>
+<linearGradient id="fur" x2=".2" y2="1"><stop stop-color="#eac18a"/><stop offset="1" stop-color="#ce935e"/></linearGradient>
+<linearGradient id="rust" x2=".3" y2="1"><stop stop-color="#b38768"/><stop offset="1" stop-color="#805d4c"/></linearGradient>
+<linearGradient id="leaf" x2=".3" y2="1"><stop stop-color="#b6d49b"/><stop offset="1" stop-color="#72a780"/></linearGradient>
+<linearGradient id="blue" x2=".2" y2="1"><stop stop-color="#c9e5ec"/><stop offset="1" stop-color="#82b8cf"/></linearGradient>
+<linearGradient id="pink" x2=".3" y2="1"><stop stop-color="#f4c3ca"/><stop offset="1" stop-color="#d995ab"/></linearGradient>
+<linearGradient id="gold" x2=".2" y2="1"><stop stop-color="#ffe8a1"/><stop offset="1" stop-color="#e8b455"/></linearGradient>
+<linearGradient id="cloud" x2=".3" y2="1"><stop stop-color="#fffef5"/><stop offset="1" stop-color="#dbe9e9"/></linearGradient>
+<linearGradient id="autumn" x2=".2" y2="1"><stop stop-color="#efc084"/><stop offset="1" stop-color="#cb855e"/></linearGradient>
+</defs><ellipse cx="150" cy="440" rx="91" ry="10" fill="#527566" opacity="0.13"/><path d="M130 428L132 264L90 220L106 202L148 237L192 188L209 200L168 273L174 428Q153 445 130 428" fill="url(#fur)"/><ellipse cx="83" cy="189" rx="57" ry="69" fill="url(#autumn)" opacity="1"/><ellipse cx="191" cy="180" rx="71" ry="73" fill="url(#autumn)" opacity="1"/><ellipse cx="147" cy="120" rx="67" ry="86" fill="url(#autumn)" opacity="1"/><ellipse cx="75" cy="115" rx="48" ry="60" fill="url(#autumn)" opacity="1"/><ellipse cx="222" cy="113" rx="44" ry="54" fill="url(#autumn)" opacity="1"/><path d="M72 141q15-51 57-54m34 36q33-31 55-7" fill="none" stroke="#f1cd95" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="M81 154q-19-25-30 0q16 22 30 0" fill="#c77958"/><path d="M175 90q-19-25-30 0q16 22 30 0" fill="#c77958"/><path d="M213 182q-19-25-30 0q16 22 30 0" fill="#c77958"/><path d="M126 208q-19-25-30 0q16 22 30 0" fill="#c77958"/></svg>

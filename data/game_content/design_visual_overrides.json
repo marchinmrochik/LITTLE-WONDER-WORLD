@@ -1,1 +1,223 @@
-{"version":1,"overrides":{}}
+{
+  "version": 1,
+  "overrides": {
+    "story/house/walls": {
+      "texture": "res://assets/illustrations/stories/walls.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "fit": "stretch"
+    },
+    "story/house/roof": {
+      "texture": "res://assets/illustrations/stories/roof.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "fit": "stretch"
+    },
+    "story/house/door": {
+      "texture": "res://assets/illustrations/stories/door_idle.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "fit": "stretch",
+      "variants": {
+        "active": "res://assets/illustrations/stories/door_active.svg"
+      }
+    },
+    "story/house/left_window": {
+      "texture": "res://assets/illustrations/stories/window_idle.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "fit": "stretch",
+      "variants": {
+        "active": "res://assets/illustrations/stories/window_active.svg",
+        "night": "res://assets/illustrations/stories/window_active.svg"
+      }
+    },
+    "story/house/right_window": {
+      "texture": "res://assets/illustrations/stories/window_idle.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "fit": "stretch",
+      "variants": {
+        "active": "res://assets/illustrations/stories/window_active.svg",
+        "night": "res://assets/illustrations/stories/window_active.svg"
+      }
+    },
+    "story/house/chimney": {
+      "texture": "res://assets/illustrations/stories/chimney.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "fit": "stretch"
+    },
+    "story/house/sun": {
+      "texture": "res://assets/illustrations/stories/sun.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "variants": {
+        "night": "res://assets/illustrations/stories/moon.svg"
+      }
+    },
+    "story/house/cloud": {
+      "texture": "res://assets/illustrations/stories/cloud.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/house/dog": {
+      "texture": "res://assets/objects/animals/dog.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/house/flowers": {
+      "texture": "res://assets/illustrations/stories/flowers.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/tree": {
+      "texture": "res://assets/illustrations/stories/tree_spring.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/sun": {
+      "texture": "res://assets/illustrations/stories/sun.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "variants": {
+        "night": "res://assets/illustrations/stories/moon.svg"
+      }
+    },
+    "story/spring/cloud": {
+      "texture": "res://assets/illustrations/stories/cloud.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/nest": {
+      "texture": "res://assets/illustrations/stories/nest.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/bird": {
+      "texture": "res://assets/illustrations/stories/bird.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/flowers": {
+      "texture": "res://assets/illustrations/stories/flowers.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/butterfly": {
+      "texture": "res://assets/illustrations/stories/butterfly.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/bee": {
+      "texture": "res://assets/illustrations/stories/bee.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/frog": {
+      "texture": "res://assets/illustrations/stories/frog.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/pond": {
+      "texture": "res://assets/illustrations/stories/pond.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/rainbow": {
+      "texture": "res://assets/illustrations/stories/rainbow.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/spring/bunny": {
+      "texture": "res://assets/objects/animals/rabbit.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/tree": {
+      "texture": "res://assets/illustrations/stories/tree_autumn.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/sun": {
+      "texture": "res://assets/illustrations/stories/sun.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "variants": {
+        "night": "res://assets/illustrations/stories/moon.svg"
+      }
+    },
+    "story/autumn/cloud": {
+      "texture": "res://assets/illustrations/stories/cloud.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/leaves": {
+      "texture": "res://assets/illustrations/stories/leaves.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/hedgehog": {
+      "texture": "res://assets/illustrations/stories/hedgehog.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/mushrooms": {
+      "texture": "res://assets/illustrations/stories/mushrooms.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/pumpkin": {
+      "texture": "res://assets/illustrations/stories/pumpkin.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/basket": {
+      "texture": "res://assets/illustrations/stories/basket.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/kite": {
+      "texture": "res://assets/illustrations/stories/kite.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/boots": {
+      "texture": "res://assets/illustrations/stories/boots.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/puddle": {
+      "texture": "res://assets/illustrations/stories/puddle.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/autumn/squirrel": {
+      "texture": "res://assets/illustrations/stories/squirrel.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/cottage": {
+      "texture": "res://assets/illustrations/stories/cottage.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "variants": {
+        "night": "res://assets/illustrations/stories/cottage_night.svg",
+        "active": "res://assets/illustrations/stories/cottage_night.svg"
+      }
+    },
+    "story/winter/moon": {
+      "texture": "res://assets/illustrations/stories/moon.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/cloud": {
+      "texture": "res://assets/illustrations/stories/cloud.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/snowman": {
+      "texture": "res://assets/illustrations/stories/snowman.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/pine": {
+      "texture": "res://assets/illustrations/stories/pine.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/penguin": {
+      "texture": "res://assets/illustrations/stories/penguin.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/sled": {
+      "texture": "res://assets/illustrations/stories/sled.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/gift": {
+      "texture": "res://assets/illustrations/stories/gift.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/lantern": {
+      "texture": "res://assets/illustrations/stories/lantern_idle.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py",
+      "variants": {
+        "night": "res://assets/illustrations/stories/lantern.svg",
+        "active": "res://assets/illustrations/stories/lantern.svg"
+      }
+    },
+    "story/winter/star": {
+      "texture": "res://assets/illustrations/stories/star.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/snowflake": {
+      "texture": "res://assets/illustrations/stories/snowflake.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    },
+    "story/winter/bird": {
+      "texture": "res://assets/illustrations/stories/bird.svg",
+      "source_note": "Project-original companion-style SVG artwork; tools/prepare_story_illustrations.py"
+    }
+  }
+}

@@ -3,6 +3,7 @@ import argparse,os,json,mimetypes,secrets,subprocess,sys,threading,urllib.parse
 from http.server import BaseHTTPRequestHandler,ThreadingHTTPServer
 from pathlib import Path
 from catalog import Catalog,safe
+import voice_review
 ROOT=Path(__file__).resolve().parents[1]
 class Server(ThreadingHTTPServer):
  def __init__(self,address,root=ROOT):
@@ -25,6 +26,9 @@ class Handler(BaseHTTPRequestHandler):
    if path=='/api/job':return self.json(self.server.job)
    if path=='/api/source':return self.json({'text':c.source(q.get('path',[''])[0])})
    if path=='/api/history':return self.json(c.history())
+   if path=='/api/voice-review':return self.json(voice_review.snapshot(c.root))
+   if path=='/voice-candidate':
+    file=voice_review.candidate(c.root,q.get('variant',[''])[0],q.get('locale',[''])[0],q.get('key',[''])[0]);return self.send_bytes(200,file.read_bytes(),'audio/wav',True)
    if path=='/media':
     e=c.entry(q.get('id',[''])[0])
     if e['type'] not in ['image','audio','font']:raise ValueError('У элемента нет медиафайла')
@@ -37,6 +41,8 @@ class Handler(BaseHTTPRequestHandler):
     return self.send_bytes(200,file.read_bytes(),'image/png',True)
    if path=='/draft-media':
     d=c.load_draft(q.get('id',[''])[0]);file=c.root/'.local/design-catalog/drafts'/d['id']/d['file'];return self.send_bytes(200,file.read_bytes(),'image/png' if d['extension']=='.png' else 'image/svg+xml',True)
+   if path in ['/voice-review','/voice_review.js','/voice_review.css']:
+    file=Path(__file__).parent/({'/voice-review':'voice_review.html'}.get(path,path[1:]));return self.send_bytes(200,file.read_bytes(),{'/voice-review':'text/html; charset=utf-8','/voice_review.js':'text/javascript; charset=utf-8','/voice_review.css':'text/css; charset=utf-8'}[path])
    if path in ['/','/app.js','/style.css']:
     file=Path(__file__).parent/({'/':'index.html'}.get(path,path[1:]));return self.send_bytes(200,file.read_bytes(),{'/':'text/html; charset=utf-8','/app.js':'text/javascript; charset=utf-8','/style.css':'text/css; charset=utf-8'}[path])
    return self.json({'error':'Не найдено'},404)
@@ -51,6 +57,8 @@ class Handler(BaseHTTPRequestHandler):
    if not self.headers.get('Content-Type','').startswith('application/json'):raise ValueError('Ожидается JSON')
    data=json.loads(self.rfile.read(length));path=urllib.parse.urlsplit(self.path).path;c=self.server.catalog
    if path=='/api/review':return self.json(c.review(data['id'],data['status'],data.get('note','')))
+   if path=='/api/voice-review':
+    with c.lock:return self.json(voice_review.decide(c.root,data['id'],data['sha256'],data['verdict'],data.get('note',''),data.get('heard',False),data.get('preferred','')))
    if path=='/api/draft':return self.json(c.stage(data['id'],data['kind'],data.get('payload',{})))
    if path=='/api/apply':return self.json(c.apply(data['id']))
    if path=='/api/rollback':return self.json(c.rollback(data['id']))

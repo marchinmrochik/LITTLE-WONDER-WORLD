@@ -1,17 +1,16 @@
 """Generate finite local WAV assets. Piper/models remain development-only tools."""
 from pathlib import Path
-import array
 import argparse
 import hashlib
 import json
-import math
 import shutil
 import subprocess
-import sys
 import wave
 import letter_aligned
 import audio_metrics
 import ukrainian_pronunciation
+from voice_processing import normalize
+from voice_overrides import preserve_approved
 
 ROOT = Path(__file__).resolve().parents[1]
 PIPER = ROOT / ".tools/piper/piper.exe"
@@ -20,39 +19,6 @@ REVISIONS = {"en": "375a0fe641dea077c2a47b4e9a056d6da521eed3", "uk": "42be6e3f72
 STAGING = ROOT / ".local/voice-staging"
 JOBS = ROOT / "data/game_content/voice_jobs.json"
 
-def normalize(path):
-    with wave.open(str(path), "rb") as source:
-        if source.getnchannels() != 1 or source.getsampwidth() != 2:
-            raise ValueError(f"Unexpected voice format: {path}")
-        rate = source.getframerate()
-        samples = array.array("h", source.readframes(source.getnframes()))
-    if sys.byteorder != "little":
-        samples.byteswap()
-    active = [i for i, value in enumerate(samples) if abs(value) > 80]
-    if not active:
-        raise ValueError(f"Silent voice: {path}")
-    start = max(0, active[0] - int(rate * 0.08))
-    end = min(len(samples), active[-1] + int(rate * 0.16))
-    samples = samples[start:end]
-    # Gentle treble smoothing, retaining intelligibility without sharp peaks.
-    alpha = 1.0 - math.exp(-2.0 * math.pi * 4500 / rate)
-    previous = 0.0
-    for i, value in enumerate(samples):
-        previous += alpha * (value - previous)
-        samples[i] = round(previous)
-    peak = max(abs(value) for value in samples)
-    gain = min(4.0, 0.46 * 32767 / peak)
-    fade = max(1, int(rate * 0.008))
-    for i, value in enumerate(samples):
-        envelope = min(1.0, i / fade, (len(samples)-1-i) / fade)
-        samples[i] = max(-32767, min(32767, round(value * gain * envelope)))
-    if sys.byteorder != "little":
-        samples.byteswap()
-    with wave.open(str(path), "wb") as target:
-        target.setnchannels(1)
-        target.setsampwidth(2)
-        target.setframerate(rate)
-        target.writeframes(samples.tobytes())
 
 jobs = json.loads(JOBS.read_text(encoding="utf-8"))
 parser = argparse.ArgumentParser()
@@ -60,10 +26,12 @@ parser.add_argument("--prefix", action="append", default=[], help="Generate only
 parser.add_argument("--locale", choices=["en","uk"], help="Replace only one locale, preserving the other locale byte-for-byte")
 args = parser.parse_args()
 previous_pack = json.loads((ROOT / "assets/audio/voice/manifest.json").read_text(encoding="utf-8")) if args.prefix or args.locale else None
+original_pack = previous_pack or json.loads((ROOT / "assets/audio/voice/manifest.json").read_text(encoding="utf-8"))
 if args.locale:
     jobs = {args.locale: jobs[args.locale]}
 if args.prefix:
     jobs = {locale: [entry for entry in entries if entry["key"].startswith(tuple(args.prefix))] for locale, entries in jobs.items()}
+jobs, preserved = preserve_approved(ROOT, jobs, original_pack)
 summary = {"engine": "Piper VITS: CLI English / ONNX Runtime Ukrainian (development only)", "processing": {"peak": 0.46, "lowpass_hz": 4500, "length_scale": 1.12}, "models": {}, "clips": []}
 if previous_pack:
     summary["models"] = previous_pack["models"].copy()
@@ -114,5 +82,6 @@ for clip in summary["clips"]:
     shutil.copy2(STAGING / clip["file"], target)
 if previous_pack:
     summary["clips"] = [clip for clip in previous_pack["clips"] if clip["locale"] not in jobs or (args.prefix and not clip["key"].startswith(tuple(args.prefix)))] + summary["clips"]
+summary["clips"] += preserved
 (ROOT / "assets/audio/voice/manifest.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2)+"\n", encoding="utf-8")
 print(f'Voice pack ready: {len(summary["clips"])} clips.', flush=True)

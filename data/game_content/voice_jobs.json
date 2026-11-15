@@ -1487,7 +1487,7 @@
     },
     {
       "key": "LIVE_WALLS",
-      "text": "Draw the walls. Follow the dots with your finger.",
+      "text": "Draw the walls.",
       "file": "assets/audio/voice/en/live_walls.wav"
     },
     {
@@ -3334,7 +3334,7 @@
     },
     {
       "key": "LIVE_WALLS",
-      "text": "Намалюй стіни. Веди пальчиком уздовж крапочок.",
+      "text": "Намалюй стіни.",
       "file": "assets/audio/voice/uk/live_walls.wav"
     },
     {

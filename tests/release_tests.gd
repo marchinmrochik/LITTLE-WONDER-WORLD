@@ -42,7 +42,7 @@ func _run() -> void:
 		for locale: String in ["en","uk"]:
 			expect(LocalizationManager.messages[locale].has(key),"Speech text exists: "+key+":"+locale)
 			expect(AudioManager.local_voice_available(key,locale),"Local speech exists: "+key+":"+locale)
-	expect(GameManager.games.size()==14,"Fourteen registered working games")
+	expect(GameManager.games.size()==15,"Fifteen registered working games")
 	app = preload("res://scenes/core/app_root.tscn").instantiate()
 	add_child(app)
 	await frames()

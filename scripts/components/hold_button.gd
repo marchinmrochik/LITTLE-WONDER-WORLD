@@ -7,9 +7,9 @@ var elapsed := 0.0
 var holding := false
 
 func _ready() -> void:
-	text = LocalizationManager.text("PARENTS")
+	text = LocalizationManager.text("PARENT_SETTINGS_BUTTON")
 	tooltip_text = LocalizationManager.text("HOLD_HINT")
-	icon = preload("res://assets/ui/lock.svg")
+	icon = preload("res://assets/ui/settings.svg")
 	expand_icon = false
 	custom_minimum_size = Vector2(190, 62)
 	button_down.connect(func() -> void: holding = true; elapsed = 0)

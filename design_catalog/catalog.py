@@ -10,7 +10,7 @@ GAMES={
  'animals':'Животные','colors':'Цвета','feeding':'Покорми животных','shapes':'Фигуры','puzzles':'Пазлы',
  'memory':'Найди пару','counting':'Цифры и счёт','drawing':'Рисовалка','coloring':'Раскраски','xylophone':'Ксилофон',
  'letters':'Алфавит','syllables':'Собери слово','balloons':'Шарики','living_drawing':'Живые рисунки',
- 'world':'Познаём мир','shared':'Общие элементы'}
+ 'draw_word':'Нарисуй слово','world':'Познаём мир','shared':'Общие элементы'}
 SOURCE_GAMES={'animals':['animals','memory','puzzles','feeding','world','syllables'],'foods':['feeding','counting','syllables'],
  'colors':['colors','drawing','coloring','syllables'],'shapes':['shapes','syllables'],'counting':['counting','syllables'],
  'memory':['memory'],'puzzles':['puzzles'],'coloring':['coloring','syllables'],'world_body':['world','syllables'],
@@ -51,6 +51,8 @@ def inventory(root:Path):
   else:
    for folder,games in [('animals',['animals','memory','puzzles','feeding','world','syllables','shared']),('food',['feeding','syllables','counting']),('colors',['colors','drawing','coloring']),('shapes',['shapes']),('people',['world']),('world',['world','syllables']),('alphabet',['letters','syllables']),('coloring',['coloring']),('counting',['counting']),('puzzles',['puzzles'])]:
     if '/'+folder+'/' in name:groups+=games
+  if kind=='image' and '/illustrations/stories/' in name:groups=['living_drawing']
+  if kind=='image' and 'syllables' in groups:groups.append('draw_word')
   if kind=='audio':
    if '/instrument/' in name:groups=['xylophone']
    if p.stem=='balloon_pop':groups=['balloons','shared']
@@ -113,8 +115,21 @@ def inventory(root:Path):
   add({'id':'component:'+p.stem,'type':'component','title':p.stem.replace('_',' '),'games':name_game or ['shared'],'path':name,'editable':[],'description':'Компонент проекта · исходный код','preview':None})
  for game,title in GAMES.items():
   if game=='shared':continue
-  source=('scripts/home/world_hub.gd' if game=='world' else {'animals':'scripts/games/learn_animals.gd','colors':'scripts/games/learn_colors.gd','feeding':'scripts/games/feed_animals.gd','shapes':'scripts/games/shape_sorting.gd','puzzles':'scripts/games/animal_puzzles.gd','memory':'scripts/games/memory_match.gd','counting':'scripts/games/lets_count.gd','drawing':'scripts/games/magic_drawing.gd','coloring':'scripts/games/coloring_book.gd','xylophone':'scripts/games/magic_xylophone.gd','letters':'scripts/games/alphabet_garden.gd','syllables':'scripts/games/syllable_garden.gd','balloons':'scripts/games/balloon_meadow.gd','living_drawing':'scripts/games/living_drawing.gd'}[game])
+  source=('scripts/home/world_hub.gd' if game=='world' else {'animals':'scripts/games/learn_animals.gd','colors':'scripts/games/learn_colors.gd','feeding':'scripts/games/feed_animals.gd','shapes':'scripts/games/shape_sorting.gd','puzzles':'scripts/games/animal_puzzles.gd','memory':'scripts/games/memory_match.gd','counting':'scripts/games/lets_count.gd','draw_word':'scripts/games/draw_word.gd','drawing':'scripts/games/magic_drawing.gd','coloring':'scripts/games/coloring_book.gd','xylophone':'scripts/games/magic_xylophone.gd','letters':'scripts/games/alphabet_garden.gd','syllables':'scripts/games/syllable_garden.gd','balloons':'scripts/games/balloon_meadow.gd','living_drawing':'scripts/games/living_drawing.gd'}[game])
   add({'id':'screen:'+game,'type':'screen','title':title,'games':[game],'path':source,'preview':'screen_'+game+'.png','editable':[],'description':'Экран игры в текущем проекте'})
+ for key,title,games,source,preview in [
+  ('draw_word_child','Рисование по слову',['draw_word'],'scripts/games/draw_word.gd','screen_draw_word_child.png'),
+  ('draw_word_family','Семейный Крокодил',['draw_word'],'scripts/games/draw_word.gd','screen_draw_word_family.png'),
+  ('coloring_reference','Зразок / Coloring example',['coloring'],'scripts/games/coloring_book.gd','screen_coloring_reference.png'),
+  ('artwork_export','PNG export / Gallery',['drawing','coloring','draw_word'],'scripts/components/artwork_gallery.gd','screen_artwork_export.png'),
+  ('difficulty','Выбор сложности',['shared'],'scripts/components/difficulty_strip.gd','screen_activities.png'),
+  ('material_picker','Выбор картинок',['puzzles','memory','syllables'],'scripts/components/material_picker.gd','screen_material_picker.png'),
+  ('music_practice','Мелодии с подсказкой',['xylophone'],'scripts/games/magic_xylophone.gd','screen_music_practice.png'),
+  ('balloon_challenge','Шарики: испытание',['balloons'],'scripts/games/balloon_meadow.gd','screen_balloon_challenge.png'),
+  ('balloon_records','Шарики: рекорды',['balloons'],'scripts/games/balloon_records.gd','screen_balloon_records.png')]:
+  add({'id':'mode:'+key,'type':'scene','title':title,'games':games,'path':source,'preview':preview,'editable':[],'description':'Новый режим · настоящий экран Godot'})
+ for page in read_json(root/'data/game_content/coloring.json',{'pages':[]})['pages']:
+  add({'id':'content:coloring_reference:'+page['id'],'type':'content','title':'Coloring example: '+page['english'],'games':['coloring'],'path':'data/game_content/coloring_references.json','preview':'coloring_example_'+page['id']+'.png','editable':[],'description':'Optional creative reference; no color scoring'})
  order={name:i for i,name in enumerate(['screen','scene','procedural','image','content','trace','component','token','paint','font','audio'])}
  entries.sort(key=lambda e:order.get(e['type'],99))
  reviews=read_json(root/'design_catalog/reviews.json')

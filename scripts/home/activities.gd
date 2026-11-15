@@ -17,6 +17,7 @@ var entries := [
 	{"node":"PuzzlesButton", "title":"PUZZLES_TITLE", "art":"res://assets/objects/animals/rabbit.svg", "route":"puzzles"},
 	{"node":"MemoryButton", "title":"MEMORY_TITLE", "art":"res://assets/ui/memory_back.svg", "route":"memory"},
 	{"node":"CountingButton", "title":"COUNT_TITLE", "art":"res://assets/objects/counting/basket.svg", "route":"counting"},
+	{"node":"DrawWordButton","title":"CROC_TITLE","art":"res://assets/ui/draw_word.svg","route":"draw_word"},
 	{"node":"DrawingButton", "title":"DRAW_TITLE", "art":"res://assets/ui/drawing.svg", "route":"drawing"},
 	{"node":"ColoringButton", "title":"BOOK_TITLE", "art":"res://assets/ui/coloring.svg", "route":"coloring"},
 	{"node":"XylophoneButton", "title":"XYLO_TITLE", "art":"res://assets/ui/xylophone.svg", "route":"xylophone"},
@@ -35,6 +36,7 @@ func _ready() -> void:
 	var title := UiKit.label("ACTIVITIES_TITLE",38)
 	title.horizontal_alignment = HORIZONTAL_ALIGNMENT_CENTER
 	column.add_child(title)
+	column.add_child(DifficultyStrip.new())
 	scroll.name = "ActivitiesScroll"
 	scroll.horizontal_scroll_mode = ScrollContainer.SCROLL_MODE_DISABLED
 	scroll.size_flags_vertical = Control.SIZE_EXPAND_FILL

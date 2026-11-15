@@ -275,3 +275,89 @@ deliverable. To restart use .\tools\Run-DesignCatalog.ps1. DocsDESIGN_CATALOG_RE
 anddesign_catalog/README.mdcontainworkflow/limitations. Nextuserreviews current
 library and chooses a coherent first visualfamily (e.g. autumnanimals/leaves)
 before redesign. Do not silently redraw everything or reinstall tablet.
+
+
+## Latest checkpoint - Play improvements0.26.0,2026-11-15
+
+User requested plan items2,3,4,6,7 together; defer remaining voice audit and
+artwork export/coloring examples/Crocodile. Completed DifficultyStrip in Activities
+(persistedthreelevels),localizedSettingsgearretainingparenthold/gate. Shared
+MaterialPicker/AppRoot.modal pauses gameplay,4colsTouchScrollvirtualpool<=32for1000
+items,groups/selectedcount/wordaudio/bodycrops;Puzzlesexactonepictureoroldrandom3,
+Memoryexact2/3/4pairsorrandom,wordbuilderexactpicturedwordorrandom5. Completion
+screenscanchooseagain. Puzzle/wordrandomreplayavoidimmediaterepeat.
+GuidedTraceboundednearbycurrentsegmentre-entry;story+symbolreleasepositionprocessed
+exceptcancelledtouches. Nineactorpathsfrom8authoredsilhouettes(repeatedbird),
+allwithinzooms;actorillustrationsunchanged. Balloonfree12/base58.5-99unchanged
+plusvisiblecounter;separate60secchallenge4->12boundedpace/respawngrowth,overlay/
+focuspause,onlyfinishedtimedrunwritesBalloonRecordsJsonStorelocaltop10perlevel,
+scrolltable/errorfeedback,doublepop/hiddenballoon/free-recordguards. Threeoriginal
+MelodyPractice8notepatterns,free/learn,listensample/stop,nextkeygoldoutline,label,
+wrongnotehint/replay,democannotadvancechildlesson,focuspause,positivecompletion.
+
+Finalfocusedheadless73/0;native122/0+24ENUKcaptures1280x800/1024x768(selected
+difficulty/picker/memory/melody/recordsinspected);lasttimeunitlocalizationistext-only.
+OldsuitesPuzzles8473/Memory3031/Xylophone86/SymbolTracing1447/House777/Seasonal1008/
+Friends368/UX882passed;Catalogfixture8/0. Content25JSON/672keys/902refs/0errors;
+voicecontent710/0allpriorhumanselectedclipsretained. Initialmixedindentationand
+orphanLabelcountercaught/fixed,finalrunsnoleaks. No need fullunrelatedregression.
+
+Designcatalognow1394records/891media/46procedural/15game-worldscreensplus5mode
+entries;nativecapturerender182success,isolatesnewBalloonRecords. Source0.26.0,
+futureAndroidcode30;installedtablet/existingAPKremain0.25.0/code29. NoAPK/ADB/
+downloads/Gitoperations. See docs/PLAY_IMPROVEMENTS_REPORT.md,tests/
+play_improvements_tests.tscn,tools/Test-PlayImprovements.ps1. IsolatedPCreview
+scene tests/play_improvements_native_review.tscn startsUKActivities,separatesaves.
+Localbacklogupdated .local/plans/TESTER_FEEDBACK_2026-11-15.md (ignored). Nextuser
+PCplaytest/requestedtabletbuild;do NOT automatically resume deferredfeatures.
+
+
+## Latest checkpoint — 0.27.0, 2026-11-15
+
+Completed requested F09 offline Draw a word (EN/UK, child/family private task, categories, three levels, two-word Advanced, random/manual choice), plus steering request to redraw ALL four living stories in the companion style. 46 actor overrides, 40 original SVGs, dog/rabbit reuse, three clouds after tracing cloud, state variants and existing interactions retained. Shared draft slots are whitelisted; DrawWord context resumes with isolated ink; save/full-gallery failures never clear task/ink. Secret mode blocks speech and translation captions.
+
+DrawWord headless1545/0; native1581/0+24captures; Drawing420/Translations2940/House777/Seasonal1008/Release2259 passed. Python art2+catalog8 passed. Content25JSON/702keys/945refs/0errors, voice710/0 with recordings unchanged this increment. Native catalog185captures, inventory1438records/932media/46actors/16screens. Inspected full stories and new layouts. See docs/DRAW_WORD_STORYBOOK_REPORT.md and tools/Test-DrawWord.ps1. Isolated PC preview tests/storybook_native_review.tscn starts completed UK autumn, separate saves.
+
+Source0.27.0/futureAndroid31; installed tablet/existingAPK stay0.25.0/code29. No APK/install/download/Git operations. Local plan .local/plans/TESTER_FEEDBACK_2026-11-15.md remains ignored. Remaining F01 residual pronunciation/listening, F05 export/gallery capacity, F08 coloring example. User acceptance on PC/tablet pending; do not automatically start deferred work or deploy.
+
+
+## Latest checkpoint — 0.28.0, 2026-11-15
+
+User authorized remaining F01/F05/F08. F05 implemented:200pictures/256MiB/4MiBPNG, old version1index accepted, no eviction; parent-only ExportPNG/nativeFileDialog, isolated file-byte/error/source-safety tests, Android contentURI FileAccess branch awaits device test. ArtworkGallery now virtual TouchScroll cards/cache<=24; native large-gallery and recycled-card open verified. F08:10authored examples from separate ColoringDocument, toggle paletteicon +parentsetting coloring_reference defaultoff/backwardcompatible/persisted, no childcolor/history/score mutation.
+
+F01 implemented a revised but HUMAN-UNREVIEWED pack:388replacements=UK364(331standardTetianaHigh text +33wholecanonicalIPAletters, no extraction), EN24(LJRed/Bread/Five+20bodywords, CoriwholeZ/zed/). All9humanselected/retained clips bytepreserved incl Cat/Кіт/Sheep/Качка/Вівця; ENBear unchanged. tooling repair_voice_pack prepare/--apply and voice_repair_pins; original388WAV+manifest .local/qa/voice-repair-028/before. All710PCM/hash/content checks pass; repaired34letters periodicity pass, not pronunciation proof.20priority oldversions linked in /voice-review; stale listening verdicts expire byhash. Routinepreserve protects397clips. Do not call F01pronunciation accepted or regenerate selected audio.
+
+Final checks: nativeGalleryReference177/0+12ENUKcaptures1280/1024, Drawing596/Coloring1820/DrawWord1545/Release2259/VoiceRouting3556 allpassed. VoiceRouting finalclean after testmixerdrain, no productionaudiochange. Pythonvoice3+review7/catalog8pass. Nativecatalog197captures,1450records/932media/16screens. Content26JSON/707keys/946refs/0errors. NativeWindows save dialog observed through computer-use; storage export tested independently, end-to-end chooser save and Android acceptance not claimed. Report docs/VOICE_GALLERY_COLORING_REPORT.md.
+
+Source0.28.0/futureAndroid32; installed tablet and APK remain0.25.0/code29. No APK/install/download/Git. PCisolatedreview tests/desktop_028_review.tscn startsUKcoloringwithreference, separatesaves. Remaining: userlisten/refine exactspeechcues and tablet acceptance/export onlyafterrequest. Localplan remainsignored.
+
+
+## Tablet installation — 0.28.0/code32, 2026-11-15
+
+User explicitly requested build/install. tools/Build-Android.ps1 passed export,
+signature,16KiB ZIP alignment, ARM64 metadata/no-permissions/development-file
+checks. APK43,109,161bytes; SHA256
+6ADA97EECED6C1064F8D8CBDC207C9D2A2701941EFF49B19823F82C5D92D86B6.
+Packaged710speech clips and10coloring references checked. ADB install -r Success
+on the connected Redmi tablet, previous0.25.0/code29 ->0.28.0/code32.
+All15existing app data files SHA256-identical after installation/before launch.
+Backup: .local/tablet-backups/20261115-180420-before-028/app-files.tar.
+App launch returnedStatusok, processalive, no SCRIPT ERROR/FATAL/parse/load errors
+in PID-filtered startup log. Screen was locked; visible in-app/tablet touch/export
+acceptance is NOT established. User should unlock and open the app to review.
+APK: build/android/little-wonder-world-debug.apk. No Git operations.
+
+
+## Latest checkpoint — 0.29.0, 2026-11-15
+
+User requested flexible letter/story tracing, compact balloon counter/flight space, bad Z repair and semantic speech QA. Steering added automatic Git publication review+commit text, difficulty selection visual persistence and background-free dog/rabbit/other story assets. Implemented all code changes. GuidedTrace bounded arc-neighborhood projection, jitter/lift recovery, duplicate sanitization, input-budget guards, robust direction inference around notches, reversed-path scene-draft restore. Screen tolerances52/44/36px. Balloons compact2rows and lower initial spawn, >=70%gamecontent flight. Difficulty exclusive toggles/checkmark/border in hover/pressed/normal, external setting refresh. Removed authored plate from12animals+generator;47relevant textures alpha-audited.
+
+Owner rejected z_whole_zee and z_context_zee; NEVERAPPLIED. Then explicitly selected human British zed from Commons En-uk-z.ogg, public domain/PD-self. SourceSHA1verified, GodotVorbisdecoded/resampled22050mono/volume-only. Runtime ALPH_EN_25 replaced; other709unchanged. Source/license assets/licenses/Z_PRONUNCIATION_NOTICE.md and tools/voice_sources.json, manifest voice_override, selectedpin protected10. repairpins387; total397protected. Local review records OWNERselection, not agenthearing. Original and previous Z preserved .local/qa/z-repair.
+
+New independent ASR tool pinnedwhisper.cpp1.9.2/base multilingual, officialCPUzip8.2MB+model148MB in ignored .tools/whisper-cpp. SHA256verified and tracked tools/voice-asr-toolchain.json; reusable setup_voice_asr.py. audit_spoken_words.py noexpectedprompt/grammar/translation/contextleak,2x4thread boundedCPU, hash/settingscache, atomicreport. Finalfull710pass:307ASRmatches/344discrepancies/59manualletters. SelectedhumanZrecognizedZ. This is NOT344provenbugs and NOTallvoicesaccepted; UKshortwordrecognition hasfalsepositives. Remaining voicework is humanlisten/targetedrepair against thisqueue, especially tester complaints. NOmassregeneration.
+
+CatalogUI expected/transcript andASRfilter, stalehashprotection, human-approvedexcludedfromneeds-review. Browserverified710queue, Ztranscript, audiostart andfilter; userdeliverabletableftopen. Nativecaptures inspected balloons1024, house dogtransparent, difficultyselection. Source0.29/futureAndroid33; tablet/existingAPK stay0.28/code32. No build/install/Gitwrites thisincrement. IsolatedPC tests/desktop_029_review.tscn startsUKActivitiesnormallevel.
+
+Checks: flexible2635/0+4captures, difficulty/art149/0+6captures47textures; symbols1447/house777/seasons1008/play73/release2259/voicerouting3556pass; Pythonsemantic6/review7/overrides3/art2/catalog8pass;710voicehash/PCM/contentpass;59letterdeclaredmetadata+signalpass; JSON26/keys707/refs946/0. Publicationguard0blockers and normal gitdiff--checkpass. More details docs/FLEXIBLE_INPUT_VOICE_QA_REPORT.md.
+
+New AGENTS.md enforces Gitpublishguard+whitespacecheck+finalcommitmessage eachincrement, noautocommit/stage/push. .gitignore extendedmodels/debugkeys/backups/dumps. tools/check_git_publish.py readonlyscans tracked+untracked/nonignored, trackedignored, commoncredentials andlargefiles. Localplanstillignored .local/plans/TESTER_FEEDBACK_2026-11-15.md. LastGitcommit e84c62c designcatalog; pendingdiff includes earlier0.26–0.28 work too, so commitmessage should cover wholependingincrement if owner commitsall.
