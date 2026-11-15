@@ -15,9 +15,13 @@ def snapshot(root):
         comparison={'variants':[],'samples':[],'stale':True}
     asr=read_json(root/'.local/qa/voice-asr/asr.json',{'clips':[]})
     by_id={r['id']:r for r in asr.get('clips',[])}
+    alphabet=read_json(root/'.local/qa/alphabet-030/audit.json',{'letters':[]})
+    alphabet_by_id={r['id']:r for r in alphabet.get('letters',[])}
     asr_current=asr.get('manifest_sha256')==audit['manifest_sha256'] and current
     for row in audit['clips']:
         result=by_id.get(row['id'],{})
+        letter=alphabet_by_id.get(row['id'],{})
+        row['alphabet_analysis']=letter if current and alphabet.get('manifest_sha256')==audit['manifest_sha256'] and letter.get('sha256')==row['sha256'] else {}
         row['asr']=result if asr_current and result.get('sha256')==row['sha256'] else {'state':'not_checked','transcript':'','stale':bool(result)}
         decision=decisions.get(row['id'],{})
         candidate_hashes={s['variant']:s['sha256'] for s in comparison['samples'] if s['locale']==row['locale'] and s['key']==row['key']}

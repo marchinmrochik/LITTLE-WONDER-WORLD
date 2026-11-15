@@ -158,3 +158,6 @@ scenes with isolated balloon history.
 
 
 0.29: GuidedTrace stores monotonic arc progress through edge/fraction, projects a bounded neighboring corridor and bounds forward progress by input movement. Direction inference considers a neighborhood and reversed-path state survives story drafts. DifficultyStrip uses an exclusive ButtonGroup with selected styling in all interaction states. Independent offline ASR tooling caches by recording/model/engine/settings; the catalog joins results only for matching pack/recording hashes. ASR does not write listening decisions.
+
+
+0.30: CompanionCatalog.label_key delegates to word_key, so home strip/portrait captions and audio share a vocabulary identity. WorldBodyBoard exposes primary/face/hand marker sets, deterministic bounded non-overlapping layouts and exact circle hit regions; selected_id is visual state only. Marker mode accepts visible targets only. Raw authoring geometry uses smallest-region priority. Atlas anchors/crops come from prepare_people_layout.py. Alphabet-quality analysis joins current WAV/manifest hashes with independent recognition and explicit aliases; selected human clips retain a separate status. Partial ASR runs never overwrite the full queue; completed snapshots are archived under ignored .local.

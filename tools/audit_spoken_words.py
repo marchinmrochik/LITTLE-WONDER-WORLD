@@ -58,7 +58,7 @@ def pcm(source,target):
     with wave.open(str(target),'wb') as f:f.setnchannels(1);f.setsampwidth(2);f.setframerate(16000);f.writeframes(audio.tobytes())
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=0);parser.add_argument('--locale',choices=['en','uk']);parser.add_argument('--key',action='append',default=[]);args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--limit',type=int,default=0);parser.add_argument('--alphabet',action='store_true');parser.add_argument('--force',action='store_true');parser.add_argument('--locale',choices=['en','uk']);parser.add_argument('--key',action='append',default=[]);args=parser.parse_args()
     exe=ROOT/'.tools/whisper-cpp/Release/whisper-cli.exe';model=ROOT/'.tools/whisper-cpp/ggml-base.bin'
     if not exe.exists() or not model.exists():raise SystemExit('Install the documented PC-only whisper.cpp toolchain first.')
     manifest_path=ROOT/'assets/audio/voice/manifest.json';manifest=json.loads(manifest_path.read_text(encoding='utf-8'));manifest_hash=checksum(manifest_path)
@@ -66,7 +66,9 @@ def main():
     model_hash=checksum(model);engine_hash=checksum(exe)
     identity=hashlib.sha256(json.dumps([CONFIG,model_hash,engine_hash],sort_keys=True).encode()).hexdigest()
     clips=[c for c in manifest['clips'] if (not args.locale or c['locale']==args.locale) and (not args.key or c['key'] in args.key)]
+    if args.alphabet:clips=[c for c in clips if re.fullmatch(r'ALPH_(EN|UK)_\d{2}',c['key'])]
     if args.limit:clips=clips[:args.limit]
+    report_name='asr-selection.json' if args.alphabet or args.key or args.locale or args.limit else 'asr.json'
     results=[]
     def transcribe_batch(task):
         locale,start,batch=task
@@ -75,7 +77,7 @@ def main():
             if checksum(ROOT/clip['file'])!=clip['sha256']:raise ValueError('Stale source: '+clip['key'])
             stem=clip['key'].lower()+'-'+clip['sha256'][:12]+'-'+identity[:8]
             target=out/'pcm'/locale/(stem+'.wav')
-            if not target.with_suffix('.wav.json').exists():pcm(ROOT/clip['file'],target);pending.append(target)
+            if args.force or not target.with_suffix('.wav.json').exists():pcm(ROOT/clip['file'],target);pending.append(target)
         if pending:
             command=[str(exe),'-m',str(model),'-l',locale,'-t',str(CONFIG['threads']),'-mc','0','-ac',str(CONFIG['context']),'-bs','3','-bo','1','-nf','-ng','-oj','-nt']+[str(p) for p in pending]
             process=subprocess.run(command,capture_output=True,timeout=900)
@@ -101,8 +103,11 @@ def main():
             report={'version':1,'manifest_sha256':manifest_hash,'engine_sha256':engine_hash,'model_sha256':model_hash,'settings':CONFIG,
                     'complete':len(results)==len(manifest['clips']),'counts':dict(Counter(r['state'] for r in results)),
                     'note':'Independent ASR triage only; no text prompt, no automatic listening approval. Letters require human listening.','clips':results}
-            temporary=out/'asr.json.new';temporary.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temporary.replace(out/'asr.json')
+            temporary=out/(report_name+'.new');temporary.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8');temporary.replace(out/report_name)
             print(f'ASR: {len(results)}/{len(clips)}; {report["counts"]}',flush=True)
-    print('Speech recognition report:',out/'asr.json',flush=True)
+    import time
+    history=out/'history';history.mkdir(exist_ok=True)
+    (history/(str(time.time_ns())+'-'+report_name)).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+    print('Speech recognition report:',out/report_name,flush=True)
 
 if __name__=='__main__':main()

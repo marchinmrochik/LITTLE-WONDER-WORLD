@@ -2617,23 +2617,25 @@
       "text": "J.",
       "file": "assets/audio/voice/en/alph_en_09.wav",
       "locale": "en",
-      "seconds": 0.481,
-      "sha256": "f1c994e155e06c419e2909ec3fbbc71f91131b67c3e1566d259bd0ca69431b72",
-      "extraction": {
-        "method": "model phoneme-duration alignment; prefix removed",
-        "synthesis_text": "The letter J is here.",
-        "target_phonemes": "dʒˈeɪ",
-        "source_start_seconds": 0.4262,
-        "source_end_seconds": 0.9073,
-        "duration_frames": 38,
-        "duration_boost": 1.65,
-        "inference_scales": [
-          0.25,
-          1.12,
-          0.0
-        ]
-      },
-      "synthesis_text": "The letter J is here."
+      "seconds": 0.929,
+      "sha256": "327b3938f14d39dc010d71c4be60431f2ce7a422a26b584316dd4628b32030c8",
+      "voice_override": {
+        "locale": "en",
+        "key": "ALPH_EN_09",
+        "variant": "human_j_selected",
+        "file": "assets/audio/voice/en/alph_en_09.wav",
+        "sha256": "327b3938f14d39dc010d71c4be60431f2ce7a422a26b584316dd4628b32030c8",
+        "seconds": 0.929,
+        "source": "https://commons.wikimedia.org/wiki/File:En-uk-j.ogg",
+        "source_file": "https://upload.wikimedia.org/wikipedia/commons/8/82/En-uk-j.ogg",
+        "source_sha256": "7d043a97659fd51ec933738f604ad89e1a822d29aa19a551f99ece64c805b008",
+        "author": "Logictheo",
+        "license": "CC BY-SA 3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "processing": "Ogg decoded to mono22050PCM; volume/fade only, no pitch/time changes",
+        "phonemes": "dʒeɪ",
+        "human_selected": true
+      }
     },
     {
       "key": "ALPH_EN_10",

@@ -33,7 +33,7 @@ model, executable, library or dataset was acquired or shipped.
 
 ## Original and historical notices
 
-The app primarily bundles project-authored short phrases synthesized locally into WAV files. Voice models, Piper/eSpeak and source datasets are not distributed. The standalone human Z recording is the exception described below.
+The app primarily bundles project-authored short phrases synthesized locally into WAV files. Voice models, Piper/eSpeak and source datasets are not distributed. The standalone human Z and J recordings are the exceptions described below.
 
 English: `en_GB-cori-high`, from `rhasspy/piper-voices`, pinned revision `375a0fe641dea077c2a47b4e9a056d6da521eed3` (v1.0.0). The model card identifies a female UK English voice trained from scratch on public-domain LibriVox recordings. Card retained in `cori-MODEL_CARD.txt`. Source: https://huggingface.co/rhasspy/piper-voices/blob/375a0fe641dea077c2a47b4e9a056d6da521eed3/en/en_GB/cori/high/MODEL_CARD . This replaces the earlier LJSpeech voice; its old card is retained for historical provenance.
 
@@ -49,3 +49,8 @@ Generated audio has been trimmed, gently treble-smoothed, peak-normalized to 0.4
 ## Selected human Z — 0.29
 
 The owner selected British human zed from Commons File:En-uk-z.ogg (public domain / PD-self), replacing rejected Cori/LJ synthetic Z attempts. See Z_PRONUNCIATION_NOTICE.md for source, assumed author and processing. Its exact output is protected in voice_clip_overrides.json. Other709clips are unchanged by this increment; ASR triage is not listening approval.
+
+
+## Selected human J — 0.30
+
+The owner selected Logictheo's human British J recording from Commons File:En-uk-j.ogg, CC BY-SA3.0. The derived PCM recording retains that license; see J_PRONUNCIATION_NOTICE.md for attribution, source, license and changes. A credit is visible in parent sound settings. Other709recordings are unchanged by this increment.

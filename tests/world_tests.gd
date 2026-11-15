@@ -51,6 +51,7 @@ func _run() -> void:
 					game.explore_face=true;game.show_explore();await frames()
 					expect(game.board.part_at(game.board.anchor("nose")-game.board.global_position)=="nose","Zoomed body board maps the visible nose")
 					game.explore_face=false;game.show_explore();await frames()
+					game.board.markers=false
 					for item: Dictionary in game.entries:
 						if true:expect(game.board.part_at(game.board.anchor(item.id)-game.board.global_position)==item.id,"Whole-body parts have correct touch anchors")
 					expect(game.board.part_at(game.board.from_image(Vector2(439,183)))=="eyebrow","Visible brow stroke maps to eyebrow, not the head")

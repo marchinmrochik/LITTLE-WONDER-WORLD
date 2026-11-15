@@ -50,6 +50,11 @@
       "sha256": "73e5fc4ce213df7a802c9f8724b58de411f45d2c7e72b26b58b77ecae243933e",
       "variant": "human_zed_selected",
       "reason": "Owner selected the British public-domain human recording; preserve exact processed PCM"
+    },
+    "en:ALPH_EN_09": {
+      "sha256": "327b3938f14d39dc010d71c4be60431f2ce7a422a26b584316dd4628b32030c8",
+      "variant": "human_j_selected",
+      "reason": "Owner explicitly selected the human J recording; preserve exact processed PCM"
     }
   }
 }

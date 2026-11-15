@@ -3,6 +3,7 @@ extends HBoxContainer
 
 signal paint_selected(paint: String)
 var side_layout := false
+var side_swatch_size := Vector2(50,48)
 const EXTRA := ["ffffff","111820","f7b6a2","a71d36","f4bd80","bf6829","fff1a6","92c75b","237650","9bded3","287e91","b7d8ee","29458b","c6afe7","642f89","f8c8df"]
 const GRADIENTS := ["d95b59:efce55","578dc2:e995b4","6ba46f:efce55","9672b7:9bded3","ec984b:e995b4","29458b:b7d8ee"]
 
@@ -14,12 +15,12 @@ func _ready() -> void:
 	for index: int in range(PaintDocument.COLORS.size()):
 		var value: String=PaintDocument.COLORS[index].to_html(false)
 		var button := swatch(value)
-		button.custom_minimum_size=Vector2(50,48) if side_layout else Vector2(40,44)
+		button.custom_minimum_size=side_swatch_size if side_layout else Vector2(40,44)
 		button.name="Color_"+str(index)
 		holder.add_child(button)
 	var more := UiKit.compact_tool_button("PALETTE_MORE",open_picker,"palette")
 	more.name="MoreColors"
-	more.custom_minimum_size=Vector2(50,48) if side_layout else Vector2(50,44)
+	more.custom_minimum_size=side_swatch_size if side_layout else Vector2(50,44)
 	holder.add_child(more)
 
 func swatch(value: String) -> ChildButton:

@@ -5,10 +5,19 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'tools'));sys.path.insert(0,str(ROOT/'design_catalog'))
 from audit_spoken_words import evaluate,normalized
 from check_git_publish import path_problem
+from audit_alphabet_quality import classify
 import voice_review
 from catalog import write_json,digest
 
 class SemanticTests(unittest.TestCase):
+ def test_alphabet_detects_extra_words_and_non_speech(self):
+  signal={"review":False}
+  self.assertEqual(classify("en","C","C.","See you.",signal),"asr_disagreement")
+  self.assertEqual(classify("en","C","C.","See.",signal),"recognizer_consistent")
+  self.assertEqual(classify("en","J","J.","[Music]",signal),"non_speech_asr")
+  self.assertEqual(classify("uk","Е","е.","Ме.",signal),"asr_disagreement")
+  self.assertEqual(classify("uk","Б","бе.","Бе.",signal),"recognizer_consistent")
+
  def test_wrong_word_is_never_a_match(self):
   clip={'locale':'en','key':'WORD_DUCK','text':'Duck.'}
   result=evaluate(clip,'Talk.');self.assertEqual(result['state'],'mismatch');self.assertFalse(result['human_approved'])

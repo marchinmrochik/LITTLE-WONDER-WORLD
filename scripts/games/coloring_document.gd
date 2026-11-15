@@ -8,24 +8,34 @@ var history: Array[Dictionary] = []
 var cursor := 0
 const HISTORY_LIMIT := 64
 
+static var legacy_pages: Array[Dictionary]=[]
 static func catalog() -> Array[Dictionary]:
-	if pages.is_empty():
-		var file := FileAccess.open("res://data/game_content/coloring.json", FileAccess.READ)
-		if file == null:
-			return []
-		var parsed: Variant = JSON.parse_string(file.get_as_text())
-		if not parsed is Dictionary or parsed.get("version") != 1:
-			return []
-		for item: Dictionary in parsed.get("pages", []):
-			for region: Dictionary in item.regions:
-				region.polygon = _polygon(region.polygon)
-				region.tap = Vector2(region.tap[0], region.tap[1])
-			var masks: Array[PackedVector2Array] = []
-			for polygon: Array in item.locks:
-				masks.append(_polygon(polygon))
-			item.locks = masks
-			pages.append(item)
+	if pages.is_empty():pages=_read_pages("res://data/game_content/coloring.json")
 	return pages
+static func available_catalog() -> Array[Dictionary]:
+	return catalog().filter(func(item: Dictionary) -> bool:return not item.get("hidden",false))
+
+static func legacy_catalog() -> Array[Dictionary]:
+	if legacy_pages.is_empty():legacy_pages=_read_pages("res://data/game_content/coloring_legacy.json")
+	return legacy_pages
+static func _read_pages(path: String) -> Array[Dictionary]:
+	var result: Array[Dictionary]=[]
+	var file := FileAccess.open(path, FileAccess.READ)
+	if file == null:
+		return []
+	var parsed: Variant = JSON.parse_string(file.get_as_text())
+	if not parsed is Dictionary or parsed.get("version") != 1:
+		return []
+	for item: Dictionary in parsed.get("pages", []):
+		for region: Dictionary in item.regions:
+			region.polygon = _polygon(region.polygon)
+			region.tap = Vector2(region.tap[0], region.tap[1])
+		var masks: Array[PackedVector2Array] = []
+		for polygon: Array in item.locks:
+			masks.append(_polygon(polygon))
+		item.locks = masks
+		result.append(item)
+	return result
 
 static func _polygon(points: Array) -> PackedVector2Array:
 	var polygon := PackedVector2Array()
@@ -33,8 +43,8 @@ static func _polygon(points: Array) -> PackedVector2Array:
 		polygon.append(Vector2(point[0], point[1]))
 	return polygon
 
-static func page_for(id: String) -> Dictionary:
-	for item: Dictionary in catalog():
+static func page_for(id: String,revision: int=2) -> Dictionary:
+	for item: Dictionary in (legacy_catalog() if revision==1 else catalog()):
 		if item.id == id:
 			return item
 	return {}
@@ -42,7 +52,8 @@ static func page_for(id: String) -> Dictionary:
 static func valid_state(value: Dictionary) -> bool:
 	if value.get("version") != 1 or not value.get("page") is String or not value.get("colors") is Dictionary:
 		return false
-	var item := page_for(value.page)
+	if value.get("art_revision",1) != 1 and value.get("art_revision",1) != 2:return false
+	var item := page_for(value.page,int(value.get("art_revision",1)))
 	if item.is_empty() or value.colors.size() > item.regions.size():
 		return false
 	var ids := {}
@@ -80,7 +91,7 @@ func region_at(point: Vector2) -> String:
 		if Geometry2D.is_point_in_polygon(point, polygon):
 			# Tapping the ink outline must not fill a neighboring region below it.
 			for i: int in range(polygon.size()):
-				if point.distance_to(Geometry2D.get_closest_point_to_segment(point, polygon[i], polygon[(i + 1) % polygon.size()])) < 3.1:
+				if point.distance_to(Geometry2D.get_closest_point_to_segment(point, polygon[i], polygon[(i + 1) % polygon.size()])) < float(page.get("outline_width",6))*.5+.1:
 					return ""
 			return region.id
 	return ""
@@ -134,12 +145,14 @@ func redo() -> bool:
 	return true
 
 func state() -> Dictionary:
-	return {"version":1,"page":page.id,"colors":colors.duplicate()}
+	return {"version":1,"page":page.id,"art_revision":int(page.get("art_revision",1)),"colors":colors.duplicate()}
 
 func restore(value: Dictionary) -> bool:
 	if not valid_state(value):
 		return false
-	page = page_for(value.page)
+	var revision: int=int(value.get("art_revision",1))
+	if value.colors.values().all(func(paint: String) -> bool:return paint=="ffffff"):revision=2
+	page = page_for(value.page,revision)
 	colors.clear()
 	for region: Dictionary in page.regions:
 		colors[region.id] = value.colors.get(region.id, "ffffff")
@@ -170,7 +183,7 @@ static func reference_image(id: String) -> Image:
 	var data: Variant=JSON.parse_string(FileAccess.get_file_as_string("res://data/game_content/coloring_references.json"))
 	if not data is Dictionary or data.get("version")!=1:return null
 	var colors_for_page: Variant=data.get("pages",{}).get(id,{})
-	var state := {"version":1,"page":id,"colors":colors_for_page}
+	var state := {"version":1,"page":id,"art_revision":2,"colors":colors_for_page}
 	if not valid_state(state) or colors_for_page.size()!=page_for(id).regions.size():return null
 	var example := ColoringDocument.new(id)
 	if not example.restore(state):return null

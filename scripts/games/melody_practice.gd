@@ -1,7 +1,7 @@
 class_name MelodyPractice
 extends RefCounted
 # Original short motifs using only the instrument's eight existing pitches.
-const MELODIES := [[0,2,4,2,0,2,4,7],[4,3,2,1,0,1,2,0],[0,0,4,4,5,4,2,0]]
+const MELODIES := [[0,2,4,2,0,2,4,7],[4,3,2,1,0,1,2,0],[0,0,4,4,5,4,2,0],[0,2,4,5,4,2,1,0],[7,6,4,2,3,4,2,0]]
 var melody := 0
 var index := 0
 var mistakes := 0

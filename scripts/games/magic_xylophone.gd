@@ -18,7 +18,7 @@ var demo_index := 0
 var demo_wait := 0.0
 var mode_hint: Label
 var mode_buttons: Dictionary={}
-var melody_buttons: Dictionary={}
+var melody_title: Label
 
 func _ready() -> void:
 	var column := UiKit.column(10)
@@ -35,8 +35,9 @@ func _ready() -> void:
 	mode_buttons[false]=UiKit.button("MUSIC_FREE",set_learning.bind(false),UiKit.MINT);mode_buttons[true]=UiKit.button("MUSIC_LEARN",set_learning.bind(true),UiKit.CREAM)
 	modes.add_child(mode_buttons[false]);modes.add_child(mode_buttons[true])
 	practice_controls=UiKit.row(8);practice_controls.alignment=BoxContainer.ALIGNMENT_CENTER;column.add_child(practice_controls)
-	for i: int in range(3):
-		var button := UiKit.button("MUSIC_MELODY_"+str(i),choose_melody.bind(i),UiKit.CREAM);practice_controls.add_child(button);melody_buttons[i]=button
+	var previous := UiKit.compact_tool_button("BACK",change_melody.bind(-1),"previous");previous.name="PreviousMelody";practice_controls.add_child(previous)
+	melody_title=UiKit.label("",22,UiKit.GREEN);melody_title.custom_minimum_size.x=260;melody_title.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;practice_controls.add_child(melody_title)
+	var next := UiKit.compact_tool_button("NEXT",change_melody.bind(1),"next");next.name="NextMelody";practice_controls.add_child(next)
 	practice_controls.add_child(UiKit.button("MUSIC_LISTEN",start_demo,UiKit.MINT,"speaker"));practice_controls.add_child(UiKit.button("ANIMALS_REPLAY",func() -> void:choose_melody(lesson.melody),UiKit.CREAM,"replay"))
 	practice_label=UiKit.label("",25,UiKit.GREEN);practice_label.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;column.add_child(practice_label)
 	column.add_child(keyboard)
@@ -108,7 +109,10 @@ func set_learning(value: bool) -> void:
 func choose_melody(index: int) -> void:
 	if overlay_paused or focus_paused:return
 	demonstration=false;stop_notes();lesson.restart(index);update_practice();_update_pause()
-	for id: int in melody_buttons:melody_buttons[id].add_theme_stylebox_override("normal",UiKit.panel(UiKit.MINT if id==index else UiKit.CREAM,18,12))
+	melody_title.text=str(lesson.melody+1)+" / "+str(MelodyPractice.MELODIES.size())+" · "+LocalizationManager.text("MUSIC_MELODY_"+str(lesson.melody))
+func change_melody(delta: int) -> void:
+	choose_melody(posmod(lesson.melody+delta,MelodyPractice.MELODIES.size()))
+
 func update_practice() -> void:
 	keyboard.highlighted=lesson.expected() if learning else -1;keyboard.queue_redraw()
 	if not learning:practice_label.text="";return

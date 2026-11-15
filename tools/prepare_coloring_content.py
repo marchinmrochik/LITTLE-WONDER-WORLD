@@ -216,3 +216,6 @@ print('Authored ten closed-region pages and fourteen offline helper/word clips.'
 # Preserve the full-locale policy after rebuilding activity data.
 import runpy
 runpy.run_path(str(ROOT / "tools/prepare_full_ukrainian.py"), run_name="__main__")
+
+# Preserve the current art refinement after base content regeneration.
+runpy.run_path(str(ROOT / "tools/prepare_coloring_art.py"), run_name="__main__")

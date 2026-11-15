@@ -59,3 +59,12 @@ Storybook 0.27: 40 original SVG illustrations authored locally by tools/prepare_
 
 
 0.29: removed the authored decorative green background plate from all12animal SVGs and their generator, retaining original character geometry/shadows. Living-story objects retain transparent surroundings (47unique relevant textures audited). The only speech replacement in this increment is the owner-selected public-domain human British Z; see licenses/Z_PRONUNCIATION_NOTICE.md and tools/voice_sources.json. Whisper.cpp/base are development-only downloaded tools in ignored .tools, never packaged into the application; no child audio is sent to a service.
+
+
+0.30: hit regions/crops for the existing generated boy/girl were recalibrated locally; no artwork regeneration or external body imagery. The owner accepted the human J recording by Logictheo (Commons En-uk-j.ogg, CC BY-SA3.0); PCM conversion/volume only, with notice and parent-settings credit. See licenses/J_PRONUNCIATION_NOTICE.md. All other709WAVs remain unchanged at this step.
+
+## Coloring artwork revision 2
+
+Local code-authored vector refinements: stronger outlines, eye highlights and rounded fox cheeks. No external image source. Original templates retained in data/game_content/coloring_legacy.json for existing nonblank drawings. Generator: tools/prepare_coloring_art.py.
+
+Music practice additions: Rainbow dance and Little bells are original eight-note motifs authored locally in scripts/games/melody_practice.gd; existing instrument samples reused. No external recordings or melody sources.

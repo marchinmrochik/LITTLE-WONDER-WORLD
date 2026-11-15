@@ -66,7 +66,7 @@ func show_explore() -> void:
 	hint.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;body.add_child(hint)
 	options.clear()
 	if topic.kind=="body":
-		show_body(explore_face,false)
+		show_body(explore_face,true)
 		board.zoom_hand=explore_hand
 		var zoom := UiKit.button("WORLD_ZOOM",toggle_zoom,UiKit.MINT,"search")
 		var zooms := UiKit.row(12);body.add_child(zooms)
@@ -79,11 +79,11 @@ func select_character(id: String) -> void:
 	if state!=State.EXPLORE or overlay_paused or focus_paused or id not in ["boy","girl"]:return
 	SettingsManager.set_value("body_character",id);entries=WorldCatalog.items("body");selected="";show_explore()
 func toggle_zoom() -> void:
-	explore_face=not explore_face;explore_hand=false;show_explore()
+	explore_face=not explore_face;explore_hand=false;selected="";show_explore()
 func toggle_hand_zoom() -> void:
-	explore_hand=not explore_hand;explore_face=false;show_explore()
+	explore_hand=not explore_hand;explore_face=false;selected="";show_explore()
 func show_body(face: bool,mark: bool) -> void:
-	board=WorldBodyBoard.new();board.entries=entries;board.zoom_face=face;board.markers=mark;board.active_ids=options.duplicate()
+	board=WorldBodyBoard.new();board.entries=entries;board.selected_id=selected if state==State.EXPLORE else "";board.zoom_face=face;board.markers=mark;board.active_ids=options.duplicate()
 	board.size_flags_vertical=Control.SIZE_EXPAND_FILL;body.add_child(board)
 	board.part_pressed.connect(choose)
 

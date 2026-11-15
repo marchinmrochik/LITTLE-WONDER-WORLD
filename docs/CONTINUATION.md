@@ -361,3 +361,38 @@ CatalogUI expected/transcript andASRfilter, stalehashprotection, human-approvede
 Checks: flexible2635/0+4captures, difficulty/art149/0+6captures47textures; symbols1447/house777/seasons1008/play73/release2259/voicerouting3556pass; Pythonsemantic6/review7/overrides3/art2/catalog8pass;710voicehash/PCM/contentpass;59letterdeclaredmetadata+signalpass; JSON26/keys707/refs946/0. Publicationguard0blockers and normal gitdiff--checkpass. More details docs/FLEXIBLE_INPUT_VOICE_QA_REPORT.md.
 
 New AGENTS.md enforces Gitpublishguard+whitespacecheck+finalcommitmessage eachincrement, noautocommit/stage/push. .gitignore extendedmodels/debugkeys/backups/dumps. tools/check_git_publish.py readonlyscans tracked+untracked/nonignored, trackedignored, commoncredentials andlargefiles. Localplanstillignored .local/plans/TESTER_FEEDBACK_2026-11-15.md. LastGitcommit e84c62c designcatalog; pendingdiff includes earlier0.26–0.28 work too, so commitmessage should cover wholependingincrement if owner commitsall.
+
+
+## Latest checkpoint — 0.30.0, 2026-11-15
+
+User called out UKpetdimunitives vs actual shorter words, requested each alphabet clip tested/analyzed and accurate visible body touch circles ~50%alpha with one active part. Fixed CompanionCatalog label_key=word_key, all11ENUKpetlabels exactlysamevocabulary asrealWAV; largeportraitcaption+repeat likewise match selectedanimal rather than fixedFOX_HELLO. AudiofilesALL710UNCHANGEDthisincrement. OldPET_*localizationstrings remain historical/unreferenced.
+
+WorldBodyBoard now11wholebodyprimarycircles,9faceconcepts/twohandconcepts;0.5neutralalpha/.7selected+whitecenter; deterministic layout22radius/2hitpadding,51mincenterspacing,leaderlinesifshifted. Onlyvisiblecirclesinteractive in marker mode; rawmode usedforauthoring picks smallestregion. Chosenname/repeat follow selectedid, explicitzoomtoggleclearsstalechoice. Sourceboy/girl face landmarks andcrops recalibrated against nativecaptures; generator updatedwithindependentgirlgeometry. Tests legacyrawanchorpass explicitly markersfalse; NEWactualUIcirclecoverage2560checks validates centers,edges,nonoverlap,allvisibleparts,actualPNGlandmarks andrealwordroutes, so oldcoveragewasnotjustremoved.
+
+FreshASR ALL59letters forced/no-cache with --alphabet --force. Partialrun writes asr-selection.json; fullcached710aggregationrefreshed. New audit_alphabet_quality.py perWAVhash expectedname/glyph/transcript/duration/activity/periodicity andexplicitnamesaliases;18/39/[Music]J initialoldreport became17recognizerconsistent/41disagreements/1selectedZ fresh. J nowtranscribesChey, earlierMusic: ASRisunstableonshortletters. NOclaimofagentlistening or17qualityapprovals. All58nonselectedletters stillneedlistening. Perletter table .local/qa/alphabet-030/REPORT.md andJSON; immutablelocalhistorysnapshots. Catalogjoinscurrentletteranalysesbysourcehash.
+
+Pendingoptionalownerquestion: human EnglishJ sample .local/qa/alphabet-030/human/En-uk-j.ogg was shown; noanswer receivedyet. It is NOTAPPLIED. Source Commons File:En-uk-j.ogg, Logictheo, CCBYSA3.0; metadata .local/qa/alphabet-030/human/sources.json. Converted/comparisoncandidate .local/qa/f01/candidates/human_j__alph_en_09.wav, variant human_j. Ifownerapproves, applyexactcandidate withlicense/provenance/override protection andrerunaudits. Do NOT assume approval. UKTabruscandidate wasnotVorbis-decodable andsourcefetchhit429; nothingunverifiedshipped. PreviouslyacceptedZandallotherselectedclips unchanged.
+
+Validation2560headless/0;native1810/0+24captures(all2locales2characters2sizes3views),World940/Friends368/Release2259passed;semantic7/review7/catalog8Pythonpass;26JSON/707keys/946refs/0,voice710/0. Nativecatalog197currentcaptures. Gitguard0blockers/whitespacepass. LastGitcommit807d016 includesprevious0.29work; currentcommittextshouldcoveronly0.30label/body/alphabetQAchanges. Source0.30/futureAndroid34;tablet/APKstay0.28/code32, noinstallationorGitwrites. IsolatedPCpreview tests/desktop_030_review.tscn startsUKbodybellyselected,separatesaves. Newreport docs/COMPANION_BODY_ALPHABET_REPORT.md; localplanupdatedandignored. RemainingpronunciationworkexplicitlyOPEN.
+
+
+0.30 follow-up BEFOREFINAL: owner explicitly answered J human sample YES. Applied exact comparison candidate human_j__alph_en_09.wav (0.929s mono22050). Source Commons En-uk-j.ogg / Logictheo / CCBYSA3.0, fullnotice assets/licenses/J_PRONUNCIATION_NOTICE.md and shortparentSOUNDcredit ENUK VOICE_J_CREDIT. Manifest voice_override/sourceprovenance/pin updated;11selectedoverridesnow, repairpins387,total398protected. OldJ+manifest .local/qa/alphabet-030/j-before. ONLYJchanged,709othersunchanged. NewJASR=J., localreview records OWNERgood/current. Finalalphabet17consistent/40disagreements/2ownerselectedJZ;57othersnotapproved. Prior pendingJ note above is superseded. No need ask J approval again. Bodytestedge+portraitassertions now2560/0headless; native1810/0+24captures.
+
+
+## Latest checkpoint - 0.31.0, 2026-11-15
+
+Coloring now uses side navigation/tools, two-column palette, height-filling paper and authored-bounds display zoom with source-coordinate touch mapping. Optional reference retained. All10 pages have thicker outlines and eye highlights where applicable; rounded fox cheeks replace angular face straps. Original templates retained in coloring_legacy.json. New states carry art_revision2; nonblank legacy states render pixel-identical, blank legacy upgrades2. Unknown revisions rejected. Android package guard requires legacy/reference JSON. No speech regeneration.
+
+Coloring1820/0; native layout146/0+8captures across EN/UK and1024x768,1280x800,1280x600,1600x740 including all10 legacy pixel checks. Drawing596/0,DrawWord1545/0,GalleryReference165/0. Report docs/COLORING_WORKSPACE_REPORT.md. Source0.31/code35; installed tablet/APK0.28/code32. NO build/install/Gitwrites. Isolated preview tests/desktop_031_review.tscn.
+
+Body/pet/alphabet task completed earlier this increment: body2560/0 native+24captures; owner accepted J and exact candidate applied with credit/protection. Finalalphabet17consistent/40ASRflags/2ownerselectedJZ;57others remain listening-unapproved. Prior pendingJ note superseded. Current commit covers0.30 and0.31 since807d016.
+
+
+## Latest checkpoint - 0.31.1, 2026-11-15
+
+Owner rejected coloring fox artwork. Fox hidden from new picture selection via available_catalog; nine selectable pages remain. Original content and both art revisions retained exclusively for existing drawings. Explicit gallery open temporarily adds archived page to session navigation; new sessions never select hidden draft by default. Drafts for all ten pages preserved. Generator retains hidden flag. Coloring1814/0, layout/archive150/0. Source0.31.1/code36; no tablet build/install or Git writes.
+
+
+## Latest checkpoint - 0.32.0, 2026-11-15
+
+Owner requested two more melodies without reducing play space. Added original eight-note Rainbow dance / Little bells motifs, EN/UK localized titles. Five melodies total. Replaced individual melody buttons with fixed single-row previous/title/next cyclic selector; listen/replay stay in same row. Choice cancels demo and resets practice. Native PlayImprovements215/0 with28captures across2locales2sizes; tests complete all5 melodies, assert unchanged keyboard size, row bounds and both wrap arrows. Source0.32/code37; tablet/APK remains0.28/code32. No build/install/Git writes.

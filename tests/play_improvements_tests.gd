@@ -77,6 +77,18 @@ func run() -> void:
    music.choose_melody(2);await capture(prefix+"_melody")
    for note: int in MelodyPractice.MELODIES[2]:music.on_key(note)
    expect(music.lesson.done() and music.keyboard.highlighted==-1,"All melody notes complete positively")
+   await frames();var keyboard_size: Vector2=music.keyboard.size
+   expect(MelodyPractice.MELODIES.size()==5,"Five authored melodies available")
+   for melody: int in range(MelodyPractice.MELODIES.size()):
+    music.choose_melody(melody);await frames()
+    expect(music.keyboard.size==keyboard_size,"Melody choice keeps keyboard size unchanged")
+    expect(music.get_global_rect().encloses(music.practice_controls.get_global_rect()),"Single-row melody selector fits game")
+    expect(music.melody_title.text.contains(LocalizationManager.text("MUSIC_MELODY_"+str(melody))),"Current localized melody shown")
+    for note: int in MelodyPractice.MELODIES[melody]:music.on_key(note)
+    expect(music.lesson.done(),"Every melody can be completed")
+   music.find_child("NextMelody",true,false).pressed.emit();expect(music.lesson.melody==0 and music.lesson.index==0,"Next wraps and resets practice")
+   music.find_child("PreviousMelody",true,false).pressed.emit();expect(music.lesson.melody==4,"Previous wraps to fifth melody")
+   await capture(prefix+"_melody_expanded")
    music.set_learning(false);expect(not music.practice_controls.visible,"Free instrument mode retained")
  var many: Array=[]
  for i: int in range(1000):

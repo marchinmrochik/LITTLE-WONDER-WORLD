@@ -3,7 +3,7 @@ config_version=5
 
 [application]
 config/name="Little Wonder World"
-config/version="0.29.0"
+config/version="0.32.0"
 run/main_scene="res://scenes/core/app_root.tscn"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://assets/ui/app_icon.svg"

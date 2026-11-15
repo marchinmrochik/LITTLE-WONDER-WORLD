@@ -2,7 +2,7 @@
 
 Godot 4.7.2 Standard educational application for ages 3-5. English is the first-run language; Ukrainian is available in the parent section. Distribution remains local/private, without Google Play.
 
-## Current desktop version - 0.29.0
+## Current desktop version - 0.32.0
 
 Fifteen activities, **Learn Animals**, **Learn Colors**, **Feed the Animals**, **Shape Sorting**, **Animal Puzzles**, **Memory Match**, **Numbers and counting**, **Magic Drawing**, **Coloring Book** and **Magic Xylophone**, are playable on the PC:
 
@@ -121,3 +121,11 @@ Desktop 0.27.0: offline **Draw a word** in EN/UK, child/family modes, familiar p
 Desktop 0.28.0: parent-gallery PNG export, 200-picture / 256MiB bounded gallery with lazy thumbnails, and optional examples for all ten coloring pages. 388 speech clips have been regenerated with revised frontends; selected recordings remain unchanged, pronunciation listening is still pending. See [Speech, gallery and coloring report](docs/VOICE_GALLERY_COLORING_REPORT.md). Tablet/APK remain 0.25.0/code29.
 
 Desktop0.29.0: flexible corner/jitter tracing, compact balloon score and larger flight area, persistent difficulty selection styling, transparent animal artwork, owner-selected human British Z and offline semantic speech triage. The full710-recording ASR report is a review aid, not pronunciation approval. See [Input and voice QA report](docs/FLEXIBLE_INPUT_VOICE_QA_REPORT.md). Tablet/APK remain0.28.0/code32.
+
+Desktop0.30.0: companion labels and portrait repeat now match the exact spoken dictionary word; body exploration shows non-overlapping translucent touch markers with one active selection and calibrated face geometry. All59 letters were re-run through independent ASR and per-file signal/alias analysis; pronunciation remains under review. See [Companion, body and alphabet report](docs/COMPANION_BODY_ALPHABET_REPORT.md). Tablet/APK remain0.28.0/code32.
+
+The owner-selected human J pronunciation is now included with CC BY-SA3.0 attribution in parent sound settings and [the recording notice](assets/licenses/J_PRONUNCIATION_NOTICE.md); J and Z remain protected from regeneration. Other letter pronunciation is still under review.
+
+Coloring workspace 0.31: height-filling paper, side tools and legacy drawing compatibility. See [report](docs/COLORING_WORKSPACE_REPORT.md).
+
+Music practice: five original eight-note melodies, compact cyclic selector and unchanged keyboard area.

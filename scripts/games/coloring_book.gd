@@ -3,6 +3,7 @@ extends Control
 var documents: Dictionary = {}
 var dirty_pages: Dictionary = {}
 var page_index := 0
+var book_pages: Array[Dictionary]=[]
 var selected := PaintDocument.COLORS[0]
 var selected_paint := ""
 var canvas := ColoringCanvas.new()
@@ -24,71 +25,43 @@ var reference_picture: TextureRect
 var reference_button: ChildButton
 
 func _ready() -> void:
+	book_pages=ColoringDocument.available_catalog()
 	for page: Dictionary in ColoringDocument.catalog():
 		documents[page.id] = ColoringDocument.new(page.id)
 	var draft := ArtworkManager.load_color_draft()
 	for id: String in draft.get("pages", {}):
 		documents[id].restore(draft.pages[id])
 		dirty_pages[id] = not documents[id].is_blank()
-	for i: int in range(ColoringDocument.catalog().size()):
-		if ColoringDocument.catalog()[i].id == draft.get("last_page", ""):
+	for i: int in range(book_pages.size()):
+		if book_pages[i].id == draft.get("last_page", ""):
 			page_index = i
 	add_child(column)
 	column.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT)
-	var top := UiKit.row(10)
-	column.add_child(top)
-	top.add_child(UiKit.label("BOOK_TITLE", 30, UiKit.GREEN))
-	top.add_child(UiKit.spacer())
-	undo_button = UiKit.tool_button("DRAW_UNDO",undo,"undo")
-	undo_button.name = "Undo"
-	top.add_child(undo_button)
-	redo_button = UiKit.tool_button("DRAW_REDO",redo,"redo")
-	redo_button.name = "Redo"
-	top.add_child(redo_button)
-	for entry: Array in [["DRAW_SAVE","SaveColoring",save_picture],["GALLERY","OpenGallery",show_gallery],["BOOK_RESET","ResetColoring",request_reset]]:
-		var button := UiKit.tool_button(entry[0],entry[2],{"SaveColoring":"save","OpenGallery":"gallery","ResetColoring":"clear"}[entry[1]])
-		button.name = entry[1]
-		top.add_child(button)
-	reference_button=UiKit.tool_button("BOOK_EXAMPLE",toggle_reference,"palette")
-	reference_button.name="ToggleReference"
-	top.add_child(reference_button)
-	var pages := UiKit.row(14)
-	pages.alignment = BoxContainer.ALIGNMENT_CENTER
-	column.add_child(pages)
-	previous = UiKit.button("", change_page.bind(-1), UiKit.CREAM, "previous")
-	previous.name = "PreviousPicture"
-	previous.custom_minimum_size.x = 80
-	pages.add_child(previous)
-	title = UiKit.label("", 30, UiKit.GREEN)
-	title.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-	pages.add_child(title)
-	next = UiKit.button("", change_page.bind(1), UiKit.CREAM, "next")
-	next.name = "NextPicture"
-	next.custom_minimum_size.x = 80
-	pages.add_child(next)
-	counter = UiKit.label("", 22, UiKit.MUTED)
-	counter.size_flags_vertical = Control.SIZE_SHRINK_CENTER
-	pages.add_child(counter)
-	var repeat := UiKit.button("", repeat_word, UiKit.MINT, "speaker")
-	repeat.name = "RepeatWord"
-	repeat.custom_minimum_size.x = 76
-	pages.add_child(repeat)
-	column.add_child(palette)
-	palette.paint_selected.connect(select_paint)
-
-	canvas.size_flags_vertical = Control.SIZE_EXPAND_FILL
-	var workspace := UiKit.row(14)
-	workspace.size_flags_vertical=Control.SIZE_EXPAND_FILL
-	column.add_child(workspace)
-	canvas.size_flags_horizontal=Control.SIZE_EXPAND_FILL
-	workspace.add_child(canvas)
-	reference_panel=UiKit.column(8);reference_panel.custom_minimum_size.x=200;workspace.add_child(reference_panel)
+	var workspace := UiKit.row(10);workspace.size_flags_vertical=Control.SIZE_EXPAND_FILL;column.add_child(workspace)
+	var left_center := CenterContainer.new();workspace.add_child(left_center)
+	var navigation := UiKit.column(6);navigation.custom_minimum_size.x=62;left_center.add_child(navigation)
+	previous=UiKit.compact_tool_button("BACK",change_page.bind(-1),"previous");previous.name="PreviousPicture";navigation.add_child(previous)
+	counter=UiKit.label("",18,UiKit.MUTED);counter.horizontal_alignment=HORIZONTAL_ALIGNMENT_CENTER;navigation.add_child(counter)
+	next=UiKit.compact_tool_button("NEXT",change_page.bind(1),"next");next.name="NextPicture";navigation.add_child(next)
+	var repeat := UiKit.compact_tool_button("SAY_HELLO",repeat_word,"speaker");repeat.name="RepeatWord";navigation.add_child(repeat)
+	reference_button=UiKit.compact_tool_button("BOOK_EXAMPLE",toggle_reference,"palette");reference_button.name="ToggleReference";navigation.add_child(reference_button)
+	canvas.size_flags_vertical=Control.SIZE_EXPAND_FILL;canvas.size_flags_horizontal=Control.SIZE_EXPAND_FILL;workspace.add_child(canvas)
+	reference_panel=UiKit.column(8);reference_panel.custom_minimum_size.x=180;workspace.add_child(reference_panel)
 	reference_panel.add_child(UiKit.label("BOOK_EXAMPLE",22,UiKit.GREEN))
-	reference_picture=TextureRect.new();reference_picture.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;reference_picture.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;reference_picture.custom_minimum_size=Vector2(200,150);reference_picture.mouse_filter=Control.MOUSE_FILTER_IGNORE;reference_panel.add_child(reference_picture)
-	var freedom := UiKit.paragraph("BOOK_EXAMPLE_HINT",18);freedom.custom_minimum_size.x=200;reference_panel.add_child(freedom)
+	reference_picture=TextureRect.new();reference_picture.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;reference_picture.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_CENTERED;reference_picture.custom_minimum_size=Vector2(180,130);reference_picture.mouse_filter=Control.MOUSE_FILTER_IGNORE;reference_panel.add_child(reference_picture)
+	var freedom := UiKit.paragraph("BOOK_EXAMPLE_HINT",18);freedom.custom_minimum_size.x=180;reference_panel.add_child(freedom)
+	var right_center := CenterContainer.new();workspace.add_child(right_center)
+	var right := UiKit.column(8);right.custom_minimum_size.x=104;right_center.add_child(right)
+	palette.side_layout=true;palette.side_swatch_size=Vector2(44,40);right.add_child(palette);palette.paint_selected.connect(select_paint)
+	var actions := GridContainer.new();actions.columns=2;actions.add_theme_constant_override("h_separation",6);actions.add_theme_constant_override("v_separation",6);right.add_child(actions)
+	undo_button=UiKit.compact_tool_button("DRAW_UNDO",undo,"undo");undo_button.name="Undo";actions.add_child(undo_button)
+	redo_button=UiKit.compact_tool_button("DRAW_REDO",redo,"redo");redo_button.name="Redo";actions.add_child(redo_button)
+	for entry: Array in [["DRAW_SAVE","SaveColoring",save_picture,"save"],["GALLERY","OpenGallery",show_gallery,"gallery"],["BOOK_RESET","ResetColoring",request_reset,"clear"]]:
+		var button := UiKit.compact_tool_button(entry[0],entry[2],entry[3]);button.name=entry[1];button.custom_minimum_size=Vector2(48,48);actions.add_child(button)
 	canvas.region_pressed.connect(fill_at)
-	status = UiKit.label("BOOK_READY", 21, UiKit.GREEN)
-	column.add_child(status)
+	var footer := UiKit.row(12);column.add_child(footer);footer.add_child(UiKit.label("BOOK_TITLE",20,UiKit.GREEN))
+	title=UiKit.label("",22,UiKit.GREEN);footer.add_child(title);footer.add_child(UiKit.spacer())
+	status=UiKit.label("BOOK_READY",18,UiKit.GREEN);footer.add_child(status)
 	draft_timer.one_shot = true
 	draft_timer.wait_time = 0.5
 	add_child(draft_timer)
@@ -101,15 +74,16 @@ func _ready() -> void:
 	AudioManager.say("BOOK_INTRO")
 
 func document() -> ColoringDocument:
-	return documents[ColoringDocument.catalog()[page_index].id]
+	return documents[book_pages[page_index].id]
 
 func _show_page() -> void:
 	canvas.pointer_owner = -2
 	canvas.set_image(document().render_image())
+	var bounds: Array=document().page.get("bounds",[0,0,1024,640]);canvas.source_bounds=Rect2(bounds[0],bounds[1],bounds[2],bounds[3]);canvas.queue_redraw()
 	title.text = LocalizationManager.object_name(document().page)
-	counter.text = LocalizationManager.text("BOOK_PAGE").format({"current":page_index + 1,"total":10})
+	counter.text = str(page_index+1)+" / "+str(book_pages.size())
 	previous.disabled = page_index == 0
-	next.disabled = page_index == ColoringDocument.catalog().size() - 1
+	next.disabled = page_index == book_pages.size() - 1
 	_update_reference()
 	_update_controls()
 
@@ -132,7 +106,8 @@ func _update_controls() -> void:
 		var style := UiKit.panel(color, 18, 8)
 		style.set_border_width_all(4 if color == selected else 0)
 		style.border_color = UiKit.GREEN if color == Color.WHITE else Color.WHITE
-		palette.get_child(i).add_theme_stylebox_override("normal", style)
+		var swatch: Button=palette.find_child("Color_"+str(i),true,false)
+		if swatch!=null:swatch.add_theme_stylebox_override("normal",style)
 
 func select_paint(value: String) -> void:
 	selected_paint=value
@@ -166,7 +141,7 @@ func redo() -> void:
 		_changed()
 
 func change_page(delta: int) -> void:
-	page_index = clampi(page_index + delta, 0, ColoringDocument.catalog().size() - 1)
+	page_index = clampi(page_index + delta, 0, book_pages.size() - 1)
 	_show_page()
 	flush_draft()
 	repeat_word()
@@ -248,8 +223,11 @@ func load_picture(id: String) -> void:
 	if state.is_empty() or not documents[state.page].restore(state):
 		status.text = LocalizationManager.text("DRAW_DAMAGED")
 		return
-	for i: int in range(ColoringDocument.catalog().size()):
-		if ColoringDocument.catalog()[i].id == state.page:
+	# Archived pages are reachable only by explicitly opening existing artwork.
+	if not book_pages.any(func(item: Dictionary) -> bool:return item.id==state.page):
+		book_pages.append(documents[state.page].page)
+	for i: int in range(book_pages.size()):
+		if book_pages[i].id == state.page:
 			page_index = i
 	dirty_pages[state.page] = false
 	close_gallery()

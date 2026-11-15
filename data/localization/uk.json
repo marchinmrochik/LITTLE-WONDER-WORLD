@@ -705,5 +705,8 @@
   "DRAW_EXPORTED": "PNG збережено у вибране місце.",
   "DRAW_EXPORT_ERROR": "Не вдалося експортувати. Малюнок у галереї збережено. Обери інше місце.",
   "BOOK_EXAMPLE": "Зразок",
-  "BOOK_EXAMPLE_HINT": "Одна з ідей. Обирай і свої кольори!"
+  "BOOK_EXAMPLE_HINT": "Одна з ідей. Обирай і свої кольори!",
+  "VOICE_J_CREDIT": "Запис J: Logictheo / Wikimedia Commons, CC BY-SA 3.0. Змінено гучність і формат.\nДжерело: commons.wikimedia.org/wiki/File:En-uk-j.ogg\nЛіцензія: creativecommons.org/licenses/by-sa/3.0/",
+  "MUSIC_MELODY_3": "Танець веселки",
+  "MUSIC_MELODY_4": "Дзвіночки"
 }

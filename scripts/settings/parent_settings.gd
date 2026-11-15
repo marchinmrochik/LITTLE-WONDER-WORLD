@@ -57,6 +57,7 @@ func _ready() -> void:
 	_add_toggle(right,"coloring_reference","BOOK_EXAMPLE")
 	_add_toggle(right, "system_voice_enabled", "SYSTEM_VOICE")
 	right.add_child(UiKit.paragraph("VOICE_NOTE", 18))
+	right.add_child(UiKit.paragraph("VOICE_J_CREDIT",16))
 	right.add_child(UiKit.paragraph("SYSTEM_VOICE_NOTE", 18))
 	var available := AudioManager.voice_available(SettingsManager.values.locale)
 	right.add_child(UiKit.paragraph("VOICE_AVAILABLE" if available else "VOICE_MISSING", 18))

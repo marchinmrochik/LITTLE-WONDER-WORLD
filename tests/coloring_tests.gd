@@ -118,7 +118,7 @@ func _run() -> void:
 		game._update_pause()
 		game.page_index = 0
 		game._show_page()
-		for i: int in range(10):
+		for i: int in range(game.book_pages.size()):
 			var doc: ColoringDocument = game.document()
 			var region: Dictionary = doc.page.regions[0]
 			game.select_color(PaintDocument.COLORS[i % 9])
@@ -140,9 +140,9 @@ func _run() -> void:
 				_expect(doc.is_blank(), "Confirmed reset restores original line art")
 				game.undo()
 				_expect(doc.colors == filled, "Reset can be undone through UI")
-			if i < 9:
+			if i < game.book_pages.size()-1:
 				game.find_child("NextPicture", true, false).pressed.emit()
-		_expect(game.next.disabled and game.page_index == 9, "All ten pages reachable with final boundary")
+		_expect(game.next.disabled and game.page_index == 8, "All nine available pages reachable with final boundary")
 		game.save_picture()
 		var count: int = ArtworkManager.entries.size()
 		game.save_picture()
@@ -190,7 +190,7 @@ func _run() -> void:
 
 func _tap(canvas: ColoringCanvas, point: Vector2) -> void:
 	var rect := canvas.image_rect()
-	var position := canvas.global_position + rect.position + point / Vector2(1024,640) * rect.size
+	var position := canvas.global_position + rect.position + (point-canvas.source_bounds.position) / canvas.source_bounds.size * rect.size
 	for pressed: bool in [true,false]:
 		var event := InputEventScreenTouch.new()
 		event.index = 0

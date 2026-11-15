@@ -30,7 +30,7 @@ func _ready() -> void:
 	var bubble := UiKit.card(Color("fffdf0"))
 	bubble.size_flags_horizontal = Control.SIZE_SHRINK_CENTER
 	right.add_child(bubble)
-	greeting = UiKit.label("FOX_HELLO", 30, UiKit.GREEN)
+	greeting = UiKit.label(CompanionCatalog.label_key(SettingsManager.values.companion), 30, UiKit.GREEN)
 	bubble.add_child(greeting)
 	var portrait_button := Button.new()
 	portrait_button.name = "FoxieButton"
@@ -48,7 +48,7 @@ func _ready() -> void:
 		fox.react()
 		fox.set_state("waving")
 		AudioManager.play_sfx("sparkle")
-		AudioManager.say("FOX_HELLO")
+		AudioManager.say(CompanionCatalog.word_key(SettingsManager.values.companion))
 	)
 
 	layout.add_child(UiKit.label("PET_CHOOSE",24,UiKit.GREEN))
@@ -62,6 +62,7 @@ func _ready() -> void:
 func choose_pet(id: String) -> void:
 	if not CompanionCatalog.valid(id):return
 	SettingsManager.set_value("companion",id)
+	greeting.text=LocalizationManager.text(CompanionCatalog.label_key(id))
 	for key: String in pet_buttons:
 		var button: Button=pet_buttons[key]
 		button.add_theme_stylebox_override("normal",UiKit.panel(UiKit.MINT if key==id else UiKit.CREAM,22,18))
