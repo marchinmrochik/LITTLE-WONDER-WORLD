@@ -1,70 +1,10 @@
 # Asset provenance
 
-- `characters/foxie*.svg`: project-original Foxie vectors. Approved original idle/resting assets are retained; happy, waving, thinking, encouraging and celebrating variants were authored from the same original source by tools/generate_foxie_states.py.
-- `backgrounds/meadow.svg`: original foundation landscape, retained unchanged.
-- `objects/animals/*.svg`: twelve project-original illustrations authored by tools/generate_animal_art.py. No emoji, third-party clip-art pack or generated bitmap was used. Mint backing shapes preserve contrast for white animal bodies.
-- `objects/colors/*.svg`: eight original colored-ball vectors authored by tools/prepare_colors_content.py. The same object geometry keeps the learning task focused on color.
-- `objects/food/*.svg`: twelve original food vectors authored by tools/prepare_feeding_content.py; no external image pack.
-- `objects/shapes/*.svg`: six original geometry pieces and six matching neutral silhouette SVGs, authored by tools/prepare_shapes_content.py. No external shape pack.
-- `ui/*.svg`: project-original interface icons, including search, repeat/speaker, replay and paging arrows.
-- `audio/sfx/{tap,sparkle,rest}.wav` and `audio/music/meadow.wav`: original synthesized foundation audio from tools/generate_foundation_audio.gd, retained unchanged for this slice. No external song/sample pack is used.
-- `audio/voice/{en,uk}/*.wav`: finite locally synthesized speech using licensed/publicly documented stock Piper models; project-authored text, trimmed/peak-normalized/faded by tools/generate_voice_pack.py. Not actor recordings or user-specific voice cloning. Exact source/model/clip hashes and attribution are under audio/voice/manifest.json, licenses/VOICE_NOTICE.md and tools/voice-toolchain.json. Models/engine stay in ignored PC .tools/ and are not runtime application assets. Listening approval remains pending.
-- `fonts/Nunito-Variable.ttf`: unmodified Google Fonts Nunito variable font, copyright 2014 The Nunito Project Authors, SIL Open Font License 1.1. Original license is in fonts/OFL.txt. Source: https://raw.githubusercontent.com/google/fonts/main/ofl/nunito/Nunito%5Bwght%5D.ttf .
+- Meadow backgrounds, Foxie poses, object and companion illustrations, interface icons, coloring templates, and seasonal story geometry are original project assets. In-app illustrations are maintained under [assets](./) and authored by the corresponding [content tools](../tools/).
+- The boy and girl illustrations under `objects/people/` were generated for the project with OpenAI ImageGen. Body hit regions and crops are authored separately in the game content.
+- Music, interface sounds, the yard bark and xylophone bars are synthesized for this project. Melody patterns are authored in [MelodyPractice](../scripts/games/melody_practice.gd).
+- Nunito is distributed under the SIL Open Font License. See [the font license](fonts/OFL.txt).
+- Bundled spoken lines use locally generated WAV files. See [voice attribution](licenses/VOICE_NOTICE.md) and the [voice manifest](audio/voice/manifest.json).
+- The [README screenshots](../docs/screenshots/) were captured from the Godot application with test data.
 
-No external animal artwork, source voice datasets or model weights are bundled. Attribution notices and licenses are included by the Android export preset, but current-version mobile packaging has not yet been executed. This notice does not assign a separate open-source license to application code or project-original art/audio.
-
-Animal Puzzles reuses the project-original Cat, Dog, Rabbit, Bear, Lion and Elephant SVGs and their existing English word recordings. AtlasTexture cuts are derived from those assets at runtime; no new external artwork or model source was introduced.
-
-Memory Match reuses original animal/food/shape SVGs and English word audio. `ui/memory_back.svg` is a new project-original mint/star card-back vector. No external image pack, new voice model or additional runtime dependency introduced.
-
-Counting reuses original apple,carrot,strawberry and star art/word resources. `objects/counting/basket.svg` is an original project wicker-basket vector. New finite number/instruction WAVs use the same documented voice models;no external artwork or new runtime dependency.
-
-`ui/drawing.svg` is a project-original paper/pencil icon. Drawing marks are created by the child using original software-generated round/soft/rainbow stamps; no external brush texture pack or uploaded images are used. Saved personal artwork is private runtime data, not bundled application art.
-
-Coloring 0.11.0: ten project-original closed-region vector pages and colored butterfly menu icon authored by tools/prepare_coloring_content.py using mathematical polygon/ellipse geometry. No external illustration pack. Semantic coloring metadata and saved PNGs are private runtime data. Fourteen BOOK_ speech clips use the existing pinned, licensed models and processing documented in AUDIO_MANIFEST.md.
-
-Magic Xylophone0.12.0: eight original mathematical modal-bar waveforms generated by tools/prepare_xylophone.py, with fundamental/decaying inharmonic partials, smooth attack and tail fade; no third-party samples. Original xylophone.svg icon generated by the same helper. These assets are authored for this project; speech/music provenance above remains unchanged.
-
-UX0.13.0: project-original vector tool/finger/size icons authored in assets/ui. Ukrainian speech now uses rhasspy/Piper ukrainian_tts-medium,Tetiana speaker2,revision6b9cfaacb4fb2e02a9621227e3c1a48bec9710c3. Bundled assets/licenses/ukrainian-tts-medium-MODEL_CARD.txt statesCC0 dataset; config mapsTetiana to2. Source:https://huggingface.co/rhasspy/piper-voices/tree/6b9cfaacb4fb2e02a9621227e3c1a48bec9710c3/uk/uk_UA/ukrainian_tts/medium . Earlier Lada x-low descriptions are historical. Model remains development-only; finite WAVs shipped. EnglishCori unchanged.
-
-Completion0.14.0: balloons,highlight outlines,firework rays andpop particles are project-original Godot drawing primitives. balloon_pop.wav is an original decaying frequency-sweep tone generated by tools/prepare_completion_content.py. Two new completion speech files use the already documented pinned Cori/Tetiana models. No external artwork/audio samples downloaded.
-
-Feedback0.15.0: palette/letter/syllable/balloon menu SVGs are original vector paths;gradient swatches/rendering are generated in software.85new speech clips use the already pinned Cori/Tetiana models. No third-party artwork,samples ornew model downloads.
-
-World0.16.0: original body and eight plant SVGs authored by tools/prepare_world_content.py. Existing original animal art reused.68 additional word/prompt WAVs use the existing pinned Cori/Tetiana voices and documented processing. No external assets or models downloaded.
-
-Learning/body0.17:32originalalphabet SVGs authored by prepare_alphabet_cards.py,reusing existing original assets for the other letter examples. Detailedbody.svg and20clippedsemanticbody-part SVGs authored by prepare_body_details.py. No external artwork/emoji substitutions.59example-word recordings and44new body clips use the existing licensed pinned Cori/Tetiana models;59olderletter-name clips regenerated without English sentence introduction. No new model/media downloads.
-
-People0.18:original transparent boy.png and girl.png generated with built-in image_gen2026-11-14;exact prompts in docs/PEOPLE_GENERATION_PROMPTS.md. User approved boy and requested matching girl. PNGs copied unchanged intoassets/objects/people. Internet references informed pose/anatomy only;no third-party stock files bundled. Companion choices reuse existing original game animal SVGs. Old geometric body/crops remain historical source assets;runtime uses the new PNG/atlas metadata. Letter59clips use unchanged pinned licensed Cori/Tetiana model weights,with recorded development-only duration extraction and existing gentle normalization.
-
-
-Living drawings0.20: original house geometry, animation and living_house.svg menu icon authored locally in code/data. Generic guided-tracing mechanics informed by reference games; no Bini/Bimi Boo artwork, recordings or code copied.18new local speech clips use existing pinned Cori/Tetiana models. No downloaded dependencies or media.
-
-
-Living yard0.21: sun/moon/cloud/puppy/flowers/rain/butterflies and back.svg are original local vector/code geometry. tools/prepare_living_house.py generates original deterministic yard_bark.wav (sine harmonics plus seeded noise and soft envelope); no sampled animal audio. Ten new finite EN/UK speech clips use existing pinned voices. No third-party assets/dependency downloads.
-
-
-Seasonal0.22:36actors across3originalscenes,seasonalicons and animatedeffects authored locally as CanvasItem geometry and SVG. JSON/guides/localization/voicejobs authored by tools/prepare_seasonal_stories.py.64local speechclips use existing pinnedlicensedmodels. No externalartwork,recordings or dependencydownloads.
-
-
-Symbol tracing0.23: original printed uppercase/digit centerline geometry authored by tools/prepare_symbol_tracing.py;smallfireworks originalCanvasItemgeometry. UkrainianWAVs rebuiltusingRomanStasyshyn/uk_UA-tetiana-high (Apache2.0,pinnedhashinvoice-toolchain),authoredfinitestresslexiconandcanonicalletterIPA. Weights/configdownloadeddevelopment-only;onlyWAVs/modelcard/license shipped. English339existingclipsunchanged. No externaltracingart or addedpackages.
-
-Play improvements0.26: `ui/settings.svg` is an original project gear vector. MelodyPractice contains three short authored note patterns played using the existing original xylophone waveforms; no external song recording or new sample library. Nine story tracing gestures were authored against existing procedural actor coordinates; illustration art is unchanged.
-
-
-Storybook 0.27: 40 original SVG illustrations authored locally by tools/prepare_story_illustrations.py, with rounded companion-style geometry. Existing original dog/rabbit companion SVGs are reused without third-party material. All 46 story actors are covered, including day/night and active variants. assets/ui/draw_word.svg is an original clue-card/pencil composition reusing the existing original cat. No external art, recordings, dependencies or models were downloaded; existing voice clips remain unchanged in this increment.
-
-
-0.28: Ten original coloring-reference palettes authored locally against existing closed regions; no external art or color-reference imagery.388 replacement speech clips use existing licensed Tetiana High/Cori/LJ Speech models, with per-cue hashes and methods recorded in manifest voice_repair fields. No new model or package downloaded. Nine owner-selected/retained clips are byte-preserved. Replacements await human listening approval; see licenses/VOICE_NOTICE.md.
-
-
-0.29: removed the authored decorative green background plate from all12animal SVGs and their generator, retaining original character geometry/shadows. Living-story objects retain transparent surroundings (47unique relevant textures audited). The only speech replacement in this increment is the owner-selected public-domain human British Z; see licenses/Z_PRONUNCIATION_NOTICE.md and tools/voice_sources.json. Whisper.cpp/base are development-only downloaded tools in ignored .tools, never packaged into the application; no child audio is sent to a service.
-
-
-0.30: hit regions/crops for the existing generated boy/girl were recalibrated locally; no artwork regeneration or external body imagery. The owner accepted the human J recording by Logictheo (Commons En-uk-j.ogg, CC BY-SA3.0); PCM conversion/volume only, with notice and parent-settings credit. See licenses/J_PRONUNCIATION_NOTICE.md. All other709WAVs remain unchanged at this step.
-
-## Coloring artwork revision 2
-
-Local code-authored vector refinements: stronger outlines, eye highlights and rounded fox cheeks. No external image source. Original templates retained in data/game_content/coloring_legacy.json for existing nonblank drawings. Generator: tools/prepare_coloring_art.py.
-
-Music practice additions: Rainbow dance and Little bells are original eight-note motifs authored locally in scripts/games/melody_practice.gd; existing instrument samples reused. No external recordings or melody sources.
+Third-party notices apply to their respective assets. They do not grant a license to the application code or project-original assets.

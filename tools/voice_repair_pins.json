@@ -1262,28 +1262,13 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_01": {
-      "sha256": "4627afa696d2d5348d5624c89a329cc12b64927d22b70f61346798eb2d6cba69",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_01": {
       "sha256": "f743d5c5478023ae7c0639cd6dc26d8ad3e8c5c271a8211621a6b1b779a68ef0",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_02": {
-      "sha256": "7d6df9ff5ac0d541cdeae98b4e734d1fcbec56e4365a274fdb3b2af77051db48",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_02": {
       "sha256": "61bc3181f04ba16dc42fa798c1dee785b8e22b0d72967b9f49f720b711677e0a",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_03": {
-      "sha256": "3a81128d29e9d03b8973d74b1bc7ea606705f2833685264fe3e7d4c3f2d2552e",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1312,18 +1297,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_06": {
-      "sha256": "07defddae0b1d442666aa182a53f965881b59b1e9116b7ae6c41646309466d97",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_06": {
       "sha256": "d78d854d291c93ba04ad8e55749e441574bb58a76e7ce91e47ade1b20e1181e1",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_07": {
-      "sha256": "ffc516528e82d0f397885f74577b028838eed33c4108090757cf5773fa992788",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1332,18 +1307,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_08": {
-      "sha256": "46ac840a768071477e3ec4123136cfdc45e17b5c820ff564ddbef7fcb5771d4f",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_08": {
       "sha256": "105f6e390464eb5ea6cd96ae54e1476ed9fce67164c7237c479d0aa052975f5d",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_09": {
-      "sha256": "374eef427d401b616a8c913460f784c741eaaab306f9ad71895166b34a72374a",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1362,18 +1327,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_11": {
-      "sha256": "aa68a3f67e3caea8d62026cb81ebd1af54ca8d81f40cefab699fca3f8991dd5f",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_11": {
       "sha256": "465bb4518c8f782f425916ba4abc10026f33aa0613cea1373c059f8ba90bff47",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_12": {
-      "sha256": "0e25e1d011d74c7dcce3de33780e8fd25bc8eb16aaa69cc3f486a7ad536744ba",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1382,33 +1337,13 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_13": {
-      "sha256": "dfadf9f4c79eed27f569819edee2e9bab1aee98f9c5c4b41d77dd4a9dd6b30b7",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_13": {
       "sha256": "4afbdd0715ec4e391537acfe06f97c327c5ab449f3331e5e8dc28fc529856f92",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_14": {
-      "sha256": "7df30097ac1644e80ceb1ddea8913ba9f2a3c9e7c57999c5b30403c562b3e9ea",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_15": {
-      "sha256": "aadf4d8b3204321cfb001dbe0ab9e6fc41fbd970e97a30f182792e8a9919049f",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_15": {
       "sha256": "13a7e61bc74e2812de952cc6abc392daa95310cbb4cbbc6db9e9da577ad051b5",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_16": {
-      "sha256": "38ede02ddd6ded0e64c2bafeb5379f3e071539b28240023ea0da1fc763c17f2f",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1427,18 +1362,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_18": {
-      "sha256": "ad937f5af4dda0d9cce3c99e5e15c8b5237961e2e6d24b5f313b31c65788e92b",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_18": {
       "sha256": "d602f519200db7828567573d4506728937e5272ecb45e951fc8f0ce888a984c0",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_19": {
-      "sha256": "beb98fa7511d20c70a08d01c0187fd66db542d3b873ab44535209da8402ca5b2",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1447,18 +1372,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_20": {
-      "sha256": "dac799629308447ae1fdbcea6a85c0c1f2bb06d45b160028413b3749d56635b3",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_20": {
       "sha256": "4117a9bcf23d16a55afe4f43d00f5c6a4d5807aecb79436f9867faecc8bb828e",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_21": {
-      "sha256": "31835e6cc48f0f0eef2e906972fa12b8c62b48935e21065b29924d9eebb85d14",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1467,18 +1382,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_22": {
-      "sha256": "0eee0ce80c236d6d3d79e6ad30fddc38f92f8edc1eedf78b18811717215f0119",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_22": {
       "sha256": "d25ab6a3186839d5a0824a4a16950306ba154079b4ed8912c9fd5b748a49a584",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_23": {
-      "sha256": "8194408b532803e96e7cadd6b0b6916a9d1d2677e1f2428204e6cb34e6d1d7eb",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1487,18 +1392,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_24": {
-      "sha256": "f736c20dd5e9d20205482ca8926c5358bfafd921acd0270344ce997a28fb7a4e",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_24": {
       "sha256": "f0f5ab92e08e80b2a4ced965595175c189440112b55e285169470d54179f3bfe",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_25": {
-      "sha256": "c6d35bbd163fd5cf0de3af380eeaab7f7567fa6279735bac9264da4a236bc992",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1507,18 +1402,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_26": {
-      "sha256": "92916d75f0792fc8c583e23a3534fd6fc0cf2c12ba5ba2750d0a980d2492a576",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_26": {
       "sha256": "cc45fc14e9e4396a861a30a4d8a83f992d0becdd4a0297f36371fe61cb136ed8",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_27": {
-      "sha256": "f7c0c0c189938090f9c9f718a6226a37ccd8e50769cfbfe940824a0e281050e5",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1537,18 +1422,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_29": {
-      "sha256": "0ed526c4de7f3f71c61192c9da6da45f8714c57c9ec46e7d29ddd3e00e44ef05",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_29": {
       "sha256": "a11c206216538542383bfd4a524177cee1b33413e31abbc8184351c8615cf202",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_30": {
-      "sha256": "387ee17a0e72521ea53c8e868451b87b28d97392e5557f3b0a42d42bee90dc9d",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
@@ -1557,18 +1432,8 @@
       "variant": "repair028",
       "listening_status": "unreviewed"
     },
-    "uk:ALPH_UK_31": {
-      "sha256": "46a77bfd03eb581d6f99580918a0bc25bdabaa27b1a6681e06b0468dd8438390",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
     "uk:ALPH_WORD_UK_31": {
       "sha256": "fb12b38cebfbc04b1865596cd5920b173e7b8fb9de9f6a8a3240cd5381b68d34",
-      "variant": "repair028",
-      "listening_status": "unreviewed"
-    },
-    "uk:ALPH_UK_32": {
-      "sha256": "db55fb09cd4eaf80358a318e37917651b30ca590377bf6d8eebb6c8b12eac9ae",
       "variant": "repair028",
       "listening_status": "unreviewed"
     },

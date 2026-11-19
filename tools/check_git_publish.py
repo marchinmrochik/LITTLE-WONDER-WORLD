@@ -24,11 +24,12 @@ def main():
     def git(*args):return subprocess.check_output(['git',*args],cwd=ROOT).decode('utf-8').split('\0')
     files=sorted(set(filter(None,git('ls-files','-z','--cached','--others','--exclude-standard'))))
     ignored=list(filter(None,git('ls-files','-z','-ci','--exclude-standard')))
-    problems=[(f,'already tracked despite .gitignore') for f in ignored]
+    problems=[(f,'already tracked despite .gitignore') for f in ignored if (ROOT/f).exists()]
     for name in files:
+        path=ROOT/name
+        if not path.exists() and not path.is_symlink():continue
         issue=path_problem(name)
         if issue:problems.append((name,issue));continue
-        path=ROOT/name
         if not path.is_file():continue
         if path.stat().st_size>25*1024*1024:problems.append((name,'individual file exceeds25MiB; review before publishing'))
         if path.stat().st_size<=2*1024*1024:

@@ -4,57 +4,287 @@
     "uk:WORD_CAT": {
       "sha256": "9451031f801c262ceed69ab7d23675314f889bd00b636d4cd16423adadcde804",
       "variant": "tetiana_standard",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "uk:BOOK_WORD_CAT": {
       "sha256": "9451031f801c262ceed69ab7d23675314f889bd00b636d4cd16423adadcde804",
       "variant": "tetiana_standard",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "uk:ALPH_WORD_UK_14": {
       "sha256": "9451031f801c262ceed69ab7d23675314f889bd00b636d4cd16423adadcde804",
       "variant": "tetiana_standard",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "en:WORD_SHEEP": {
       "sha256": "d61d621225dc8d1dfe5fbdc42e333d25b26a21efd50609d137aa723d9f011ab7",
       "variant": "ljspeech",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "en:WORD_CAT": {
       "sha256": "6b337bd7e54af607316791b63d85bb0ada19dff98e216091f445a5e49381d273",
       "variant": "cat_direct_model",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "en:BOOK_WORD_CAT": {
       "sha256": "6b337bd7e54af607316791b63d85bb0ada19dff98e216091f445a5e49381d273",
       "variant": "cat_direct_model",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "en:ALPH_WORD_EN_02": {
       "sha256": "6b337bd7e54af607316791b63d85bb0ada19dff98e216091f445a5e49381d273",
       "variant": "cat_direct_model",
-      "reason": "Preserve the human-selected recording during routine synthesis"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "uk:WORD_DUCK": {
       "sha256": "537506e5dd147787e0146e08633891a0c2e2e052a0537ea7186d68cb80186cc8",
       "variant": "current_selected",
-      "reason": "Owner explicitly kept this existing Ukrainian recording; preserve exact bytes"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "uk:WORD_SHEEP": {
       "sha256": "ca77592d7b85f6d2989122e0b562bc7a614a4bf542491c65a1a296c83ca57824",
       "variant": "current_selected",
-      "reason": "Owner explicitly kept this existing Ukrainian recording; preserve exact bytes"
+      "reason": "Preserve the selected recording during regeneration"
     },
     "en:ALPH_EN_25": {
-      "sha256": "73e5fc4ce213df7a802c9f8724b58de411f45d2c7e72b26b58b77ecae243933e",
-      "variant": "human_zed_selected",
-      "reason": "Owner selected the British public-domain human recording; preserve exact processed PCM"
+      "sha256": "8c2f7dffc5dcdb8923303c000936cba8f48adb4fa4a0a8cd771f9fd0fbb79a22",
+      "variant": "alph_en_25_timbre_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_02": {
+      "sha256": "e426cafeb522a8a758fc6a402d75c3c91c89e8dc794cfdaedd1823638493b4fa",
+      "variant": "c_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_03": {
+      "sha256": "2b8879ede47ebaeceea19321a1dcfb81e4e3eca6264f698187cfb89ea109c81c",
+      "variant": "d_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_04": {
+      "sha256": "bc3b2a4c0cfe8af96bdd14b4ff4fb64d9f123337cda1970e0ab1db2503a68f15",
+      "variant": "e_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_05": {
+      "sha256": "27c9d9e50ae091d65615ea11815c2f2ceea1808462e763b2f37034635e6eebe4",
+      "variant": "f_cori_whole_ipa_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_06": {
+      "sha256": "bc108de9d3f707902fa6318d59bb33bad86446d7d378ec24c3867cc7c0189d4e",
+      "variant": "g_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_07": {
+      "sha256": "cefd0e9c69c3aa6d099d7be33e44374368d0ed6dac60a6c4cf4a72fffdc93f9d",
+      "variant": "h_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_08": {
+      "sha256": "b25496ef05480c67191d678f66d645bb1351da73ddc7012cd7184e5ee26d18fc",
+      "variant": "i_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_11": {
+      "sha256": "27fa022e3c054222bf773160bb9dcdc6d2311b1e006e7d8d17e116907366b4b8",
+      "variant": "l_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_12": {
+      "sha256": "4733f5d2aec5b58d97f1a70197385446ef2933abec5c237f9c9905cd7565da62",
+      "variant": "m_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_14": {
+      "sha256": "69305185441dcef4d3cff5e31c229ec469a4b7c76402ec5120783a1c70088e6b",
+      "variant": "o_cori_whole_ipa_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_15": {
+      "sha256": "6aba75dc915adc19ac75df237d9d336b49831c414869589a6b5d77ed9cc5a45f",
+      "variant": "p_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_16": {
+      "sha256": "dec8144367be48f7c91c10d04eabd16cec1c144f028b6d5fb90000e52320eaf9",
+      "variant": "q_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_17": {
+      "sha256": "c3492889970b15252701cdd07c363c8b8f74a21c31dbdc3de0a3f1619af5d9fb",
+      "variant": "r_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_19": {
+      "sha256": "f1f72582f88c6b579324f7693937f79c59ef4ee4e4881c4268f9e913fcd144b5",
+      "variant": "t_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_20": {
+      "sha256": "db3f657fc0ffc011a8d998558eba70f5b6854248cc77c1e8fa5f5175a1fdb1a4",
+      "variant": "u_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_22": {
+      "sha256": "916560936f009b83710d79eb3dc546dcdd9e35e85d1d9565674e62a74572d061",
+      "variant": "w_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_01": {
+      "sha256": "132fdf44224a90126b9edeb76c4fc135e9395bf277fa969e45e6675726bdf25e",
+      "variant": "uk_b_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_02": {
+      "sha256": "42ca11b138b1d142298d3a0482e54a4702f8d1172e81e30d30a08eff865736f0",
+      "variant": "uk_v_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_03": {
+      "sha256": "1501bf6240d3cdc12079d81ab78f2e1ca1dd35743f15a271f2ff6e01871e3cd9",
+      "variant": "uk_h_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_06": {
+      "sha256": "b5a902f416ed363d8c4092e9c48f3243d041eebca84e0821b5bfc81b81154316",
+      "variant": "uk_e_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_07": {
+      "sha256": "d242e2b933ffb87faf094fe641b2f3f72568a9fa568d27b680dc35a67c6c024f",
+      "variant": "alph_uk_07_timbre_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_08": {
+      "sha256": "230c12c0a14178fd098b29a04ac616bb7257335f6fec44e56e55c9ab73b7af2b",
+      "variant": "uk_zh_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_09": {
+      "sha256": "6653319d63101a586a6125624f6c73d0e3567c6217c7f6a3464152b17a09cf95",
+      "variant": "uk_z_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_11": {
+      "sha256": "b58fcd9bcea3e3eb056a7feaf2e5c6de414e725fcafa0f42c255ad739665989f",
+      "variant": "uk_i_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_12": {
+      "sha256": "429d5b26525f69e4fde179eb7585eb4ec3d21c0704191180b8d50c1575383505",
+      "variant": "uk_yi_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_13": {
+      "sha256": "fa132dc30013e8454fc353e403a4f60f5384f9c38acbf0b34d0d41cf50ee5e3e",
+      "variant": "uk_yot_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_14": {
+      "sha256": "a73c7ce873c42ce12d793390f8380ab467fa57898e84a96a4aaaf8c9464a4e2e",
+      "variant": "uk_k_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_15": {
+      "sha256": "09d207f81fff81ad47bd5447b1d32008abf9bff864f6c59cef5d3b2bc3fc3659",
+      "variant": "uk_l_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_16": {
+      "sha256": "34c6f319bef215925444014af56d85cf2b9970b2260a7704bde7d69e39d4991d",
+      "variant": "uk_m_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_18": {
+      "sha256": "7e7d08084b5e0eb05fefae856403386b16be9bc15f3190491828c206c66663e9",
+      "variant": "uk_o_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_19": {
+      "sha256": "3d903110885a3f0172f2100655d9d98e3d4fc2e5ecb092e7d2826f13ba9de05c",
+      "variant": "uk_p_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_20": {
+      "sha256": "d2e7a2396ff14005b07ddd44a2d32873bc03b3edc8bf046c19195d45bca54ed2",
+      "variant": "uk_r_medium_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_21": {
+      "sha256": "764fa6e4ec99895b3a91699726b35f7007a0e3395d0123c180e5c5cdf6a1cd37",
+      "variant": "uk_s_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_22": {
+      "sha256": "df56cf4b4b40354310cb5599d99894e9217b06eb0cba11e76a58eb0f1f98b92c",
+      "variant": "uk_t_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_23": {
+      "sha256": "9463bad51c1393cb5b17a3b1066dcc04e45e110c30d1486dad8adeb5f954ff3f",
+      "variant": "uk_u_medium_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_24": {
+      "sha256": "6f0f4f1bf7dc8f419c183a5a80ff23df7c268a6a448f11ed59f2dfeb26d9b246",
+      "variant": "uk_f_medium_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_25": {
+      "sha256": "81d19bbba62ab74e8637816abffd564140c392e25176d720850d649ac1df0729",
+      "variant": "uk_kh_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_26": {
+      "sha256": "2e1841a4404bbab8ac169d6dfbc3531a8d87ef1d386d178992f76f928b7176ae",
+      "variant": "uk_ts_medium_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_27": {
+      "sha256": "53a108f222834837ff1ddee459ea1caf9460979c259715136ffb89df443f8428",
+      "variant": "uk_ch_medium_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_30": {
+      "sha256": "d5dcb68d8915ef69efa365a04dd1472bdc6ff576f12557d135d16093ca8e41ba",
+      "variant": "uk_soft_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_31": {
+      "sha256": "1c6c8daaaac935edb140fe4e19cbf2998abbb60da661984f6e0020d582a8aab6",
+      "variant": "uk_yu_medium_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_32": {
+      "sha256": "379ca611191c9ed5a9f580640df37d68aaafe7096c75b880177cda35d1c2dcb7",
+      "variant": "uk_ya_tetiana_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
     },
     "en:ALPH_EN_09": {
-      "sha256": "327b3938f14d39dc010d71c4be60431f2ce7a422a26b584316dd4628b32030c8",
-      "variant": "human_j_selected",
-      "reason": "Owner explicitly selected the human J recording; preserve exact processed PCM"
+      "sha256": "a0ec81d68503d7852c76034d4f92cf3182fe6fcee4791e080540fe07ec807dbb",
+      "variant": "j_cori_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_13": {
+      "sha256": "e2002fdad8803a66993fc9d3976e4e9bbdf6fd5266198c29caa51b4c0bc636f9",
+      "variant": "n_cori_short_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_23": {
+      "sha256": "69397ef0534ac5d8aec7933333797d23692fbc41ebc288cb73611c7432d3e812",
+      "variant": "x_ljspeech_direct_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "uk:ALPH_UK_29": {
+      "sha256": "025b1e07d2bfcbd589b29bff043849599d3cd9b514a90624c86eba28130d7c61",
+      "variant": "alph_uk_29_timbre_selected",
+      "reason": "Preserve the selected recording during regeneration"
+    },
+    "en:ALPH_EN_21": {
+      "sha256": "8c20908dcc16c8f5429a247200c004b30064d65efcfaa343317b19277f2b7e5e",
+      "variant": "v_cori_trimmed_selected",
+      "reason": "Preserve the selected recording during regeneration"
     }
   }
 }

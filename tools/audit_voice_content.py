@@ -41,6 +41,32 @@ def make_audit(root=ROOT):
         if path.stem not in ['foundation','voice_jobs','word_translations','symbol_tracing','design_visual_overrides']:
             walk(read(path),path.relative_to(root).as_posix())
     rows=[]; ids=set(); errors=[]
+    clips_by_id = {(clip['locale'], clip['key']): clip for clip in manifest['clips']}
+    labels = {'en': 'english', 'uk': 'ukrainian'}
+
+    def check_label(locale, key, label, source):
+        clip = clips_by_id.get((locale, key))
+        if clip is None or normalized(label) != normalized(clip['text']):
+            errors.append({'id': f'{locale}:{key}', 'check': 'visible_label', 'source': source})
+
+    def check_object_labels(value, source):
+        if isinstance(value, dict):
+            key = value.get('word_key')
+            if isinstance(key, str):
+                for locale, field in labels.items():
+                    if isinstance(value.get(field), str):
+                        check_label(locale, key, value[field], source)
+            for child in value.values():
+                check_object_labels(child, source)
+        elif isinstance(value, list):
+            for item in value:
+                check_object_labels(item, source)
+
+    for path in sorted((root/'data/game_content').glob('*.json')):
+        check_object_labels(read(path), path.name)
+    for locale, entries in read(root/'data/game_content/letters.json')['alphabets'].items():
+        for entry in entries:
+            check_label(locale, entry['example_key'], entry['example'], 'letters.json')
     overrides=read(root/'tools/voice_clip_overrides.json')['clips'] if (root/'tools/voice_clip_overrides.json').exists() else {}
     repairs=read(root/'tools/voice_repair_pins.json')['clips'] if (root/'tools/voice_repair_pins.json').exists() else {}
     for clip in manifest['clips']:

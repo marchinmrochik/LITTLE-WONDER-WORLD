@@ -132,7 +132,7 @@ def inventory(root:Path):
   add({'id':'content:coloring_reference:'+page['id'],'type':'content','title':'Coloring example: '+page['english'],'games':['coloring'],'path':'data/game_content/coloring_references.json','preview':'coloring_example_'+page['id']+'.png','editable':[],'description':'Optional creative reference; no color scoring'})
  order={name:i for i,name in enumerate(['screen','scene','procedural','image','content','trace','component','token','paint','font','audio'])}
  entries.sort(key=lambda e:order.get(e['type'],99))
- reviews=read_json(root/'design_catalog/reviews.json')
+ reviews=read_json(root/'.local/design-catalog/reviews.json')
  for entry in entries:
   entry['review']=reviews.get(entry['id'],{'status':'current','note':''})
   if entry.get('path') and (root/entry['path']).is_file():entry['source_sha']=digest((root/entry['path']).read_bytes())
@@ -158,7 +158,7 @@ class Catalog:
   if status not in ['current','review','approved','needs_work']:raise ValueError('Неизвестный статус')
   if not isinstance(note,str) or len(note)>4000:raise ValueError('Слишком длинная заметка')
   with self.lock:
-   path=self.root/'design_catalog/reviews.json';data=read_json(path);data[id]={'status':status,'note':note};write_json(path,data);self.refresh()
+   path=self.root/'.local/design-catalog/reviews.json';data=read_json(path);data[id]={'status':status,'note':note};write_json(path,data);self.refresh()
   return data[id]
  def stage(self,id,kind,payload):
   e=self.entry(id)

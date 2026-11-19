@@ -80,3 +80,6 @@ adbkey.pub
 *.backup
 *.dmp
 *.hprof
+
+# Legacy local catalog review file
+/design_catalog/reviews.json

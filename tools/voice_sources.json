@@ -1,39 +1,4 @@
 {
   "version": 1,
-  "clips": {
-    "en:ALPH_EN_25": {
-      "locale": "en",
-      "key": "ALPH_EN_25",
-      "variant": "z_human_zed",
-      "label": "Z · human zed · selected",
-      "file": "assets/audio/voice/en/alph_en_25.wav",
-      "sha256": "73e5fc4ce213df7a802c9f8724b58de411f45d2c7e72b26b58b77ecae243933e",
-      "seconds": 2.601,
-      "source": "https://commons.wikimedia.org/wiki/File:En-uk-z.ogg",
-      "source_file": "https://upload.wikimedia.org/wikipedia/commons/f/f3/En-uk-z.ogg",
-      "source_sha256": "90e3963fc98f79bbd1fdb4fd55ca948ffb9c275de9eaca922b67e1ae836e2d1f",
-      "source_sha1": "c1a3247570e436a61ac9034f34a0e7abc6c45f8b",
-      "author": "Celestianpower (assumed author according to Commons)",
-      "license": "Public domain (PD-self)",
-      "processing": "Ogg decoded with Godot; mono22050PCM; edge silence/volume/fade only; no pitch/time change",
-      "human_selected": true
-    },
-    "en:ALPH_EN_09": {
-      "locale": "en",
-      "key": "ALPH_EN_09",
-      "variant": "human_j_selected",
-      "file": "assets/audio/voice/en/alph_en_09.wav",
-      "sha256": "327b3938f14d39dc010d71c4be60431f2ce7a422a26b584316dd4628b32030c8",
-      "seconds": 0.929,
-      "source": "https://commons.wikimedia.org/wiki/File:En-uk-j.ogg",
-      "source_file": "https://upload.wikimedia.org/wikipedia/commons/8/82/En-uk-j.ogg",
-      "source_sha256": "7d043a97659fd51ec933738f604ad89e1a822d29aa19a551f99ece64c805b008",
-      "author": "Logictheo",
-      "license": "CC BY-SA 3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
-      "processing": "Ogg decoded to mono22050PCM; volume/fade only, no pitch/time changes",
-      "phonemes": "dʒeɪ",
-      "human_selected": true
-    }
-  }
+  "clips": {}
 }
